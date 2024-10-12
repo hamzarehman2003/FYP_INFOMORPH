@@ -138,6 +138,7 @@
 #             logging.info(f"Content from {url}:\n{content[:1500]}\n")
 #         else:
 #             logging.info(f"No content retrieved from {url}.\n")
+
 import asyncio
 import aiohttp
 import logging
@@ -231,7 +232,7 @@ if __name__ == "__main__":
     query = input("Enter the topic or keywords to search: ")
 
     # List of domains to block
-    blocked_domains = ['reddit.com', 'instagram.com', 'wikipedia.org', 'linkedin.com']
+    blocked_domains = ['reddit.com', 'instagram.com', 'wikipedia.org', 'linkedin.com', 'youtube.com', 'vexforum.com']
 
     # Initialize variables
     desired_num_urls = 5
@@ -277,10 +278,14 @@ if __name__ == "__main__":
     logging.info("Scraping content from collected URLs...")
     contents = asyncio.run(scrape_contents(collected_urls))
 
-    # Display the content
-    for url, content in zip(collected_urls, contents):
-        if content:
-            snippet = get_first_n_words(content, 500)
-            logging.info(f"Content from {url}:\n{snippet}\n")
-        else:
-            logging.info(f"No content retrieved from {url}.\n")
+    # Write the URLs and content to a text file
+    with open('output.txt', 'w', encoding='utf-8') as f:
+        for url, content in zip(collected_urls, contents):
+            if content:
+                f.write(f"URL: {url}\n")
+                f.write("Content:\n")
+                f.write(content)
+                f.write("\n" + "-"*80 + "\n\n")
+                logging.info(f"Content from {url} written to file.")
+            else:
+                logging.info(f"No content retrieved from {url}.")

@@ -151,3 +151,39 @@ Sections Print Most people are not very familiar with the concept of artificial 
 2024-10-12 06:59:19,385 [INFO] Content from https://science.house.gov/2024/9/science-committee-passes-nine-bills-to-support-the-advancement-of-artificial-intelligence:
 (Washington, D.C.) – Today, the House Committee on Science, Space, and Technology passed nine bipartisan bills to ensure U.S. leadership in artificial intelligence (AI). The bills encompass a range of initiatives, including increased support for AI research and development and the promotion of AI education and workforce training programs. “Artificial intelligence has never been more vital to our national competitiveness,” said Chairman Frank Lucas (R-OK). “Today’s markup is a significant step in our committee’s commitment to driving AI technology forward and maintaining America's competitive edge in this critical field without burdensome or unnecessary regulations. Each bill contributes to advancing AI in a safe, reliable, and trustworthy manner while fostering the technology's growth and progress through innovation and vital R&D. I want to thank our committee members and hardworking staff for their collaborative efforts in getting these important bills out the door. Our work today will be critical in securing our nation's success in science and technology.” “The Science Committee has always been at the forefront of burgeoning technology, and this markup is further proof of that,” said Ranking Member Zoe Lofgren (D-CA). “Today, we moved nine bills through Committee that address both the challenges and opportunities presented by the rapid acceleration of AI. We are working to leverage AI to improve many aspects of American life while also moving policy that will ensure we build a diverse AI workforce and set strong AI safety standards—and so much more. While not every single bill we passed through the Committee today was perfect, I am proud of the work we have accomplished, and I am committed to continuing to work with my colleagues to make the necessary improvements as these policies move through Congress. The number of bipartisan bills we have been able to advance through the Committee this Congress is a testament to our focus and willingness to work together for the good of our scientific enterprise. I have often said the Science Committee is an island of sanity in the current Congressional climate, and that remains true. I want to thank Chairman Lucas for his leadership and the Minority and Majority staff for their tireless work on these efforts.” Legislation Passed: H.R. 9197, the Small Business Artificial Intelligence Advancement Act, requires the Director of the National Institute of Standards and Technology to develop guidance resources for small businesses in utilizing artificial intelligence. H.R. 9194, the Nucleic Acid Screening for Biosecurity Act, amends the Research and Development, Competition, and Innovation Act to support nucleic acid screening. H.R. 9211, the LIFT AI Act, improves educational efforts related to artificial intelligence literacy at the K through 12 level. H.R. 9215, the Workforce for AI Trust Act, facilitates a workforce of trained experts to build trustworthy AI systems. H.R. 9402, the NSF AI Education Act of 2024, supports National Science Foundation education and professional development relating to artificial intelligence. H.R. 9403, the Expanding AI Voices Act, supports a broad and diverse interdisciplinary research community for the advancement of artificial intelligence and AI-powered innovation through
 
+2024-10-12 07:14:25,414 [INFO] Collecting URLs...
+2024-10-12 07:14:26,138 [ERROR] Google Search API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=YOUR_API_KEY&cx=YOUR_CSE_ID&q=How+to+shave&num=10&start=1
+2024-10-12 07:14:26,139 [INFO] No more results from Google.
+2024-10-12 07:14:26,140 [INFO] Collected 0 URLs after filtering.
+2024-10-12 07:14:26,140 [INFO] Scraping content from collected URLs...
+2024-10-12 07:14:50,132 [INFO] Collecting URLs...
+2024-10-12 07:14:51,237 [INFO] Collected 5 URLs after filtering.
+2024-10-12 07:14:51,239 [INFO] Scraping content from collected URLs...
+2024-10-12 07:14:56,682 [INFO] Article at https://www.youtube.com/watch?v=mGOzW5DDYBs is too short; skipping.
+2024-10-12 07:15:01,128 [INFO] Article at https://www.youtube.com/watch?v=vYurKVxFXPI is too short; skipping.
+2024-10-12 07:15:05,372 [INFO] Article at https://www.youtube.com/watch?v=DjUfffuMNWw is too short; skipping.
+2024-10-12 07:15:07,572 [ERROR] Error fetching article at https://kidshealth.org/en/teens/shaving.html: 
+2024-10-12 07:15:07,578 [INFO] No content retrieved from https://www.youtube.com/watch?v=mGOzW5DDYBs.
+2024-10-12 07:15:07,579 [INFO] No content retrieved from https://www.youtube.com/watch?v=vYurKVxFXPI.
+2024-10-12 07:15:07,579 [INFO] Content from https://www.aad.org/public/everyday-care/skin-care-basics/hair/how-to-shave written to file.
+2024-10-12 07:15:07,580 [INFO] No content retrieved from https://www.youtube.com/watch?v=DjUfffuMNWw.
+2024-10-12 07:15:07,580 [INFO] No content retrieved from https://kidshealth.org/en/teens/shaving.html.
+2024-10-12 07:15:29,681 [INFO] Collecting URLs...
+2024-10-12 07:15:30,664 [INFO] Collected 5 URLs after filtering.
+2024-10-12 07:15:30,665 [INFO] Scraping content from collected URLs...
+2024-10-12 07:15:30,843 [ERROR] Failed to fetch https://www.vexforum.com/t/best-way-to-shave-a-36-tooth-gear/35176: HTTP 403
+2024-10-12 07:15:33,635 [INFO] Article at https://gillette.com/en-us/shaving-tips/how-to-shave/how-to-shave-your-face is too short; skipping.
+2024-10-12 07:15:34,414 [INFO] Content from https://www.aad.org/public/everyday-care/skin-care-basics/hair/how-to-shave written to file.
+2024-10-12 07:15:34,414 [INFO] Content from https://kidshealth.org/en/teens/shaving.html written to file.
+2024-10-12 07:15:34,414 [INFO] No content retrieved from https://gillette.com/en-us/shaving-tips/how-to-shave/how-to-shave-your-face.
+2024-10-12 07:15:34,415 [INFO] Content from https://www.thisamericanlife.org/815/transcript written to file.
+2024-10-12 07:15:34,415 [INFO] No content retrieved from https://www.vexforum.com/t/best-way-to-shave-a-36-tooth-gear/35176.
+2024-10-12 07:16:30,678 [INFO] Collecting URLs...
+2024-10-12 07:16:31,767 [INFO] Collected 5 URLs after filtering.
+2024-10-12 07:16:31,768 [INFO] Scraping content from collected URLs...
+2024-10-12 07:16:35,223 [INFO] Article at https://gillette.com/en-us/shaving-tips/how-to-shave/how-to-shave-your-face is too short; skipping.
+2024-10-12 07:16:36,273 [INFO] Content from https://www.aad.org/public/everyday-care/skin-care-basics/hair/how-to-shave written to file.
+2024-10-12 07:16:36,274 [INFO] Content from https://kidshealth.org/en/teens/shaving.html written to file.
+2024-10-12 07:16:36,274 [INFO] No content retrieved from https://gillette.com/en-us/shaving-tips/how-to-shave/how-to-shave-your-face.
+2024-10-12 07:16:36,276 [INFO] Content from https://www.thisamericanlife.org/815/transcript written to file.
+2024-10-12 07:16:36,276 [INFO] Content from https://forum.alzheimers.org.uk/threads/can-anyone-advise-me-on-how-to-shave-my-husband.54341/ written to file.
