@@ -1,154 +1,23 @@
-# import asyncio
-# import aiohttp
-# import logging
-# import requests
-# from newspaper import Article
-# from urllib.parse import urlparse
-# import time
-# from aiohttp import ClientSession
-
-# # Set up logging
-# logging.basicConfig(
-#     level=logging.INFO,
-#     format='%(asctime)s [%(levelname)s] %(message)s',
-#     handlers=[
-#         logging.FileHandler('app.log'),
-#         logging.StreamHandler()
-#     ]
-# )
-
-# def google_search(api_key, cse_id, query, num_results=5, start_index=1):
-#     """Search Google using the Custom Search API and return URLs."""
-#     url = "https://www.googleapis.com/customsearch/v1"
-#     params = {
-#         'key': api_key,
-#         'cx': cse_id,
-#         'q': query,
-#         'num': num_results,
-#         'start': start_index
-#     }
-#     try:
-#         response = requests.get(url, params=params)
-#         response.raise_for_status()
-#         results = response.json()
-#         urls = [item['link'] for item in results.get('items', [])]
-#         return urls
-#     except requests.exceptions.RequestException as e:
-#         logging.error(f"Google Search API request failed: {e}")
-#         return []
-
-# def is_blocked(url, blocked_domains):
-#     """Check if the URL's domain is in the list of blocked domains."""
-#     domain = urlparse(url).netloc.lower()
-#     for blocked_domain in blocked_domains:
-#         if blocked_domain in domain:
-#             return True
-#     return False
-
-# async def fetch_article(session, url, headers):
-#     """Asynchronously fetch and parse an article."""
-#     try:
-#         async with session.get(url, headers=headers, timeout=10) as response:
-#             if response.status != 200:
-#                 logging.error(f"Failed to fetch {url}: HTTP {response.status}")
-#                 return None
-#             html = await response.text()
-#             article = Article(url)
-#             article.set_html(html)
-#             article.parse()
-#             # Content Filtering: Check article length and language
-#             if len(article.text) < 200:
-#                 logging.info(f"Article at {url} is too short; skipping.")
-#                 return None
-#             if article.meta_lang and article.meta_lang != 'en':
-#                 logging.info(f"Article at {url} is not in English; skipping.")
-#                 return None
-#             return article.text
-#     except Exception as e:
-#         logging.error(f"Error fetching article at {url}: {e}")
-#         return None
-
-# async def scrape_contents(urls):
-#     """Scrape contents from a list of URLs asynchronously."""
-#     headers = {
-#         'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-#                        'AppleWebKit/537.36 (KHTML, like Gecko) '
-#                        'Chrome/58.0.3029.110 Safari/537.3')
-#     }
-#     async with ClientSession() as session:
-#         tasks = [fetch_article(session, url, headers) for url in urls]
-#         contents = await asyncio.gather(*tasks)
-#     return contents
-
-# if __name__ == "__main__":
-#     API_KEY = 'AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4'
-#     CSE_ID = '72e62b8642f194f09'
-#     query = input("Enter the topic or keywords to search: ")
-
-#     # List of domains to block
-#     blocked_domains = ['reddit.com', 'instagram.com', 'wikipedia.org', 'pk.linkedin.com']
-
-#     # Initialize variables
-#     desired_num_urls = 5
-#     collected_urls = []
-#     start_index = 1
-#     max_api_calls = 10  # To prevent infinite loops
-#     api_calls_made = 0
-
-#     logging.info("Collecting URLs...")
-
-#     while len(collected_urls) < desired_num_urls and api_calls_made < max_api_calls:
-#         # Fetch more URLs as needed
-#         num_results = 10  # Fetch 10 results at a time to increase chances
-#         urls = google_search(API_KEY, CSE_ID, query, num_results=num_results, start_index=start_index)
-#         api_calls_made += 1
-
-#         if not urls:
-#             logging.info("No more results from Google.")
-#             break
-
-#         # Filter out blocked domains
-#         filtered_urls = [url for url in urls if not is_blocked(url, blocked_domains)]
-
-#         # Add filtered URLs to the collected list
-#         collected_urls.extend(filtered_urls)
-
-#         # Update the start index for the next API call
-#         start_index += num_results
-
-#         # Remove duplicates
-#         collected_urls = list(dict.fromkeys(collected_urls))
-
-#         # Limit the collected URLs to the desired number
-#         if len(collected_urls) >= desired_num_urls:
-#             collected_urls = collected_urls[:desired_num_urls]
-#             break
-
-#         time.sleep(1)  # Respectful delay between API calls
-
-#     logging.info(f"Collected {len(collected_urls)} URLs after filtering.")
-
-#     # Scrape the content of each URL asynchronously
-#     logging.info("Scraping content from collected URLs...")
-#     contents = asyncio.run(scrape_contents(collected_urls))
-
-#     # Display the content
-#     for url, content in zip(collected_urls, contents):
-#         if content:
-#             logging.info(f"Content from {url}:\n{content[:1500]}\n")
-#         else:
-#             logging.info(f"No content retrieved from {url}.\n")
+# scraper.py
 
 import asyncio
 import aiohttp
 import logging
 import requests
+import argparse
+import yaml
+import time
+import json
 from newspaper import Article
 from urllib.parse import urlparse
-import time
-from aiohttp import ClientSession
+from aiohttp import ClientSession, TCPConnector
+from tqdm.asyncio import tqdm_asyncio
+from urllib.robotparser import RobotFileParser
+from langdetect import detect
+from translate import Translator
+from itertools import cycle
 
-# Set up logging
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -158,7 +27,40 @@ logging.basicConfig(
     ]
 )
 
-def google_search(api_key, cse_id, query, num_results=5, start_index=1):
+error_handler = logging.FileHandler('errors.log')
+error_handler.setLevel(logging.ERROR)
+error_handler.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(message)s'))
+logging.getLogger().addHandler(error_handler)
+
+# Load configuration from config.yaml
+with open('config.yaml', 'r') as f:
+    config = yaml.safe_load(f)
+
+API_KEY = config['api_key']
+CSE_ID = config['cse_id']
+blocked_domains = config.get('blocked_domains', [])
+proxies_list = config.get('proxies', [])
+
+# Command-line arguments
+parser = argparse.ArgumentParser(description='Web Article Scraper')
+parser.add_argument('--query', type=str, help='Search query', required=True)
+parser.add_argument('--num_urls', type=int, default=5, help='Number of articles to collect')
+parser.add_argument('--output', type=str, default='output.json', help='Output file name')
+args = parser.parse_args()
+
+query = args.query
+desired_num_articles = args.num_urls
+output_file = args.output
+
+# Initialize variables
+collected_urls = []
+start_index = 1
+max_api_calls = 10  # To prevent infinite loops
+api_calls_made = 0
+
+error_log = []
+
+def google_search(api_key, cse_id, query, num_results=10, start_index=1):
     """Search Google using the Custom Search API and return URLs."""
     url = "https://www.googleapis.com/customsearch/v1"
     params = {
@@ -176,6 +78,7 @@ def google_search(api_key, cse_id, query, num_results=5, start_index=1):
         return urls
     except requests.exceptions.RequestException as e:
         logging.error(f"Google Search API request failed: {e}")
+        error_log.append(f"Google Search API request failed: {e}")
         return []
 
 def is_blocked(url, blocked_domains):
@@ -186,64 +89,104 @@ def is_blocked(url, blocked_domains):
             return True
     return False
 
-def get_first_n_words(text, n):
-    """Return the first n words of the given text."""
-    words = text.split()
-    return ' '.join(words[:n])
-
-async def fetch_article(session, url, headers):
-    """Asynchronously fetch and parse an article."""
+def is_allowed(url, user_agent='*'):
+    """Check if scraping is allowed by robots.txt."""
+    parsed_url = urlparse(url)
+    robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
+    rp = RobotFileParser()
+    rp.set_url(robots_url)
     try:
-        async with session.get(url, headers=headers, timeout=10) as response:
-            if response.status != 200:
-                logging.error(f"Failed to fetch {url}: HTTP {response.status}")
+        rp.read()
+        return rp.can_fetch(user_agent, url)
+    except:
+        return False  # Disallow if robots.txt cannot be read
+
+def get_proxy():
+    """Get a proxy from the list, if available."""
+    if proxies_list:
+        return next(get_proxy.proxy_cycle)
+    return None
+
+get_proxy.proxy_cycle = cycle(proxies_list)
+
+async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3):
+    """Asynchronously fetch and parse an article."""
+    for attempt in range(retries):
+        try:
+            async with semaphore:
+                async with session.get(url, headers=headers, timeout=10, proxy=proxy) as response:
+                    if response.status == 403:
+                        logging.error(f"Access denied to {url}: HTTP 403 Forbidden.")
+                        error_log.append(f"Access denied to {url}: HTTP 403 Forbidden.")
+                        return None
+                    elif response.status != 200:
+                        logging.error(f"Failed to fetch {url}: HTTP {response.status}")
+                        error_log.append(f"Failed to fetch {url}: HTTP {response.status}")
+                        return None
+                    html = await response.text()
+                    article = Article(url)
+                    article.set_html(html)
+                    article.parse()
+                    # Extract Article Metadata
+                    title = article.title if article.title else 'No Title'
+                    authors = article.authors if article.authors else []
+                    publish_date = article.publish_date.strftime('%Y-%m-%d') if article.publish_date else 'No Publish Date'
+                    # Enhanced Content Filtering
+                    if len(article.text.split()) < 200:
+                        logging.info(f"Article at {url} is too short; skipping.")
+                        return None
+                    # Multi-language Support
+                    lang = detect(article.text)
+                    if lang != 'en':
+                        logging.info(f"Translating article at {url} from {lang} to English.")
+                        translator = Translator(to_lang='en')
+                        article.text = translator.translate(article.text)
+                    return {
+                        'url': url,
+                        'title': title,
+                        'authors': authors,
+                        'publish_date': publish_date,
+                        'content': article.text
+                    }
+        except Exception as e:
+            if attempt < retries - 1:
+                await asyncio.sleep(2)  # Wait before retrying
+                continue
+            else:
+                logging.error(f"Error fetching article at {url}: {e}")
+                error_log.append(f"Error fetching article at {url}: {e}")
                 return None
-            html = await response.text()
-            article = Article(url)
-            article.set_html(html)
-            article.parse()
-            # Content Filtering: Check article length and language
-            if len(article.text.split()) < 200:
-                logging.info(f"Article at {url} is too short; skipping.")
-                return None
-            if article.meta_lang and article.meta_lang != 'en':
-                logging.info(f"Article at {url} is not in English; skipping.")
-                return None
-            return article.text
-    except Exception as e:
-        logging.error(f"Error fetching article at {url}: {e}")
-        return None
 
 async def scrape_contents(urls):
     """Scrape contents from a list of URLs asynchronously."""
     headers = {
         'User-Agent': ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
                        'AppleWebKit/537.36 (KHTML, like Gecko) '
-                       'Chrome/58.0.3029.110 Safari/537.3')
+                       'Chrome/94.0.4606.81 Safari/537.36')
     }
-    async with ClientSession() as session:
-        tasks = [fetch_article(session, url, headers) for url in urls]
-        contents = await asyncio.gather(*tasks)
+    semaphore = asyncio.Semaphore(5)  # Limit to 5 concurrent requests
+    connector = TCPConnector(limit_per_host=2)
+    async with ClientSession(connector=connector) as session:
+        tasks = []
+        for url in urls:
+            proxy = get_proxy()
+            tasks.append(fetch_article(session, url, headers, semaphore, proxy))
+        # Progress Indicator
+        contents = []
+        for task in tqdm_asyncio.as_completed(tasks, total=len(tasks)):
+            content = await task
+            contents.append(content)
     return contents
 
-if __name__ == "__main__":
-    API_KEY = 'AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4'
-    CSE_ID = '72e62b8642f194f09'
-    query = input("Enter the topic or keywords to search: ")
-
-    # List of domains to block
-    blocked_domains = ['reddit.com', 'instagram.com', 'wikipedia.org', 'linkedin.com', 'youtube.com', 'vexforum.com']
-
-    # Initialize variables
-    desired_num_urls = 5
-    collected_urls = []
-    start_index = 1
-    max_api_calls = 10  # To prevent infinite loops
-    api_calls_made = 0
-
+async def main():
     logging.info("Collecting URLs...")
+    collected_urls = []
+    valid_articles = []
+    start_index = 1
+    api_calls_made = 0
+    max_urls_to_attempt = 10  # Maximum number of URLs to attempt
 
-    while len(collected_urls) < desired_num_urls and api_calls_made < max_api_calls:
+    while len(valid_articles) < desired_num_articles and api_calls_made < max_api_calls:
         # Fetch more URLs as needed
         num_results = 10  # Fetch 10 results at a time to increase chances
         urls = google_search(API_KEY, CSE_ID, query, num_results=num_results, start_index=start_index)
@@ -256,36 +199,55 @@ if __name__ == "__main__":
         # Filter out blocked domains
         filtered_urls = [url for url in urls if not is_blocked(url, blocked_domains)]
 
-        # Add filtered URLs to the collected list
-        collected_urls.extend(filtered_urls)
+        # Check robots.txt compliance
+        allowed_urls = [url for url in filtered_urls if is_allowed(url)]
 
-        # Update the start index for the next API call
-        start_index += num_results
+        # Add allowed URLs to the collected list
+        collected_urls.extend(allowed_urls)
 
         # Remove duplicates
         collected_urls = list(dict.fromkeys(collected_urls))
 
-        # Limit the collected URLs to the desired number
-        if len(collected_urls) >= desired_num_urls:
-            collected_urls = collected_urls[:desired_num_urls]
+        # Update the start index for the next API call
+        start_index += num_results
+
+        # Limit the number of URLs to attempt
+        if len(collected_urls) >= max_urls_to_attempt:
+            collected_urls = collected_urls[:max_urls_to_attempt]
             break
 
-        time.sleep(1)  # Respectful delay between API calls
+        await asyncio.sleep(1)  # Respectful delay between API calls
 
     logging.info(f"Collected {len(collected_urls)} URLs after filtering.")
 
     # Scrape the content of each URL asynchronously
     logging.info("Scraping content from collected URLs...")
-    contents = asyncio.run(scrape_contents(collected_urls))
+    contents = await scrape_contents(collected_urls)
 
-    # Write the URLs and content to a text file
-    with open('output.txt', 'w', encoding='utf-8') as f:
-        for url, content in zip(collected_urls, contents):
-            if content:
-                f.write(f"URL: {url}\n")
-                f.write("Content:\n")
-                f.write(content)
-                f.write("\n" + "-"*80 + "\n\n")
-                logging.info(f"Content from {url} written to file.")
-            else:
-                logging.info(f"No content retrieved from {url}.")
+    # Collect data in a list of dictionaries
+    for content in contents:
+        if content:
+            valid_articles.append(content)
+            logging.info(f"Article '{content['title']}' added to valid articles.")
+            if len(valid_articles) >= desired_num_articles:
+                break
+        else:
+            logging.info("No content retrieved or article skipped.")
+
+    if not valid_articles:
+        logging.error("No valid articles were collected.")
+    else:
+        # Write data to JSON file
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(valid_articles[:desired_num_articles], f, ensure_ascii=False, indent=4)
+        logging.info(f"Data written to {output_file}.")
+
+    # Exception Handling and Reporting
+    if error_log:
+        logging.info("Errors encountered during scraping:")
+        for error in error_log:
+            logging.info(error)
+
+# Run the main function
+if __name__ == "__main__":
+    asyncio.run(main())
