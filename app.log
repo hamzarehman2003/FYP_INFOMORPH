@@ -1,0 +1,164 @@
+2024-10-12 07:55:04,388 [INFO] Collecting URLs...
+2024-10-12 07:55:13,654 [INFO] Collected 5 URLs after filtering.
+2024-10-12 07:55:13,655 [INFO] Scraping content from collected URLs...
+2024-10-12 07:55:14,117 [ERROR] Failed to fetch https://www.nytimes.com/2024/08/23/sports/arshad-nadeem-javelin-gold-olympics-buffalo.html: HTTP 403
+2024-10-12 07:55:15,531 [INFO] No content retrieved.
+2024-10-12 07:55:15,533 [INFO] Data written to articles.json.
+2024-10-12 07:55:15,533 [INFO] Errors encountered during scraping:
+2024-10-12 07:55:15,533 [INFO] Failed to fetch https://www.nytimes.com/2024/08/23/sports/arshad-nadeem-javelin-gold-olympics-buffalo.html: HTTP 403
+2024-10-12 07:57:25,264 [INFO] Collecting URLs...
+2024-10-12 07:57:32,169 [INFO] Collected 5 URLs after filtering.
+2024-10-12 07:57:32,171 [INFO] Scraping content from collected URLs...
+2024-10-12 07:57:44,060 [INFO] Article at https://www.hmfckickback.co.uk/index.php?/topic/205389-international-break-poll/ is too short; skipping.
+2024-10-12 07:57:47,529 [INFO] Article at https://www.skysports.com/internationals-fixtures is too short; skipping.
+2024-10-12 07:57:49,781 [INFO] No content retrieved.
+2024-10-12 07:57:49,781 [INFO] No content retrieved.
+2024-10-12 07:57:49,783 [INFO] Data written to articles.json.
+2024-10-12 08:00:11,747 [INFO] Collecting URLs...
+2024-10-12 08:01:23,485 [INFO] Collecting URLs...
+2024-10-12 08:01:36,035 [INFO] Collected 10 URLs after filtering.
+2024-10-12 08:01:36,036 [INFO] Scraping content from collected URLs...
+2024-10-12 08:01:37,270 [INFO] Article at https://community.sports-interactive.com/forums/topic/580130-why-does-the-game-switch-to-a-2-week-international-break-in-september-from-2026/ is too short; skipping.
+2024-10-12 08:01:40,314 [INFO] Article at https://www.hmfckickback.co.uk/index.php?/topic/205389-international-break-poll/ is too short; skipping.
+2024-10-12 08:01:41,509 [INFO] Article at https://www.skysports.com/internationals-fixtures is too short; skipping.
+2024-10-12 08:01:46,098 [INFO] No content retrieved or article skipped.
+2024-10-12 08:01:46,098 [INFO] No content retrieved or article skipped.
+2024-10-12 08:01:46,098 [INFO] No content retrieved or article skipped.
+2024-10-12 08:01:46,099 [INFO] Article 'What do Sunderland need to work on during the international break?' added to valid articles.
+2024-10-12 08:01:46,099 [INFO] Article 'Every International Break During the 2024/25 Football Season' added to valid articles.
+2024-10-12 08:01:46,099 [INFO] Article 'Who's playing and when in the international break?' added to valid articles.
+2024-10-12 08:01:46,100 [INFO] Article 'When are the international breaks this season?' added to valid articles.
+2024-10-12 08:01:46,100 [INFO] Article 'When Are the Next International Breaks in English Football?' added to valid articles.
+2024-10-12 08:01:46,102 [INFO] Data written to articles.json.
+2024-10-12 10:17:29,791 [INFO] Collecting URLs...
+2024-10-12 10:17:47,338 [INFO] Collected 10 URLs after filtering.
+2024-10-12 10:17:47,339 [INFO] Scraping content from collected URLs...
+2024-10-12 10:17:49,458 [INFO] Article at https://www.defense.gov/News/News-Stories/Article/Article/3923123/us-assets-in-mediterranean-again-helped-defend-israel-against-iranian-missiles/ is too short; skipping.
+2024-10-12 10:17:50,043 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-launches-drone-attack-israel-expected-unfold-over-hours-2024-04-13/: HTTP 401
+2024-10-12 10:17:51,476 [INFO] Article at https://www.nbcnews.com/news/world/live-blog/israel-iran-live-updates-netanyahu-biden-idf-hezbollah-lebanon-gaza-rcna174629 is too short; skipping.
+2024-10-12 10:17:51,972 [INFO] Article 'Statement from President Joe Biden on Iran’s Attacks against the State of Israel' added to valid articles.
+2024-10-12 10:17:51,972 [INFO] Article 'What we know about Iran's latest missile attack on Israel' added to valid articles.
+2024-10-12 10:17:51,972 [INFO] No content retrieved or article skipped.
+2024-10-12 10:17:51,972 [INFO] Article 'Israel says Iran ‘will pay’ for launching a major missile attack against it' added to valid articles.
+2024-10-12 10:17:51,972 [INFO] No content retrieved or article skipped.
+2024-10-12 10:17:51,972 [INFO] Article 'Why Is Iran Delaying Its Vowed Attack On Israel?' added to valid articles.
+2024-10-12 10:17:51,972 [INFO] Article 'Assessing Israel’s Strike on Iran' added to valid articles.
+2024-10-12 10:17:51,973 [INFO] Data written to articles.json.
+2024-10-12 10:17:51,974 [INFO] Errors encountered during scraping:
+2024-10-12 10:17:51,974 [INFO] Failed to fetch https://www.reuters.com/world/middle-east/iran-launches-drone-attack-israel-expected-unfold-over-hours-2024-04-13/: HTTP 401
+2024-10-12 10:22:50,496 [INFO] Collecting URLs...
+2024-10-12 10:23:15,232 [INFO] Collected 10 URLs after filtering.
+2024-10-12 10:23:15,233 [INFO] Scraping content from collected URLs...
+2024-10-12 10:23:18,062 [INFO] Article at https://m.cricbuzz.com/cricket-series/8497/england-tour-of-pakistan-2024/matches is too short; skipping.
+2024-10-12 10:23:18,579 [INFO] Article at https://www.hindustantimes.com/cricket/match-result-pak-vs-eng-eng-in-pak-3-tests-2024-1st-test-pakistan-vs-england-test-pken10072024247793 is too short; skipping.
+2024-10-12 10:23:18,786 [INFO] Article at https://www.espncricinfo.com/series/england-in-pakistan-2024-25-1442205 is too short; skipping.
+2024-10-12 10:23:19,198 [INFO] Article at https://www.skysports.com/cricket/live-blog/12123/13229545/pakistan-vs-england-live-over-by-over-text-commentary-and-in-play-video-clips-from-first-test-in-multan is too short; skipping.
+2024-10-12 10:23:22,158 [INFO] Article at https://www.livemint.com/sports/cricket-news/pakistan-vs-england-live-score-1st-test-day-5-of-england-tour-of-pakistan-2024-final-updates-today-07-oct-2024-11728619533424.html is too short; skipping.
+2024-10-12 10:23:24,534 [INFO] Article at https://www.bbc.co.uk/sport/cricket/live/cnd0pp64ld3t?page=2 is too short; skipping.
+2024-10-12 10:23:25,865 [INFO] Article at https://sports.ndtv.com/cricket/pakistan-vs-england-1st-test-day-5-live-score-updates-6764368 is too short; skipping.
+2024-10-12 10:23:25,868 [INFO] No content retrieved or article skipped.
+2024-10-12 10:23:25,869 [INFO] Article 'Pakistan vs England: Harry Brook & Joe Root set up victory charge' added to valid articles.
+2024-10-12 10:23:25,869 [INFO] No content retrieved or article skipped.
+2024-10-12 10:23:25,869 [INFO] No content retrieved or article skipped.
+2024-10-12 10:23:25,870 [INFO] No content retrieved or article skipped.
+2024-10-12 10:23:25,870 [INFO] Article 'Pakistan vs England: Jack Leach seals record-breaking win in first Test in Multan' added to valid articles.
+2024-10-12 10:23:25,870 [INFO] No content retrieved or article skipped.
+2024-10-12 10:23:25,871 [INFO] Article 'England thrash Pakistan by an innings and 47 runs to win first Test' added to valid articles.
+2024-10-12 10:23:25,872 [INFO] No content retrieved or article skipped.
+2024-10-12 10:23:25,872 [INFO] No content retrieved or article skipped.
+2024-10-12 10:23:25,873 [INFO] Data written to articles.json.
+2024-10-12 10:28:03,275 [INFO] Collecting URLs...
+2024-10-12 10:30:54,854 [INFO] Collecting URLs...
+2024-10-12 10:32:34,378 [INFO] Collecting URLs...
+2024-10-12 10:38:06,686 [INFO] Collecting URLs...
+2024-10-12 10:38:52,092 [INFO] Collected 10 URLs after filtering.
+2024-10-12 10:38:52,092 [INFO] Scraping content from collected URLs...
+2024-10-12 10:38:53,749 [INFO] Article at https://cricket.sourceforge.net/ is too short; skipping.
+2024-10-12 10:38:53,944 [INFO] Article at https://vulcain.ch/collections/cricket-1 is too short; skipping.
+2024-10-12 10:38:54,130 [INFO] Article at https://schachtspindle.com/products/cricket-rigid-heddle-looms is too short; skipping.
+2024-10-12 10:38:54,556 [INFO] Article at https://www.theguardian.com/sport/cricket is too short; skipping.
+2024-10-12 10:38:55,147 [INFO] Article at https://www.espncricinfo.com/ is too short; skipping.
+2024-10-12 10:38:55,235 [INFO] Article at https://cherrycricket.com/ is too short; skipping.
+2024-10-12 10:38:55,665 [INFO] Article at https://www.cricketsweepstakes.com/Extras is too short; skipping.
+2024-10-12 10:38:56,307 [INFO] Article at https://www.cricketcafepdx.com/ is too short; skipping.
+2024-10-12 10:38:56,442 [INFO] Article at https://shop.cricketmedia.com/ is too short; skipping.
+2024-10-12 10:38:56,445 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,445 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,446 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,446 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,446 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,447 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,447 [INFO] Article 'Prepaid Phones: No Contract Cell Phone Plans' added to valid articles.
+2024-10-12 10:38:56,447 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,448 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,448 [INFO] No content retrieved or article skipped.
+2024-10-12 10:38:56,449 [INFO] Data written to articles.json.
+2024-10-12 10:39:15,612 [INFO] Collecting URLs...
+2024-10-12 10:40:56,548 [INFO] Collected 10 URLs after filtering.
+2024-10-12 10:40:56,549 [INFO] Scraping content from collected URLs...
+2024-10-12 10:40:58,539 [INFO] Article at https://www.theguardian.com/us-news/hurricane-milton is too short; skipping.
+2024-10-12 10:40:58,624 [INFO] Article at https://www.noaa.gov/milton is too short; skipping.
+2024-10-12 10:40:58,919 [INFO] Article at https://www.fema.gov/disaster/current/hurricane-milton is too short; skipping.
+2024-10-12 10:40:59,769 [INFO] Article at https://www.aljazeera.com/news/liveblog/2024/10/9/hurricane-milton-live-updates-epic-storm-prepares-to-slam-florida is too short; skipping.
+2024-10-12 10:40:59,988 [INFO] Article at https://www.usa.gov/hurricane-milton is too short; skipping.
+2024-10-12 10:41:04,837 [INFO] Article at https://www.nbcnews.com/weather/hurricanes/live-blog/hurricane-milton-live-updates-rcna174774 is too short; skipping.
+2024-10-12 10:41:04,845 [INFO] No content retrieved or article skipped.
+2024-10-12 10:41:04,845 [INFO] No content retrieved or article skipped.
+2024-10-12 10:41:04,846 [INFO] No content retrieved or article skipped.
+2024-10-12 10:41:04,846 [INFO] No content retrieved or article skipped.
+2024-10-12 10:41:04,846 [INFO] No content retrieved or article skipped.
+2024-10-12 10:41:04,846 [INFO] Article 'Hurricane Milton makes landfall as Category 3 on Florida's west coast' added to valid articles.
+2024-10-12 10:41:04,847 [INFO] Article 'Hurricane Milton rapidly intensifies into Category 5 hurricane, becoming the Gulf's strongest late-season storm on record' added to valid articles.
+2024-10-12 10:41:04,847 [INFO] Article 'Hurricane Milton – Walmart's Response' added to valid articles.
+2024-10-12 10:41:04,847 [INFO] Article 'Hurricane Milton Recap' added to valid articles.
+2024-10-12 10:41:04,848 [INFO] No content retrieved or article skipped.
+2024-10-12 10:41:04,849 [INFO] Data written to articles.json.
+2024-10-12 10:55:34,852 [INFO] Collecting URLs...
+2024-10-12 10:55:56,371 [INFO] Collected 10 URLs after filtering.
+2024-10-12 10:55:56,372 [INFO] Scraping content from collected URLs...
+2024-10-12 10:55:57,321 [INFO] Article at https://play.google.com/store/apps/details?id=com.aliaman.timetablenotificare&hl=en_US is too short; skipping.
+2024-10-12 10:55:58,414 [INFO] Article at https://nu.insigniails.com/library/Home is too short; skipping.
+2024-10-12 10:55:58,606 [INFO] Article at https://khi.nu.edu.pk/ is too short; skipping.
+2024-10-12 10:55:58,804 [INFO] Article at https://nu.edu.pk/Career is too short; skipping.
+2024-10-12 10:56:00,571 [INFO] Article at https://github.com/Hamza5743/TimeTableGenerator is too short; skipping.
+2024-10-12 10:56:00,575 [INFO] No content retrieved or article skipped.
+2024-10-12 10:56:00,575 [INFO] Article 'FAST NUCES Lahore' added to valid articles.
+2024-10-12 10:56:00,575 [INFO] Article 'FAST NUCES' added to valid articles.
+2024-10-12 10:56:00,576 [INFO] Article 'FAST National University' added to valid articles.
+2024-10-12 10:56:00,576 [INFO] No content retrieved or article skipped.
+2024-10-12 10:56:00,576 [INFO] Article 'CFP' added to valid articles.
+2024-10-12 10:56:00,577 [INFO] No content retrieved or article skipped.
+2024-10-12 10:56:00,577 [INFO] No content retrieved or article skipped.
+2024-10-12 10:56:00,577 [INFO] Article 'NUCES Peshawar' added to valid articles.
+2024-10-12 10:56:00,578 [INFO] Data written to articles.json.
+2024-10-12 10:56:36,091 [INFO] Collecting URLs...
+2024-10-12 10:57:12,010 [INFO] Collected 10 URLs after filtering.
+2024-10-12 10:57:12,012 [INFO] Scraping content from collected URLs...
+2024-10-12 10:57:17,289 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-says-it-has-finished-attack-israel-amid-fears-spreading-conflict-2024-10-02/: HTTP 401
+2024-10-12 10:57:20,733 [INFO] Article at https://www.nbcnews.com/news/world/live-blog/israel-iran-live-updates-netanyahu-biden-idf-hezbollah-lebanon-gaza-rcna174629 is too short; skipping.
+2024-10-12 10:57:27,363 [INFO] Article at https://www.defense.gov/News/News-Stories/Article/Article/3923123/us-assets-in-mediterranean-again-helped-defend-israel-against-iranian-missiles/ is too short; skipping.
+2024-10-12 10:57:27,366 [INFO] Article 'What we know about Iran's latest missile attack on Israel' added to valid articles.
+2024-10-12 10:57:27,367 [INFO] Article 'Iran carries out a massive missile attack on Israel, expanding the Middle East conflict' added to valid articles.
+2024-10-12 10:57:27,367 [INFO] Article 'Why Is Iran Delaying Its Vowed Attack On Israel?' added to valid articles.
+2024-10-12 10:57:27,367 [INFO] Article 'Iran’s missile attack against Israel: What we know and what comes next' added to valid articles.
+2024-10-12 10:57:27,368 [INFO] No content retrieved or article skipped.
+2024-10-12 10:57:27,368 [INFO] Article 'Assessing Israel’s Strike on Iran' added to valid articles.
+2024-10-12 10:57:27,369 [INFO] Data written to articles.json.
+2024-10-12 10:57:27,369 [INFO] Errors encountered during scraping:
+2024-10-12 10:57:27,370 [INFO] Failed to fetch https://www.reuters.com/world/middle-east/iran-says-it-has-finished-attack-israel-amid-fears-spreading-conflict-2024-10-02/: HTTP 401
+2024-10-12 13:17:00,686 [INFO] Collecting URLs...
+2024-10-12 13:17:22,077 [INFO] Collected 10 URLs after filtering.
+2024-10-12 13:17:22,077 [INFO] Scraping content from collected URLs...
+2024-10-12 13:17:24,313 [INFO] Article at https://business.batangascity.gov.ph/product.php?football%20international%20break%20fixtures is too short; skipping.
+2024-10-12 13:17:28,711 [INFO] Article at https://www.skysports.com/internationals-fixtures is too short; skipping.
+2024-10-12 13:17:30,762 [INFO] Article at https://www.themoscowtimes.com/2024/10/09/russian-football-team-left-without-opponents-for-international-break-a86634 is too short; skipping.
+2024-10-12 13:17:30,765 [INFO] Article 'When are the international breaks this season?' added to valid articles.
+2024-10-12 13:17:30,766 [INFO] No content retrieved or article skipped.
+2024-10-12 13:17:30,766 [INFO] Article '2024 Men's International Friendly Schedule' added to valid articles.
+2024-10-12 13:17:30,766 [INFO] Article 'International break winners and losers: USMNT, Kylian Mbappe and Brazil all had a horrible couple of weeks' added to valid articles.
+2024-10-12 13:17:30,767 [INFO] Article 'When Are the Next International Breaks in English Football?' added to valid articles.
+2024-10-12 13:17:30,767 [INFO] Article 'Milan: Pulisic’s late return from international break concerns Fonseca' added to valid articles.
+2024-10-12 13:17:30,770 [INFO] Data written to articles.json.
+2024-11-29 01:49:09,914 [INFO] Collecting URLs...
+2024-11-29 02:01:33,486 [INFO] Collecting URLs...
+2024-12-03 22:58:57,855 [INFO] Collecting URLs...

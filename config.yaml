@@ -1,0 +1,11 @@
+api_key: 'AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4'
+cse_id: '72e62b8642f194f09'
+blocked_domains:
+  - 'reddit.com'
+  - 'instagram.com'
+  - 'wikipedia.org'
+  - 'linkedin.com'
+  - 'youtube.com'
+  - 'vexforum.com'
+  - 'nytimes.com'
+proxies: []

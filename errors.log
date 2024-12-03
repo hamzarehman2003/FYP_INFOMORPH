@@ -1,0 +1,3 @@
+2024-10-12 07:55:14,117 [ERROR] Failed to fetch https://www.nytimes.com/2024/08/23/sports/arshad-nadeem-javelin-gold-olympics-buffalo.html: HTTP 403
+2024-10-12 10:17:50,043 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-launches-drone-attack-israel-expected-unfold-over-hours-2024-04-13/: HTTP 401
+2024-10-12 10:57:17,289 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-says-it-has-finished-attack-israel-amid-fears-spreading-conflict-2024-10-02/: HTTP 401
