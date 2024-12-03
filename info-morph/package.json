@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "TallalHamzaAhmad",
+=======
+  "name": "talal",
+>>>>>>> 7af0e9a55d3257340f951f20019701eb477d1948
   "version": "0.1.0",
   "private": true,
   "scripts": {
