@@ -8,4 +8,5 @@ blocked_domains:
   - 'youtube.com'
   - 'vexforum.com'
   - 'nytimes.com'
+  - 'twitter.com'
 proxies: []

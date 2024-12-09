@@ -1,3 +1,6 @@
 2024-10-12 07:55:14,117 [ERROR] Failed to fetch https://www.nytimes.com/2024/08/23/sports/arshad-nadeem-javelin-gold-olympics-buffalo.html: HTTP 403
 2024-10-12 10:17:50,043 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-launches-drone-attack-israel-expected-unfold-over-hours-2024-04-13/: HTTP 401
 2024-10-12 10:57:17,289 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-says-it-has-finished-attack-israel-amid-fears-spreading-conflict-2024-10-02/: HTTP 401
+2024-12-09 23:29:57,979 [ERROR] Error fetching robots.txt from https://olympics.com/robots.txt: Remote end closed connection without response
+2024-12-10 00:07:44,193 [ERROR] Error fetching robots.txt from https://olympics.com/robots.txt: Remote end closed connection without response
+2024-12-10 02:12:10,166 [ERROR] Failed to fetch https://www.reuters.com/sports/olympics/mud-brick-house-olympic-podium-arshad-nadeem-is-unlikely-pakistani-hero-2024-08-09/: HTTP 401
