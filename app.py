@@ -1,5 +1,4 @@
 import asyncio
-import aiohttp
 import logging
 import requests
 import yaml
@@ -13,6 +12,8 @@ from urllib.robotparser import RobotFileParser
 from langdetect import detect
 from translate import Translator
 from itertools import cycle
+from transformers import PegasusForConditionalGeneration, PegasusTokenizer
+import torch
 
 # Configure logging
 logging.basicConfig(
@@ -56,9 +57,7 @@ def google_search(api_key, cse_id, query, num_results=10, start_index=1):
         return urls
     except requests.exceptions.RequestException as e:
         logging.error(f"Google Search API request failed: {e}")
-        error_log.append(f"Google Search API request failed: {e}")
         return []
-
 
 def is_blocked(url, blocked_domains):
     """Check if the URL's domain is in the list of blocked domains."""
@@ -68,17 +67,48 @@ def is_blocked(url, blocked_domains):
             return True
     return False
 
-def is_allowed(url, user_agent='*'):
-    """Check if scraping is allowed by robots.txt."""
+async def fetch_robots_txt(robots_url, timeout):
+    """Asynchronously fetch robots.txt with a timeout."""
+    async with ClientSession(timeout=ClientTimeout(total=timeout)) as session:
+        try:
+            async with session.get(robots_url) as response:
+                if response.status == 200:
+                    text = await response.text()
+                    return text
+                else:
+                    logging.info(f"Non-200 response from {robots_url}: {response.status}")
+                    return None
+        except asyncio.TimeoutError:
+            logging.info(f"Timeout occurred while fetching {robots_url}")
+        except Exception as e:
+            logging.error(f"Error fetching robots.txt from {robots_url}: {e}")
+        return None
+
+async def parse_robots_txt(robots_txt, url, user_agent='*'):
+    """Parse the fetched robots.txt and check permissions."""
+    rp = RobotFileParser()
+    rp.parse(robots_txt.splitlines())
+    return rp.can_fetch(user_agent, url)
+
+async def is_allowed_async(url, user_agent='*', timeout=5):
+    """Check if scraping is allowed asynchronously with timeout."""
     parsed_url = urlparse(url)
     robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
-    rp = RobotFileParser()
-    rp.set_url(robots_url)
-    try:
-        rp.read()
-        return rp.can_fetch(user_agent, url)
-    except:
-        return False  # Disallow if robots.txt cannot be read
+    logging.info(f"Fetching robots.txt from {robots_url}")
+    
+    robots_txt = await fetch_robots_txt(robots_url, timeout)
+    if robots_txt is None:
+        logging.info(f"Skipping {url} as robots.txt could not be fetched.")
+        return False
+
+    allowed = await parse_robots_txt(robots_txt, url, user_agent)
+    if not allowed:
+        logging.info(f"Scraping not allowed for {url} as per robots.txt.")
+    return allowed
+
+async def is_allowed(url, user_agent='*', timeout=5):
+    """Check if scraping is allowed asynchronously with timeout."""
+    return await is_allowed_async(url, user_agent, timeout)
 
 def get_proxy():
     """Get a proxy from the list, if available."""
@@ -96,11 +126,9 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3)
                 async with session.get(url, headers=headers, timeout=10, proxy=proxy) as response:
                     if response.status == 403:
                         logging.error(f"Access denied to {url}: HTTP 403 Forbidden.")
-                        error_log.append(f"Access denied to {url}: HTTP 403 Forbidden.")
                         return None
                     elif response.status != 200:
                         logging.error(f"Failed to fetch {url}: HTTP {response.status}")
-                        error_log.append(f"Failed to fetch {url}: HTTP {response.status}")
                         return None
                     html = await response.text()
                     article = Article(url)
@@ -109,13 +137,11 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3)
                     # Enhanced Content Filtering
                     if len(article.text.split()) < 200:
                         logging.info(f"Article at {url} is too short; skipping.")
-                        print(f"Article at {url} is too short; skipping.")
                         return None
                     # Multi-language Support
                     lang = detect(article.text)
                     if lang != 'en':
                         logging.info(f"Translating article at {url} from {lang} to English.")
-                        print(f"Translating article at {url} from {lang} to English.")
                         translator = Translator(to_lang='en')
                         article.text = translator.translate(article.text)
                     return {
@@ -133,7 +159,6 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3)
                 continue
             else:
                 logging.error(f"Error fetching article at {url}: {e}")
-                error_log.append(f"Error fetching article at {url}: {e}")
                 return None
 
 async def scrape_contents(urls):
@@ -201,8 +226,12 @@ async def collect_and_scrape(query, desired_num_articles, max_api_calls=10, max_
         # Filter out blocked domains
         filtered_urls = [url for url in urls if not is_blocked(url, blocked_domains)]
 
-        # Check robots.txt compliance
-        allowed_urls = [url for url in filtered_urls if is_allowed(url)]
+        # Check robots.txt compliance asynchronously
+        allowed_urls = []
+        for url in filtered_urls:
+            allowed = await is_allowed(url)
+            if allowed:
+                allowed_urls.append(url)
 
         # Add allowed URLs to the collected list
         collected_urls.extend(allowed_urls)
@@ -275,12 +304,4 @@ async def collect_and_scrape(query, desired_num_articles, max_api_calls=10, max_
         json.dump(result, f, ensure_ascii=False, indent=4)
     logging.info(f"Data written to {output_file}.")
 
-    # Exception Handling and Reporting
-    if error_log:
-        logging.info("Errors encountered during scraping:")
-        for error in error_log:
-            logging.info(error)
-
-# Run the main function
-if __name__ == "__main__":
-    asyncio.run(main())
+    return result
