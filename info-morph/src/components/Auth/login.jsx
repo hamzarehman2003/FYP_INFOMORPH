@@ -33,11 +33,7 @@ const Login = () => {
         </div>
         <WithOthers name="Log in" />
         <WithGoogle name="Log in" />
-<<<<<<< HEAD
         <div className="flex justify-center " >
-=======
-        <div className="flex justify-center">
->>>>>>> 7af0e9a55d3257340f951f20019701eb477d1948
         <BlueButton text="Login" type="submit" />
         </div>
         

@@ -16,7 +16,7 @@ app = FastAPI()
 # Configure CORS
 origins = [
     "http://localhost:3000",  # React development server
-    # Add other origins if necessary
+    # Add other origins as needed
 ]
 
 app.add_middleware(
@@ -27,7 +27,7 @@ app.add_middleware(
     allow_headers=["*"],              # Allows all headers
 )
 
-# Configure logging
+# Configure logging (redundant if already configured in scraper.py, but kept for completeness)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -55,19 +55,12 @@ class Article(BaseModel):
     authors: List[str]
     publish_date: str
     content: str
-    summary: str
+    # Removed 'summary' field as individual summaries are no longer generated
 
 class ScrapeResponse(BaseModel):
     articles: List[Article]
     final_summary: Optional[str] = None
     errors: List[str] = []
-
-class SummarizeRequest(BaseModel):
-    url: str
-
-class SummarizeResponse(BaseModel):
-    summary: Optional[str] = None
-    error: Optional[str] = None
 
 @app.post("/scrape", response_model=ScrapeResponse)
 async def scrape_articles(request: ScrapeRequest):
@@ -89,15 +82,14 @@ async def scrape_articles(request: ScrapeRequest):
         articles = result.get('articles', [])
         final_summary = result.get('final_summary', "")
 
-        # Convert articles to Pydantic models
+        # Convert articles to Pydantic models without 'summary'
         response_articles = [
             Article(
                 url=article['url'],
                 title=article['title'],
                 authors=article['authors'],
                 publish_date=article['publish_date'],
-                content=article['content'],
-                summary=article['summary']
+                content=article['content']
             )
             for article in articles
         ]
@@ -109,41 +101,6 @@ async def scrape_articles(request: ScrapeRequest):
     except Exception as e:
         logging.error(f"Scraping failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
-
-@app.post("/summarize", response_model=SummarizeResponse)
-async def summarize_article(request: SummarizeRequest):
-    """
-    Endpoint to generate a summary for a specific article URL.
-
-    Args:
-        request (SummarizeRequest): The summarization request containing the article URL.
-
-    Returns:
-        SummarizeResponse: The response containing the summary or an error message.
-    """
-    try:
-        logging.info(f"Summarization request received for URL: {request.url}")
-        # Scrape and summarize the specific article
-        # Here, we're using the URL as a query to fetch and summarize it
-        # Ensure that the `collect_and_scrape` can handle this appropriately
-        # Adjust parameters as needed
-        result = await collect_and_scrape(
-            query=request.url,
-            desired_num_articles=1,
-            max_api_calls=1,
-            max_urls_to_attempt=1
-        )
-        articles = result.get('articles', [])
-        if not articles:
-            raise HTTPException(status_code=404, detail="Article not found or too short for summarization.")
-        article = articles[0]
-        summary = article['summary']
-        return SummarizeResponse(summary=summary)
-    except HTTPException as he:
-        raise he
-    except Exception as e:
-        logging.error(f"Summarization failed: {e}")
-        return SummarizeResponse(summary=None, error=str(e))
 
 # Endpoint to serve static files (optional)
 @app.get("/static/{file_path:path}")

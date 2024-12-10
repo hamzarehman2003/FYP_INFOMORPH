@@ -1,3 +1,5 @@
+# scraper.py
+
 import asyncio
 import logging
 import requests
@@ -14,6 +16,7 @@ from translate import Translator
 from itertools import cycle
 from transformers import PegasusForConditionalGeneration, PegasusTokenizer
 import torch
+import re
 
 # Configure logging
 logging.basicConfig(
@@ -182,7 +185,34 @@ async def scrape_contents(urls):
             contents.append(content)
     return contents
 
-def summarize_with_pegasus(text, max_length=150, min_length=40):
+# Initialize Pegasus tokenizer and model
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+MODEL_NAME = "google/pegasus-xsum"  # You can choose other Pegasus models as needed
+tokenizer = PegasusTokenizer.from_pretrained(MODEL_NAME)
+model = PegasusForConditionalGeneration.from_pretrained(MODEL_NAME).to(DEVICE)
+
+def remove_duplicate_sentences(text):
+    """Remove duplicate sentences from text."""
+    seen = set()
+    unique_sentences = []
+    for sentence in re.split(r'(?<=[.!?]) +', text):
+        sentence_clean = sentence.strip().lower()
+        if sentence_clean and sentence_clean not in seen:
+            seen.add(sentence_clean)
+            unique_sentences.append(sentence.strip())
+    return ' '.join(unique_sentences)
+
+def clean_summary(summary):
+    """Post-process the summary to enhance readability."""
+    # Remove duplicate sentences
+    summary = remove_duplicate_sentences(summary)
+    # Capitalize first letter
+    if summary:
+        summary = summary[0].upper() + summary[1:]
+    return summary
+
+def summarize_with_pegasus(text, max_length=300, min_length=80, num_beams=6):
     """
     Summarize the input text using Pegasus.
 
@@ -190,6 +220,7 @@ def summarize_with_pegasus(text, max_length=150, min_length=40):
         text (str): The text to summarize.
         max_length (int): Maximum length of the summary.
         min_length (int): Minimum length of the summary.
+        num_beams (int): Number of beams for beam search.
 
     Returns:
         str: The summarized text.
@@ -197,7 +228,7 @@ def summarize_with_pegasus(text, max_length=150, min_length=40):
     tokens = tokenizer(text, truncation=True, padding='longest', return_tensors="pt").to(DEVICE)
     summary_ids = model.generate(
         tokens['input_ids'],
-        num_beams=4,
+        num_beams=num_beams,
         max_length=max_length,
         min_length=min_length,
         early_stopping=True
@@ -269,28 +300,19 @@ async def collect_and_scrape(query, desired_num_articles, max_api_calls=10, max_
         logging.error("No valid articles were collected.")
         raise Exception("No valid articles found.")
 
-    # Summarize each article individually
-    individual_summaries = []
-    for article in valid_articles:
-        try:
-            summary = summarize_with_pegasus(article['content'])
-            article['summary'] = summary
-            individual_summaries.append(summary)
-        except Exception as e:
-            logging.error(f"Summarization failed for article '{article['title']}': {e}")
-            # Fallback: Use first 500 characters
-            article['summary'] = article['content'][:500] + "..."
-            individual_summaries.append(article['summary'])
+    # Concatenate all article contents into one text block
+    combined_text = " ".join([article['content'] for article in valid_articles])
 
-    # Combine all individual summaries into one text
-    combined_summaries = " ".join(individual_summaries)
+    # Remove duplicate sentences to enhance summary quality
+    combined_text = remove_duplicate_sentences(combined_text)
 
+    # Summarize the combined text
     try:
-        # Generate a unified summary from the combined summaries
-        final_summary = summarize_with_pegasus(combined_summaries, max_length=200, min_length=80)
+        final_summary = summarize_with_pegasus(combined_text, max_length=300, min_length=80, num_beams=6)
+        final_summary = clean_summary(final_summary)
     except Exception as e:
         logging.error(f"Final summarization failed: {e}")
-        final_summary = combined_summaries  # Fallback to combined summaries
+        final_summary = "Summary could not be generated due to an error."
 
     # Prepare the result with articles and the final summary
     result = {

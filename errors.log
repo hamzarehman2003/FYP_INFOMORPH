@@ -37,3 +37,21 @@
 2024-12-10 00:07:44,193 [ERROR] Error fetching robots.txt from https://olympics.com/robots.txt: Remote end closed connection without response
 2024-12-10 02:12:10,166 [ERROR] Failed to fetch https://www.reuters.com/sports/olympics/mud-brick-house-olympic-podium-arshad-nadeem-is-unlikely-pakistani-hero-2024-08-09/: HTTP 401
 >>>>>>> bbc4b06cb7b234e642ad1055c4a9cf0837f68d6a
+2024-12-11 01:39:31,328 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:39:31,328 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:39:31,330 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:39:31,330 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Summarization failed for article 'News, Photos, Stats, Ranking, Records - NDTV Sports': name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Summarization failed for article 'News, Photos, Stats, Ranking, Records - NDTV Sports': name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 02:21:25,027 [ERROR] Access denied to https://www.unicef.org/emergencies/devastating-floods-pakistan-2022: HTTP 403 Forbidden.
+2024-12-11 02:21:25,027 [ERROR] Access denied to https://www.unicef.org/emergencies/devastating-floods-pakistan-2022: HTTP 403 Forbidden.
+2024-12-11 02:26:12,200 [ERROR] Scraping failed: 'summary'
+2024-12-11 02:26:12,200 [ERROR] Scraping failed: 'summary'
+2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
+2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
