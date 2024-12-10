@@ -9,3 +9,4 @@ blocked_domains:
   - 'vexforum.com'
   - 'nytimes.com'
 proxies: []
+output_file: "output.json"

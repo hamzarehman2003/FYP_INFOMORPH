@@ -1,21 +1,19 @@
-# scraper.py
-
 import asyncio
-import aiohttp
 import logging
 import requests
-import argparse
 import yaml
-import time
 import json
+import os
 from newspaper import Article
 from urllib.parse import urlparse
-from aiohttp import ClientSession, TCPConnector
+from aiohttp import ClientSession, TCPConnector, ClientTimeout
 from tqdm.asyncio import tqdm_asyncio
 from urllib.robotparser import RobotFileParser
 from langdetect import detect
 from translate import Translator
 from itertools import cycle
+from transformers import PegasusForConditionalGeneration, PegasusTokenizer
+import torch
 
 # Configure logging
 logging.basicConfig(
@@ -41,25 +39,6 @@ CSE_ID = config['cse_id']
 blocked_domains = config.get('blocked_domains', [])
 proxies_list = config.get('proxies', [])
 
-# Command-line arguments
-parser = argparse.ArgumentParser(description='Web Article Scraper')
-parser.add_argument('--query', type=str, help='Search query', required=True)
-parser.add_argument('--num_urls', type=int, default=5, help='Number of articles to collect')
-parser.add_argument('--output', type=str, default='output.json', help='Output file name')
-args = parser.parse_args()
-
-query = args.query
-desired_num_articles = args.num_urls
-output_file = args.output
-
-# Initialize variables
-collected_urls = []
-start_index = 1
-max_api_calls = 10  # To prevent infinite loops
-api_calls_made = 0
-
-error_log = []
-
 def google_search(api_key, cse_id, query, num_results=10, start_index=1):
     """Search Google using the Custom Search API and return URLs."""
     url = "https://www.googleapis.com/customsearch/v1"
@@ -78,7 +57,6 @@ def google_search(api_key, cse_id, query, num_results=10, start_index=1):
         return urls
     except requests.exceptions.RequestException as e:
         logging.error(f"Google Search API request failed: {e}")
-        error_log.append(f"Google Search API request failed: {e}")
         return []
 
 def is_blocked(url, blocked_domains):
@@ -89,17 +67,48 @@ def is_blocked(url, blocked_domains):
             return True
     return False
 
-def is_allowed(url, user_agent='*'):
-    """Check if scraping is allowed by robots.txt."""
+async def fetch_robots_txt(robots_url, timeout):
+    """Asynchronously fetch robots.txt with a timeout."""
+    async with ClientSession(timeout=ClientTimeout(total=timeout)) as session:
+        try:
+            async with session.get(robots_url) as response:
+                if response.status == 200:
+                    text = await response.text()
+                    return text
+                else:
+                    logging.info(f"Non-200 response from {robots_url}: {response.status}")
+                    return None
+        except asyncio.TimeoutError:
+            logging.info(f"Timeout occurred while fetching {robots_url}")
+        except Exception as e:
+            logging.error(f"Error fetching robots.txt from {robots_url}: {e}")
+        return None
+
+async def parse_robots_txt(robots_txt, url, user_agent='*'):
+    """Parse the fetched robots.txt and check permissions."""
+    rp = RobotFileParser()
+    rp.parse(robots_txt.splitlines())
+    return rp.can_fetch(user_agent, url)
+
+async def is_allowed_async(url, user_agent='*', timeout=5):
+    """Check if scraping is allowed asynchronously with timeout."""
     parsed_url = urlparse(url)
     robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
-    rp = RobotFileParser()
-    rp.set_url(robots_url)
-    try:
-        rp.read()
-        return rp.can_fetch(user_agent, url)
-    except:
-        return False  # Disallow if robots.txt cannot be read
+    logging.info(f"Fetching robots.txt from {robots_url}")
+    
+    robots_txt = await fetch_robots_txt(robots_url, timeout)
+    if robots_txt is None:
+        logging.info(f"Skipping {url} as robots.txt could not be fetched.")
+        return False
+
+    allowed = await parse_robots_txt(robots_txt, url, user_agent)
+    if not allowed:
+        logging.info(f"Scraping not allowed for {url} as per robots.txt.")
+    return allowed
+
+async def is_allowed(url, user_agent='*', timeout=5):
+    """Check if scraping is allowed asynchronously with timeout."""
+    return await is_allowed_async(url, user_agent, timeout)
 
 def get_proxy():
     """Get a proxy from the list, if available."""
@@ -107,7 +116,7 @@ def get_proxy():
         return next(get_proxy.proxy_cycle)
     return None
 
-get_proxy.proxy_cycle = cycle(proxies_list)
+get_proxy.proxy_cycle = cycle(proxies_list) if proxies_list else None
 
 async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3):
     """Asynchronously fetch and parse an article."""
@@ -117,20 +126,14 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3)
                 async with session.get(url, headers=headers, timeout=10, proxy=proxy) as response:
                     if response.status == 403:
                         logging.error(f"Access denied to {url}: HTTP 403 Forbidden.")
-                        error_log.append(f"Access denied to {url}: HTTP 403 Forbidden.")
                         return None
                     elif response.status != 200:
                         logging.error(f"Failed to fetch {url}: HTTP {response.status}")
-                        error_log.append(f"Failed to fetch {url}: HTTP {response.status}")
                         return None
                     html = await response.text()
                     article = Article(url)
                     article.set_html(html)
                     article.parse()
-                    # Extract Article Metadata
-                    title = article.title if article.title else 'No Title'
-                    authors = article.authors if article.authors else []
-                    publish_date = article.publish_date.strftime('%Y-%m-%d') if article.publish_date else 'No Publish Date'
                     # Enhanced Content Filtering
                     if len(article.text.split()) < 200:
                         logging.info(f"Article at {url} is too short; skipping.")
@@ -143,18 +146,19 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3)
                         article.text = translator.translate(article.text)
                     return {
                         'url': url,
-                        'title': title,
-                        'authors': authors,
-                        'publish_date': publish_date,
+                        'title': article.title or 'No Title',
+                        'authors': article.authors or [],
+                        'publish_date': (article.publish_date.strftime('%Y-%m-%d')
+                                         if article.publish_date else 'No Publish Date'),
                         'content': article.text
                     }
         except Exception as e:
             if attempt < retries - 1:
+                logging.warning(f"Error fetching article at {url}: {e}. Retrying ({attempt + 1}/{retries})...")
                 await asyncio.sleep(2)  # Wait before retrying
                 continue
             else:
                 logging.error(f"Error fetching article at {url}: {e}")
-                error_log.append(f"Error fetching article at {url}: {e}")
                 return None
 
 async def scrape_contents(urls):
@@ -169,7 +173,7 @@ async def scrape_contents(urls):
     async with ClientSession(connector=connector) as session:
         tasks = []
         for url in urls:
-            proxy = get_proxy()
+            proxy = get_proxy() if proxies_list else None
             tasks.append(fetch_article(session, url, headers, semaphore, proxy))
         # Progress Indicator
         contents = []
@@ -178,13 +182,36 @@ async def scrape_contents(urls):
             contents.append(content)
     return contents
 
-async def main():
-    logging.info("Collecting URLs...")
+def summarize_with_pegasus(text, max_length=150, min_length=40):
+    """
+    Summarize the input text using Pegasus.
+
+    Args:
+        text (str): The text to summarize.
+        max_length (int): Maximum length of the summary.
+        min_length (int): Minimum length of the summary.
+
+    Returns:
+        str: The summarized text.
+    """
+    tokens = tokenizer(text, truncation=True, padding='longest', return_tensors="pt").to(DEVICE)
+    summary_ids = model.generate(
+        tokens['input_ids'],
+        num_beams=4,
+        max_length=max_length,
+        min_length=min_length,
+        early_stopping=True
+    )
+    summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
+    return summary
+
+async def collect_and_scrape(query, desired_num_articles, max_api_calls=10, max_urls_to_attempt=10):
+    """Collect URLs based on query and scrape articles."""
     collected_urls = []
     valid_articles = []
     start_index = 1
     api_calls_made = 0
-    max_urls_to_attempt = 10  # Maximum number of URLs to attempt
+    error_log = []
 
     while len(valid_articles) < desired_num_articles and api_calls_made < max_api_calls:
         # Fetch more URLs as needed
@@ -199,8 +226,12 @@ async def main():
         # Filter out blocked domains
         filtered_urls = [url for url in urls if not is_blocked(url, blocked_domains)]
 
-        # Check robots.txt compliance
-        allowed_urls = [url for url in filtered_urls if is_allowed(url)]
+        # Check robots.txt compliance asynchronously
+        allowed_urls = []
+        for url in filtered_urls:
+            allowed = await is_allowed(url)
+            if allowed:
+                allowed_urls.append(url)
 
         # Add allowed URLs to the collected list
         collected_urls.extend(allowed_urls)
@@ -236,18 +267,41 @@ async def main():
 
     if not valid_articles:
         logging.error("No valid articles were collected.")
-    else:
-        # Write data to JSON file
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(valid_articles[:desired_num_articles], f, ensure_ascii=False, indent=4)
-        logging.info(f"Data written to {output_file}.")
+        raise Exception("No valid articles found.")
 
-    # Exception Handling and Reporting
-    if error_log:
-        logging.info("Errors encountered during scraping:")
-        for error in error_log:
-            logging.info(error)
+    # Summarize each article individually
+    individual_summaries = []
+    for article in valid_articles:
+        try:
+            summary = summarize_with_pegasus(article['content'])
+            article['summary'] = summary
+            individual_summaries.append(summary)
+        except Exception as e:
+            logging.error(f"Summarization failed for article '{article['title']}': {e}")
+            # Fallback: Use first 500 characters
+            article['summary'] = article['content'][:500] + "..."
+            individual_summaries.append(article['summary'])
 
-# Run the main function
-if __name__ == "__main__":
-    asyncio.run(main())
+    # Combine all individual summaries into one text
+    combined_summaries = " ".join(individual_summaries)
+
+    try:
+        # Generate a unified summary from the combined summaries
+        final_summary = summarize_with_pegasus(combined_summaries, max_length=200, min_length=80)
+    except Exception as e:
+        logging.error(f"Final summarization failed: {e}")
+        final_summary = combined_summaries  # Fallback to combined summaries
+
+    # Prepare the result with articles and the final summary
+    result = {
+        'articles': valid_articles[:desired_num_articles],
+        'final_summary': final_summary
+    }
+
+    # Save articles to JSON file
+    output_file = config.get('output_file', 'output.json')
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(result, f, ensure_ascii=False, indent=4)
+    logging.info(f"Data written to {output_file}.")
+
+    return result
