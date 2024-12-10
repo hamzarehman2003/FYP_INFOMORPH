@@ -13,6 +13,7 @@ const TopicSelectionPage = () => {
   const [urls, setUrls] = useState([]);
   const [selectedUrl, setSelectedUrl] = useState("");
   const [summary, setSummary] = useState("");
+  const [finalSummary, setFinalSummary] = useState(""); // New state for final summary
   const [errors, setErrors] = useState([]);
   const [loading, setLoading] = useState(false);
   const [summarizing, setSummarizing] = useState(false);
@@ -26,6 +27,7 @@ const TopicSelectionPage = () => {
     setErrors([]);
     setUrls([]);
     setSummary("");
+    setFinalSummary(""); // Reset final summary on new search
     try {
       const response = await axios.post("http://localhost:8000/scrape", {
         query,
@@ -33,14 +35,27 @@ const TopicSelectionPage = () => {
         input_language: inputLanguage,
         output_language: outputLanguage,
       });
-      setUrls(response.data.articles.map((article, index) => ({
-        id: index,
-        title: article.title,
-        url: article.url,
-      })));
+      
+      // Extract articles and final_summary from the response
+      const { articles, final_summary } = response.data;
+      
+      // Set individual URLs for selection
+      setUrls(
+        articles.map((article, index) => ({
+          id: index,
+          title: article.title,
+          url: article.url,
+        }))
+      );
+      
+      // Set the final summary
+      setFinalSummary(final_summary);
     } catch (error) {
       console.error("Error fetching URLs:", error);
-      setErrors([error.response?.data?.detail || "An error occurred while fetching URLs."]);
+      setErrors([
+        error.response?.data?.detail ||
+          "An error occurred while fetching URLs.",
+      ]);
     } finally {
       setLoading(false);
     }
@@ -61,11 +76,16 @@ const TopicSelectionPage = () => {
       if (response.data.summary) {
         setSummary(response.data.summary);
       } else {
-        setErrors([response.data.error || "Failed to summarize the article."]);
+        setErrors([
+          response.data.error || "Failed to summarize the article.",
+        ]);
       }
     } catch (error) {
       console.error("Error summarizing article:", error);
-      setErrors([error.response?.data?.detail || "An error occurred during summarization."]);
+      setErrors([
+        error.response?.data?.detail ||
+          "An error occurred during summarization.",
+      ]);
     } finally {
       setSummarizing(false);
     }
@@ -181,11 +201,37 @@ const TopicSelectionPage = () => {
           </div>
         )}
 
+        {/* Display Final Summary */}
+        {finalSummary && (
+          <div className="mt-24 w-full flex flex-col urlLink:flex-row flex-wrap items-center gap-10">
+            <div className="flex flex-wrap justify-center urlLink:justify-end w-full urlLink:w-auto urlLink:flex-1">
+              <label className="w-[120px] font-poppins" htmlFor="finalSummary">
+                Final Summary
+              </label>
+              <textarea
+                id="finalSummary"
+                value={finalSummary}
+                readOnly
+                className="max-w-[772px] w-full rounded-2xl h-[242px] pl-4 py-2.5"
+              />
+            </div>
+            <div className="urlLink:w-[350px] urlLink:h-[242px] flex-wrap flex urlLink:flex-col items-end justify-end gap-[12px]">
+              <button
+                onClick={handleReportFeedback}
+                className="active:scale-90 duration-300 ease-in-out transition-all font-poppins text-lg py-4 px-8 rounded-full bg-[#DCFCFE]"
+              >
+                Report Feedback
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Display Individual Article Summary */}
         {summary && (
           <div className="mt-24 w-full flex flex-col urlLink:flex-row flex-wrap items-center gap-10">
             <div className="flex flex-wrap justify-center urlLink:justify-end w-full urlLink:w-auto urlLink:flex-1">
               <label className="w-[120px] font-poppins" htmlFor="summary">
-                Summary
+                Article Summary
               </label>
               <textarea
                 id="summary"
