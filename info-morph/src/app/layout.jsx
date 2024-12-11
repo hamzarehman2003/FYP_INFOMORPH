@@ -1,6 +1,10 @@
+//MAIN FILE
+
 import "./globals.css";
 import Providers from '../components/Auth/Providers'; 
 import { Inter, Poppins } from "next/font/google";
+import { AuthProvider } from '../context/AuthContext'; 
+
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,9 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} ${poppins.variable} antialiased`}>
-        <Providers>
-          {children}
-        </Providers>
+        <AuthProvider>
+          <Providers>
+            {children}
+          </Providers>
+        </AuthProvider>
       </body>
     </html>
   );

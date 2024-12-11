@@ -8,6 +8,8 @@ import styles from '../style.module.css';
 import axios from "axios";
 import { useRouter } from 'next/navigation';
 import { SummaryContext } from '../summaryContext/SummaryContext';
+import ProtectedRoute from '../../../components/Auth/ProtectedRoute';
+
 
 const TopicSelectionPage = () => {
   const [queryInput, setQueryInput] = useState("");
@@ -165,5 +167,11 @@ const TopicSelectionPage = () => {
   );
 };
 
-export default TopicSelectionPage;
+const WrappedTopicSelectionPage = () => (
+  <ProtectedRoute>
+    <TopicSelectionPage />
+  </ProtectedRoute>
+);
+
+export default WrappedTopicSelectionPage;
 

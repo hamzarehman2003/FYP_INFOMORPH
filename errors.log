@@ -55,3 +55,15 @@
 2024-12-11 02:26:12,200 [ERROR] Scraping failed: 'summary'
 2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
 2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
+2024-12-11 22:24:52,970 [ERROR] Regenerated summary is still too short (275 words).
+2024-12-11 22:24:52,970 [ERROR] Regenerated summary is still too short (275 words).
+2024-12-12 02:09:26,917 [ERROR] Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2024-12-12 02:09:26,917 [ERROR] Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+

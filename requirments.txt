@@ -10,4 +10,5 @@ langdetect>=1.0.9
 translate>=3.6.1  # Note: This package might have limitations; consider alternatives like Google Translate API if needed
 transformers 
 torch
+python-multipart
 

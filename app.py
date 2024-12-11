@@ -1,3 +1,5 @@
+# backend/app.py
+
 import asyncio
 import logging
 import requests
@@ -210,14 +212,14 @@ def clean_summary(summary):
         summary = summary[0].upper() + summary[1:]
     return summary
 
-def summarize_with_pegasus(text, max_length=300, min_length=80, num_beams=6):
+def summarize_with_pegasus(text, max_length=667, min_length=400, num_beams=6):
     """
     Summarize the input text using Pegasus.
 
     Args:
         text (str): The text to summarize.
-        max_length (int): Maximum length of the summary.
-        min_length (int): Minimum length of the summary.
+        max_length (int): Maximum length of the summary in tokens.
+        min_length (int): Minimum length of the summary in tokens.
         num_beams (int): Number of beams for beam search.
 
     Returns:
@@ -306,11 +308,35 @@ async def collect_and_scrape(query, desired_num_articles, max_api_calls=10, max_
 
     # Summarize the combined text
     try:
-        final_summary = summarize_with_pegasus(combined_text, max_length=300, min_length=80, num_beams=6)
+        final_summary = summarize_with_pegasus(combined_text, max_length=667, min_length=400, num_beams=6)
         final_summary = clean_summary(final_summary)
     except Exception as e:
         logging.error(f"Final summarization failed: {e}")
         final_summary = "Summary could not be generated due to an error."
+
+    # Calculate actual word count
+    word_count = len(final_summary.split())
+    logging.info(f"Generated summary with {word_count} words.")
+
+    # Validate summary length
+    if word_count < 300:
+        logging.warning(f"Generated summary is too short ({word_count} words). Attempting to regenerate.")
+        try:
+            final_summary = summarize_with_pegasus(combined_text, max_length=667, min_length=400, num_beams=6)
+            final_summary = clean_summary(final_summary)
+            word_count = len(final_summary.split())
+            logging.info(f"Regenerated summary with {word_count} words.")
+            if word_count < 300:
+                logging.error(f"Regenerated summary is still too short ({word_count} words).")
+                final_summary = "Summary could not be generated to meet the desired word count."
+        except Exception as e:
+            logging.error(f"Regeneration of summary failed: {e}")
+            final_summary = "Summary could not be generated due to an error."
+    elif word_count > 500:
+        logging.warning(f"Generated summary is too long ({word_count} words). Truncating.")
+        final_summary = ' '.join(final_summary.split()[:500])
+        word_count = len(final_summary.split())
+        logging.info(f"Truncated summary to {word_count} words.")
 
     # Prepare the result with articles and the final summary
     result = {

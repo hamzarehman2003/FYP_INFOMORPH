@@ -1339,3 +1339,196 @@
 2024-12-11 22:12:13,566 [INFO] Article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats' added to valid articles.
 2024-12-11 22:12:13,566 [INFO] Article 'Babar Azam Profile - Cricket Player Pakistan' added to valid articles.
 2024-12-11 22:12:35,330 [INFO] Data written to output.json.
+2024-12-11 22:20:22,037 [INFO] Scrape request received: Query='Fast Nuces', Num URLs=5
+2024-12-11 22:20:24,115 [INFO] Fetching robots.txt from https://www.nu.edu.pk/robots.txt
+2024-12-11 22:20:24,655 [INFO] Non-200 response from https://www.nu.edu.pk/robots.txt: 404
+2024-12-11 22:20:24,656 [INFO] Skipping https://www.nu.edu.pk/ as robots.txt could not be fetched.
+2024-12-11 22:20:24,656 [INFO] Fetching robots.txt from http://isb.nu.edu.pk/robots.txt
+2024-12-11 22:20:25,008 [INFO] Non-200 response from http://isb.nu.edu.pk/robots.txt: 404
+2024-12-11 22:20:25,009 [INFO] Skipping http://isb.nu.edu.pk/ as robots.txt could not be fetched.
+2024-12-11 22:20:25,010 [INFO] Fetching robots.txt from https://lhr.nu.edu.pk/robots.txt
+2024-12-11 22:20:25,875 [INFO] Non-200 response from https://lhr.nu.edu.pk/robots.txt: 404
+2024-12-11 22:20:25,876 [INFO] Skipping https://lhr.nu.edu.pk/ as robots.txt could not be fetched.
+2024-12-11 22:20:25,876 [INFO] Fetching robots.txt from https://khi.nu.edu.pk/robots.txt
+2024-12-11 22:20:27,415 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2024-12-11 22:20:27,905 [INFO] Scraping not allowed for https://www.facebook.com/groups/2506986672753736/ as per robots.txt.
+2024-12-11 22:20:27,905 [INFO] Fetching robots.txt from https://www.quora.com/robots.txt
+2024-12-11 22:20:28,486 [INFO] Scraping not allowed for https://www.quora.com/How-do-I-get-a-good-GPA-in-FAST-NUCES as per robots.txt.
+2024-12-11 22:20:28,487 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2024-12-11 22:20:29,164 [INFO] Scraping not allowed for https://www.facebook.com/groups/2506986672753736/posts/6532625943523102/ as per robots.txt.
+2024-12-11 22:20:31,217 [INFO] Fetching robots.txt from https://www.quora.com/robots.txt
+2024-12-11 22:20:31,915 [INFO] Scraping not allowed for https://www.quora.com/Why-do-people-complain-about-FAST-NUCES-social-environment-I-mean-it-feels-the-same-as-any-other-university as per robots.txt.
+2024-12-11 22:20:31,916 [INFO] Fetching robots.txt from https://nu.insigniails.com/robots.txt
+2024-12-11 22:20:32,672 [INFO] Non-200 response from https://nu.insigniails.com/robots.txt: 404
+2024-12-11 22:20:32,673 [INFO] Skipping https://nu.insigniails.com/library/Home as robots.txt could not be fetched.
+2024-12-11 22:20:32,674 [INFO] Fetching robots.txt from https://imaginecup.microsoft.com/robots.txt
+2024-12-11 22:20:38,620 [INFO] Timeout occurred while fetching https://imaginecup.microsoft.com/robots.txt
+2024-12-11 22:20:38,621 [INFO] Skipping https://imaginecup.microsoft.com/en-us/Team/7889342e-69c0-48bc-8b87-dad4512a8881 as robots.txt could not be fetched.
+2024-12-11 22:20:38,622 [INFO] Fetching robots.txt from http://pwr.nu.edu.pk/robots.txt
+2024-12-11 22:20:39,118 [INFO] Fetching robots.txt from http://www.nu.edu.pk/robots.txt
+2024-12-11 22:20:39,839 [INFO] Non-200 response from http://www.nu.edu.pk/robots.txt: 404
+2024-12-11 22:20:39,841 [INFO] Skipping http://www.nu.edu.pk/Career as robots.txt could not be fetched.
+2024-12-11 22:20:39,842 [INFO] Fetching robots.txt from https://cfd.nu.edu.pk/robots.txt
+2024-12-11 22:20:41,188 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2024-12-11 22:20:44,106 [INFO] Fetching robots.txt from https://m.facebook.com/robots.txt
+2024-12-11 22:20:45,029 [INFO] Scraping not allowed for https://m.facebook.com/groups/2506986672753736/permalink/6575282525924110/ as per robots.txt.
+2024-12-11 22:20:45,030 [INFO] Fetching robots.txt from https://chromewebstore.google.com/robots.txt
+2024-12-11 22:20:46,308 [INFO] Non-200 response from https://chromewebstore.google.com/robots.txt: 404
+2024-12-11 22:20:46,309 [INFO] Skipping https://chromewebstore.google.com/detail/flexer-feedback-submitter/eefoegmehkeabdoccnglipkcagncddia?hl=en as robots.txt could not be fetched.
+2024-12-11 22:20:46,310 [INFO] Fetching robots.txt from https://www.edufi.tech/robots.txt
+2024-12-11 22:20:51,197 [INFO] No more results from Google.
+2024-12-11 22:20:51,198 [INFO] Collected 5 URLs after filtering.
+2024-12-11 22:20:51,198 [INFO] Scraping content from collected URLs...
+2024-12-11 22:20:53,132 [INFO] Article at https://github.com/Syed007Hassan/Fast-Material-CS-SE is too short; skipping.
+2024-12-11 22:20:54,261 [INFO] Article at https://khi.nu.edu.pk/ is too short; skipping.
+2024-12-11 22:20:54,750 [INFO] Article 'FAST NUCES' added to valid articles.
+2024-12-11 22:20:54,751 [INFO] No content retrieved or article skipped.
+2024-12-11 22:20:54,751 [INFO] Article 'NUCES Peshawar' added to valid articles.
+2024-12-11 22:20:54,751 [INFO] No content retrieved or article skipped.
+2024-12-11 22:20:54,752 [INFO] Article 'EduFi and FAST (NUCES) Unite in an Ambition of Providing Affordable Education in Pakistan with a Signature MOU – EduFi' added to valid articles.
+2024-12-11 22:22:59,600 [INFO] Generated summary with 275 words.
+2024-12-11 22:22:59,601 [WARNING] Generated summary is too short (275 words). Attempting to regenerate.
+2024-12-11 22:24:52,968 [INFO] Regenerated summary with 275 words.
+2024-12-11 22:24:52,970 [ERROR] Regenerated summary is still too short (275 words).
+2024-12-11 22:24:52,974 [INFO] Data written to output.json.
+2024-12-11 22:24:53,030 [INFO] Scrape request received: Query='Babar Azam', Num URLs=5
+2024-12-11 22:24:54,039 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2024-12-11 22:24:54,912 [INFO] Fetching robots.txt from https://www.cricbuzz.com/robots.txt
+2024-12-11 22:24:55,289 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2024-12-11 22:24:55,751 [INFO] Scraping not allowed for https://www.facebook.com/MBabarAzamPakistan/ as per robots.txt.
+2024-12-11 22:24:55,752 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2024-12-11 22:25:01,631 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2024-12-11 22:25:01,633 [INFO] Skipping https://x.com/babarazam258?lang=en as robots.txt could not be fetched.
+2024-12-11 22:25:01,634 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2024-12-11 22:25:02,089 [INFO] Scraping not allowed for https://www.facebook.com/MBabarAzamPakistan/posts/honored-to-have-my-bat-among-legends-at-the-mcg-long-room/976491941175906/ as per robots.txt.
+2024-12-11 22:25:04,187 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2024-12-11 22:25:04,274 [INFO] Fetching robots.txt from https://www.gray-nicolls.com.au/robots.txt
+2024-12-11 22:25:04,547 [INFO] Fetching robots.txt from https://www.quora.com/robots.txt
+2024-12-11 22:25:05,055 [INFO] Scraping not allowed for https://www.quora.com/Why-are-Pakistanis-rating-Babar-Azam-as-the-world-s-best-batsman-and-king as per robots.txt.
+2024-12-11 22:25:05,057 [INFO] Fetching robots.txt from https://www.icc-cricket.com/robots.txt
+2024-12-11 22:25:05,223 [INFO] Fetching robots.txt from https://sports.ndtv.com/robots.txt
+2024-12-11 22:25:05,805 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2024-12-11 22:25:06,711 [INFO] Fetching robots.txt from https://acceducate.org/robots.txt
+2024-12-11 22:25:07,040 [INFO] Fetching robots.txt from https://www.thehindu.com/robots.txt
+2024-12-11 22:25:09,058 [INFO] Fetching robots.txt from https://africa.espn.com/robots.txt
+2024-12-11 22:25:09,249 [INFO] Fetching robots.txt from https://www.hindustantimes.com/robots.txt
+2024-12-11 22:25:09,500 [INFO] Fetching robots.txt from https://arynews.tv/robots.txt
+2024-12-11 22:25:10,815 [INFO] Fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt
+2024-12-11 22:25:11,470 [INFO] Fetching robots.txt from https://www.livemint.com/robots.txt
+2024-12-11 22:25:12,497 [INFO] Fetching robots.txt from https://indianexpress.com/robots.txt
+2024-12-11 22:25:12,928 [INFO] Non-200 response from https://indianexpress.com/robots.txt: 403
+2024-12-11 22:25:12,929 [INFO] Skipping https://indianexpress.com/article/sports/cricket/babar-azam-defamation-notice-journalist-match-fixing-t20-world-cup-2024-9412139/ as robots.txt could not be fetched.
+2024-12-11 22:25:12,930 [INFO] Fetching robots.txt from https://www.barrons.com/robots.txt
+2024-12-11 22:25:14,105 [INFO] Non-200 response from https://www.barrons.com/robots.txt: 403
+2024-12-11 22:25:14,106 [INFO] Skipping https://www.barrons.com/news/dropped-the-rise-and-fall-of-pakistan-batting-maestro-babar-azam-1427ea7c as robots.txt could not be fetched.
+2024-12-11 22:25:14,108 [INFO] Fetching robots.txt from https://www.gray-nicolls.co.uk/robots.txt
+2024-12-11 22:25:14,343 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-11 22:25:14,950 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2024-12-11 22:25:15,175 [INFO] Collected 10 URLs after filtering.
+2024-12-11 22:25:15,175 [INFO] Scraping content from collected URLs...
+2024-12-11 22:25:16,223 [INFO] Article at https://www.icc-cricket.com/rankings/59429/babar-azam is too short; skipping.
+2024-12-11 22:25:19,337 [INFO] Article 'Babar Azam resigns as Pakistan captain from limited-overs cricket' added to valid articles.
+2024-12-11 22:25:19,338 [INFO] Article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats' added to valid articles.
+2024-12-11 22:25:19,338 [INFO] No content retrieved or article skipped.
+2024-12-11 22:25:19,339 [INFO] Article 'Babar Azam Players Edition Bat' added to valid articles.
+2024-12-11 22:25:19,339 [INFO] Article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest' added to valid articles.
+2024-12-11 22:25:19,340 [INFO] Article 'Babar Azam Profile - Cricket Player Pakistan' added to valid articles.
+2024-12-11 22:26:54,555 [INFO] Generated summary with 311 words.
+2024-12-11 22:26:54,557 [INFO] Data written to output.json.
+2024-12-11 22:26:54,566 [INFO] Scrape request received: Query='Babar Azam', Num URLs=5
+2024-12-11 22:26:55,603 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2024-12-11 22:26:56,479 [INFO] Fetching robots.txt from https://www.cricbuzz.com/robots.txt
+2024-12-11 22:26:56,966 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2024-12-11 22:26:57,433 [INFO] Scraping not allowed for https://www.facebook.com/MBabarAzamPakistan/ as per robots.txt.
+2024-12-11 22:26:57,434 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2024-12-11 22:27:02,633 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2024-12-11 22:27:02,634 [INFO] Skipping https://x.com/babarazam258?lang=en as robots.txt could not be fetched.
+2024-12-11 22:27:02,635 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2024-12-11 22:27:03,144 [INFO] Scraping not allowed for https://www.facebook.com/MBabarAzamPakistan/posts/honored-to-have-my-bat-among-legends-at-the-mcg-long-room/976491941175906/ as per robots.txt.
+2024-12-11 22:27:05,084 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2024-12-11 22:27:05,166 [INFO] Fetching robots.txt from https://www.gray-nicolls.com.au/robots.txt
+2024-12-11 22:27:05,414 [INFO] Fetching robots.txt from https://www.quora.com/robots.txt
+2024-12-11 22:27:05,910 [INFO] Scraping not allowed for https://www.quora.com/Why-are-Pakistanis-rating-Babar-Azam-as-the-world-s-best-batsman-and-king as per robots.txt.
+2024-12-11 22:27:05,910 [INFO] Fetching robots.txt from https://www.icc-cricket.com/robots.txt
+2024-12-11 22:27:06,060 [INFO] Fetching robots.txt from https://sports.ndtv.com/robots.txt
+2024-12-11 22:27:07,036 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2024-12-11 22:27:08,037 [INFO] Fetching robots.txt from https://acceducate.org/robots.txt
+2024-12-11 22:27:08,385 [INFO] Fetching robots.txt from https://www.thehindu.com/robots.txt
+2024-12-11 22:27:10,652 [INFO] Fetching robots.txt from https://africa.espn.com/robots.txt
+2024-12-11 22:27:10,834 [INFO] Fetching robots.txt from https://www.hindustantimes.com/robots.txt
+2024-12-11 22:27:11,039 [INFO] Fetching robots.txt from https://arynews.tv/robots.txt
+2024-12-11 22:27:11,103 [INFO] Fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt
+2024-12-11 22:27:11,808 [INFO] Fetching robots.txt from https://www.livemint.com/robots.txt
+2024-12-11 22:27:12,832 [INFO] Fetching robots.txt from https://indianexpress.com/robots.txt
+2024-12-11 22:27:13,525 [INFO] Non-200 response from https://indianexpress.com/robots.txt: 403
+2024-12-11 22:27:13,525 [INFO] Skipping https://indianexpress.com/article/sports/cricket/babar-azam-defamation-notice-journalist-match-fixing-t20-world-cup-2024-9412139/ as robots.txt could not be fetched.
+2024-12-11 22:27:13,526 [INFO] Fetching robots.txt from https://www.barrons.com/robots.txt
+2024-12-11 22:27:14,410 [INFO] Non-200 response from https://www.barrons.com/robots.txt: 403
+2024-12-11 22:27:14,412 [INFO] Skipping https://www.barrons.com/news/dropped-the-rise-and-fall-of-pakistan-batting-maestro-babar-azam-1427ea7c as robots.txt could not be fetched.
+2024-12-11 22:27:14,413 [INFO] Fetching robots.txt from https://www.gray-nicolls.co.uk/robots.txt
+2024-12-11 22:27:14,741 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-11 22:27:15,630 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2024-12-11 22:27:16,019 [INFO] Collected 10 URLs after filtering.
+2024-12-11 22:27:16,020 [INFO] Scraping content from collected URLs...
+2024-12-11 22:27:16,596 [INFO] Article at https://www.icc-cricket.com/rankings/59429/babar-azam is too short; skipping.
+2024-12-11 22:27:19,859 [INFO] Article 'Babar Azam resigns as Pakistan captain from limited-overs cricket' added to valid articles.
+2024-12-11 22:27:19,860 [INFO] No content retrieved or article skipped.
+2024-12-11 22:27:19,860 [INFO] Article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats' added to valid articles.
+2024-12-11 22:27:19,861 [INFO] Article 'Babar Azam Players Edition Bat' added to valid articles.
+2024-12-11 22:27:19,862 [INFO] Article 'Babar Azam Profile - Cricket Player Pakistan' added to valid articles.
+2024-12-11 22:27:19,862 [INFO] Article 'News, Photos, Stats, Ranking, Records - NDTV Sports' added to valid articles.
+2024-12-11 22:28:53,558 [INFO] Generated summary with 311 words.
+2024-12-11 22:28:53,560 [INFO] Data written to output.json.
+2024-12-11 22:29:19,225 [INFO] Feedback received for query 'Babar Azam': I am under the water
+2024-12-12 00:20:52,952 [INFO] Scrape request received: Query='Imran Khan', Num URLs=5
+2024-12-12 00:20:53,927 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2024-12-12 00:20:54,220 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2024-12-12 00:20:59,616 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2024-12-12 00:20:59,617 [INFO] Skipping https://x.com/imrankhanpti as robots.txt could not be fetched.
+2024-12-12 00:20:59,618 [INFO] Fetching robots.txt from https://ccr.cancer.gov/robots.txt
+2024-12-12 00:21:01,091 [INFO] Fetching robots.txt from https://www.icij.org/robots.txt
+2024-12-12 00:21:03,085 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-12 00:21:03,702 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2024-12-12 00:21:06,451 [INFO] Fetching robots.txt from https://www.inova.org/robots.txt
+2024-12-12 00:21:08,118 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2024-12-12 00:21:08,657 [INFO] Fetching robots.txt from https://www.du.edu/robots.txt
+2024-12-12 00:21:10,822 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2024-12-12 00:21:11,698 [INFO] Fetching robots.txt from https://profiles.ucsf.edu/robots.txt
+2024-12-12 00:21:13,930 [INFO] Fetching robots.txt from https://pediatrics.ucsf.edu/robots.txt
+2024-12-12 00:21:15,846 [INFO] Fetching robots.txt from https://carnegieendowment.org/robots.txt
+2024-12-12 00:21:17,170 [INFO] Fetching robots.txt from https://www.ikca.org.uk/robots.txt
+2024-12-12 00:21:17,979 [INFO] Fetching robots.txt from https://www.theguardian.com/robots.txt
+2024-12-12 00:21:18,656 [INFO] Fetching robots.txt from https://www.brookings.edu/robots.txt
+2024-12-12 00:21:18,718 [INFO] Non-200 response from https://www.brookings.edu/robots.txt: 403
+2024-12-12 00:21:18,719 [INFO] Skipping https://www.brookings.edu/articles/imran-khans-incomplete-taliban-narrative/ as robots.txt could not be fetched.
+2024-12-12 00:21:18,720 [INFO] Collected 10 URLs after filtering.
+2024-12-12 00:21:18,721 [INFO] Scraping content from collected URLs...
+2024-12-12 00:21:20,606 [INFO] Article at https://www.aljazeera.com/tag/imran-khan/ is too short; skipping.
+2024-12-12 00:21:20,710 [INFO] Article at https://www.inova.org/doctors/imran-a-khan-md is too short; skipping.
+2024-12-12 00:21:21,213 [INFO] Article at https://ccr.cancer.gov/staff-directory/imran-khan is too short; skipping.
+2024-12-12 00:21:21,226 [INFO] Article at https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js is too short; skipping.
+2024-12-12 00:21:24,494 [INFO] Article at https://profiles.ucsf.edu/imran.khan is too short; skipping.
+2024-12-12 00:21:24,497 [INFO] Article 'Imran Khan: The cricket star and former PM who is dividing Pakistan' added to valid articles.
+2024-12-12 00:21:24,498 [INFO] Article 'Imran Khan Profile - Cricket Player Pakistan' added to valid articles.
+2024-12-12 00:21:24,498 [INFO] No content retrieved or article skipped.
+2024-12-12 00:21:24,499 [INFO] No content retrieved or article skipped.
+2024-12-12 00:21:24,500 [INFO] No content retrieved or article skipped.
+2024-12-12 00:21:24,500 [INFO] No content retrieved or article skipped.
+2024-12-12 00:21:24,501 [INFO] Article 'Pakistan’s Imran Khan gets bail in a graft case but will stay behind bars on other charges' added to valid articles.
+2024-12-12 00:21:24,501 [INFO] Article 'Alumnus Imran Khan Creates Opportunity Through Scholarship Gift' added to valid articles.
+2024-12-12 00:21:24,502 [INFO] Article 'Prime Minister Imran Khan promised ‘new Pakistan’ but members of his inner circle secretly moved millions offshore' added to valid articles.
+2024-12-12 00:21:40,230 [INFO] Data written to output.json.
+2024-12-12 02:09:26,917 [ERROR] Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2024-12-12 02:11:55,795 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 02:11:56,463 [INFO] New user registered: m@gmail.com
+2024-12-12 02:13:33,428 [INFO] User logged in: m@gmail.com
+2024-12-12 02:13:45,206 [INFO] User logged in: m@gmail.com
