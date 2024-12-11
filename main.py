@@ -1,4 +1,4 @@
-# app.py
+# backend/main.py
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -15,7 +15,7 @@ app = FastAPI()
 
 # Configure CORS
 origins = [
-    "http://localhost:3000",  # React development server
+    "http://localhost:3000",  # Next.js development server
     # Add other origins as needed
 ]
 
@@ -27,7 +27,7 @@ app.add_middleware(
     allow_headers=["*"],              # Allows all headers
 )
 
-# Configure logging (redundant if already configured in scraper.py, but kept for completeness)
+# Configure logging (redundant if already configured in app.py, but kept for completeness)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -61,6 +61,11 @@ class ScrapeResponse(BaseModel):
     articles: List[Article]
     final_summary: Optional[str] = None
     errors: List[str] = []
+
+# Pydantic model for feedback
+class FeedbackRequest(BaseModel):
+    query: str
+    feedback: str
 
 @app.post("/scrape", response_model=ScrapeResponse)
 async def scrape_articles(request: ScrapeRequest):
@@ -101,6 +106,25 @@ async def scrape_articles(request: ScrapeRequest):
     except Exception as e:
         logging.error(f"Scraping failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/feedback")
+async def receive_feedback(feedback_request: FeedbackRequest):
+    """
+    Endpoint to receive user feedback.
+
+    Args:
+        feedback_request (FeedbackRequest): The feedback data.
+
+    Returns:
+        dict: Confirmation message.
+    """
+    try:
+        # Here, you can process the feedback, e.g., save it to a database or a file
+        logging.info(f"Feedback received for query '{feedback_request.query}': {feedback_request.feedback}")
+        return {"message": "Feedback received. Thank you!"}
+    except Exception as e:
+        logging.error(f"Failed to receive feedback: {e}")
+        raise HTTPException(status_code=500, detail="Failed to receive feedback.")
 
 # Endpoint to serve static files (optional)
 @app.get("/static/{file_path:path}")

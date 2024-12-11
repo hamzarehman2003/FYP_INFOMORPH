@@ -1,4 +1,5 @@
 import LogoSVG from "@/assets/logo";
+import Providers from './Providers';
 
 const Layout = () => {
   return (

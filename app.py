@@ -1,5 +1,3 @@
-# scraper.py
-
 import asyncio
 import logging
 import requests

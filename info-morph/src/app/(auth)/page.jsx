@@ -3,6 +3,7 @@ import BurgerMenu from "@/components/Auth/burgerMenu";
 import Login from "@/components/Auth/login";
 import Navbar from "@/components/Auth/navbar";
 import Signup from "@/components/Auth/signup";
+import { SummaryProvider} from "../(pages)/summaryContext/SummaryContext";
 import { useState } from "react";
 
 const AuthPage = () => {

@@ -12,7 +12,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    router.push("/url-link");
+    router.push("/topic-selection");
   };
 
   return (
