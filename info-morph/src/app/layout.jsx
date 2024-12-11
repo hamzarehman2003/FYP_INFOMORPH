@@ -4,6 +4,10 @@ import "./globals.css";
 import Providers from '../components/Auth/Providers'; 
 import { Inter, Poppins } from "next/font/google";
 import { AuthProvider } from '../context/AuthContext'; 
+import 'react-toastify/dist/ReactToastify.css';
+//import Header from '../components/Auth/Header'; // Import Header
+import { ToastContainer } from 'react-toastify';
+
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -23,8 +27,21 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} ${poppins.variable} antialiased`}>
         <AuthProvider>
           <Providers>
-            {children}
-          </Providers>
+              
+              {children}
+              <ToastContainer 
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+              />
+            </Providers>
         </AuthProvider>
       </body>
     </html>

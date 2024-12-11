@@ -1,3 +1,5 @@
+// frontend/src/context/AuthContext.jsx
+
 "use client";
 
 import React, { createContext, useState, useEffect } from "react";
@@ -24,10 +26,11 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post("http://localhost:8000/token", {
-        username: email,
-        password: password,
-      }, {
+      const params = new URLSearchParams();
+      params.append('username', email);
+      params.append('password', password);
+
+      const response = await axios.post("http://localhost:8000/token", params, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
@@ -66,6 +69,7 @@ export const AuthProvider = ({ children }) => {
     setAuth({ token: null, email: null });
     localStorage.removeItem("token");
     localStorage.removeItem("email");
+    // Optionally, navigate to login page or homepage
   };
 
   return (

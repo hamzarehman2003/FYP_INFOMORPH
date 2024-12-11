@@ -1,6 +1,7 @@
 // frontend/src/components/Auth/Signup.jsx
 
 "use client";
+
 import { useState, useContext } from "react";
 import Heading from "./heading";
 import InputField from "./inputfield";
@@ -10,6 +11,7 @@ import WithGoogle from "./withGoogle";
 import BlueButton from "./blueButton";
 import { AuthContext } from "../../context/AuthContext"; // Adjust path as needed
 import { useRouter } from "next/navigation";
+import { toast } from 'react-toastify'; // Import toast from react-toastify
 
 const Signup = () => {
   const { signup } = useContext(AuthContext);
@@ -17,22 +19,28 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [retypePassword, setRetypePassword] = useState("");
-  const [error, setError] = useState("");
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    setError("");
 
     if (password !== retypePassword) {
-      setError("Passwords do not match");
+      toast.error("Passwords do not match");
+      return;
+    }
+
+    // Password strength validation
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    if (!passwordRegex.test(password)) {
+      toast.error("Password must be at least 8 characters long and contain both letters and numbers");
       return;
     }
 
     const result = await signup(email, password);
     if (result.success) {
+      toast.success("Signed up successfully!");
       router.push("/topic-selection");
     } else {
-      setError(result.message || "Signup failed");
+      toast.error(result.message || "Signup failed. Please try again.");
     }
   };
 
@@ -66,7 +74,6 @@ const Signup = () => {
             required
           />
         </div>
-        {error && <p className="text-red-500 mt-2">{error}</p>}
         <WithOthers name={"Sign up"} />
         <WithGoogle name={"Sign up"} />
         <div className="flex justify-center">

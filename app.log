@@ -1532,3 +1532,55 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2024-12-12 02:11:56,463 [INFO] New user registered: m@gmail.com
 2024-12-12 02:13:33,428 [INFO] User logged in: m@gmail.com
 2024-12-12 02:13:45,206 [INFO] User logged in: m@gmail.com
+2024-12-12 02:15:08,467 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 02:15:09,012 [INFO] New user registered: hamza@gmail.com
+2024-12-12 02:17:13,716 [INFO] User logged in: hamza@gmail.com
+2024-12-12 02:32:25,115 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 02:32:33,701 [INFO] User logged in: m@gmail.com
+2024-12-12 02:34:38,859 [INFO] User logged in: m@gmail.com
+2024-12-12 03:13:58,675 [INFO] User logged in: m@gmail.com
+2024-12-12 03:17:29,308 [INFO] User logged in: m@gmail.com
+2024-12-12 03:19:05,751 [INFO] User logged in: m@gmail.com
+2024-12-12 03:19:41,461 [INFO] User logged in: m@gmail.com
+2024-12-12 03:20:05,242 [INFO] User logged in: m@gmail.com
+2024-12-12 03:21:19,976 [INFO] User logged in: m@gmail.com
+2024-12-12 03:22:44,895 [INFO] User logged in: m@gmail.com
+2024-12-12 03:22:59,700 [INFO] User logged in: m@gmail.com
+2024-12-12 03:23:41,106 [INFO] User logged in: m@gmail.com
+2024-12-12 03:24:38,415 [INFO] User logged in: m@gmail.com
+2024-12-12 03:34:32,072 [INFO] User logged in: m@gmail.com
+2024-12-12 03:34:57,024 [INFO] User logged in: m@gmail.com
+2024-12-12 03:35:36,723 [INFO] User logged in: m@gmail.com
+2024-12-12 03:37:25,258 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 03:37:25,532 [INFO] User logged in: m@gmail.com
+2024-12-12 03:38:16,317 [INFO] User logged in: m@gmail.com
+2024-12-12 03:40:04,835 [INFO] User logged in: m@gmail.com
+2024-12-12 03:41:30,409 [INFO] User logged in: m@gmail.com
+2024-12-12 03:41:51,498 [INFO] User logged in: m@gmail.com
+2024-12-12 03:46:33,189 [INFO] User logged in: m@gmail.com
+2024-12-12 03:52:20,861 [INFO] User logged in: m@gmail.com
+2024-12-12 03:53:00,697 [INFO] User logged in: m@gmail.com
+2024-12-12 03:53:31,994 [INFO] User logged in: m@gmail.com
+2024-12-12 03:54:29,784 [INFO] User logged in: m@gmail.com
+2024-12-12 03:57:22,683 [INFO] User logged in: m@gmail.com
+2024-12-12 03:59:48,567 [INFO] User logged in: m@gmail.com
+2024-12-12 04:02:26,328 [INFO] User logged in: m@gmail.com
+2024-12-12 04:13:35,118 [INFO] User logged in: m@gmail.com
+2024-12-12 04:16:04,260 [INFO] User logged in: m@gmail.com
+2024-12-12 04:27:04,374 [INFO] User logged in: m@gmail.com
+2024-12-12 04:41:18,603 [INFO] User logged in: m@gmail.com

@@ -1,13 +1,12 @@
-import Header from "@/components/Header";
+// frontend/app/urllink/layout.jsx
+
+"use client";
 
 const PagesLayout = ({ children }) => {
   return (
-    <>
-      <Header />
-      <div className="bg-[#dcebfe] min-h-screen flex justify-center">
-        {children}
-      </div>
-    </>
+    <div className="bg-[#dcebfe] min-h-screen flex justify-center">
+      {children}
+    </div>
   );
 };
 

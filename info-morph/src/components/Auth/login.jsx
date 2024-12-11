@@ -1,6 +1,7 @@
 // frontend/src/components/Auth/Login.jsx
 
 "use client";
+
 import { useRouter } from "next/navigation";
 import Heading from "./heading";
 import InputField from "./inputfield";
@@ -10,22 +11,23 @@ import WithGoogle from "./withGoogle";
 import BlueButton from "./blueButton";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthContext"; // Adjust path as needed
+import { toast } from 'react-toastify'; // Import toast from react-toastify
 
 const Login = () => {
   const router = useRouter();
   const { login } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError("");
+    
     const result = await login(email, password);
     if (result.success) {
+      toast.success("Logged in successfully!");
       router.push("/topic-selection");
     } else {
-      setError(result.message || "Login failed");
+      toast.error(result.message || "Login failed. Please try again.");
     }
   };
 
@@ -51,7 +53,6 @@ const Login = () => {
             required
           />
         </div>
-        {error && <p className="text-red-500 mt-2">{error}</p>}
         <WithOthers name="Log in" />
         <WithGoogle name="Log in" />
         <div className="flex justify-center">
