@@ -20,7 +20,15 @@ from datetime import datetime, timedelta
 # Create all tables
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(
+    title="InfoMorph API",
+    description="An API for collecting and analyzing information",
+    version="1.0.0"
+)
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to InfoMorph API"}
 
 # Configure CORS
 origins = [

@@ -5,6 +5,9 @@
 *.py text eol=lf
 *.sh text eol=lf
 *.bat text eol=crlf
+*.txt text eol=lf
+*.md text eol=lf
+*.json text eol=lf
 
 # Ignore line endings for binary files
 *.jpg binary
