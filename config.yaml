@@ -1,5 +1,6 @@
 api_key: 'AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4'
 cse_id: '72e62b8642f194f09'
+gemini_api_key: 'AIzaSyDjH4Hi69XwnhQhzye2PnpyBCqcD90-gd8'  # Add your Gemini API key here
 blocked_domains:
   - 'reddit.com'
   - 'instagram.com'
@@ -8,6 +9,6 @@ blocked_domains:
   - 'youtube.com'
   - 'vexforum.com'
   - 'nytimes.com'
-  - 'twitter.com'
+  - 'x.com'
 proxies: []
 output_file: "output.json"

@@ -31,11 +31,17 @@ const TopicSelectionPage = () => {
     setErrors([]);
     setUrls([]);
     try {
+      const token = localStorage.getItem('token'); // Get token from storage
+
       const response = await axios.post("http://localhost:8000/scrape", {
         query: queryInput,
-        num_urls: 5,
+        num_urls: 10,
         input_language: inputLanguage,
         output_language: outputLanguage,
+      }, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
       });
 
       console.log("Scrape response:", response.data); // Debugging log
@@ -50,9 +56,10 @@ const TopicSelectionPage = () => {
         }))
       );
 
-      setSummary(final_summary);
+      setSummary(final_summary || "No summary was generated. Please try another search term.");
       setQuery(queryInput);
 
+      console.log(`Summary length: ${final_summary ? final_summary.split(' ').length : 0} words`); // Log summary length
       console.log("Context updated with summary and query"); // Debugging log
 
       router.push('/summarization');

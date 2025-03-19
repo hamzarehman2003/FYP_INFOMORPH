@@ -1584,3 +1584,1292 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2024-12-12 04:16:04,260 [INFO] User logged in: m@gmail.com
 2024-12-12 04:27:04,374 [INFO] User logged in: m@gmail.com
 2024-12-12 04:41:18,603 [INFO] User logged in: m@gmail.com
+2025-03-18 19:41:50,692 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\FYP_INFOMORPH\fyp\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-18 19:41:51,025 [INFO] New user registered: syedhamzarehman6@gmail.com
+2025-03-19 06:53:34,471 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\FYP_INFOMORPH\fyp\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-19 06:53:34,729 [INFO] User logged in: syedhamzarehman6@gmail.com
+2025-03-19 07:02:45,638 [INFO] User logged in: syedhamzarehman6@gmail.com
+2025-03-19 07:09:10,750 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='machine learning', Num URLs=5
+2025-03-19 07:09:11,608 [INFO] Fetching robots.txt from https://www.coursera.org/robots.txt
+2025-03-19 07:09:11,997 [INFO] Fetching robots.txt from https://www.ibm.com/robots.txt
+2025-03-19 07:09:12,412 [INFO] Fetching robots.txt from https://developers.google.com/robots.txt
+2025-03-19 07:09:13,117 [INFO] Fetching robots.txt from https://mitsloan.mit.edu/robots.txt
+2025-03-19 07:09:13,386 [INFO] Fetching robots.txt from https://www.geeksforgeeks.org/robots.txt
+2025-03-19 07:09:13,660 [INFO] Fetching robots.txt from https://www.techtarget.com/robots.txt
+2025-03-19 07:09:14,910 [INFO] Non-200 response from https://www.techtarget.com/robots.txt: 403
+2025-03-19 07:09:14,911 [INFO] Skipping https://www.techtarget.com/searchenterpriseai/definition/machine-learning-ML as robots.txt could not be fetched.
+2025-03-19 07:09:14,911 [INFO] Fetching robots.txt from https://www.sas.com/robots.txt
+2025-03-19 07:09:16,900 [INFO] Fetching robots.txt from https://azure.microsoft.com/robots.txt
+2025-03-19 07:09:18,921 [INFO] Fetching robots.txt from https://aws.amazon.com/robots.txt
+2025-03-19 07:09:21,249 [INFO] Fetching robots.txt from https://link.springer.com/robots.txt
+2025-03-19 07:09:21,580 [INFO] Scraping not allowed for https://link.springer.com/journal/10994 as per robots.txt.
+2025-03-19 07:09:21,580 [INFO] Fetching robots.txt from https://ecornell.cornell.edu/robots.txt
+2025-03-19 07:09:22,604 [INFO] Fetching robots.txt from https://aws.amazon.com/robots.txt
+2025-03-19 07:09:22,946 [INFO] Fetching robots.txt from https://www.ml.cmu.edu/robots.txt
+2025-03-19 07:09:25,440 [INFO] Fetching robots.txt from https://cloud.google.com/robots.txt
+2025-03-19 07:09:26,262 [INFO] Fetching robots.txt from https://blog.gregbrockman.com/robots.txt
+2025-03-19 07:09:27,340 [INFO] Fetching robots.txt from https://kozyrkov.medium.com/robots.txt
+2025-03-19 07:09:27,785 [INFO] Fetching robots.txt from https://www.technologyreview.com/robots.txt
+2025-03-19 07:09:28,093 [INFO] Fetching robots.txt from https://developer.apple.com/robots.txt
+2025-03-19 07:09:29,192 [INFO] Collected 10 URLs after filtering.
+2025-03-19 07:09:29,192 [INFO] Scraping content from collected URLs...
+2025-03-19 07:09:29,866 [INFO] Article at https://aws.amazon.com/training/learn-about/machine-learning/ is too short; skipping.
+2025-03-19 07:09:30,830 [INFO] Article at https://developers.google.com/machine-learning/crash-course is too short; skipping.
+2025-03-19 07:09:31,303 [INFO] Article at https://aws.amazon.com/ai/machine-learning/ is too short; skipping.
+2025-03-19 07:09:33,477 [INFO] Article at https://www.coursera.org/learn/machine-learning is too short; skipping.
+2025-03-19 07:09:33,967 [INFO] Article at https://www.sas.com/en_us/insights/analytics/machine-learning.html is too short; skipping.
+2025-03-19 07:09:40,294 [INFO] Article at https://azure.microsoft.com/en-us/products/machine-learning is too short; skipping.
+2025-03-19 07:09:40,297 [INFO] No content retrieved or article skipped.
+2025-03-19 07:09:40,297 [INFO] Article 'What Is Machine Learning (ML)?' added to valid articles.
+2025-03-19 07:09:40,297 [INFO] No content retrieved or article skipped.
+2025-03-19 07:09:40,297 [INFO] Article 'Machine Learning Tutorial' added to valid articles.
+2025-03-19 07:09:40,298 [INFO] No content retrieved or article skipped.
+2025-03-19 07:09:40,298 [INFO] Article 'Machine Learning' added to valid articles.
+2025-03-19 07:09:40,298 [INFO] Article 'Machine learning, explained' added to valid articles.
+2025-03-19 07:09:40,298 [INFO] No content retrieved or article skipped.
+2025-03-19 07:09:40,298 [INFO] No content retrieved or article skipped.
+2025-03-19 07:09:40,298 [INFO] No content retrieved or article skipped.
+2025-03-19 07:11:35,954 [INFO] Generated summary with 215 words.
+2025-03-19 07:11:35,955 [WARNING] Generated summary is too short (215 words). Attempting to regenerate.
+2025-03-19 07:13:31,016 [INFO] Regenerated summary with 215 words.
+2025-03-19 07:13:31,016 [ERROR] Regenerated summary is still too short (215 words).
+2025-03-19 07:13:31,019 [INFO] Data written to output.json.
+2025-03-19 07:16:22,054 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='babar azam', Num URLs=5
+2025-03-19 07:16:23,012 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2025-03-19 07:16:23,360 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2025-03-19 07:16:23,511 [INFO] Scraping not allowed for https://www.facebook.com/MBabarAzamPakistan/ as per robots.txt.
+2025-03-19 07:16:23,512 [INFO] Fetching robots.txt from https://www.cricbuzz.com/robots.txt
+2025-03-19 07:16:23,882 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2025-03-19 07:16:28,945 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2025-03-19 07:16:28,945 [INFO] Skipping https://x.com/babarazam258?lang=en as robots.txt could not be fetched.
+2025-03-19 07:16:28,945 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2025-03-19 07:16:34,936 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2025-03-19 07:16:34,936 [INFO] Skipping https://x.com/team_babarazam?lang=en as robots.txt could not be fetched.
+2025-03-19 07:16:36,698 [INFO] Fetching robots.txt from https://cricket.one/robots.txt
+2025-03-19 07:16:36,914 [INFO] Non-200 response from https://cricket.one/robots.txt: 403
+2025-03-19 07:16:36,916 [INFO] Skipping https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38 as robots.txt could not be fetched.
+2025-03-19 07:16:36,916 [INFO] Fetching robots.txt from https://www.icc-cricket.com/robots.txt
+2025-03-19 07:16:37,203 [INFO] Fetching robots.txt from https://medium.com/robots.txt
+2025-03-19 07:16:37,629 [INFO] Fetching robots.txt from https://acceducate.org/robots.txt
+2025-03-19 07:16:38,432 [INFO] Fetching robots.txt from https://www.espn.com/robots.txt
+2025-03-19 07:16:38,594 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2025-03-19 07:16:38,686 [INFO] Fetching robots.txt from https://www.stadiumrant.com/robots.txt
+2025-03-19 07:16:39,847 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2025-03-19 07:16:42,020 [INFO] Fetching robots.txt from https://www.amazon.com/robots.txt
+2025-03-19 07:16:42,974 [INFO] Fetching robots.txt from https://indianexpress.com/robots.txt
+2025-03-19 07:16:43,087 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 07:16:43,087 [INFO] Skipping https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/ as robots.txt could not be fetched.
+2025-03-19 07:16:43,087 [INFO] Fetching robots.txt from https://www.snapchat.com/robots.txt
+2025-03-19 07:16:43,478 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2025-03-19 07:16:43,697 [INFO] Fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt
+2025-03-19 07:16:43,804 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 07:16:43,804 [INFO] Skipping https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms as robots.txt could not be fetched.
+2025-03-19 07:16:43,804 [INFO] Fetching robots.txt from https://www.rajasthanroyals.com/robots.txt
+2025-03-19 07:16:44,853 [INFO] Fetching robots.txt from https://stats.espncricinfo.com/robots.txt
+2025-03-19 07:16:45,280 [INFO] Non-200 response from https://stats.espncricinfo.com/robots.txt: 403
+2025-03-19 07:16:45,281 [INFO] Skipping https://stats.espncricinfo.com/ci/engine/player/348144.html?class=1;type=allround as robots.txt could not be fetched.
+2025-03-19 07:16:45,281 [INFO] Fetching robots.txt from https://sports.ndtv.com/robots.txt
+2025-03-19 07:16:45,725 [INFO] Fetching robots.txt from https://ppforum.pakpassion.net/robots.txt
+2025-03-19 07:16:46,859 [INFO] Fetching robots.txt from https://www.i24news.tv/robots.txt
+2025-03-19 07:16:47,839 [INFO] Collected 10 URLs after filtering.
+2025-03-19 07:16:47,840 [INFO] Scraping content from collected URLs...
+2025-03-19 07:16:48,169 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-19 07:16:49,159 [INFO] Article at https://www.icc-cricket.com/rankings/59429/babar-azam is too short; skipping.
+2025-03-19 07:16:59,056 [INFO] Article at https://www.amazon.com/Batsman-Babar-Azam-Sticker-Bumper-Sticker/dp/B0CG6MKZ59 is too short; skipping.
+2025-03-19 07:16:59,135 [INFO] No content retrieved or article skipped.
+2025-03-19 07:16:59,135 [INFO] No content retrieved or article skipped.
+2025-03-19 07:16:59,136 [INFO] Article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity' added to valid articles.
+2025-03-19 07:16:59,136 [INFO] Article 'There's a certain sadness about Babar Azam's mortality' added to valid articles.
+2025-03-19 07:16:59,136 [INFO] Article 'Babar Azam steps down as Pakistan captain for the second time' added to valid articles.
+2025-03-19 07:16:59,137 [INFO] Article 'Profile - ICC Ranking, Age, Career Info & Stats' added to valid articles.
+2025-03-19 07:16:59,137 [INFO] Article 'Babar Azam steps down as Pakistan captain in all formats. PCB says it offered him test captaincy' added to valid articles.
+2025-03-19 07:18:53,083 [INFO] Generated summary with 302 words.
+2025-03-19 07:18:53,084 [INFO] Data written to output.json.
+2025-03-19 07:20:17,630 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='valorant', Num URLs=10
+2025-03-19 07:20:18,436 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 07:20:19,433 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 07:20:20,003 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 07:20:20,572 [INFO] Fetching robots.txt from https://www.riotgames.com/robots.txt
+2025-03-19 07:20:21,197 [INFO] Fetching robots.txt from https://tracker.gg/robots.txt
+2025-03-19 07:20:21,367 [INFO] Fetching robots.txt from https://valorantesports.com/robots.txt
+2025-03-19 07:20:22,449 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2025-03-19 07:20:27,938 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2025-03-19 07:20:27,939 [INFO] Skipping https://x.com/valorant?lang=en as robots.txt could not be fetched.
+2025-03-19 07:20:27,939 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 07:20:30,100 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2025-03-19 07:20:35,927 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2025-03-19 07:20:35,928 [INFO] Skipping https://x.com/valorant?lang=en as robots.txt could not be fetched.
+2025-03-19 07:20:35,928 [INFO] Fetching robots.txt from https://technology.riotgames.com/robots.txt
+2025-03-19 07:20:36,451 [INFO] Fetching robots.txt from https://store.epicgames.com/robots.txt
+2025-03-19 07:20:37,078 [INFO] Non-200 response from https://store.epicgames.com/robots.txt: 403
+2025-03-19 07:20:37,079 [INFO] Skipping https://store.epicgames.com/en-US/p/valorant as robots.txt could not be fetched.
+2025-03-19 07:20:37,079 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2025-03-19 07:20:42,932 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2025-03-19 07:20:42,932 [INFO] Skipping https://x.com/valorantesports?lang=en as robots.txt could not be fetched.
+2025-03-19 07:20:42,933 [INFO] Fetching robots.txt from https://support-valorant.riotgames.com/robots.txt
+2025-03-19 07:20:43,785 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2025-03-19 07:20:48,951 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2025-03-19 07:20:48,951 [INFO] Skipping https://x.com/valorleaks?lang=en as robots.txt could not be fetched.
+2025-03-19 07:20:48,951 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 07:20:49,199 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2025-03-19 07:20:49,510 [INFO] Fetching robots.txt from https://answers.microsoft.com/robots.txt
+2025-03-19 07:20:50,027 [INFO] Collected 10 URLs after filtering.
+2025-03-19 07:20:50,028 [INFO] Scraping content from collected URLs...
+2025-03-19 07:20:50,331 [INFO] Article at https://www.twitch.tv/valorant is too short; skipping.
+2025-03-19 07:20:50,413 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 07:20:50,771 [INFO] Article at https://playvalorant.com/en-us/ is too short; skipping.
+2025-03-19 07:20:50,984 [INFO] Article at https://playvalorant.com/en-us/console/ is too short; skipping.
+2025-03-19 07:20:51,200 [INFO] Article at https://playvalorant.com/en-us/download/ is too short; skipping.
+2025-03-19 07:20:51,382 [INFO] Article at https://valorantesports.com/ is too short; skipping.
+2025-03-19 07:20:51,397 [INFO] Article at https://www.twitch.tv/directory/category/valorant is too short; skipping.
+2025-03-19 07:20:51,449 [INFO] Article at https://support-valorant.riotgames.com/hc/en-us/requests/new is too short; skipping.
+2025-03-19 07:20:51,933 [INFO] Article at https://www.riotgames.com/en is too short; skipping.
+2025-03-19 07:20:52,135 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,135 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,136 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,136 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,136 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,136 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,136 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,136 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,136 [INFO] No content retrieved or article skipped.
+2025-03-19 07:20:52,137 [INFO] Article 'VALORANT Shaders and Gameplay Clarity' added to valid articles.
+2025-03-19 07:22:30,576 [INFO] Generated summary with 297 words.
+2025-03-19 07:22:30,577 [WARNING] Generated summary is too short (297 words). Attempting to regenerate.
+2025-03-19 07:24:08,818 [INFO] Regenerated summary with 297 words.
+2025-03-19 07:24:08,819 [ERROR] Regenerated summary is still too short (297 words).
+2025-03-19 07:24:08,820 [INFO] Data written to output.json.
+2025-03-19 07:34:32,691 [INFO] Configuration loaded successfully
+2025-03-19 07:34:39,577 [INFO] Pegasus model loaded on cpu
+2025-03-19 07:35:33,341 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\FYP_INFOMORPH\fyp\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-19 07:35:33,630 [INFO] User logged in: syedhamzarehman6@gmail.com
+2025-03-19 07:35:46,970 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 07:35:46,971 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 07:35:46,973 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 07:35:46,973 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='CS2 Cheating Problem', Num URLs=10
+2025-03-19 07:35:46,973 [INFO] Starting collection process for query: 'CS2 Cheating Problem'
+2025-03-19 07:35:46,974 [INFO] Desired article count: 10
+2025-03-19 07:35:47,748 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:35:47,749 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:35:47,749 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:35:47,749 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:35:47,749 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:35:47,749 [INFO] Filtered 4 blocked domains
+2025-03-19 07:35:47,749 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:35:48,275 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:35:48,852 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:35:49,398 [INFO] Fetching robots.txt from https://richardlewis.substack.com/robots.txt
+2025-03-19 07:35:49,856 [INFO] Fetching robots.txt from https://tradeit.gg/robots.txt
+2025-03-19 07:35:50,563 [INFO] Fetching robots.txt from https://blog.clash.gg/robots.txt
+2025-03-19 07:35:51,104 [INFO] Non-200 response from https://blog.clash.gg/robots.txt: 403
+2025-03-19 07:35:51,105 [INFO] Skipping https://blog.clash.gg/cs2-cheating-problem as robots.txt could not be fetched.
+2025-03-19 07:35:51,105 [INFO] Added 6 allowed URLs
+2025-03-19 07:35:51,105 [INFO] Collected 6 unique URLs so far
+2025-03-19 07:35:52,678 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:35:52,678 [INFO] Blocked domain detected: x.com
+2025-03-19 07:35:52,678 [INFO] Blocked domain detected: x.com
+2025-03-19 07:35:52,678 [INFO] Blocked domain detected: x.com
+2025-03-19 07:35:52,678 [INFO] Blocked domain detected: www.linkedin.com
+2025-03-19 07:35:52,678 [INFO] Filtered 4 blocked domains
+2025-03-19 07:35:52,679 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2025-03-19 07:35:52,837 [INFO] Scraping not allowed for https://www.facebook.com/csgolounge/posts/have-they-seen-premier-matches-cs2/1078644080968305/ as per robots.txt.
+2025-03-19 07:35:52,837 [INFO] Fetching robots.txt from https://blix.gg/robots.txt
+2025-03-19 07:35:54,333 [INFO] Fetching robots.txt from https://cslabez.com/robots.txt
+2025-03-19 07:35:55,749 [INFO] Fetching robots.txt from https://www.gamegrin.com/robots.txt
+2025-03-19 07:35:56,612 [INFO] Fetching robots.txt from https://csdb.gg/robots.txt
+2025-03-19 07:35:58,039 [INFO] Fetching robots.txt from https://www.esports.net/robots.txt
+2025-03-19 07:35:59,704 [INFO] Added 5 allowed URLs
+2025-03-19 07:35:59,704 [INFO] Collected 11 unique URLs so far
+2025-03-19 07:36:01,282 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:36:01,284 [INFO] Filtered 0 blocked domains
+2025-03-19 07:36:01,284 [INFO] Fetching robots.txt from https://skinflow.gg/robots.txt
+2025-03-19 07:36:01,986 [INFO] Fetching robots.txt from https://www.dexerto.com/robots.txt
+2025-03-19 07:36:02,205 [INFO] Fetching robots.txt from https://www.sportskeeda.com/robots.txt
+2025-03-19 07:36:02,595 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-19 07:36:03,051 [INFO] Fetching robots.txt from https://twitter.com/robots.txt
+2025-03-19 07:36:08,933 [INFO] Timeout occurred while fetching https://twitter.com/robots.txt
+2025-03-19 07:36:08,934 [INFO] Skipping https://twitter.com/Ozzny_CS2/status/1780290330807415028 as robots.txt could not be fetched.
+2025-03-19 07:36:08,934 [INFO] Fetching robots.txt from https://www.hltv.org/robots.txt
+2025-03-19 07:36:09,039 [INFO] Non-200 response from https://www.hltv.org/robots.txt: 403
+2025-03-19 07:36:09,040 [INFO] Skipping https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem as robots.txt could not be fetched.
+2025-03-19 07:36:09,040 [INFO] Fetching robots.txt from https://bo3.gg/robots.txt
+2025-03-19 07:36:09,795 [INFO] Fetching robots.txt from https://www.quora.com/robots.txt
+2025-03-19 07:36:10,222 [INFO] Scraping not allowed for https://www.quora.com/I-notice-Valorant-has-as-many-hackers-as-CS-GO-Why-are-all-games-anti-cheat-software-so-bad-Is-it-a-design-flaw-from-the-game-developers as per robots.txt.
+2025-03-19 07:36:10,223 [INFO] Fetching robots.txt from https://www.resetera.com/robots.txt
+2025-03-19 07:36:11,511 [INFO] Fetching robots.txt from https://gamerant.com/robots.txt
+2025-03-19 07:36:12,225 [INFO] Added 9 allowed URLs
+2025-03-19 07:36:12,225 [INFO] Collected 20 unique URLs so far
+2025-03-19 07:36:12,226 [INFO] Limited URL collection to 20
+2025-03-19 07:36:12,226 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 07:36:12,331 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:36:14,493 [INFO] newspaper3k extracted low-quality content from https://bo3.gg/news/reddit-users-discuss-the-problem-of-cheating-in-cs2, trying BeautifulSoup
+2025-03-19 07:36:14,505 [INFO] Failed to extract meaningful content from https://bo3.gg/news/reddit-users-discuss-the-problem-of-cheating-in-cs2
+2025-03-19 07:36:14,628 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:36:15,378 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/4417551094432695045/ has insufficient content after processing.
+2025-03-19 07:36:16,122 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/594010406470555434/ has insufficient content after processing.
+2025-03-19 07:36:16,304 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:36:17,430 [INFO] newspaper3k extracted low-quality content from https://www.resetera.com/threads/first-pro-counter-strike-team-to-leave-counter-strike-2-due-to-ongoing-cheating-issues.810189/, trying BeautifulSoup
+2025-03-19 07:36:17,711 [INFO] Failed to extract meaningful content from https://www.resetera.com/threads/first-pro-counter-strike-team-to-leave-counter-strike-2-due-to-ongoing-cheating-issues.810189/
+2025-03-19 07:36:17,843 [INFO] Article at https://github.com/ValveSoftware/steam-for-linux/issues/9882 has insufficient content after processing.
+2025-03-19 07:36:18,305 [INFO] newspaper3k extracted low-quality content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/, trying BeautifulSoup
+2025-03-19 07:36:18,343 [INFO] Failed to extract meaningful content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/
+2025-03-19 07:36:19,909 [INFO] newspaper3k extracted low-quality content from https://cslabez.com/the-cs2-cheating-problem/, trying BeautifulSoup
+2025-03-19 07:36:33,941 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1780290330807415028: . Retrying in 1.5s (1/3)...
+2025-03-19 07:36:50,940 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1780290330807415028: . Retrying in 3.0s (2/3)...
+2025-03-19 07:37:09,941 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1780290330807415028: 
+2025-03-19 07:37:09,943 [INFO] Successfully scraped 10 articles out of 20 URLs
+2025-03-19 07:37:09,953 [INFO] Formatted content for summarization with 7972 words
+2025-03-19 07:37:10,027 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:37:10,028 [INFO] Trying chunk-based approach after error
+2025-03-19 07:37:10,028 [INFO] Summarizing chunk 1/11
+2025-03-19 07:37:10,047 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:37:10,049 [INFO] Summarizing chunk 2/11
+2025-03-19 07:37:10,059 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:37:10,060 [INFO] Summarizing chunk 3/11
+2025-03-19 07:37:10,068 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:37:10,069 [INFO] Summarizing chunk 4/11
+2025-03-19 07:37:10,077 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:37:10,078 [INFO] Summarizing chunk 5/11
+2025-03-19 07:37:10,087 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:37:10,087 [INFO] Summarizing chunk 6/11
+2025-03-19 07:37:10,095 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:37:10,096 [INFO] Summarizing chunk 7/11
+2025-03-19 07:37:10,104 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:37:10,104 [INFO] Summarizing chunk 8/11
+2025-03-19 07:37:10,115 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:37:10,116 [INFO] Summarizing chunk 9/11
+2025-03-19 07:37:10,127 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:37:10,128 [INFO] Summarizing chunk 10/11
+2025-03-19 07:37:10,135 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:37:10,136 [INFO] Summarizing chunk 11/11
+2025-03-19 07:37:10,143 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:37:10,144 [INFO] Summarization completed in 0.19 seconds
+2025-03-19 07:37:10,144 [INFO] Generated summary with 0 words.
+2025-03-19 07:37:10,144 [WARNING] Generated summary is too short (0 words). Attempting to regenerate.
+2025-03-19 07:37:10,177 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:37:10,177 [INFO] Trying chunk-based approach after error
+2025-03-19 07:37:10,179 [INFO] Summarizing chunk 1/11
+2025-03-19 07:37:10,186 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:37:10,188 [INFO] Summarizing chunk 2/11
+2025-03-19 07:37:10,194 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:37:10,196 [INFO] Summarizing chunk 3/11
+2025-03-19 07:37:10,206 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:37:10,207 [INFO] Summarizing chunk 4/11
+2025-03-19 07:37:10,216 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:37:10,216 [INFO] Summarizing chunk 5/11
+2025-03-19 07:37:10,223 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:37:10,224 [INFO] Summarizing chunk 6/11
+2025-03-19 07:37:10,233 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:37:10,234 [INFO] Summarizing chunk 7/11
+2025-03-19 07:37:10,243 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:37:10,244 [INFO] Summarizing chunk 8/11
+2025-03-19 07:37:10,252 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:37:10,253 [INFO] Summarizing chunk 9/11
+2025-03-19 07:37:10,260 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:37:10,260 [INFO] Summarizing chunk 10/11
+2025-03-19 07:37:10,269 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:37:10,270 [INFO] Summarizing chunk 11/11
+2025-03-19 07:37:10,276 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:37:10,277 [INFO] Regenerated summary with 0 words.
+2025-03-19 07:37:10,277 [WARNING] Summary is still short (0 words), but will be returned as is.
+2025-03-19 07:37:10,279 [INFO] Data written to output.json.
+2025-03-19 07:39:46,387 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 07:39:46,388 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 07:39:46,390 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 07:39:46,390 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='CS2 Cheater Problem', Num URLs=10
+2025-03-19 07:39:46,390 [INFO] Starting collection process for query: 'CS2 Cheater Problem'
+2025-03-19 07:39:46,390 [INFO] Desired article count: 10
+2025-03-19 07:39:46,989 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:39:46,990 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:39:46,990 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:39:46,990 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:39:46,990 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:39:46,991 [INFO] Filtered 4 blocked domains
+2025-03-19 07:39:46,991 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:39:47,510 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:39:47,830 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:39:48,345 [INFO] Fetching robots.txt from https://richardlewis.substack.com/robots.txt
+2025-03-19 07:39:48,444 [INFO] Fetching robots.txt from https://tradeit.gg/robots.txt
+2025-03-19 07:39:48,539 [INFO] Fetching robots.txt from https://blog.clash.gg/robots.txt
+2025-03-19 07:39:48,802 [INFO] Non-200 response from https://blog.clash.gg/robots.txt: 403
+2025-03-19 07:39:48,802 [INFO] Skipping https://blog.clash.gg/cs2-cheating-problem as robots.txt could not be fetched.
+2025-03-19 07:39:48,802 [INFO] Added 6 allowed URLs
+2025-03-19 07:39:48,802 [INFO] Collected 6 unique URLs so far
+2025-03-19 07:39:50,382 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:39:50,383 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:39:50,384 [INFO] Blocked domain detected: x.com
+2025-03-19 07:39:50,384 [INFO] Blocked domain detected: x.com
+2025-03-19 07:39:50,384 [INFO] Blocked domain detected: www.linkedin.com
+2025-03-19 07:39:50,384 [INFO] Filtered 4 blocked domains
+2025-03-19 07:39:50,384 [INFO] Fetching robots.txt from https://blix.gg/robots.txt
+2025-03-19 07:39:50,520 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2025-03-19 07:39:50,831 [INFO] Scraping not allowed for https://www.facebook.com/csgolounge/posts/have-they-seen-premier-matches-cs2/1078644080968305/ as per robots.txt.
+2025-03-19 07:39:50,832 [INFO] Fetching robots.txt from https://www.gamegrin.com/robots.txt
+2025-03-19 07:39:51,351 [INFO] Fetching robots.txt from https://cslabez.com/robots.txt
+2025-03-19 07:39:52,975 [INFO] Fetching robots.txt from https://twitter.com/robots.txt
+2025-03-19 07:39:58,941 [INFO] Timeout occurred while fetching https://twitter.com/robots.txt
+2025-03-19 07:39:58,941 [INFO] Skipping https://twitter.com/Ozzny_CS2/status/1725115879443018154 as robots.txt could not be fetched.
+2025-03-19 07:39:58,942 [INFO] Fetching robots.txt from https://csdb.gg/robots.txt
+2025-03-19 07:40:00,024 [INFO] Added 5 allowed URLs
+2025-03-19 07:40:00,024 [INFO] Collected 11 unique URLs so far
+2025-03-19 07:40:01,791 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:40:01,792 [INFO] Filtered 0 blocked domains
+2025-03-19 07:40:01,792 [INFO] Fetching robots.txt from https://www.esports.net/robots.txt
+2025-03-19 07:40:01,890 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-19 07:40:02,334 [INFO] Fetching robots.txt from https://www.dexerto.com/robots.txt
+2025-03-19 07:40:02,492 [INFO] Fetching robots.txt from https://skinflow.gg/robots.txt
+2025-03-19 07:40:03,350 [INFO] Fetching robots.txt from https://www.sportskeeda.com/robots.txt
+2025-03-19 07:40:03,747 [INFO] Fetching robots.txt from https://help.steampowered.com/robots.txt
+2025-03-19 07:40:04,581 [INFO] Fetching robots.txt from https://play.esea.net/robots.txt
+2025-03-19 07:40:05,039 [INFO] Non-200 response from https://play.esea.net/robots.txt: 403
+2025-03-19 07:40:05,040 [INFO] Skipping https://play.esea.net/forums/1339411 as robots.txt could not be fetched.
+2025-03-19 07:40:05,040 [INFO] Fetching robots.txt from https://www.unknowncheats.me/robots.txt
+2025-03-19 07:40:06,251 [INFO] Fetching robots.txt from https://www.hltv.org/robots.txt
+2025-03-19 07:40:06,335 [INFO] Non-200 response from https://www.hltv.org/robots.txt: 403
+2025-03-19 07:40:06,335 [INFO] Skipping https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem as robots.txt could not be fetched.
+2025-03-19 07:40:06,336 [INFO] Fetching robots.txt from https://gamerant.com/robots.txt
+2025-03-19 07:40:07,046 [INFO] Added 10 allowed URLs
+2025-03-19 07:40:07,046 [INFO] Collected 21 unique URLs so far
+2025-03-19 07:40:07,046 [INFO] Limited URL collection to 20
+2025-03-19 07:40:07,046 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 07:40:07,691 [INFO] newspaper3k extracted low-quality content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74, trying BeautifulSoup
+2025-03-19 07:40:07,703 [INFO] Failed to extract meaningful content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74
+2025-03-19 07:40:07,993 [INFO] newspaper3k extracted low-quality content from https://cslabez.com/the-cs2-cheating-problem/, trying BeautifulSoup
+2025-03-19 07:40:08,095 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:40:08,699 [INFO] Article at https://github.com/ValveSoftware/steam-for-linux/issues/9882 has insufficient content after processing.
+2025-03-19 07:40:08,904 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:40:09,665 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/594010406470555434/ has insufficient content after processing.
+2025-03-19 07:40:10,333 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/4417551094432695045/ has insufficient content after processing.
+2025-03-19 07:40:12,994 [INFO] newspaper3k extracted low-quality content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/, trying BeautifulSoup
+2025-03-19 07:40:13,030 [INFO] Failed to extract meaningful content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/
+2025-03-19 07:40:13,125 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:40:13,387 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:40:23,953 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 1.5s (1/3)...
+2025-03-19 07:40:40,941 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 3.0s (2/3)...
+2025-03-19 07:40:59,947 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:40:59,948 [INFO] Successfully scraped 10 articles out of 20 URLs
+2025-03-19 07:40:59,958 [INFO] Formatted content for summarization with 8392 words
+2025-03-19 07:40:59,994 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:40:59,995 [INFO] Trying chunk-based approach after error
+2025-03-19 07:40:59,996 [INFO] Summarizing chunk 1/11
+2025-03-19 07:41:00,004 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:41:00,005 [INFO] Summarizing chunk 2/11
+2025-03-19 07:41:00,017 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:41:00,019 [INFO] Summarizing chunk 3/11
+2025-03-19 07:41:00,035 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:41:00,035 [INFO] Summarizing chunk 4/11
+2025-03-19 07:41:00,046 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:41:00,046 [INFO] Summarizing chunk 5/11
+2025-03-19 07:41:00,057 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:41:00,058 [INFO] Summarizing chunk 6/11
+2025-03-19 07:41:00,068 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:41:00,069 [INFO] Summarizing chunk 7/11
+2025-03-19 07:41:00,085 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:41:00,085 [INFO] Summarizing chunk 8/11
+2025-03-19 07:41:00,095 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:41:00,096 [INFO] Summarizing chunk 9/11
+2025-03-19 07:41:00,108 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:41:00,108 [INFO] Summarizing chunk 10/11
+2025-03-19 07:41:00,118 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:41:00,119 [INFO] Summarizing chunk 11/11
+2025-03-19 07:41:00,128 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:41:00,129 [INFO] Summarization completed in 0.17 seconds
+2025-03-19 07:41:00,129 [INFO] Generated summary with 0 words.
+2025-03-19 07:41:00,129 [WARNING] Generated summary is too short (0 words). Attempting to regenerate.
+2025-03-19 07:41:00,164 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:41:00,165 [INFO] Trying chunk-based approach after error
+2025-03-19 07:41:00,166 [INFO] Summarizing chunk 1/11
+2025-03-19 07:41:00,174 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:41:00,174 [INFO] Summarizing chunk 2/11
+2025-03-19 07:41:00,180 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:41:00,181 [INFO] Summarizing chunk 3/11
+2025-03-19 07:41:00,192 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:41:00,192 [INFO] Summarizing chunk 4/11
+2025-03-19 07:41:00,201 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:41:00,201 [INFO] Summarizing chunk 5/11
+2025-03-19 07:41:00,208 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:41:00,209 [INFO] Summarizing chunk 6/11
+2025-03-19 07:41:00,218 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:41:00,218 [INFO] Summarizing chunk 7/11
+2025-03-19 07:41:00,226 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:41:00,227 [INFO] Summarizing chunk 8/11
+2025-03-19 07:41:00,235 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:41:00,236 [INFO] Summarizing chunk 9/11
+2025-03-19 07:41:00,244 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:41:00,245 [INFO] Summarizing chunk 10/11
+2025-03-19 07:41:00,255 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:41:00,257 [INFO] Summarizing chunk 11/11
+2025-03-19 07:41:00,267 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:41:00,268 [INFO] Regenerated summary with 0 words.
+2025-03-19 07:41:00,268 [WARNING] Summary is still short (0 words), but will be returned as is.
+2025-03-19 07:41:00,269 [INFO] Data written to output.json.
+2025-03-19 07:45:07,060 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 07:45:07,060 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 07:45:07,062 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 07:45:07,062 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='CS2 Cheater Problem', Num URLs=10
+2025-03-19 07:45:07,062 [INFO] Starting collection process for query: 'CS2 Cheater Problem'
+2025-03-19 07:45:07,063 [INFO] Desired article count: 10
+2025-03-19 07:45:07,824 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:45:07,824 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:45:07,824 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:45:07,825 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:45:07,825 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:45:07,825 [INFO] Filtered 4 blocked domains
+2025-03-19 07:45:07,825 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:45:08,356 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:45:08,665 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:45:08,970 [INFO] Fetching robots.txt from https://richardlewis.substack.com/robots.txt
+2025-03-19 07:45:09,121 [INFO] Fetching robots.txt from https://tradeit.gg/robots.txt
+2025-03-19 07:45:09,257 [INFO] Fetching robots.txt from https://blog.clash.gg/robots.txt
+2025-03-19 07:45:09,782 [INFO] Non-200 response from https://blog.clash.gg/robots.txt: 403
+2025-03-19 07:45:09,782 [INFO] Skipping https://blog.clash.gg/cs2-cheating-problem as robots.txt could not be fetched.
+2025-03-19 07:45:09,783 [INFO] Added 6 allowed URLs
+2025-03-19 07:45:09,783 [INFO] Collected 6 unique URLs so far
+2025-03-19 07:45:11,555 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:45:11,556 [INFO] Blocked domain detected: x.com
+2025-03-19 07:45:11,556 [INFO] Blocked domain detected: www.linkedin.com
+2025-03-19 07:45:11,556 [INFO] Filtered 2 blocked domains
+2025-03-19 07:45:11,556 [INFO] Fetching robots.txt from https://blog.clash.gg/robots.txt
+2025-03-19 07:45:11,659 [INFO] Non-200 response from https://blog.clash.gg/robots.txt: 403
+2025-03-19 07:45:11,660 [INFO] Skipping https://blog.clash.gg/cs2-cheating-problem as robots.txt could not be fetched.
+2025-03-19 07:45:11,660 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2025-03-19 07:45:11,812 [INFO] Scraping not allowed for https://www.facebook.com/csgolounge/posts/have-they-seen-premier-matches-cs2/1078644080968305/ as per robots.txt.
+2025-03-19 07:45:11,812 [INFO] Fetching robots.txt from https://blix.gg/robots.txt
+2025-03-19 07:45:12,347 [INFO] Fetching robots.txt from https://www.gamegrin.com/robots.txt
+2025-03-19 07:45:13,053 [INFO] Fetching robots.txt from https://cslabez.com/robots.txt
+2025-03-19 07:45:13,796 [INFO] Fetching robots.txt from https://twitter.com/robots.txt
+2025-03-19 07:45:18,947 [INFO] Timeout occurred while fetching https://twitter.com/robots.txt
+2025-03-19 07:45:18,947 [INFO] Skipping https://twitter.com/Ozzny_CS2/status/1725115879443018154 as robots.txt could not be fetched.
+2025-03-19 07:45:18,947 [INFO] Fetching robots.txt from https://csdb.gg/robots.txt
+2025-03-19 07:45:20,280 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-19 07:45:21,362 [INFO] Added 7 allowed URLs
+2025-03-19 07:45:21,362 [INFO] Collected 12 unique URLs so far
+2025-03-19 07:45:22,948 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:45:22,949 [INFO] Filtered 0 blocked domains
+2025-03-19 07:45:22,949 [INFO] Fetching robots.txt from https://www.esports.net/robots.txt
+2025-03-19 07:45:24,527 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-19 07:45:24,769 [INFO] Fetching robots.txt from https://www.dexerto.com/robots.txt
+2025-03-19 07:45:24,921 [INFO] Fetching robots.txt from https://skinflow.gg/robots.txt
+2025-03-19 07:45:25,194 [INFO] Fetching robots.txt from https://www.sportskeeda.com/robots.txt
+2025-03-19 07:45:25,588 [INFO] Fetching robots.txt from https://help.steampowered.com/robots.txt
+2025-03-19 07:45:26,180 [INFO] Fetching robots.txt from https://play.esea.net/robots.txt
+2025-03-19 07:45:26,326 [INFO] Non-200 response from https://play.esea.net/robots.txt: 403
+2025-03-19 07:45:26,326 [INFO] Skipping https://play.esea.net/forums/1339411 as robots.txt could not be fetched.
+2025-03-19 07:45:26,326 [INFO] Fetching robots.txt from https://www.unknowncheats.me/robots.txt
+2025-03-19 07:45:26,448 [INFO] Fetching robots.txt from https://www.hltv.org/robots.txt
+2025-03-19 07:45:26,536 [INFO] Non-200 response from https://www.hltv.org/robots.txt: 403
+2025-03-19 07:45:26,537 [INFO] Skipping https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem as robots.txt could not be fetched.
+2025-03-19 07:45:26,537 [INFO] Fetching robots.txt from https://gamerant.com/robots.txt
+2025-03-19 07:45:27,247 [INFO] Added 10 allowed URLs
+2025-03-19 07:45:27,248 [INFO] Collected 21 unique URLs so far
+2025-03-19 07:45:27,248 [INFO] Limited URL collection to 20
+2025-03-19 07:45:27,248 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 07:45:27,342 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:45:27,580 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:45:31,066 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/594010406470555434/ has insufficient content after processing.
+2025-03-19 07:45:31,152 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:45:31,692 [INFO] newspaper3k extracted low-quality content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/, trying BeautifulSoup
+2025-03-19 07:45:31,735 [INFO] Failed to extract meaningful content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/
+2025-03-19 07:45:33,543 [INFO] Article at https://github.com/ValveSoftware/steam-for-linux/issues/9882 has insufficient content after processing.
+2025-03-19 07:45:34,100 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/4417551094432695045/ has insufficient content after processing.
+2025-03-19 07:45:34,188 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:45:34,660 [INFO] newspaper3k extracted low-quality content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74, trying BeautifulSoup
+2025-03-19 07:45:34,671 [INFO] Failed to extract meaningful content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74
+2025-03-19 07:45:34,917 [INFO] newspaper3k extracted low-quality content from https://cslabez.com/the-cs2-cheating-problem/, trying BeautifulSoup
+2025-03-19 07:45:42,951 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 1.5s (1/3)...
+2025-03-19 07:45:59,936 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 3.0s (2/3)...
+2025-03-19 07:46:18,951 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:46:18,952 [INFO] Successfully scraped 10 articles out of 20 URLs
+2025-03-19 07:46:18,962 [INFO] Formatted content for summarization with 8392 words
+2025-03-19 07:46:18,997 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:46:18,997 [INFO] Trying chunk-based approach after error
+2025-03-19 07:46:18,999 [INFO] Summarizing chunk 1/11
+2025-03-19 07:46:19,005 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:46:19,005 [INFO] Summarizing chunk 2/11
+2025-03-19 07:46:19,018 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:46:19,019 [INFO] Summarizing chunk 3/11
+2025-03-19 07:46:19,031 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:46:19,031 [INFO] Summarizing chunk 4/11
+2025-03-19 07:46:19,039 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:46:19,040 [INFO] Summarizing chunk 5/11
+2025-03-19 07:46:19,048 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:46:19,048 [INFO] Summarizing chunk 6/11
+2025-03-19 07:46:19,056 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:46:19,056 [INFO] Summarizing chunk 7/11
+2025-03-19 07:46:19,065 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:46:19,065 [INFO] Summarizing chunk 8/11
+2025-03-19 07:46:19,074 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:46:19,074 [INFO] Summarizing chunk 9/11
+2025-03-19 07:46:19,083 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:46:19,083 [INFO] Summarizing chunk 10/11
+2025-03-19 07:46:19,090 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:46:19,091 [INFO] Summarizing chunk 11/11
+2025-03-19 07:46:19,100 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:46:19,100 [INFO] Summarization completed in 0.14 seconds
+2025-03-19 07:46:19,101 [INFO] Generated summary with 0 words.
+2025-03-19 07:46:19,101 [WARNING] Generated summary is too short (0 words). Attempting to regenerate.
+2025-03-19 07:46:19,137 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:46:19,138 [INFO] Trying chunk-based approach after error
+2025-03-19 07:46:19,139 [INFO] Summarizing chunk 1/11
+2025-03-19 07:46:19,145 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:46:19,146 [INFO] Summarizing chunk 2/11
+2025-03-19 07:46:19,153 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:46:19,153 [INFO] Summarizing chunk 3/11
+2025-03-19 07:46:19,162 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:46:19,163 [INFO] Summarizing chunk 4/11
+2025-03-19 07:46:19,171 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:46:19,171 [INFO] Summarizing chunk 5/11
+2025-03-19 07:46:19,178 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:46:19,179 [INFO] Summarizing chunk 6/11
+2025-03-19 07:46:19,187 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:46:19,188 [INFO] Summarizing chunk 7/11
+2025-03-19 07:46:19,197 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:46:19,197 [INFO] Summarizing chunk 8/11
+2025-03-19 07:46:19,204 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:46:19,205 [INFO] Summarizing chunk 9/11
+2025-03-19 07:46:19,213 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:46:19,214 [INFO] Summarizing chunk 10/11
+2025-03-19 07:46:19,223 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:46:19,224 [INFO] Summarizing chunk 11/11
+2025-03-19 07:46:19,233 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:46:19,236 [INFO] Regenerated summary with 0 words.
+2025-03-19 07:46:19,236 [WARNING] Summary is still short (0 words), but will be returned as is.
+2025-03-19 07:46:19,238 [INFO] Data written to output.json.
+2025-03-19 07:49:42,362 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 07:49:42,363 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 07:49:42,365 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 07:49:42,365 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='CS2 Cheater Problem', Num URLs=10
+2025-03-19 07:49:42,366 [INFO] Starting collection process for query: 'CS2 Cheater Problem'
+2025-03-19 07:49:42,366 [INFO] Desired article count: 10
+2025-03-19 07:49:43,098 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:49:43,099 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:49:43,099 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:49:43,099 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:49:43,100 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:49:43,100 [INFO] Filtered 4 blocked domains
+2025-03-19 07:49:43,100 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:49:43,649 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:49:43,975 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:49:44,507 [INFO] Fetching robots.txt from https://richardlewis.substack.com/robots.txt
+2025-03-19 07:49:44,925 [INFO] Fetching robots.txt from https://tradeit.gg/robots.txt
+2025-03-19 07:49:45,044 [INFO] Fetching robots.txt from https://blog.clash.gg/robots.txt
+2025-03-19 07:49:45,394 [INFO] Non-200 response from https://blog.clash.gg/robots.txt: 403
+2025-03-19 07:49:45,395 [INFO] Skipping https://blog.clash.gg/cs2-cheating-problem as robots.txt could not be fetched.
+2025-03-19 07:49:45,395 [INFO] Added 6 allowed URLs
+2025-03-19 07:49:45,395 [INFO] Collected 6 unique URLs so far
+2025-03-19 07:49:46,968 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:49:46,968 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:49:46,968 [INFO] Blocked domain detected: x.com
+2025-03-19 07:49:46,968 [INFO] Blocked domain detected: x.com
+2025-03-19 07:49:46,968 [INFO] Blocked domain detected: www.linkedin.com
+2025-03-19 07:49:46,968 [INFO] Filtered 4 blocked domains
+2025-03-19 07:49:46,969 [INFO] Fetching robots.txt from https://blix.gg/robots.txt
+2025-03-19 07:49:47,098 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2025-03-19 07:49:47,257 [INFO] Scraping not allowed for https://www.facebook.com/csgolounge/posts/have-they-seen-premier-matches-cs2/1078644080968305/ as per robots.txt.
+2025-03-19 07:49:47,257 [INFO] Fetching robots.txt from https://www.gamegrin.com/robots.txt
+2025-03-19 07:49:47,788 [INFO] Fetching robots.txt from https://cslabez.com/robots.txt
+2025-03-19 07:49:48,516 [INFO] Fetching robots.txt from https://twitter.com/robots.txt
+2025-03-19 07:49:53,943 [INFO] Timeout occurred while fetching https://twitter.com/robots.txt
+2025-03-19 07:49:53,944 [INFO] Skipping https://twitter.com/Ozzny_CS2/status/1725115879443018154 as robots.txt could not be fetched.
+2025-03-19 07:49:53,944 [INFO] Fetching robots.txt from https://csdb.gg/robots.txt
+2025-03-19 07:49:55,062 [INFO] Added 5 allowed URLs
+2025-03-19 07:49:55,062 [INFO] Collected 11 unique URLs so far
+2025-03-19 07:49:56,828 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:49:56,828 [INFO] Filtered 0 blocked domains
+2025-03-19 07:49:56,828 [INFO] Fetching robots.txt from https://www.esports.net/robots.txt
+2025-03-19 07:49:56,929 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-19 07:49:57,387 [INFO] Fetching robots.txt from https://www.dexerto.com/robots.txt
+2025-03-19 07:49:57,496 [INFO] Fetching robots.txt from https://skinflow.gg/robots.txt
+2025-03-19 07:49:57,812 [INFO] Fetching robots.txt from https://www.sportskeeda.com/robots.txt
+2025-03-19 07:49:58,450 [INFO] Fetching robots.txt from https://help.steampowered.com/robots.txt
+2025-03-19 07:49:59,104 [INFO] Fetching robots.txt from https://play.esea.net/robots.txt
+2025-03-19 07:49:59,217 [INFO] Non-200 response from https://play.esea.net/robots.txt: 403
+2025-03-19 07:49:59,218 [INFO] Skipping https://play.esea.net/forums/1339411 as robots.txt could not be fetched.
+2025-03-19 07:49:59,218 [INFO] Fetching robots.txt from https://www.unknowncheats.me/robots.txt
+2025-03-19 07:49:59,341 [INFO] Fetching robots.txt from https://www.hltv.org/robots.txt
+2025-03-19 07:49:59,455 [INFO] Non-200 response from https://www.hltv.org/robots.txt: 403
+2025-03-19 07:49:59,456 [INFO] Skipping https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem as robots.txt could not be fetched.
+2025-03-19 07:49:59,456 [INFO] Fetching robots.txt from https://gamerant.com/robots.txt
+2025-03-19 07:50:00,166 [INFO] Added 10 allowed URLs
+2025-03-19 07:50:00,167 [INFO] Collected 21 unique URLs so far
+2025-03-19 07:50:00,167 [INFO] Limited URL collection to 20
+2025-03-19 07:50:00,167 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 07:50:00,257 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:50:00,539 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:50:04,245 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/594010406470555434/ has insufficient content after processing.
+2025-03-19 07:50:04,420 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:50:05,127 [INFO] newspaper3k extracted low-quality content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/, trying BeautifulSoup
+2025-03-19 07:50:05,164 [INFO] Failed to extract meaningful content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/
+2025-03-19 07:50:05,253 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:50:06,124 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/4417551094432695045/ has insufficient content after processing.
+2025-03-19 07:50:06,793 [INFO] newspaper3k extracted low-quality content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74, trying BeautifulSoup
+2025-03-19 07:50:06,804 [INFO] Failed to extract meaningful content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74
+2025-03-19 07:50:07,534 [INFO] newspaper3k extracted low-quality content from https://cslabez.com/the-cs2-cheating-problem/, trying BeautifulSoup
+2025-03-19 07:50:07,853 [INFO] Article at https://github.com/ValveSoftware/steam-for-linux/issues/9882 has insufficient content after processing.
+2025-03-19 07:50:15,924 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 1.5s (1/3)...
+2025-03-19 07:50:32,943 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 3.0s (2/3)...
+2025-03-19 07:50:51,946 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:50:51,947 [INFO] Successfully scraped 10 articles out of 20 URLs
+2025-03-19 07:50:51,958 [INFO] Formatted content for summarization with 8392 words
+2025-03-19 07:50:51,991 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:50:51,992 [INFO] Trying chunk-based approach after error
+2025-03-19 07:50:51,993 [INFO] Summarizing chunk 1/11
+2025-03-19 07:50:52,000 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:50:52,001 [INFO] Summarizing chunk 2/11
+2025-03-19 07:50:52,010 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:50:52,011 [INFO] Summarizing chunk 3/11
+2025-03-19 07:50:52,018 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:50:52,018 [INFO] Summarizing chunk 4/11
+2025-03-19 07:50:52,028 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:50:52,028 [INFO] Summarizing chunk 5/11
+2025-03-19 07:50:52,036 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:50:52,036 [INFO] Summarizing chunk 6/11
+2025-03-19 07:50:52,045 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:50:52,047 [INFO] Summarizing chunk 7/11
+2025-03-19 07:50:52,115 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:50:52,117 [INFO] Summarizing chunk 8/11
+2025-03-19 07:50:52,124 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:50:52,125 [INFO] Summarizing chunk 9/11
+2025-03-19 07:50:52,154 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:50:52,154 [INFO] Summarizing chunk 10/11
+2025-03-19 07:50:52,163 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:50:52,164 [INFO] Summarizing chunk 11/11
+2025-03-19 07:50:52,172 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:50:52,173 [INFO] Summarization completed in 0.21 seconds
+2025-03-19 07:50:52,173 [INFO] Generated summary with 0 words.
+2025-03-19 07:50:52,173 [WARNING] Generated summary is too short (0 words). Attempting to regenerate.
+2025-03-19 07:50:52,210 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:50:52,210 [INFO] Trying chunk-based approach after error
+2025-03-19 07:50:52,212 [INFO] Summarizing chunk 1/11
+2025-03-19 07:50:52,219 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:50:52,220 [INFO] Summarizing chunk 2/11
+2025-03-19 07:50:52,228 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:50:52,229 [INFO] Summarizing chunk 3/11
+2025-03-19 07:50:52,238 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:50:52,239 [INFO] Summarizing chunk 4/11
+2025-03-19 07:50:52,246 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:50:52,246 [INFO] Summarizing chunk 5/11
+2025-03-19 07:50:52,255 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:50:52,255 [INFO] Summarizing chunk 6/11
+2025-03-19 07:50:52,263 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:50:52,263 [INFO] Summarizing chunk 7/11
+2025-03-19 07:50:52,273 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:50:52,274 [INFO] Summarizing chunk 8/11
+2025-03-19 07:50:52,282 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:50:52,283 [INFO] Summarizing chunk 9/11
+2025-03-19 07:50:52,292 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:50:52,292 [INFO] Summarizing chunk 10/11
+2025-03-19 07:50:52,300 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:50:52,300 [INFO] Summarizing chunk 11/11
+2025-03-19 07:50:52,309 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:50:52,310 [INFO] Regenerated summary with 0 words.
+2025-03-19 07:50:52,310 [WARNING] Summary is still short (0 words), but will be returned as is.
+2025-03-19 07:50:52,312 [INFO] Data written to output.json.
+2025-03-19 07:59:15,594 [INFO] Configuration loaded successfully
+2025-03-19 07:59:21,866 [INFO] Pegasus model loaded on cpu
+2025-03-19 07:59:27,515 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 07:59:27,525 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 07:59:27,532 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 07:59:27,532 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='CS2 Cheater Problem', Num URLs=10
+2025-03-19 07:59:27,532 [INFO] Starting collection process for query: 'CS2 Cheater Problem'
+2025-03-19 07:59:27,533 [INFO] Desired article count: 10
+2025-03-19 07:59:28,239 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:59:28,240 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:59:28,240 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:59:28,241 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 07:59:28,241 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:59:28,241 [INFO] Filtered 4 blocked domains
+2025-03-19 07:59:28,241 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:59:28,562 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:59:28,874 [INFO] Fetching robots.txt from https://steamcommunity.com/robots.txt
+2025-03-19 07:59:29,191 [INFO] Fetching robots.txt from https://richardlewis.substack.com/robots.txt
+2025-03-19 07:59:29,318 [INFO] Fetching robots.txt from https://tradeit.gg/robots.txt
+2025-03-19 07:59:29,449 [INFO] Fetching robots.txt from https://blog.clash.gg/robots.txt
+2025-03-19 07:59:30,080 [INFO] Non-200 response from https://blog.clash.gg/robots.txt: 403
+2025-03-19 07:59:30,081 [INFO] Skipping https://blog.clash.gg/cs2-cheating-problem as robots.txt could not be fetched.
+2025-03-19 07:59:30,081 [INFO] Added 6 allowed URLs
+2025-03-19 07:59:30,081 [INFO] Collected 6 unique URLs so far
+2025-03-19 07:59:31,663 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:59:31,664 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 07:59:31,664 [INFO] Blocked domain detected: x.com
+2025-03-19 07:59:31,664 [INFO] Blocked domain detected: x.com
+2025-03-19 07:59:31,664 [INFO] Blocked domain detected: www.linkedin.com
+2025-03-19 07:59:31,664 [INFO] Filtered 4 blocked domains
+2025-03-19 07:59:31,664 [INFO] Fetching robots.txt from https://blix.gg/robots.txt
+2025-03-19 07:59:32,030 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2025-03-19 07:59:32,186 [INFO] Scraping not allowed for https://www.facebook.com/csgolounge/posts/have-they-seen-premier-matches-cs2/1078644080968305/ as per robots.txt.
+2025-03-19 07:59:32,186 [INFO] Fetching robots.txt from https://www.gamegrin.com/robots.txt
+2025-03-19 07:59:32,721 [INFO] Fetching robots.txt from https://cslabez.com/robots.txt
+2025-03-19 07:59:34,344 [INFO] Fetching robots.txt from https://twitter.com/robots.txt
+2025-03-19 07:59:39,951 [INFO] Timeout occurred while fetching https://twitter.com/robots.txt
+2025-03-19 07:59:39,952 [INFO] Skipping https://twitter.com/Ozzny_CS2/status/1725115879443018154 as robots.txt could not be fetched.
+2025-03-19 07:59:39,953 [INFO] Fetching robots.txt from https://csdb.gg/robots.txt
+2025-03-19 07:59:41,281 [INFO] Added 5 allowed URLs
+2025-03-19 07:59:41,282 [INFO] Collected 11 unique URLs so far
+2025-03-19 07:59:42,914 [INFO] Google Search API returned 10 URLs
+2025-03-19 07:59:42,914 [INFO] Filtered 0 blocked domains
+2025-03-19 07:59:42,915 [INFO] Fetching robots.txt from https://www.esports.net/robots.txt
+2025-03-19 07:59:44,673 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-19 07:59:45,116 [INFO] Fetching robots.txt from https://www.dexerto.com/robots.txt
+2025-03-19 07:59:45,321 [INFO] Fetching robots.txt from https://skinflow.gg/robots.txt
+2025-03-19 07:59:45,852 [INFO] Fetching robots.txt from https://www.sportskeeda.com/robots.txt
+2025-03-19 07:59:46,248 [INFO] Fetching robots.txt from https://help.steampowered.com/robots.txt
+2025-03-19 07:59:46,775 [INFO] Fetching robots.txt from https://play.esea.net/robots.txt
+2025-03-19 07:59:46,896 [INFO] Non-200 response from https://play.esea.net/robots.txt: 403
+2025-03-19 07:59:46,896 [INFO] Skipping https://play.esea.net/forums/1339411 as robots.txt could not be fetched.
+2025-03-19 07:59:46,896 [INFO] Fetching robots.txt from https://www.unknowncheats.me/robots.txt
+2025-03-19 07:59:47,264 [INFO] Fetching robots.txt from https://www.hltv.org/robots.txt
+2025-03-19 07:59:47,354 [INFO] Non-200 response from https://www.hltv.org/robots.txt: 403
+2025-03-19 07:59:47,355 [INFO] Skipping https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem as robots.txt could not be fetched.
+2025-03-19 07:59:47,355 [INFO] Fetching robots.txt from https://gamerant.com/robots.txt
+2025-03-19 07:59:48,098 [INFO] Added 10 allowed URLs
+2025-03-19 07:59:48,099 [INFO] Collected 21 unique URLs so far
+2025-03-19 07:59:48,099 [INFO] Limited URL collection to 20
+2025-03-19 07:59:48,099 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 07:59:48,222 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:59:49,216 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/594010406470555434/ has insufficient content after processing.
+2025-03-19 07:59:50,455 [INFO] newspaper3k extracted low-quality content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/, trying BeautifulSoup
+2025-03-19 07:59:50,491 [INFO] Failed to extract meaningful content from https://steamcommunity.com/app/730/discussions/0/4348858679331060681/
+2025-03-19 07:59:50,598 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:59:51,194 [INFO] Article at https://steamcommunity.com/app/730/discussions/0/4417551094432695045/ has insufficient content after processing.
+2025-03-19 07:59:51,230 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:59:52,233 [INFO] newspaper3k extracted low-quality content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74, trying BeautifulSoup
+2025-03-19 07:59:52,264 [INFO] Failed to extract meaningful content from https://help.steampowered.com/en/faqs/view/571A-97DA-70E9-FF74
+2025-03-19 07:59:52,802 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:59:53,098 [INFO] newspaper3k extracted low-quality content from https://cslabez.com/the-cs2-cheating-problem/, trying BeautifulSoup
+2025-03-19 07:59:53,244 [INFO] Article at https://github.com/ValveSoftware/steam-for-linux/issues/9882 has insufficient content after processing.
+2025-03-19 08:00:08,931 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 1.5s (1/3)...
+2025-03-19 08:00:25,941 [WARNING] Error fetching article at https://twitter.com/Ozzny_CS2/status/1725115879443018154: . Retrying in 3.0s (2/3)...
+2025-03-19 08:00:44,962 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 08:00:44,983 [INFO] Successfully scraped 10 articles out of 20 URLs
+2025-03-19 08:00:45,006 [INFO] Formatted content for summarization with 8392 words
+2025-03-19 08:00:45,006 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 08:00:45,007 [INFO] Falling back to extractive summarization
+2025-03-19 08:00:45,007 [INFO] Using extractive summarization fallback
+2025-03-19 08:00:45,009 [INFO] Summarization completed in 0.00 seconds
+2025-03-19 08:00:45,009 [INFO] Generated summary with 993 words.
+2025-03-19 08:00:45,009 [WARNING] Generated summary is too long (993 words). Truncating.
+2025-03-19 08:00:45,010 [INFO] Truncated summary to 548 words at sentence boundaries.
+2025-03-19 08:00:45,025 [INFO] Data written to output.json.
+2025-03-19 15:21:07,061 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\FYP_INFOMORPH\fyp\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-19 15:21:07,339 [INFO] User logged in: syedhamzarehman6@gmail.com
+2025-03-19 15:21:12,411 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 15:21:12,412 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 15:21:12,414 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 15:21:12,414 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='babar azam', Num URLs=10
+2025-03-19 15:21:12,415 [INFO] Starting collection process for query: 'babar azam'
+2025-03-19 15:21:12,415 [INFO] Desired article count: 10
+2025-03-19 15:21:13,345 [INFO] Google Search API returned 10 URLs
+2025-03-19 15:21:13,347 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-19 15:21:13,347 [INFO] Blocked domain detected: www.instagram.com
+2025-03-19 15:21:13,347 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 15:21:13,347 [INFO] Blocked domain detected: x.com
+2025-03-19 15:21:13,347 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 15:21:13,348 [INFO] Blocked domain detected: x.com
+2025-03-19 15:21:13,348 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 15:21:13,348 [INFO] Filtered 7 blocked domains
+2025-03-19 15:21:13,348 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2025-03-19 15:21:14,416 [INFO] Fetching robots.txt from https://www.facebook.com/robots.txt
+2025-03-19 15:21:14,586 [INFO] Scraping not allowed for https://www.facebook.com/MBabarAzamPakistan/ as per robots.txt.
+2025-03-19 15:21:14,586 [INFO] Fetching robots.txt from https://www.cricbuzz.com/robots.txt
+2025-03-19 15:21:15,026 [INFO] Added 2 allowed URLs
+2025-03-19 15:21:15,026 [INFO] Collected 2 unique URLs so far
+2025-03-19 15:21:16,807 [INFO] Google Search API returned 10 URLs
+2025-03-19 15:21:16,808 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 15:21:16,808 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 15:21:16,808 [INFO] Filtered 2 blocked domains
+2025-03-19 15:21:16,808 [INFO] Fetching robots.txt from https://cricket.one/robots.txt
+2025-03-19 15:21:17,056 [INFO] Non-200 response from https://cricket.one/robots.txt: 403
+2025-03-19 15:21:17,057 [INFO] Skipping https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38 as robots.txt could not be fetched.
+2025-03-19 15:21:17,057 [INFO] Fetching robots.txt from https://www.icc-cricket.com/robots.txt
+2025-03-19 15:21:17,449 [INFO] Fetching robots.txt from https://medium.com/robots.txt
+2025-03-19 15:21:17,846 [INFO] Fetching robots.txt from https://acceducate.org/robots.txt
+2025-03-19 15:21:18,678 [INFO] Fetching robots.txt from https://www.espn.com/robots.txt
+2025-03-19 15:21:18,950 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2025-03-19 15:21:19,065 [INFO] Fetching robots.txt from https://www.stadiumrant.com/robots.txt
+2025-03-19 15:21:20,165 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2025-03-19 15:21:20,500 [INFO] Added 8 allowed URLs
+2025-03-19 15:21:20,500 [INFO] Collected 10 unique URLs so far
+2025-03-19 15:21:22,396 [INFO] Google Search API returned 10 URLs
+2025-03-19 15:21:22,396 [INFO] Blocked domain detected: www.linkedin.com
+2025-03-19 15:21:22,396 [INFO] Filtered 1 blocked domains
+2025-03-19 15:21:22,396 [INFO] Fetching robots.txt from https://indianexpress.com/robots.txt
+2025-03-19 15:21:22,510 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:22,511 [INFO] Skipping https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/ as robots.txt could not be fetched.
+2025-03-19 15:21:22,512 [INFO] Fetching robots.txt from https://www.snapchat.com/robots.txt
+2025-03-19 15:21:22,914 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2025-03-19 15:21:23,138 [INFO] Fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt
+2025-03-19 15:21:23,238 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:23,239 [INFO] Skipping https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms as robots.txt could not be fetched.
+2025-03-19 15:21:23,239 [INFO] Fetching robots.txt from https://www.rajasthanroyals.com/robots.txt
+2025-03-19 15:21:23,838 [INFO] Fetching robots.txt from https://stats.espncricinfo.com/robots.txt
+2025-03-19 15:21:24,144 [INFO] Non-200 response from https://stats.espncricinfo.com/robots.txt: 403
+2025-03-19 15:21:24,145 [INFO] Skipping https://stats.espncricinfo.com/ci/engine/player/348144.html?class=1;type=allround as robots.txt could not be fetched.
+2025-03-19 15:21:24,145 [INFO] Fetching robots.txt from https://sports.ndtv.com/robots.txt
+2025-03-19 15:21:24,755 [INFO] Fetching robots.txt from https://ppforum.pakpassion.net/robots.txt
+2025-03-19 15:21:25,774 [INFO] Fetching robots.txt from https://www.i24news.tv/robots.txt
+2025-03-19 15:21:27,046 [INFO] Added 9 allowed URLs
+2025-03-19 15:21:27,046 [INFO] Collected 19 unique URLs so far
+2025-03-19 15:21:28,774 [INFO] Google Search API returned 10 URLs
+2025-03-19 15:21:28,775 [INFO] Blocked domain detected: de.wikipedia.org
+2025-03-19 15:21:28,775 [INFO] Filtered 1 blocked domains
+2025-03-19 15:21:28,775 [INFO] Fetching robots.txt from https://www.livemint.com/robots.txt
+2025-03-19 15:21:29,115 [INFO] Fetching robots.txt from https://www.hindustantimes.com/robots.txt
+2025-03-19 15:21:29,230 [ERROR] Error fetching robots.txt from https://www.hindustantimes.com/robots.txt: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:29,230 [INFO] Skipping https://www.hindustantimes.com/cricket/pakistan-name-squad-for-champions-trophy-2025-babar-azam-poised-for-new-role-fakhar-zaman-returns-no-saim-ayub-101738331525289.html as robots.txt could not be fetched.
+2025-03-19 15:21:29,230 [INFO] Fetching robots.txt from https://www.france24.com/robots.txt
+2025-03-19 15:21:29,359 [INFO] Fetching robots.txt from https://www.pcb.com.pk/robots.txt
+2025-03-19 15:21:29,617 [INFO] Fetching robots.txt from https://twitter.com/robots.txt
+2025-03-19 15:21:34,682 [INFO] Timeout occurred while fetching https://twitter.com/robots.txt
+2025-03-19 15:21:34,682 [INFO] Skipping https://twitter.com/babarazam258/status/1879823218808381452 as robots.txt could not be fetched.
+2025-03-19 15:21:34,682 [INFO] Fetching robots.txt from https://inshorts.com/robots.txt
+2025-03-19 15:21:34,957 [INFO] Fetching robots.txt from https://www.thehindu.com/robots.txt
+2025-03-19 15:21:35,366 [INFO] Fetching robots.txt from https://crictoday.com/robots.txt
+2025-03-19 15:21:35,691 [INFO] Fetching robots.txt from https://www.newindianexpress.com/robots.txt
+2025-03-19 15:21:36,877 [INFO] Added 9 allowed URLs
+2025-03-19 15:21:36,878 [INFO] Collected 28 unique URLs so far
+2025-03-19 15:21:36,878 [INFO] Limited URL collection to 20
+2025-03-19 15:21:36,878 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 15:21:37,587 [INFO] newspaper3k extracted low-quality content from https://www.i24news.tv/en/tags/babar-azam, trying BeautifulSoup
+2025-03-19 15:21:37,590 [INFO] Failed to extract meaningful content from https://www.i24news.tv/en/tags/babar-azam
+2025-03-19 15:21:37,887 [WARNING] Error fetching article at https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]. Retrying in 1.5s (1/3)...
+2025-03-19 15:21:38,025 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-19 15:21:39,775 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-19 15:21:42,520 [INFO] newspaper3k extracted low-quality content from https://www.icc-cricket.com/rankings/59429/babar-azam, trying BeautifulSoup
+2025-03-19 15:21:42,636 [INFO] Article at https://www.icc-cricket.com/rankings/59429/babar-azam has insufficient content after processing.
+2025-03-19 15:21:43,600 [INFO] Article at https://www.bbc.com/sport/cricket/articles/cew1nznk8e2o has insufficient content after processing.
+2025-03-19 15:21:43,946 [INFO] newspaper3k extracted low-quality content from https://www.snapchat.com/add/babarazami?locale=en-US, trying BeautifulSoup
+2025-03-19 15:21:44,085 [INFO] Failed to extract meaningful content from https://www.snapchat.com/add/babarazami?locale=en-US
+2025-03-19 15:21:44,913 [WARNING] Error fetching article at https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]. Retrying in 1.5s (1/3)...
+2025-03-19 15:21:47,180 [WARNING] Error fetching article at https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]. Retrying in 3.0s (2/3)...
+2025-03-19 15:21:47,240 [WARNING] Error fetching article at https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]. Retrying in 3.0s (2/3)...
+2025-03-19 15:21:50,304 [ERROR] Max retries reached for https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:50,362 [ERROR] Max retries reached for https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:50,363 [INFO] Successfully scraped 12 articles out of 20 URLs
+2025-03-19 15:21:50,367 [INFO] Formatted content for summarization with 4607 words
+2025-03-19 15:21:50,367 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 15:21:50,367 [INFO] Falling back to extractive summarization
+2025-03-19 15:21:50,368 [INFO] Using extractive summarization fallback
+2025-03-19 15:21:50,369 [INFO] Summarization completed in 0.00 seconds
+2025-03-19 15:21:50,370 [INFO] Generated summary with 917 words.
+2025-03-19 15:21:50,370 [WARNING] Generated summary is too long (917 words). Truncating.
+2025-03-19 15:21:50,370 [INFO] Truncated summary to 397 words at sentence boundaries.
+2025-03-19 15:21:50,371 [INFO] Data written to output.json.
+2025-03-19 15:54:06,046 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 15:54:06,055 [ERROR] JWT Error: Signature has expired.
+2025-03-19 15:54:30,120 [INFO] User logged in: syedhamzarehman6@gmail.com
+2025-03-19 15:54:33,769 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 15:54:33,770 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 15:54:33,773 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 15:54:33,774 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='valorant', Num URLs=10
+2025-03-19 15:54:33,775 [INFO] Starting collection process for query: 'valorant'
+2025-03-19 15:54:33,775 [INFO] Desired article count: 10
+2025-03-19 15:54:34,442 [INFO] Google Search API returned 10 URLs
+2025-03-19 15:54:34,444 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 15:54:34,446 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-19 15:54:34,447 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 15:54:34,447 [INFO] Filtered 3 blocked domains
+2025-03-19 15:54:34,448 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 15:54:35,169 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 15:54:36,214 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 15:54:36,808 [INFO] Fetching robots.txt from https://www.riotgames.com/robots.txt
+2025-03-19 15:54:37,475 [INFO] Fetching robots.txt from https://tracker.gg/robots.txt
+2025-03-19 15:54:37,883 [INFO] Fetching robots.txt from https://valorantesports.com/robots.txt
+2025-03-19 15:54:38,600 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 15:54:38,883 [INFO] Added 7 allowed URLs
+2025-03-19 15:54:38,884 [INFO] Collected 7 unique URLs so far
+2025-03-19 15:54:40,818 [INFO] Google Search API returned 10 URLs
+2025-03-19 15:54:40,819 [INFO] Blocked domain detected: x.com
+2025-03-19 15:54:40,820 [INFO] Blocked domain detected: x.com
+2025-03-19 15:54:40,820 [INFO] Blocked domain detected: x.com
+2025-03-19 15:54:40,821 [INFO] Blocked domain detected: www.instagram.com
+2025-03-19 15:54:40,821 [INFO] Filtered 4 blocked domains
+2025-03-19 15:54:40,821 [INFO] Fetching robots.txt from https://technology.riotgames.com/robots.txt
+2025-03-19 15:54:41,058 [INFO] Fetching robots.txt from https://store.epicgames.com/robots.txt
+2025-03-19 15:54:41,607 [INFO] Non-200 response from https://store.epicgames.com/robots.txt: 403
+2025-03-19 15:54:41,607 [INFO] Skipping https://store.epicgames.com/en-US/p/valorant as robots.txt could not be fetched.
+2025-03-19 15:54:41,607 [INFO] Fetching robots.txt from https://support-valorant.riotgames.com/robots.txt
+2025-03-19 15:54:42,397 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 15:54:42,660 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2025-03-19 15:54:42,813 [INFO] Fetching robots.txt from https://answers.microsoft.com/robots.txt
+2025-03-19 15:54:43,338 [INFO] Added 6 allowed URLs
+2025-03-19 15:54:43,339 [INFO] Collected 13 unique URLs so far
+2025-03-19 15:54:45,025 [INFO] Google Search API returned 10 URLs
+2025-03-19 15:54:45,026 [INFO] Blocked domain detected: www.xbox.com
+2025-03-19 15:54:45,026 [INFO] Filtered 1 blocked domains
+2025-03-19 15:54:45,027 [INFO] Fetching robots.txt from https://valorant.com/robots.txt
+2025-03-19 15:54:48,286 [INFO] Fetching robots.txt from https://valorant.fandom.com/robots.txt
+2025-03-19 15:54:48,860 [INFO] Fetching robots.txt from https://www.uakron.edu/robots.txt
+2025-03-19 15:54:50,293 [INFO] Fetching robots.txt from https://www.playstation.com/robots.txt
+2025-03-19 15:54:50,813 [INFO] Fetching robots.txt from https://www.vlr.gg/robots.txt
+2025-03-19 15:54:51,998 [INFO] Non-200 response from https://www.vlr.gg/robots.txt: 404
+2025-03-19 15:54:52,000 [INFO] Skipping https://www.vlr.gg/team/11328/funplus-phoenix as robots.txt could not be fetched.
+2025-03-19 15:54:52,001 [INFO] Fetching robots.txt from https://kick.com/robots.txt
+2025-03-19 15:54:52,131 [INFO] Non-200 response from https://kick.com/robots.txt: 403
+2025-03-19 15:54:52,132 [INFO] Skipping https://kick.com/category/valorant as robots.txt could not be fetched.
+2025-03-19 15:54:52,133 [INFO] Fetching robots.txt from https://liquipedia.net/robots.txt
+2025-03-19 15:54:52,673 [INFO] Fetching robots.txt from https://secretlab.co/robots.txt
+2025-03-19 15:54:53,201 [INFO] Fetching robots.txt from https://www.winthrop.edu/robots.txt
+2025-03-19 15:54:54,719 [INFO] Added 9 allowed URLs
+2025-03-19 15:54:54,720 [INFO] Collected 22 unique URLs so far
+2025-03-19 15:54:54,720 [INFO] Limited URL collection to 20
+2025-03-19 15:54:54,720 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 15:54:54,841 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 15:54:55,868 [INFO] newspaper3k extracted low-quality content from https://valorant.fandom.com/wiki/VALORANT_Wiki, trying BeautifulSoup
+2025-03-19 15:54:56,069 [INFO] Failed to extract meaningful content from https://valorant.fandom.com/wiki/VALORANT_Wiki
+2025-03-19 15:54:56,087 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/download/, trying BeautifulSoup
+2025-03-19 15:54:56,095 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/download/
+2025-03-19 15:54:56,410 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/directory/category/valorant, trying BeautifulSoup
+2025-03-19 15:54:56,417 [INFO] Failed to extract meaningful content from https://www.twitch.tv/directory/category/valorant
+2025-03-19 15:54:56,446 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/valorant, trying BeautifulSoup
+2025-03-19 15:54:56,457 [INFO] Failed to extract meaningful content from https://www.twitch.tv/valorant
+2025-03-19 15:54:57,035 [INFO] newspaper3k extracted low-quality content from https://valorantesports.com/, trying BeautifulSoup
+2025-03-19 15:54:57,252 [INFO] Failed to extract meaningful content from https://valorantesports.com/
+2025-03-19 15:54:57,341 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/console/, trying BeautifulSoup
+2025-03-19 15:54:57,367 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/console/
+2025-03-19 15:54:58,613 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/, trying BeautifulSoup
+2025-03-19 15:54:58,634 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/
+2025-03-19 15:54:59,100 [INFO] newspaper3k extracted low-quality content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t, trying BeautifulSoup
+2025-03-19 15:54:59,106 [INFO] Failed to extract meaningful content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t
+2025-03-19 15:54:59,414 [INFO] newspaper3k extracted low-quality content from https://www.uakron.edu/esports/varsity/valorant, trying BeautifulSoup
+2025-03-19 15:54:59,443 [INFO] Failed to extract meaningful content from https://www.uakron.edu/esports/varsity/valorant
+2025-03-19 15:55:00,037 [INFO] newspaper3k extracted low-quality content from https://www.riotgames.com/en, trying BeautifulSoup
+2025-03-19 15:55:00,072 [INFO] Failed to extract meaningful content from https://www.riotgames.com/en
+2025-03-19 15:55:00,778 [INFO] newspaper3k extracted low-quality content from https://www.playstation.com/en-us/games/valorant/, trying BeautifulSoup
+2025-03-19 15:55:00,917 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 15:55:01,025 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 15:55:01,952 [INFO] newspaper3k extracted low-quality content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8, trying BeautifulSoup
+2025-03-19 15:55:01,954 [INFO] Failed to extract meaningful content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8
+2025-03-19 15:55:02,580 [INFO] newspaper3k extracted low-quality content from https://www.vlr.gg/team/11328/funplus-phoenix, trying BeautifulSoup
+2025-03-19 15:55:02,748 [INFO] Failed to extract meaningful content from https://www.vlr.gg/team/11328/funplus-phoenix
+2025-03-19 15:55:02,862 [INFO] newspaper3k extracted low-quality content from https://support-valorant.riotgames.com/hc/en-us/requests/new, trying BeautifulSoup
+2025-03-19 15:55:02,898 [INFO] Failed to extract meaningful content from https://support-valorant.riotgames.com/hc/en-us/requests/new
+2025-03-19 15:55:05,019 [INFO] newspaper3k extracted low-quality content from https://valorant.com/, trying BeautifulSoup
+2025-03-19 15:55:05,099 [INFO] Article at https://valorant.com/ has insufficient content after processing.
+2025-03-19 15:55:05,102 [INFO] Successfully scraped 3 articles out of 20 URLs
+2025-03-19 15:55:05,106 [INFO] Formatted content for summarization with 1999 words
+2025-03-19 15:55:05,108 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 15:55:05,108 [INFO] Falling back to extractive summarization
+2025-03-19 15:55:05,108 [INFO] Using extractive summarization fallback
+2025-03-19 15:55:05,112 [INFO] Summarization completed in 0.00 seconds
+2025-03-19 15:55:05,112 [INFO] Generated summary with 710 words.
+2025-03-19 15:55:05,113 [WARNING] Generated summary is too long (710 words). Truncating.
+2025-03-19 15:55:05,114 [INFO] Truncated summary to 534 words at sentence boundaries.
+2025-03-19 15:55:05,117 [INFO] Data written to output.json.
+2025-03-19 16:08:13,661 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 16:08:13,662 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 16:08:13,664 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 16:08:13,665 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='valorant', Num URLs=10
+2025-03-19 16:08:13,665 [INFO] Starting collection process for query: 'valorant'
+2025-03-19 16:08:13,666 [INFO] Desired article count: 10
+2025-03-19 16:08:14,298 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:08:14,299 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 16:08:14,299 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-19 16:08:14,300 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 16:08:14,300 [INFO] Filtered 3 blocked domains
+2025-03-19 16:08:14,300 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:08:14,907 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:08:15,625 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:08:16,335 [INFO] Fetching robots.txt from https://www.riotgames.com/robots.txt
+2025-03-19 16:08:17,018 [INFO] Fetching robots.txt from https://tracker.gg/robots.txt
+2025-03-19 16:08:17,162 [INFO] Fetching robots.txt from https://valorantesports.com/robots.txt
+2025-03-19 16:08:17,817 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 16:08:18,088 [INFO] Added 7 allowed URLs
+2025-03-19 16:08:18,089 [INFO] Collected 7 unique URLs so far
+2025-03-19 16:08:20,007 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:08:20,007 [INFO] Blocked domain detected: x.com
+2025-03-19 16:08:20,007 [INFO] Blocked domain detected: x.com
+2025-03-19 16:08:20,008 [INFO] Blocked domain detected: x.com
+2025-03-19 16:08:20,008 [INFO] Blocked domain detected: www.instagram.com
+2025-03-19 16:08:20,008 [INFO] Filtered 4 blocked domains
+2025-03-19 16:08:20,009 [INFO] Fetching robots.txt from https://technology.riotgames.com/robots.txt
+2025-03-19 16:08:20,236 [INFO] Fetching robots.txt from https://store.epicgames.com/robots.txt
+2025-03-19 16:08:20,753 [INFO] Non-200 response from https://store.epicgames.com/robots.txt: 403
+2025-03-19 16:08:20,754 [INFO] Skipping https://store.epicgames.com/en-US/p/valorant as robots.txt could not be fetched.
+2025-03-19 16:08:20,754 [INFO] Fetching robots.txt from https://support-valorant.riotgames.com/robots.txt
+2025-03-19 16:08:21,070 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 16:08:21,672 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2025-03-19 16:08:21,818 [INFO] Fetching robots.txt from https://answers.microsoft.com/robots.txt
+2025-03-19 16:08:22,306 [INFO] Added 6 allowed URLs
+2025-03-19 16:08:22,307 [INFO] Collected 13 unique URLs so far
+2025-03-19 16:08:23,988 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:08:23,989 [INFO] Blocked domain detected: www.xbox.com
+2025-03-19 16:08:23,990 [INFO] Filtered 1 blocked domains
+2025-03-19 16:08:23,990 [INFO] Fetching robots.txt from https://valorant.com/robots.txt
+2025-03-19 16:08:26,437 [INFO] Fetching robots.txt from https://valorant.fandom.com/robots.txt
+2025-03-19 16:08:26,701 [INFO] Fetching robots.txt from https://www.uakron.edu/robots.txt
+2025-03-19 16:08:28,196 [INFO] Fetching robots.txt from https://www.playstation.com/robots.txt
+2025-03-19 16:08:28,788 [INFO] Fetching robots.txt from https://www.vlr.gg/robots.txt
+2025-03-19 16:08:29,894 [INFO] Non-200 response from https://www.vlr.gg/robots.txt: 404
+2025-03-19 16:08:29,895 [INFO] Skipping https://www.vlr.gg/team/11328/funplus-phoenix as robots.txt could not be fetched.
+2025-03-19 16:08:29,895 [INFO] Fetching robots.txt from https://kick.com/robots.txt
+2025-03-19 16:08:29,994 [INFO] Non-200 response from https://kick.com/robots.txt: 403
+2025-03-19 16:08:29,995 [INFO] Skipping https://kick.com/category/valorant as robots.txt could not be fetched.
+2025-03-19 16:08:29,995 [INFO] Fetching robots.txt from https://liquipedia.net/robots.txt
+2025-03-19 16:08:30,509 [INFO] Fetching robots.txt from https://secretlab.co/robots.txt
+2025-03-19 16:08:30,963 [INFO] Fetching robots.txt from https://www.winthrop.edu/robots.txt
+2025-03-19 16:08:31,901 [INFO] Added 9 allowed URLs
+2025-03-19 16:08:31,901 [INFO] Collected 22 unique URLs so far
+2025-03-19 16:08:31,902 [INFO] Limited URL collection to 20
+2025-03-19 16:08:31,902 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 16:08:32,218 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/directory/category/valorant, trying BeautifulSoup
+2025-03-19 16:08:32,226 [INFO] Failed to extract meaningful content from https://www.twitch.tv/directory/category/valorant
+2025-03-19 16:08:33,415 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/download/, trying BeautifulSoup
+2025-03-19 16:08:33,421 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/download/
+2025-03-19 16:08:33,911 [INFO] newspaper3k extracted low-quality content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t, trying BeautifulSoup
+2025-03-19 16:08:33,916 [INFO] Failed to extract meaningful content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t
+2025-03-19 16:08:33,961 [INFO] newspaper3k extracted low-quality content from https://www.uakron.edu/esports/varsity/valorant, trying BeautifulSoup
+2025-03-19 16:08:33,982 [INFO] Failed to extract meaningful content from https://www.uakron.edu/esports/varsity/valorant
+2025-03-19 16:08:34,607 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/console/, trying BeautifulSoup
+2025-03-19 16:08:34,625 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/console/
+2025-03-19 16:08:34,676 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/, trying BeautifulSoup
+2025-03-19 16:08:34,691 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/
+2025-03-19 16:08:35,064 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:35,731 [INFO] newspaper3k extracted low-quality content from https://www.riotgames.com/en, trying BeautifulSoup
+2025-03-19 16:08:35,762 [INFO] Failed to extract meaningful content from https://www.riotgames.com/en
+2025-03-19 16:08:36,143 [INFO] newspaper3k extracted low-quality content from https://www.playstation.com/en-us/games/valorant/, trying BeautifulSoup
+2025-03-19 16:08:36,985 [INFO] newspaper3k extracted low-quality content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8, trying BeautifulSoup
+2025-03-19 16:08:36,987 [INFO] Failed to extract meaningful content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8
+2025-03-19 16:08:37,808 [INFO] newspaper3k extracted low-quality content from https://www.vlr.gg/team/11328/funplus-phoenix, trying BeautifulSoup
+2025-03-19 16:08:37,910 [INFO] Failed to extract meaningful content from https://www.vlr.gg/team/11328/funplus-phoenix
+2025-03-19 16:08:38,345 [INFO] newspaper3k extracted low-quality content from https://valorantesports.com/, trying BeautifulSoup
+2025-03-19 16:08:38,459 [INFO] Failed to extract meaningful content from https://valorantesports.com/
+2025-03-19 16:08:38,553 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:38,667 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:38,773 [INFO] newspaper3k extracted low-quality content from https://support-valorant.riotgames.com/hc/en-us/requests/new, trying BeautifulSoup
+2025-03-19 16:08:38,794 [INFO] Failed to extract meaningful content from https://support-valorant.riotgames.com/hc/en-us/requests/new
+2025-03-19 16:08:39,334 [INFO] newspaper3k extracted low-quality content from https://valorant.fandom.com/wiki/VALORANT_Wiki, trying BeautifulSoup
+2025-03-19 16:08:39,465 [INFO] Failed to extract meaningful content from https://valorant.fandom.com/wiki/VALORANT_Wiki
+2025-03-19 16:08:39,490 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/valorant, trying BeautifulSoup
+2025-03-19 16:08:39,499 [INFO] Failed to extract meaningful content from https://www.twitch.tv/valorant
+2025-03-19 16:08:40,017 [INFO] newspaper3k extracted low-quality content from https://valorant.com/, trying BeautifulSoup
+2025-03-19 16:08:40,079 [INFO] Article at https://valorant.com/ has insufficient content after processing.
+2025-03-19 16:08:40,082 [INFO] Successfully scraped 3 articles out of 20 URLs
+2025-03-19 16:08:40,084 [INFO] Formatted content for summarization with 2003 words
+2025-03-19 16:08:40,085 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:08:40,085 [INFO] Falling back to extractive summarization
+2025-03-19 16:08:40,086 [INFO] Using extractive summarization fallback
+2025-03-19 16:08:40,087 [INFO] Summarization completed in 0.00 seconds
+2025-03-19 16:08:40,088 [INFO] Generated summary with 679 words.
+2025-03-19 16:08:40,088 [WARNING] Generated summary is too long (679 words). Truncating.
+2025-03-19 16:08:40,089 [INFO] Truncated summary to 523 words at sentence boundaries.
+2025-03-19 16:08:40,090 [INFO] Data written to output.json.
+2025-03-19 16:26:40,472 [INFO] User logged in: syedhamzarehman6@gmail.com
+2025-03-19 16:28:42,682 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 16:28:42,683 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 16:28:42,686 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 16:28:42,686 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='valorant', Num URLs=10
+2025-03-19 16:28:42,686 [INFO] Starting collection process for query: 'valorant'
+2025-03-19 16:28:42,686 [INFO] Desired article count: 10
+2025-03-19 16:28:43,445 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:28:43,447 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 16:28:43,447 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-19 16:28:43,448 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 16:28:43,448 [INFO] Filtered 3 blocked domains
+2025-03-19 16:28:43,448 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:28:44,035 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:28:44,593 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:28:45,195 [INFO] Fetching robots.txt from https://www.riotgames.com/robots.txt
+2025-03-19 16:28:45,844 [INFO] Fetching robots.txt from https://tracker.gg/robots.txt
+2025-03-19 16:28:46,051 [INFO] Fetching robots.txt from https://valorantesports.com/robots.txt
+2025-03-19 16:28:46,494 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 16:28:46,769 [INFO] Added 7 allowed URLs
+2025-03-19 16:28:46,770 [INFO] Collected 7 unique URLs so far
+2025-03-19 16:28:48,537 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:28:48,539 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 16:28:48,539 [INFO] Blocked domain detected: x.com
+2025-03-19 16:28:48,540 [INFO] Blocked domain detected: x.com
+2025-03-19 16:28:48,540 [INFO] Blocked domain detected: www.instagram.com
+2025-03-19 16:28:48,541 [INFO] Filtered 4 blocked domains
+2025-03-19 16:28:48,541 [INFO] Fetching robots.txt from https://technology.riotgames.com/robots.txt
+2025-03-19 16:28:48,905 [INFO] Fetching robots.txt from https://store.epicgames.com/robots.txt
+2025-03-19 16:28:49,288 [INFO] Non-200 response from https://store.epicgames.com/robots.txt: 403
+2025-03-19 16:28:49,289 [INFO] Skipping https://store.epicgames.com/en-US/p/valorant as robots.txt could not be fetched.
+2025-03-19 16:28:49,290 [INFO] Fetching robots.txt from https://support-valorant.riotgames.com/robots.txt
+2025-03-19 16:28:49,513 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 16:28:49,759 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2025-03-19 16:28:49,924 [INFO] Fetching robots.txt from https://answers.microsoft.com/robots.txt
+2025-03-19 16:28:50,424 [INFO] Added 6 allowed URLs
+2025-03-19 16:28:50,424 [INFO] Collected 13 unique URLs so far
+2025-03-19 16:28:52,203 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:28:52,204 [INFO] Blocked domain detected: www.xbox.com
+2025-03-19 16:28:52,204 [INFO] Filtered 1 blocked domains
+2025-03-19 16:28:52,204 [INFO] Fetching robots.txt from https://valorant.com/robots.txt
+2025-03-19 16:28:55,296 [INFO] Fetching robots.txt from https://valorant.fandom.com/robots.txt
+2025-03-19 16:28:55,477 [INFO] Fetching robots.txt from https://www.uakron.edu/robots.txt
+2025-03-19 16:28:57,146 [INFO] Fetching robots.txt from https://www.playstation.com/robots.txt
+2025-03-19 16:28:57,674 [INFO] Fetching robots.txt from https://ottawabraves.com/robots.txt
+2025-03-19 16:28:59,198 [INFO] Fetching robots.txt from https://www.vlr.gg/robots.txt
+2025-03-19 16:29:00,155 [INFO] Non-200 response from https://www.vlr.gg/robots.txt: 404
+2025-03-19 16:29:00,155 [INFO] Skipping https://www.vlr.gg/team/11328/funplus-phoenix as robots.txt could not be fetched.
+2025-03-19 16:29:00,156 [INFO] Fetching robots.txt from https://www.brookdalecc.edu/robots.txt
+2025-03-19 16:29:00,803 [INFO] Non-200 response from https://www.brookdalecc.edu/robots.txt: 403
+2025-03-19 16:29:00,804 [INFO] Skipping https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/ as robots.txt could not be fetched.
+2025-03-19 16:29:00,804 [INFO] Fetching robots.txt from https://kick.com/robots.txt
+2025-03-19 16:29:00,909 [INFO] Non-200 response from https://kick.com/robots.txt: 403
+2025-03-19 16:29:00,910 [INFO] Skipping https://kick.com/category/valorant as robots.txt could not be fetched.
+2025-03-19 16:29:00,911 [INFO] Fetching robots.txt from https://secretlab.co/robots.txt
+2025-03-19 16:29:01,422 [INFO] Added 9 allowed URLs
+2025-03-19 16:29:01,423 [INFO] Collected 22 unique URLs so far
+2025-03-19 16:29:01,423 [INFO] Limited URL collection to 20
+2025-03-19 16:29:01,423 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 16:29:02,081 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/download/, trying BeautifulSoup
+2025-03-19 16:29:02,087 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/download/
+2025-03-19 16:29:02,485 [INFO] newspaper3k extracted low-quality content from https://www.playstation.com/en-us/games/valorant/, trying BeautifulSoup
+2025-03-19 16:29:03,821 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:29:04,469 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/console/, trying BeautifulSoup
+2025-03-19 16:29:04,503 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/console/
+2025-03-19 16:29:04,838 [INFO] newspaper3k extracted low-quality content from https://valorantesports.com/, trying BeautifulSoup
+2025-03-19 16:29:05,040 [INFO] Failed to extract meaningful content from https://valorantesports.com/
+2025-03-19 16:29:05,204 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/, trying BeautifulSoup
+2025-03-19 16:29:05,220 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/
+2025-03-19 16:29:05,874 [INFO] newspaper3k extracted low-quality content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8, trying BeautifulSoup
+2025-03-19 16:29:05,876 [INFO] Failed to extract meaningful content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8
+2025-03-19 16:29:06,827 [INFO] newspaper3k extracted low-quality content from https://support-valorant.riotgames.com/hc/en-us/requests/new, trying BeautifulSoup
+2025-03-19 16:29:06,864 [INFO] Failed to extract meaningful content from https://support-valorant.riotgames.com/hc/en-us/requests/new
+2025-03-19 16:29:07,719 [INFO] newspaper3k extracted low-quality content from https://www.riotgames.com/en, trying BeautifulSoup
+2025-03-19 16:29:07,748 [INFO] Failed to extract meaningful content from https://www.riotgames.com/en
+2025-03-19 16:29:09,063 [INFO] newspaper3k extracted low-quality content from https://valorant.com/, trying BeautifulSoup
+2025-03-19 16:29:09,133 [INFO] Article at https://valorant.com/ has insufficient content after processing.
+2025-03-19 16:29:09,520 [INFO] newspaper3k extracted low-quality content from https://www.vlr.gg/team/11328/funplus-phoenix, trying BeautifulSoup
+2025-03-19 16:29:09,625 [INFO] Failed to extract meaningful content from https://www.vlr.gg/team/11328/funplus-phoenix
+2025-03-19 16:29:09,669 [INFO] newspaper3k extracted low-quality content from https://ottawabraves.com/sports/valorant, trying BeautifulSoup
+2025-03-19 16:29:09,703 [INFO] Failed to extract meaningful content from https://ottawabraves.com/sports/valorant
+2025-03-19 16:29:10,252 [INFO] newspaper3k extracted low-quality content from https://valorant.fandom.com/wiki/VALORANT_Wiki, trying BeautifulSoup
+2025-03-19 16:29:10,403 [INFO] Failed to extract meaningful content from https://valorant.fandom.com/wiki/VALORANT_Wiki
+2025-03-19 16:29:10,432 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/directory/category/valorant, trying BeautifulSoup
+2025-03-19 16:29:10,440 [INFO] Failed to extract meaningful content from https://www.twitch.tv/directory/category/valorant
+2025-03-19 16:29:10,464 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/valorant, trying BeautifulSoup
+2025-03-19 16:29:10,469 [INFO] Failed to extract meaningful content from https://www.twitch.tv/valorant
+2025-03-19 16:29:10,568 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:29:11,056 [INFO] newspaper3k extracted low-quality content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t, trying BeautifulSoup
+2025-03-19 16:29:11,062 [INFO] Failed to extract meaningful content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t
+2025-03-19 16:29:11,493 [INFO] newspaper3k extracted low-quality content from https://www.uakron.edu/esports/varsity/valorant, trying BeautifulSoup
+2025-03-19 16:29:11,524 [INFO] Failed to extract meaningful content from https://www.uakron.edu/esports/varsity/valorant
+2025-03-19 16:29:13,393 [INFO] Successfully scraped 3 articles out of 20 URLs
+2025-03-19 16:29:13,397 [INFO] Formatted content for summarization with 2019 words
+2025-03-19 16:29:13,398 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:29:13,398 [INFO] Falling back to extractive summarization
+2025-03-19 16:29:13,399 [INFO] Using extractive summarization fallback
+2025-03-19 16:29:13,400 [INFO] Summarization completed in 0.00 seconds
+2025-03-19 16:29:13,400 [INFO] Generated summary with 462 words.
+2025-03-19 16:29:13,403 [INFO] Data written to output.json.
+2025-03-19 16:42:16,057 [INFO] User logged in: syedhamzarehman6@gmail.com
+2025-03-19 16:42:20,740 [INFO] Attempting to authenticate with token: eyJhbGciOi...
+2025-03-19 16:42:20,740 [INFO] Token decoded successfully, email: syedhamzarehman6@gmail.com
+2025-03-19 16:42:20,743 [INFO] Authentication successful for user: syedhamzarehman6@gmail.com
+2025-03-19 16:42:20,744 [INFO] Scrape request received from syedhamzarehman6@gmail.com: Query='valorant', Num URLs=10
+2025-03-19 16:42:20,744 [INFO] Starting collection process for query: 'valorant'
+2025-03-19 16:42:20,744 [INFO] Desired article count: 10
+2025-03-19 16:42:21,365 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:42:21,367 [INFO] Blocked domain detected: www.reddit.com
+2025-03-19 16:42:21,368 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-19 16:42:21,368 [INFO] Blocked domain detected: www.youtube.com
+2025-03-19 16:42:21,368 [INFO] Filtered 3 blocked domains
+2025-03-19 16:42:21,369 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:42:22,552 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:42:23,122 [INFO] Fetching robots.txt from https://playvalorant.com/robots.txt
+2025-03-19 16:42:23,714 [INFO] Fetching robots.txt from https://www.riotgames.com/robots.txt
+2025-03-19 16:42:24,335 [INFO] Fetching robots.txt from https://tracker.gg/robots.txt
+2025-03-19 16:42:24,481 [INFO] Fetching robots.txt from https://valorantesports.com/robots.txt
+2025-03-19 16:42:25,513 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 16:42:25,769 [INFO] Added 7 allowed URLs
+2025-03-19 16:42:25,769 [INFO] Collected 7 unique URLs so far
+2025-03-19 16:42:27,669 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:42:27,670 [INFO] Blocked domain detected: x.com
+2025-03-19 16:42:27,670 [INFO] Blocked domain detected: x.com
+2025-03-19 16:42:27,671 [INFO] Blocked domain detected: x.com
+2025-03-19 16:42:27,671 [INFO] Blocked domain detected: www.instagram.com
+2025-03-19 16:42:27,671 [INFO] Filtered 4 blocked domains
+2025-03-19 16:42:27,671 [INFO] Fetching robots.txt from https://technology.riotgames.com/robots.txt
+2025-03-19 16:42:27,905 [INFO] Fetching robots.txt from https://store.epicgames.com/robots.txt
+2025-03-19 16:42:28,294 [INFO] Non-200 response from https://store.epicgames.com/robots.txt: 403
+2025-03-19 16:42:28,294 [INFO] Skipping https://store.epicgames.com/en-US/p/valorant as robots.txt could not be fetched.
+2025-03-19 16:42:28,295 [INFO] Fetching robots.txt from https://support-valorant.riotgames.com/robots.txt
+2025-03-19 16:42:28,416 [INFO] Fetching robots.txt from https://www.twitch.tv/robots.txt
+2025-03-19 16:42:28,667 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2025-03-19 16:42:28,814 [INFO] Fetching robots.txt from https://answers.microsoft.com/robots.txt
+2025-03-19 16:42:29,375 [INFO] Added 6 allowed URLs
+2025-03-19 16:42:29,376 [INFO] Collected 13 unique URLs so far
+2025-03-19 16:42:31,225 [INFO] Google Search API returned 10 URLs
+2025-03-19 16:42:31,225 [INFO] Blocked domain detected: www.xbox.com
+2025-03-19 16:42:31,226 [INFO] Filtered 1 blocked domains
+2025-03-19 16:42:31,226 [INFO] Fetching robots.txt from https://valorant.com/robots.txt
+2025-03-19 16:42:33,536 [INFO] Fetching robots.txt from https://valorant.fandom.com/robots.txt
+2025-03-19 16:42:33,814 [INFO] Fetching robots.txt from https://www.uakron.edu/robots.txt
+2025-03-19 16:42:34,927 [INFO] Fetching robots.txt from https://www.playstation.com/robots.txt
+2025-03-19 16:42:35,484 [INFO] Fetching robots.txt from https://www.vlr.gg/robots.txt
+2025-03-19 16:42:36,548 [INFO] Non-200 response from https://www.vlr.gg/robots.txt: 404
+2025-03-19 16:42:36,549 [INFO] Skipping https://www.vlr.gg/team/11328/funplus-phoenix as robots.txt could not be fetched.
+2025-03-19 16:42:36,549 [INFO] Fetching robots.txt from https://kick.com/robots.txt
+2025-03-19 16:42:36,669 [INFO] Non-200 response from https://kick.com/robots.txt: 403
+2025-03-19 16:42:36,670 [INFO] Skipping https://kick.com/category/valorant as robots.txt could not be fetched.
+2025-03-19 16:42:36,670 [INFO] Fetching robots.txt from https://liquipedia.net/robots.txt
+2025-03-19 16:42:37,193 [INFO] Fetching robots.txt from https://secretlab.co/robots.txt
+2025-03-19 16:42:37,633 [INFO] Fetching robots.txt from https://www.winthrop.edu/robots.txt
+2025-03-19 16:42:39,134 [INFO] Added 9 allowed URLs
+2025-03-19 16:42:39,135 [INFO] Collected 22 unique URLs so far
+2025-03-19 16:42:39,135 [INFO] Limited URL collection to 20
+2025-03-19 16:42:39,135 [INFO] Scraping content from 20 collected URLs...
+2025-03-19 16:42:39,534 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:39,851 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/directory/category/valorant, trying BeautifulSoup
+2025-03-19 16:42:39,858 [INFO] Failed to extract meaningful content from https://www.twitch.tv/directory/category/valorant
+2025-03-19 16:42:40,697 [INFO] newspaper3k extracted low-quality content from https://www.vlr.gg/team/11328/funplus-phoenix, trying BeautifulSoup
+2025-03-19 16:42:40,817 [INFO] Failed to extract meaningful content from https://www.vlr.gg/team/11328/funplus-phoenix
+2025-03-19 16:42:40,887 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/console/, trying BeautifulSoup
+2025-03-19 16:42:40,910 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/console/
+2025-03-19 16:42:41,573 [INFO] newspaper3k extracted low-quality content from https://www.riotgames.com/en, trying BeautifulSoup
+2025-03-19 16:42:41,594 [INFO] Failed to extract meaningful content from https://www.riotgames.com/en
+2025-03-19 16:42:41,763 [INFO] newspaper3k extracted low-quality content from https://support-valorant.riotgames.com/hc/en-us/requests/new, trying BeautifulSoup
+2025-03-19 16:42:41,789 [INFO] Failed to extract meaningful content from https://support-valorant.riotgames.com/hc/en-us/requests/new
+2025-03-19 16:42:42,351 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/, trying BeautifulSoup
+2025-03-19 16:42:42,364 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/
+2025-03-19 16:42:42,463 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:42,979 [INFO] newspaper3k extracted low-quality content from https://valorant.fandom.com/wiki/VALORANT_Wiki, trying BeautifulSoup
+2025-03-19 16:42:43,116 [INFO] Failed to extract meaningful content from https://valorant.fandom.com/wiki/VALORANT_Wiki
+2025-03-19 16:42:43,366 [INFO] newspaper3k extracted low-quality content from https://valorantesports.com/, trying BeautifulSoup
+2025-03-19 16:42:43,499 [INFO] Failed to extract meaningful content from https://valorantesports.com/
+2025-03-19 16:42:43,526 [INFO] newspaper3k extracted low-quality content from https://www.twitch.tv/valorant, trying BeautifulSoup
+2025-03-19 16:42:43,536 [INFO] Failed to extract meaningful content from https://www.twitch.tv/valorant
+2025-03-19 16:42:43,996 [INFO] newspaper3k extracted low-quality content from https://valorant.com/, trying BeautifulSoup
+2025-03-19 16:42:44,066 [INFO] Article at https://valorant.com/ has insufficient content after processing.
+2025-03-19 16:42:44,086 [INFO] newspaper3k extracted low-quality content from https://playvalorant.com/en-us/download/, trying BeautifulSoup
+2025-03-19 16:42:44,094 [INFO] Failed to extract meaningful content from https://playvalorant.com/en-us/download/
+2025-03-19 16:42:45,794 [INFO] newspaper3k extracted low-quality content from https://www.uakron.edu/esports/varsity/valorant, trying BeautifulSoup
+2025-03-19 16:42:45,851 [INFO] Failed to extract meaningful content from https://www.uakron.edu/esports/varsity/valorant
+2025-03-19 16:42:45,866 [INFO] newspaper3k extracted low-quality content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t, trying BeautifulSoup
+2025-03-19 16:42:45,875 [INFO] Failed to extract meaningful content from https://open.spotify.com/artist/3wrFoI9EVjWg6m8xXeWr5t
+2025-03-19 16:42:45,993 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:47,037 [INFO] newspaper3k extracted low-quality content from https://www.playstation.com/en-us/games/valorant/, trying BeautifulSoup
+2025-03-19 16:42:47,965 [INFO] newspaper3k extracted low-quality content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8, trying BeautifulSoup
+2025-03-19 16:42:47,967 [INFO] Failed to extract meaningful content from https://answers.microsoft.com/en-us/windows/forum/all/pc-crashing-every-time-i-open-valorant/9d7aac69-88ed-4570-a322-9b8ae4f161f8
+2025-03-19 16:42:47,969 [INFO] Successfully scraped 3 articles out of 20 URLs
+2025-03-19 16:42:47,974 [INFO] Formatted content for summarization with 2003 words
+2025-03-19 16:42:47,974 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:42:47,975 [INFO] Falling back to extractive summarization
+2025-03-19 16:42:47,975 [INFO] Using extractive summarization fallback
+2025-03-19 16:42:47,976 [INFO] Summarization completed in 0.00 seconds
+2025-03-19 16:42:47,977 [INFO] Generated summary with 679 words.
+2025-03-19 16:42:47,977 [WARNING] Generated summary is too long (679 words). Truncating.
+2025-03-19 16:42:47,978 [INFO] Truncated summary to 523 words at sentence boundaries.
+2025-03-19 16:42:47,980 [INFO] Data written to output.json.

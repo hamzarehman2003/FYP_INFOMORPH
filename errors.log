@@ -67,3 +67,305 @@ You can install "python-multipart" with:
 
 pip install python-multipart
 
+2025-03-19 07:13:31,016 [ERROR] Regenerated summary is still too short (215 words).
+2025-03-19 07:13:31,016 [ERROR] Regenerated summary is still too short (215 words).
+2025-03-19 07:16:43,087 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 07:16:43,087 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 07:16:43,804 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 07:16:43,804 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 07:16:48,169 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-19 07:16:48,169 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-19 07:20:50,413 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 07:20:50,413 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 07:24:08,819 [ERROR] Regenerated summary is still too short (297 words).
+2025-03-19 07:24:08,819 [ERROR] Regenerated summary is still too short (297 words).
+2025-03-19 07:36:12,331 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:36:12,331 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:36:14,628 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:36:14,628 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:36:16,304 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:36:16,304 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:37:09,941 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1780290330807415028: 
+2025-03-19 07:37:09,941 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1780290330807415028: 
+2025-03-19 07:37:10,027 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:37:10,027 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:37:10,047 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:37:10,047 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:37:10,059 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:37:10,059 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:37:10,068 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:37:10,068 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:37:10,077 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:37:10,077 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:37:10,087 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:37:10,087 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:37:10,095 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:37:10,095 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:37:10,104 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:37:10,104 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:37:10,115 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:37:10,115 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:37:10,127 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:37:10,127 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:37:10,135 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:37:10,135 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:37:10,143 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:37:10,143 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:37:10,177 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:37:10,177 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:37:10,186 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:37:10,186 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:37:10,194 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:37:10,194 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:37:10,206 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:37:10,206 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:37:10,216 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:37:10,216 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:37:10,223 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:37:10,223 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:37:10,233 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:37:10,233 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:37:10,243 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:37:10,243 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:37:10,252 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:37:10,252 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:37:10,260 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:37:10,260 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:37:10,269 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:37:10,269 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:37:10,276 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:37:10,276 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:40:08,095 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:40:08,095 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:40:08,904 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:40:08,904 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:40:13,125 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:40:13,125 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:40:13,387 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:40:13,387 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:40:59,947 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:40:59,947 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:40:59,994 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:40:59,994 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:41:00,004 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:41:00,004 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:41:00,017 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:41:00,017 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:41:00,035 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:41:00,035 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:41:00,046 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:41:00,046 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:41:00,057 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:41:00,057 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:41:00,068 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:41:00,068 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:41:00,085 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:41:00,085 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:41:00,095 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:41:00,095 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:41:00,108 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:41:00,108 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:41:00,118 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:41:00,118 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:41:00,128 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:41:00,128 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:41:00,164 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:41:00,164 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:41:00,174 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:41:00,174 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:41:00,180 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:41:00,180 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:41:00,192 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:41:00,192 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:41:00,201 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:41:00,201 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:41:00,208 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:41:00,208 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:41:00,218 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:41:00,218 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:41:00,226 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:41:00,226 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:41:00,235 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:41:00,235 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:41:00,244 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:41:00,244 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:41:00,255 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:41:00,255 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:41:00,267 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:41:00,267 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:45:27,342 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:45:27,342 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:45:27,580 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:45:27,580 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:45:31,152 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:45:31,152 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:45:34,188 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:45:34,188 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:46:18,951 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:46:18,951 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:46:18,997 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:46:18,997 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:46:19,005 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:46:19,005 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:46:19,018 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:46:19,018 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:46:19,031 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:46:19,031 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:46:19,039 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:46:19,039 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:46:19,048 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:46:19,048 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:46:19,056 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:46:19,056 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:46:19,065 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:46:19,065 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:46:19,074 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:46:19,074 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:46:19,083 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:46:19,083 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:46:19,090 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:46:19,090 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:46:19,100 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:46:19,100 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:46:19,137 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:46:19,137 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:46:19,145 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:46:19,145 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:46:19,153 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:46:19,153 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:46:19,162 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:46:19,162 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:46:19,171 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:46:19,171 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:46:19,178 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:46:19,178 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:46:19,187 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:46:19,187 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:46:19,197 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:46:19,197 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:46:19,204 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:46:19,204 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:46:19,213 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:46:19,213 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:46:19,223 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:46:19,223 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:46:19,233 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:46:19,233 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:50:00,257 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:50:00,257 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:50:00,539 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:50:00,539 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:50:04,420 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:50:04,420 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:50:05,253 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:50:05,253 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:50:51,946 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:50:51,946 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 07:50:51,991 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:50:51,991 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:50:52,000 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:50:52,000 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:50:52,010 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:50:52,010 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:50:52,018 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:50:52,018 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:50:52,028 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:50:52,028 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:50:52,036 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:50:52,036 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:50:52,045 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:50:52,045 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:50:52,115 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:50:52,115 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:50:52,124 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:50:52,124 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:50:52,154 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:50:52,154 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:50:52,163 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:50:52,163 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:50:52,172 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:50:52,172 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:50:52,210 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:50:52,210 [ERROR] Error in summarization: index out of range in self
+2025-03-19 07:50:52,219 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:50:52,219 [ERROR] Error summarizing chunk 1: index out of range in self
+2025-03-19 07:50:52,228 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:50:52,228 [ERROR] Error summarizing chunk 2: index out of range in self
+2025-03-19 07:50:52,238 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:50:52,238 [ERROR] Error summarizing chunk 3: index out of range in self
+2025-03-19 07:50:52,246 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:50:52,246 [ERROR] Error summarizing chunk 4: index out of range in self
+2025-03-19 07:50:52,255 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:50:52,255 [ERROR] Error summarizing chunk 5: index out of range in self
+2025-03-19 07:50:52,263 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:50:52,263 [ERROR] Error summarizing chunk 6: index out of range in self
+2025-03-19 07:50:52,273 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:50:52,273 [ERROR] Error summarizing chunk 7: index out of range in self
+2025-03-19 07:50:52,282 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:50:52,282 [ERROR] Error summarizing chunk 8: index out of range in self
+2025-03-19 07:50:52,292 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:50:52,292 [ERROR] Error summarizing chunk 9: index out of range in self
+2025-03-19 07:50:52,300 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:50:52,300 [ERROR] Error summarizing chunk 10: index out of range in self
+2025-03-19 07:50:52,309 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:50:52,309 [ERROR] Error summarizing chunk 11: index out of range in self
+2025-03-19 07:59:48,222 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:59:48,222 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-03-19 07:59:50,598 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:59:50,598 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
+2025-03-19 07:59:51,230 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:59:51,230 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-03-19 07:59:52,802 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 07:59:52,802 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
+2025-03-19 08:00:44,962 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 08:00:44,962 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
+2025-03-19 08:00:45,006 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 08:00:45,006 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 15:21:22,510 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:22,510 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:23,238 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:23,238 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:29,230 [ERROR] Error fetching robots.txt from https://www.hindustantimes.com/robots.txt: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:29,230 [ERROR] Error fetching robots.txt from https://www.hindustantimes.com/robots.txt: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:38,025 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-19 15:21:38,025 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-19 15:21:39,775 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-19 15:21:39,775 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-19 15:21:50,304 [ERROR] Max retries reached for https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:50,304 [ERROR] Max retries reached for https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:50,362 [ERROR] Max retries reached for https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:50,362 [ERROR] Max retries reached for https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-03-19 15:21:50,367 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 15:21:50,367 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 15:54:06,055 [ERROR] JWT Error: Signature has expired.
+2025-03-19 15:54:06,055 [ERROR] JWT Error: Signature has expired.
+2025-03-19 15:54:54,841 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 15:54:54,841 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 15:55:00,917 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 15:55:00,917 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 15:55:01,025 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 15:55:01,025 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 15:55:05,108 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 15:55:05,108 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:08:35,064 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:35,064 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:38,553 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:38,553 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:38,667 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:38,667 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 16:08:40,085 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:08:40,085 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:29:03,821 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:29:03,821 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:29:10,568 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:29:10,568 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:29:13,398 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:29:13,398 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:42:39,534 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:39,534 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:42,463 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:42,463 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:45,993 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:45,993 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-03-19 16:42:47,974 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-19 16:42:47,974 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'

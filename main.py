@@ -152,13 +152,16 @@ async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = De
         detail="Could not validate credentials",
         headers={"WWW-Authenticate": "Bearer"},
     )
+    logging.info(f"Attempting to authenticate with token: {token[:10]}...")
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         email: str = payload.get("sub")
+        logging.info(f"Token decoded successfully, email: {email}")
         if email is None:
             raise credentials_exception
         token_data = TokenData(email=email)
-    except JWTError:
+    except JWTError as e:
+        logging.error(f"JWT Error: {str(e)}")
         raise credentials_exception
     user = get_user(db, email=token_data.email)
     if user is None:
@@ -232,6 +235,7 @@ async def scrape_articles(request: ScrapeRequest, current_user: User = Depends(g
     Requires authentication.
     """
     try:
+        logging.info(f"Authentication successful for user: {current_user.email}")
         logging.info(f"Scrape request received from {current_user.email}: Query='{request.query}', Num URLs={request.num_urls}")
         result = await collect_and_scrape(
             query=request.query,
