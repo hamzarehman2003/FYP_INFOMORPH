@@ -9,7 +9,8 @@ import axios from "axios";
 import { useRouter } from 'next/navigation';
 import { SummaryContext } from '../summaryContext/SummaryContext';
 import ProtectedRoute from '../../../components/Auth/ProtectedRoute';
-
+import { toast } from "react-toastify"; // Import toast
+import { AuthContext } from "../../../context/AuthContext"; // Import AuthContext
 
 const TopicSelectionPage = () => {
   const [queryInput, setQueryInput] = useState("");
@@ -20,23 +21,32 @@ const TopicSelectionPage = () => {
   const [loading, setLoading] = useState(false);
 
   const { setSummary, setQuery } = useContext(SummaryContext);
+  const { auth } = useContext(AuthContext); // Access auth.token
   const router = useRouter();
 
   const handleSearch = async () => {
     if (!queryInput.trim()) {
-      alert("Please enter a topic to search.");
+      toast.error("Please enter a topic to search."); // Replace alert with toast
       return;
     }
     setLoading(true);
     setErrors([]);
     setUrls([]);
     try {
-      const response = await axios.post("http://localhost:8000/scrape", {
-        query: queryInput,
-        num_urls: 5,
-        input_language: inputLanguage,
-        output_language: outputLanguage,
-      });
+      const response = await axios.post(
+        "http://localhost:8000/scrape",
+        {
+          query: queryInput,
+          num_urls: 5,
+          input_language: inputLanguage,
+          output_language: outputLanguage,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${auth.token}`, // Include the token here
+          },
+        }
+      );
 
       console.log("Scrape response:", response.data); // Debugging log
 
@@ -63,6 +73,7 @@ const TopicSelectionPage = () => {
         error.response?.data?.detail ||
           "An error occurred while fetching URLs.",
       ]);
+      toast.error(error.response?.data?.detail || "An error occurred while fetching URLs.");
     } finally {
       setLoading(false);
     }
@@ -70,7 +81,7 @@ const TopicSelectionPage = () => {
 
   const handleReportFeedback = () => {
     // Implement feedback reporting logic
-    alert("Feedback submitted. Thank you!");
+    toast.info("Feedback submitted. Thank you!");
   };
 
   return (
@@ -115,7 +126,6 @@ const TopicSelectionPage = () => {
               <option value="ur">Urdu</option>
               {/* Add more languages as needed */}
             </select>
-            
           </div>
         </div>
 
@@ -167,6 +177,7 @@ const TopicSelectionPage = () => {
   );
 };
 
+// Wrap the page with ProtectedRoute
 const WrappedTopicSelectionPage = () => (
   <ProtectedRoute>
     <TopicSelectionPage />
@@ -174,4 +185,3 @@ const WrappedTopicSelectionPage = () => (
 );
 
 export default WrappedTopicSelectionPage;
-

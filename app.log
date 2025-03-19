@@ -1584,3 +1584,334 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2024-12-12 04:16:04,260 [INFO] User logged in: m@gmail.com
 2024-12-12 04:27:04,374 [INFO] User logged in: m@gmail.com
 2024-12-12 04:41:18,603 [INFO] User logged in: m@gmail.com
+2024-12-12 04:55:00,730 [INFO] User logged in: m@gmail.com
+2024-12-12 04:55:36,608 [INFO] User logged in: m@gmail.com
+2024-12-12 04:59:01,610 [INFO] User logged in: m@gmail.com
+2024-12-12 05:33:14,410 [INFO] New user registered: tallaleatazaz@yahoo.com
+2024-12-12 06:15:13,231 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 09:15:48,304 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 09:17:42,998 [INFO] Fetching robots.txt from https://bitcoin.org/robots.txt
+2024-12-12 09:17:43,735 [INFO] Fetching robots.txt from https://www.bitcoin.com/robots.txt
+2024-12-12 09:17:44,069 [INFO] Fetching robots.txt from https://coinmarketcap.com/robots.txt
+2024-12-12 09:17:44,535 [INFO] Fetching robots.txt from https://www.ussc.gov/robots.txt
+2024-12-12 09:17:45,754 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2024-12-12 09:17:46,611 [INFO] Fetching robots.txt from https://finance.yahoo.com/robots.txt
+2024-12-12 09:17:47,137 [INFO] Fetching robots.txt from https://www.investopedia.com/robots.txt
+2024-12-12 09:17:47,690 [INFO] Fetching robots.txt from https://digiconomist.net/robots.txt
+2024-12-12 09:17:50,357 [INFO] Fetching robots.txt from https://bitcoincore.org/robots.txt
+2024-12-12 09:17:51,190 [INFO] Fetching robots.txt from https://ccaf.io/robots.txt
+2024-12-12 09:17:51,452 [INFO] Non-200 response from https://ccaf.io/robots.txt: 404
+2024-12-12 09:17:51,454 [INFO] Skipping https://ccaf.io/cbeci/ as robots.txt could not be fetched.
+2024-12-12 09:17:51,454 [INFO] Fetching robots.txt from https://www.bitcoinsv.com/robots.txt
+2024-12-12 09:17:53,617 [INFO] Fetching robots.txt from https://en.bitcoin.it/robots.txt
+2024-12-12 09:17:53,997 [INFO] Fetching robots.txt from https://www.coindesk.com/robots.txt
+2024-12-12 09:17:54,282 [INFO] Fetching robots.txt from https://www.coinbase.com/robots.txt
+2024-12-12 09:17:54,825 [ERROR] Error fetching robots.txt from https://www.coinbase.com/robots.txt: 400, message='Got more than 8190 bytes (8429) when reading Header value is too long.', url='https://www.coinbase.com/robots.txt'
+2024-12-12 09:17:54,826 [INFO] Skipping https://www.coinbase.com/ as robots.txt could not be fetched.
+2024-12-12 09:17:54,827 [INFO] Fetching robots.txt from https://www.brookings.edu/robots.txt
+2024-12-12 09:17:55,014 [INFO] Non-200 response from https://www.brookings.edu/robots.txt: 403
+2024-12-12 09:17:55,015 [INFO] Skipping https://www.brookings.edu/articles/the-brutal-truth-about-bitcoin/ as robots.txt could not be fetched.
+2024-12-12 09:17:55,016 [INFO] Fetching robots.txt from https://www.cmegroup.com/robots.txt
+2024-12-12 09:18:00,686 [INFO] Timeout occurred while fetching https://www.cmegroup.com/robots.txt
+2024-12-12 09:18:00,687 [INFO] Skipping https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin.html as robots.txt could not be fetched.
+2024-12-12 09:18:00,688 [INFO] Fetching robots.txt from https://www.congress.gov/robots.txt
+2024-12-12 09:18:00,901 [INFO] Non-200 response from https://www.congress.gov/robots.txt: 403
+2024-12-12 09:18:00,911 [INFO] Skipping https://www.congress.gov/bill/118th-congress/senate-bill/4912/text as robots.txt could not be fetched.
+2024-12-12 09:18:00,912 [INFO] Collected 10 URLs after filtering.
+2024-12-12 09:18:00,912 [INFO] Scraping content from collected URLs...
+2024-12-12 09:18:02,210 [INFO] Article at https://www.bitcoin.com/ is too short; skipping.
+2024-12-12 09:18:02,410 [INFO] Article at https://www.bitcoinsv.com/ is too short; skipping.
+2024-12-12 09:18:02,865 [INFO] Article at https://bitcoincore.org/ is too short; skipping.
+2024-12-12 09:18:03,179 [INFO] Article at https://bitcoin.org/ is too short; skipping.
+2024-12-12 09:18:03,184 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (18266) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying (1/3)...
+2024-12-12 09:18:08,049 [INFO] Article at https://digiconomist.net/bitcoin-energy-consumption/ is too short; skipping.
+2024-12-12 09:18:08,954 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (16305) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying (2/3)...
+2024-12-12 09:18:12,071 [ERROR] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (16306) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2024-12-12 09:18:13,361 [WARNING] Error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte. Retrying (1/3)...
+2024-12-12 09:18:20,231 [WARNING] Error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte. Retrying (2/3)...
+2024-12-12 09:18:27,187 [ERROR] Error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2024-12-12 09:18:27,191 [INFO] No content retrieved or article skipped.
+2024-12-12 09:18:27,192 [INFO] No content retrieved or article skipped.
+2024-12-12 09:18:27,192 [INFO] No content retrieved or article skipped.
+2024-12-12 09:18:27,193 [INFO] No content retrieved or article skipped.
+2024-12-12 09:18:27,193 [INFO] Article 'Bitcoin price today, BTC to USD live price, marketcap and chart' added to valid articles.
+2024-12-12 09:18:27,193 [INFO] Article 'bitcoin/bitcoin: Bitcoin Core integration/staging tree' added to valid articles.
+2024-12-12 09:18:27,194 [INFO] Article 'What Is Bitcoin? How To Buy, Mine, and Use It' added to valid articles.
+2024-12-12 09:18:27,194 [INFO] No content retrieved or article skipped.
+2024-12-12 09:18:27,195 [INFO] No content retrieved or article skipped.
+2024-12-12 09:18:27,195 [INFO] No content retrieved or article skipped.
+2024-12-12 09:20:22,247 [INFO] Generated summary with 327 words.
+2024-12-12 09:20:22,249 [INFO] Data written to output.json.
+2024-12-12 09:21:29,107 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2024-12-12 09:21:34,682 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2024-12-12 09:21:34,684 [INFO] Skipping https://x.com/imranzomg as robots.txt could not be fetched.
+2024-12-12 09:21:34,685 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2024-12-12 09:21:35,067 [INFO] Fetching robots.txt from https://www.britannica.com/robots.txt
+2024-12-12 09:21:36,198 [INFO] Fetching robots.txt from https://ccr.cancer.gov/robots.txt
+2024-12-12 09:21:38,281 [INFO] Fetching robots.txt from https://www.icij.org/robots.txt
+2024-12-12 09:21:39,725 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-12 09:21:40,358 [ERROR] Error fetching robots.txt from https://open.spotify.com/robots.txt: Cannot connect to host open.spotify.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2024-12-12 09:21:40,360 [INFO] Skipping https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js as robots.txt could not be fetched.
+2024-12-12 09:21:42,048 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2024-12-12 09:21:42,616 [INFO] Fetching robots.txt from https://www.inova.org/robots.txt
+2024-12-12 09:21:44,322 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2024-12-12 09:21:44,603 [INFO] Fetching robots.txt from https://www.du.edu/robots.txt
+2024-12-12 09:21:46,206 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2024-12-12 09:21:46,748 [INFO] Fetching robots.txt from https://profiles.ucsf.edu/robots.txt
+2024-12-12 09:21:49,360 [INFO] Fetching robots.txt from https://pediatrics.ucsf.edu/robots.txt
+2024-12-12 09:21:51,438 [INFO] Fetching robots.txt from https://carnegieendowment.org/robots.txt
+2024-12-12 09:21:51,976 [INFO] Fetching robots.txt from https://www.ikca.org.uk/robots.txt
+2024-12-12 09:21:53,300 [INFO] Fetching robots.txt from https://www.theguardian.com/robots.txt
+2024-12-12 09:21:53,958 [INFO] Collected 10 URLs after filtering.
+2024-12-12 09:21:53,959 [INFO] Scraping content from collected URLs...
+2024-12-12 09:21:56,656 [INFO] Article at https://www.inova.org/doctors/imran-a-khan-md is too short; skipping.
+2024-12-12 09:21:56,809 [INFO] Article at https://profiles.ucsf.edu/imran.khan is too short; skipping.
+2024-12-12 09:21:57,366 [INFO] Article at https://ccr.cancer.gov/staff-directory/imran-khan is too short; skipping.
+2024-12-12 09:21:57,633 [INFO] Article at https://www.aljazeera.com/tag/imran-khan/ is too short; skipping.
+2024-12-12 09:21:59,050 [INFO] Article 'Alumnus Imran Khan Creates Opportunity Through Scholarship Gift' added to valid articles.
+2024-12-12 09:21:59,050 [INFO] Article 'Pakistan’s Imran Khan gets bail in a graft case but will stay behind bars on other charges' added to valid articles.
+2024-12-12 09:21:59,051 [INFO] Article 'Imran Khan Profile - Cricket Player Pakistan' added to valid articles.
+2024-12-12 09:21:59,051 [INFO] Article 'Pakistan, Biography, Cricketer, Prime Minister, & PTI' added to valid articles.
+2024-12-12 09:21:59,051 [INFO] No content retrieved or article skipped.
+2024-12-12 09:21:59,051 [INFO] No content retrieved or article skipped.
+2024-12-12 09:21:59,052 [INFO] No content retrieved or article skipped.
+2024-12-12 09:21:59,052 [INFO] Article 'Imran Khan: The cricket star and former PM who is dividing Pakistan' added to valid articles.
+2024-12-12 09:23:41,811 [INFO] Generated summary with 301 words.
+2024-12-12 09:23:41,815 [INFO] Data written to output.json.
+2024-12-12 09:31:01,345 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 09:31:09,343 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2024-12-12 09:31:14,680 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2024-12-12 09:31:14,682 [INFO] Skipping https://x.com/imranzomg as robots.txt could not be fetched.
+2024-12-12 09:31:14,683 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2024-12-12 09:31:15,014 [INFO] Fetching robots.txt from https://www.britannica.com/robots.txt
+2024-12-12 09:31:16,092 [INFO] Fetching robots.txt from https://ccr.cancer.gov/robots.txt
+2024-12-12 09:31:17,850 [INFO] Fetching robots.txt from https://www.icij.org/robots.txt
+2024-12-12 09:31:18,369 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-12 09:31:18,856 [ERROR] Error fetching robots.txt from https://open.spotify.com/robots.txt: Cannot connect to host open.spotify.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2024-12-12 09:31:18,860 [INFO] Skipping https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js as robots.txt could not be fetched.
+2024-12-12 09:31:20,495 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2024-12-12 09:31:21,211 [INFO] Fetching robots.txt from https://www.inova.org/robots.txt
+2024-12-12 09:31:22,339 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2024-12-12 09:31:22,604 [INFO] Fetching robots.txt from https://www.du.edu/robots.txt
+2024-12-12 09:31:23,709 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2024-12-12 09:31:25,125 [INFO] Fetching robots.txt from https://profiles.ucsf.edu/robots.txt
+2024-12-12 09:31:26,740 [INFO] Fetching robots.txt from https://pediatrics.ucsf.edu/robots.txt
+2024-12-12 09:31:28,174 [INFO] Fetching robots.txt from https://carnegieendowment.org/robots.txt
+2024-12-12 09:31:28,508 [INFO] Fetching robots.txt from https://www.ikca.org.uk/robots.txt
+2024-12-12 09:31:28,979 [INFO] Fetching robots.txt from https://www.theguardian.com/robots.txt
+2024-12-12 09:31:29,402 [INFO] Collected 10 URLs after filtering.
+2024-12-12 09:31:29,403 [INFO] Scraping content from collected URLs...
+2024-12-12 09:31:31,142 [INFO] Article at https://www.aljazeera.com/tag/imran-khan/ is too short; skipping.
+2024-12-12 09:31:31,509 [INFO] Article at https://ccr.cancer.gov/staff-directory/imran-khan is too short; skipping.
+2024-12-12 09:31:32,306 [INFO] Article at https://www.inova.org/doctors/imran-a-khan-md is too short; skipping.
+2024-12-12 09:31:33,875 [INFO] Article at https://profiles.ucsf.edu/imran.khan is too short; skipping.
+2024-12-12 09:31:33,881 [INFO] Article 'Prime Minister Imran Khan promised ‘new Pakistan’ but members of his inner circle secretly moved millions offshore' added to valid articles.
+2024-12-12 09:31:33,882 [INFO] Article 'Pakistan, Biography, Cricketer, Prime Minister, & PTI' added to valid articles.
+2024-12-12 09:31:33,882 [INFO] Article 'Pakistan’s Imran Khan gets bail in a graft case but will stay behind bars on other charges' added to valid articles.
+2024-12-12 09:31:33,882 [INFO] No content retrieved, article skipped, or duplicate title found.
+2024-12-12 09:31:33,883 [INFO] No content retrieved, article skipped, or duplicate title found.
+2024-12-12 09:31:33,883 [INFO] Article 'Alumnus Imran Khan Creates Opportunity Through Scholarship Gift' added to valid articles.
+2024-12-12 09:31:33,883 [INFO] Article 'Imran Khan Profile - Cricket Player Pakistan' added to valid articles.
+2024-12-12 09:33:23,083 [ERROR] Final summarization failed: index out of range in self
+2024-12-12 09:33:23,084 [INFO] Generated summary with 9 words.
+2024-12-12 09:33:23,085 [WARNING] Generated summary is too short (9 words). Attempting to regenerate.
+2024-12-12 09:35:21,172 [ERROR] Regeneration of summary failed: index out of range in self
+2024-12-12 09:35:21,177 [INFO] Data written to output.json.
+2024-12-12 09:37:20,051 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 09:37:24,792 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2024-12-12 09:37:30,691 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2024-12-12 09:37:30,692 [INFO] Skipping https://x.com/imranzomg as robots.txt could not be fetched.
+2024-12-12 09:37:30,693 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2024-12-12 09:37:31,035 [INFO] Fetching robots.txt from https://www.britannica.com/robots.txt
+2024-12-12 09:37:31,730 [INFO] Fetching robots.txt from https://ccr.cancer.gov/robots.txt
+2024-12-12 09:37:32,726 [INFO] Fetching robots.txt from https://www.icij.org/robots.txt
+2024-12-12 09:37:33,259 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-12 09:37:33,763 [ERROR] Error fetching robots.txt from https://open.spotify.com/robots.txt: Cannot connect to host open.spotify.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2024-12-12 09:37:33,765 [INFO] Skipping https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js as robots.txt could not be fetched.
+2024-12-12 09:37:35,338 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2024-12-12 09:37:35,913 [INFO] Fetching robots.txt from https://www.inova.org/robots.txt
+2024-12-12 09:37:36,829 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2024-12-12 09:37:37,100 [INFO] Fetching robots.txt from https://www.du.edu/robots.txt
+2024-12-12 09:37:38,097 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2024-12-12 09:37:38,881 [INFO] Fetching robots.txt from https://profiles.ucsf.edu/robots.txt
+2024-12-12 09:37:40,780 [INFO] Fetching robots.txt from https://pediatrics.ucsf.edu/robots.txt
+2024-12-12 09:37:42,203 [INFO] Fetching robots.txt from https://carnegieendowment.org/robots.txt
+2024-12-12 09:37:42,612 [INFO] Fetching robots.txt from https://www.ikca.org.uk/robots.txt
+2024-12-12 09:37:43,071 [INFO] Fetching robots.txt from https://www.theguardian.com/robots.txt
+2024-12-12 09:37:43,414 [INFO] Collected 10 URLs after filtering.
+2024-12-12 09:37:43,415 [INFO] Scraping content from collected URLs...
+2024-12-12 09:37:45,753 [INFO] Article at https://www.aljazeera.com/tag/imran-khan/ is too short; skipping.
+2024-12-12 09:37:45,827 [INFO] Article at https://www.inova.org/doctors/imran-a-khan-md is too short; skipping.
+2024-12-12 09:37:46,419 [INFO] Article at https://ccr.cancer.gov/staff-directory/imran-khan is too short; skipping.
+2024-12-12 09:37:46,596 [INFO] Article at https://profiles.ucsf.edu/imran.khan is too short; skipping.
+2024-12-12 09:37:47,230 [INFO] Article 'Pakistan’s Imran Khan gets bail in a graft case but will stay behind bars on other charges' added to valid articles.
+2024-12-12 09:37:47,231 [INFO] Article 'Pakistan, Biography, Cricketer, Prime Minister, & PTI' added to valid articles.
+2024-12-12 09:37:47,232 [INFO] No content retrieved or article skipped.
+2024-12-12 09:37:47,232 [INFO] No content retrieved or article skipped.
+2024-12-12 09:37:47,233 [INFO] Article 'Imran Khan Profile - Cricket Player Pakistan' added to valid articles.
+2024-12-12 09:37:47,233 [INFO] No content retrieved or article skipped.
+2024-12-12 09:37:47,233 [INFO] No content retrieved or article skipped.
+2024-12-12 09:37:47,234 [INFO] Article 'Prime Minister Imran Khan promised ‘new Pakistan’ but members of his inner circle secretly moved millions offshore' added to valid articles.
+2024-12-12 09:37:47,234 [INFO] Article 'Alumnus Imran Khan Creates Opportunity Through Scholarship Gift' added to valid articles.
+2024-12-12 09:39:58,321 [INFO] Generated summary with 268 words.
+2024-12-12 09:39:58,322 [WARNING] Generated summary is too short (268 words). Attempting to regenerate.
+2024-12-12 09:42:32,250 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\Fyp\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-12 09:42:37,642 [INFO] Fetching robots.txt from https://x.com/robots.txt
+2024-12-12 09:42:42,691 [INFO] Timeout occurred while fetching https://x.com/robots.txt
+2024-12-12 09:42:42,692 [INFO] Skipping https://x.com/imranzomg as robots.txt could not be fetched.
+2024-12-12 09:42:42,693 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2024-12-12 09:42:43,038 [INFO] Fetching robots.txt from https://www.britannica.com/robots.txt
+2024-12-12 09:42:43,818 [INFO] Fetching robots.txt from https://ccr.cancer.gov/robots.txt
+2024-12-12 09:42:44,759 [INFO] Fetching robots.txt from https://www.icij.org/robots.txt
+2024-12-12 09:42:44,956 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-12 09:42:45,569 [ERROR] Error fetching robots.txt from https://open.spotify.com/robots.txt: Cannot connect to host open.spotify.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2024-12-12 09:42:45,571 [INFO] Skipping https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js as robots.txt could not be fetched.
+2024-12-12 09:42:47,164 [INFO] Fetching robots.txt from https://www.aljazeera.com/robots.txt
+2024-12-12 09:42:47,531 [INFO] Fetching robots.txt from https://www.inova.org/robots.txt
+2024-12-12 09:42:52,535 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2024-12-12 09:42:52,742 [INFO] Fetching robots.txt from https://www.du.edu/robots.txt
+2024-12-12 09:42:53,717 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2024-12-12 09:42:54,152 [INFO] Fetching robots.txt from https://profiles.ucsf.edu/robots.txt
+2024-12-12 09:42:55,805 [INFO] Fetching robots.txt from https://pediatrics.ucsf.edu/robots.txt
+2024-12-12 09:42:57,806 [INFO] Fetching robots.txt from https://carnegieendowment.org/robots.txt
+2024-12-12 09:42:58,094 [INFO] Fetching robots.txt from https://www.ikca.org.uk/robots.txt
+2024-12-12 09:42:59,282 [INFO] Fetching robots.txt from https://www.theguardian.com/robots.txt
+2024-12-12 09:42:59,614 [INFO] Collected 10 URLs after filtering.
+2024-12-12 09:42:59,617 [INFO] Scraping content from collected URLs...
+2024-12-12 09:43:01,604 [INFO] Article at https://www.aljazeera.com/tag/imran-khan/ is too short; skipping.
+2024-12-12 09:43:02,106 [INFO] Article at https://www.inova.org/doctors/imran-a-khan-md is too short; skipping.
+2024-12-12 09:43:03,459 [INFO] Article at https://profiles.ucsf.edu/imran.khan is too short; skipping.
+2024-12-12 09:43:04,765 [INFO] Article at https://ccr.cancer.gov/staff-directory/imran-khan is too short; skipping.
+2024-12-12 09:43:04,770 [INFO] Article 'Pakistan, Biography, Cricketer, Prime Minister, & PTI' added to valid articles.
+2024-12-12 09:43:04,771 [INFO] Article 'Imran Khan Profile - Cricket Player Pakistan' added to valid articles.
+2024-12-12 09:43:04,771 [INFO] No content retrieved or article skipped.
+2024-12-12 09:43:04,771 [INFO] Article 'Prime Minister Imran Khan promised ‘new Pakistan’ but members of his inner circle secretly moved millions offshore' added to valid articles.
+2024-12-12 09:43:04,772 [INFO] No content retrieved or article skipped.
+2024-12-12 09:43:04,772 [INFO] Article 'Imran Khan: The cricket star and former PM who is dividing Pakistan' added to valid articles.
+2024-12-12 09:43:04,773 [INFO] Article 'Pakistan’s Imran Khan gets bail in a graft case but will stay behind bars on other charges' added to valid articles.
+2024-12-12 09:44:48,522 [INFO] Generated summary with 328 words.
+2024-12-12 09:44:48,524 [INFO] Data written to output.json.
+2024-12-12 09:50:35,631 [INFO] Fetching robots.txt from https://bitcoin.org/robots.txt
+2024-12-12 09:50:37,141 [INFO] Fetching robots.txt from https://www.bitcoin.com/robots.txt
+2024-12-12 09:50:37,677 [INFO] Fetching robots.txt from https://coinmarketcap.com/robots.txt
+2024-12-12 09:50:38,323 [INFO] Fetching robots.txt from https://www.ussc.gov/robots.txt
+2024-12-12 09:50:39,959 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2024-12-12 09:50:40,623 [INFO] Fetching robots.txt from https://finance.yahoo.com/robots.txt
+2024-12-12 09:50:41,379 [INFO] Fetching robots.txt from https://www.investopedia.com/robots.txt
+2024-12-12 09:50:42,316 [INFO] Fetching robots.txt from https://digiconomist.net/robots.txt
+2024-12-12 09:50:46,654 [INFO] Fetching robots.txt from https://bitcoincore.org/robots.txt
+2024-12-12 09:50:49,058 [INFO] Fetching robots.txt from https://ccaf.io/robots.txt
+2024-12-12 09:50:50,930 [INFO] Non-200 response from https://ccaf.io/robots.txt: 404
+2024-12-12 09:50:50,932 [INFO] Skipping https://ccaf.io/cbeci/ as robots.txt could not be fetched.
+2024-12-12 09:50:50,933 [INFO] Fetching robots.txt from https://www.bitcoinsv.com/robots.txt
+2024-12-12 09:50:53,775 [INFO] Fetching robots.txt from https://en.bitcoin.it/robots.txt
+2024-12-12 09:50:54,484 [INFO] Fetching robots.txt from https://www.coindesk.com/robots.txt
+2024-12-12 09:50:55,060 [INFO] Fetching robots.txt from https://www.coinbase.com/robots.txt
+2024-12-12 09:50:55,827 [ERROR] Error fetching robots.txt from https://www.coinbase.com/robots.txt: 400, message='Got more than 8190 bytes (8429) when reading Header value is too long.', url='https://www.coinbase.com/robots.txt'
+2024-12-12 09:50:55,829 [INFO] Skipping https://www.coinbase.com/ as robots.txt could not be fetched.
+2024-12-12 09:50:55,830 [INFO] Fetching robots.txt from https://www.brookings.edu/robots.txt
+2024-12-12 09:50:56,382 [INFO] Non-200 response from https://www.brookings.edu/robots.txt: 403
+2024-12-12 09:50:56,383 [INFO] Skipping https://www.brookings.edu/articles/the-brutal-truth-about-bitcoin/ as robots.txt could not be fetched.
+2024-12-12 09:50:56,383 [INFO] Fetching robots.txt from https://www.cmegroup.com/robots.txt
+2024-12-12 09:51:01,682 [INFO] Timeout occurred while fetching https://www.cmegroup.com/robots.txt
+2024-12-12 09:51:01,684 [INFO] Skipping https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin.html as robots.txt could not be fetched.
+2024-12-12 09:51:01,685 [INFO] Fetching robots.txt from https://www.congress.gov/robots.txt
+2024-12-12 09:51:02,108 [INFO] Non-200 response from https://www.congress.gov/robots.txt: 403
+2024-12-12 09:51:02,109 [INFO] Skipping https://www.congress.gov/bill/118th-congress/senate-bill/4912/text as robots.txt could not be fetched.
+2024-12-12 09:51:02,110 [INFO] Collected 10 URLs after filtering.
+2024-12-12 09:51:02,110 [INFO] Scraping content from collected URLs...
+2024-12-12 09:51:02,487 [INFO] Article at https://www.bitcoin.com/ is too short; skipping.
+2024-12-12 09:51:02,911 [INFO] Article at https://www.bitcoinsv.com/ is too short; skipping.
+2024-12-12 09:51:03,161 [INFO] Article at https://bitcoincore.org/ is too short; skipping.
+2024-12-12 09:51:03,425 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (13705) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying (1/3)...
+2024-12-12 09:51:03,485 [INFO] Article at https://bitcoin.org/ is too short; skipping.
+2024-12-12 09:51:06,653 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (17946) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying (2/3)...
+2024-12-12 09:51:07,294 [INFO] Article at https://digiconomist.net/bitcoin-energy-consumption/ is too short; skipping.
+2024-12-12 09:51:09,790 [ERROR] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (17606) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2024-12-12 09:51:13,668 [WARNING] Error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: . Retrying (1/3)...
+2024-12-12 09:51:26,680 [WARNING] Error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: . Retrying (2/3)...
+2024-12-12 09:51:39,682 [ERROR] Error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 
+2024-12-12 09:51:39,685 [INFO] No content retrieved or article skipped.
+2024-12-12 09:51:39,685 [INFO] No content retrieved or article skipped.
+2024-12-12 09:51:39,686 [INFO] No content retrieved or article skipped.
+2024-12-12 09:51:39,687 [INFO] No content retrieved or article skipped.
+2024-12-12 09:51:39,687 [INFO] Article 'Bitcoin price today, BTC to USD live price, marketcap and chart' added to valid articles.
+2024-12-12 09:51:39,688 [INFO] Article 'What Is Bitcoin? How To Buy, Mine, and Use It' added to valid articles.
+2024-12-12 09:51:39,689 [INFO] Article 'bitcoin/bitcoin: Bitcoin Core integration/staging tree' added to valid articles.
+2024-12-12 09:51:39,689 [INFO] No content retrieved or article skipped.
+2024-12-12 09:51:39,689 [INFO] No content retrieved or article skipped.
+2024-12-12 09:51:39,690 [INFO] No content retrieved or article skipped.
+2024-12-12 09:52:51,226 [INFO] Generated summary with 327 words.
+2024-12-12 09:52:51,227 [INFO] Data written to output.json.
+2024-12-12 09:58:41,188 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2024-12-12 09:58:41,671 [ERROR] Error fetching robots.txt from https://open.spotify.com/robots.txt: Cannot connect to host open.spotify.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2024-12-12 09:58:41,671 [INFO] Skipping https://open.spotify.com/track/2CzWeyC9zlDpIOZPUUKrBW as robots.txt could not be fetched.
+2024-12-12 09:58:41,672 [INFO] Fetching robots.txt from https://www.ncbi.nlm.nih.gov/robots.txt
+2024-12-12 09:58:43,010 [INFO] Fetching robots.txt from https://legislature.idaho.gov/robots.txt
+2024-12-12 09:58:48,670 [INFO] Timeout occurred while fetching https://legislature.idaho.gov/robots.txt
+2024-12-12 09:58:48,671 [INFO] Skipping https://legislature.idaho.gov/sessioninfo/2024/legislation/s1234/ as robots.txt could not be fetched.
+2024-12-12 09:58:48,672 [INFO] Fetching robots.txt from https://www.alphawire.com/robots.txt
+2024-12-12 09:58:50,964 [INFO] Fetching robots.txt from https://dmped.dc.gov/robots.txt
+2024-12-12 09:58:52,338 [INFO] Fetching robots.txt from https://leginfo.legislature.ca.gov/robots.txt
+2024-12-12 09:58:54,164 [INFO] Fetching robots.txt from https://www.accuride.com/robots.txt
+2024-12-12 09:58:56,792 [INFO] Fetching robots.txt from https://jumper1234.com/robots.txt
+2024-12-12 09:58:57,526 [INFO] Fetching robots.txt from http://www.bostonplans.org/robots.txt
+2024-12-12 09:58:58,519 [INFO] Fetching robots.txt from https://leg.colorado.gov/robots.txt
+2024-12-12 09:59:00,720 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2024-12-12 09:59:01,515 [INFO] Fetching robots.txt from https://leg.colorado.gov/robots.txt
+2024-12-12 09:59:02,724 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2024-12-12 09:59:03,244 [INFO] Fetching robots.txt from https://law.lis.virginia.gov/robots.txt
+2024-12-12 09:59:05,442 [INFO] Non-200 response from https://law.lis.virginia.gov/robots.txt: 404
+2024-12-12 09:59:05,444 [INFO] Skipping https://law.lis.virginia.gov/vacode/title10.1/chapter12.1/section10.1-1234/ as robots.txt could not be fetched.
+2024-12-12 09:59:05,445 [INFO] Fetching robots.txt from https://solutions.covestro.com/robots.txt
+2024-12-12 09:59:06,953 [INFO] Fetching robots.txt from https://www.flsenate.gov/robots.txt
+2024-12-12 09:59:12,677 [INFO] Timeout occurred while fetching https://www.flsenate.gov/robots.txt
+2024-12-12 09:59:12,679 [INFO] Skipping https://www.flsenate.gov/Session/Bill/2024/1234 as robots.txt could not be fetched.
+2024-12-12 09:59:12,680 [INFO] Fetching robots.txt from https://support.google.com/robots.txt
+2024-12-12 09:59:13,030 [INFO] Collected 10 URLs after filtering.
+2024-12-12 09:59:13,031 [INFO] Scraping content from collected URLs...
+2024-12-12 09:59:13,613 [INFO] Article at https://jumper1234.com/collections/new-in is too short; skipping.
+2024-12-12 09:59:13,922 [WARNING] Error fetching article at https://www.accuride.com/en-us/products/specialty-slides/1234-light-duty-slide-for-pocket-doors-without-hinges: 400, message='Got more than 8190 bytes (10659) when reading Header value is too long.', url='https://www.accuride.com/en-us/products/specialty-slides/1234-light-duty-slide-for-pocket-doors-without-hinges'. Retrying (1/3)...
+2024-12-12 09:59:14,712 [INFO] Article at https://github.com/tensorflow/tfjs/issues/1397 is too short; skipping.
+2024-12-12 09:59:14,865 [INFO] Article at https://www.alphawire.com/products/accessories/fit-wire-management/braid/1234 is too short; skipping.
+2024-12-12 09:59:16,016 [INFO] Article at http://www.bostonplans.org/projects/development-projects/1234-1240-soldiers-field-road is too short; skipping.
+2024-12-12 09:59:16,903 [WARNING] Error fetching article at https://www.accuride.com/en-us/products/specialty-slides/1234-light-duty-slide-for-pocket-doors-without-hinges: 400, message='Got more than 8190 bytes (12641) when reading Header value is too long.', url='https://www.accuride.com/en-us/products/specialty-slides/1234-light-duty-slide-for-pocket-doors-without-hinges'. Retrying (2/3)...
+2024-12-12 09:59:17,992 [INFO] Article at https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=1234 is too short; skipping.
+2024-12-12 09:59:19,541 [ERROR] Error fetching article at https://www.accuride.com/en-us/products/specialty-slides/1234-light-duty-slide-for-pocket-doors-without-hinges: 400, message='Got more than 8190 bytes (10659) when reading Header value is too long.', url='https://www.accuride.com/en-us/products/specialty-slides/1234-light-duty-slide-for-pocket-doors-without-hinges'
+2024-12-12 09:59:19,543 [INFO] No content retrieved or article skipped.
+2024-12-12 09:59:19,544 [INFO] No content retrieved or article skipped.
+2024-12-12 09:59:19,544 [INFO] No content retrieved or article skipped.
+2024-12-12 09:59:19,544 [INFO] No content retrieved or article skipped.
+2024-12-12 09:59:19,545 [INFO] Article '1234 Good Hope Parcels' added to valid articles.
+2024-12-12 09:59:19,545 [INFO] Article 'Regulated Marijuana Delivery' added to valid articles.
+2024-12-12 09:59:19,546 [INFO] No content retrieved or article skipped.
+2024-12-12 09:59:19,546 [INFO] Article 'Streamlined Solar Permitting And Inspection Grants' added to valid articles.
+2024-12-12 09:59:19,546 [INFO] Article 'CCR5 C-C motif chemokine receptor 5 [Homo sapiens (human)]' added to valid articles.
+2024-12-12 09:59:19,547 [INFO] No content retrieved or article skipped.
+2024-12-12 10:00:37,469 [INFO] Generated summary with 354 words.
+2024-12-12 10:00:37,470 [INFO] Data written to output.json.

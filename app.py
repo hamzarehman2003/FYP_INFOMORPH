@@ -236,13 +236,12 @@ def summarize_with_pegasus(text, max_length=667, min_length=400, num_beams=6):
     summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
     return summary
 
-async def collect_and_scrape(query, desired_num_articles, max_api_calls=10, max_urls_to_attempt=10):
+async def collect_and_scrape(query, desired_num_articles, input_language="en", output_language="en", max_api_calls=10, max_urls_to_attempt=10):
     """Collect URLs based on query and scrape articles."""
     collected_urls = []
     valid_articles = []
     start_index = 1
     api_calls_made = 0
-    error_log = []
 
     while len(valid_articles) < desired_num_articles and api_calls_made < max_api_calls:
         # Fetch more URLs as needed

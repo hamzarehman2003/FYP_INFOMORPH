@@ -20,24 +20,21 @@ const Header = () => {
   const handleLogout = () => {
     logout();
     toast.info("Logged out successfully.");
-    router.push("/login");
+    router.push("/");
   };
 
   return (
     <>
       <BurgerMenu pathName={pathName} />
-      <header className="hidden laptop:flex items-center py-8 bg-[#FCFEDC] w-full px-14">
-        <div className="flex items-center w-full">
-          {/* Left Side - Logo */}
-          <div className="flex-1 flex items-center gap-[5px]">
+      <header className="hidden laptop:flex items-center py-8 bg-[#FCFEDC] w-screen max-w-full"> {/* Updated */}
+        <div className="container mx-auto flex items-center justify-between w-full px-4"> {/* New container */}
+          <div className="flex items-center gap-[5px]">
             <Link href="/" className="flex items-center">
               <LogoSVG />
               <div className="text-5xl font-bold text-[#1A3453]">Info Morph</div>
             </Link>
           </div>
-
-          {/* Center - Navigation Links */}
-          <div className="flex-1 flex items-center justify-center space-x-8">
+          <div className="flex items-center space-x-8">
             {headerLinks.map((item, index) => (
               <Link
                 key={index}
@@ -52,9 +49,7 @@ const Header = () => {
               </Link>
             ))}
           </div>
-
-          {/* Right Side - Auth Buttons */}
-          <div className="flex-1 flex justify-end">
+          <div className="flex">
             {auth.token ? (
               <button
                 onClick={handleLogout}

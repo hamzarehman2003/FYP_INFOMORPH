@@ -3,7 +3,7 @@
 "use client";
 
 import React, { createContext, useState, useEffect } from "react";
-import axios from "axios";
+import api from "../../src/app/api"; // Import the configured Axios instance
 
 // Create the context
 export const AuthContext = createContext();
@@ -16,11 +16,12 @@ export const AuthProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    // Check for token in localStorage on mount
+    // Check for token and email in localStorage on mount
     const token = localStorage.getItem("token");
     const email = localStorage.getItem("email");
     if (token && email) {
       setAuth({ token, email });
+      api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
     }
   }, []);
 
@@ -30,7 +31,7 @@ export const AuthProvider = ({ children }) => {
       params.append('username', email);
       params.append('password', password);
 
-      const response = await axios.post("http://localhost:8000/token", params, {
+      const response = await api.post("/token", params, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
@@ -40,6 +41,7 @@ export const AuthProvider = ({ children }) => {
       setAuth({ token: access_token, email });
       localStorage.setItem("token", access_token);
       localStorage.setItem("email", email);
+      api.defaults.headers.common["Authorization"] = `Bearer ${access_token}`;
       return { success: true };
     } catch (error) {
       console.error("Login error:", error.response?.data?.detail || error.message);
@@ -49,7 +51,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (email, password) => {
     try {
-      const response = await axios.post("http://localhost:8000/signup", {
+      const response = await api.post("/signup", {
         email,
         password,
       });
@@ -58,6 +60,7 @@ export const AuthProvider = ({ children }) => {
       setAuth({ token: access_token, email });
       localStorage.setItem("token", access_token);
       localStorage.setItem("email", email);
+      api.defaults.headers.common["Authorization"] = `Bearer ${access_token}`;
       return { success: true };
     } catch (error) {
       console.error("Signup error:", error.response?.data?.detail || error.message);
@@ -69,6 +72,7 @@ export const AuthProvider = ({ children }) => {
     setAuth({ token: null, email: null });
     localStorage.removeItem("token");
     localStorage.removeItem("email");
+    delete api.defaults.headers.common["Authorization"];
     // Optionally, navigate to login page or homepage
   };
 

@@ -5,7 +5,7 @@
 import { useContext, useEffect } from "react";
 import { AuthContext } from "../../context/AuthContext"; // Adjust the path as necessary
 import { useRouter } from "next/navigation";
-import Header from "../../components/Header"; // Ensure correct path
+import Header from "../../components/Header"; // Adjust the path as necessary
 import { toast } from "react-toastify";
 
 const ProtectedRoute = ({ children }) => {
@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     if (!auth.token) {
       toast.error("You must be logged in to access this page.");
-      router.push("/login");
+      router.push("/");
     }
   }, [auth.token, router]);
 
@@ -25,8 +25,10 @@ const ProtectedRoute = ({ children }) => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header /> {/* Navbar */}
-      <main className="flex-grow">{children}</main>
+      <Header /> {/* Navbar at the top */}
+      <main className="flex-1 w-full">
+        {children}
+      </main>
     </div>
   );
 };

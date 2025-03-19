@@ -160,35 +160,21 @@ async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = De
 # Authentication Endpoints
 
 @app.post("/signup", response_model=Token)
-async def signup(user: UserCreate, db: Session = Depends(get_db)):
-    """
-    Endpoint to register a new user.
-    """
-    existing_user = get_user(db, user.email)
-    if existing_user:
+def signup(user: UserCreate, db: Session = Depends(get_db)):
+    db_user = get_user(db, email=user.email)
+    if db_user:
         raise HTTPException(status_code=400, detail="Email already registered")
-    
     hashed_password = get_password_hash(user.password)
     new_user = User(email=user.email, hashed_password=hashed_password)
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
-    
-    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    access_token = create_access_token(
-        data={"sub": new_user.email}, expires_delta=access_token_expires
-    )
-    
-    logging.info(f"New user registered: {new_user.email}")
-    
+    access_token = create_access_token(data={"sub": new_user.email})
     return {"access_token": access_token, "token_type": "bearer"}
 
 @app.post("/token", response_model=Token)
-async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    """
-    Endpoint to authenticate a user and provide a JWT token.
-    """
-    user = authenticate_user(db, form_data.username, form_data.password)
+def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+    user = authenticate_user(db, email=form_data.username, password=form_data.password)
     if not user:
         raise HTTPException(
             status_code=401,
@@ -199,67 +185,19 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
     access_token = create_access_token(
         data={"sub": user.email}, expires_delta=access_token_expires
     )
-    logging.info(f"User logged in: {user.email}")
     return {"access_token": access_token, "token_type": "bearer"}
 
-# Feedback Endpoint
-@app.post("/feedback")
-async def receive_feedback(feedback_request: FeedbackRequest, current_user: User = Depends(get_current_user)):
-    """
-    Endpoint to receive user feedback.
-    """
-    try:
-        # Here, you can process the feedback, e.g., save it to a database or a file
-        logging.info(f"Feedback received from {current_user.email} for query '{feedback_request.query}': {feedback_request.feedback}")
-        return {"message": "Feedback received. Thank you!"}
-    except Exception as e:
-        logging.error(f"Failed to receive feedback: {e}")
-        raise HTTPException(status_code=500, detail="Failed to receive feedback.")
-
-# Existing Scrape and Static File Endpoints
+# Scrape Endpoint
 @app.post("/scrape", response_model=ScrapeResponse)
-async def scrape_articles(request: ScrapeRequest, current_user: User = Depends(get_current_user)):
-    """
-    Endpoint to scrape articles based on a query and generate a unified summary.
-    Requires authentication.
-    """
+async def scrape(request: ScrapeRequest, current_user: User = Depends(get_current_user)):
     try:
-        logging.info(f"Scrape request received from {current_user.email}: Query='{request.query}', Num URLs={request.num_urls}")
         result = await collect_and_scrape(
             query=request.query,
-            desired_num_articles=request.num_urls
+            desired_num_articles=request.num_urls,
+            input_language=request.input_language,
+            output_language=request.output_language
         )
-        articles = result.get('articles', [])
-        final_summary = result.get('final_summary', "")
-    
-        # Convert articles to Pydantic models without 'summary'
-        response_articles = [
-            Article(
-                url=article['url'],
-                title=article['title'],
-                authors=article['authors'],
-                publish_date=article['publish_date'],
-                content=article['content']
-            )
-            for article in articles
-        ]
-    
-        return ScrapeResponse(
-            articles=response_articles,
-            final_summary=final_summary
-        )
+        return ScrapeResponse(articles=result['articles'], final_summary=result['final_summary'])
     except Exception as e:
-        logging.error(f"Scraping failed: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/static/{file_path:path}")
-async def serve_static(file_path: str):
-    """
-    Endpoint to serve static files.
-    """
-    static_dir = "static"
-    full_path = os.path.join(static_dir, file_path)
-    if os.path.exists(full_path):
-        return FileResponse(full_path)
-    else:
-        raise HTTPException(status_code=404, detail="File not found.")
+        logging.error(f"Scrape failed: {e}")
+        raise HTTPException(status_code=500, detail="Scraping failed")

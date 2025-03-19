@@ -24,6 +24,7 @@ const Login = () => {
     
     const result = await login(email, password);
     if (result.success) {
+      localStorage.setItem('token', result.token);
       toast.success("Logged in successfully!");
       router.push("/topic-selection");
     } else {
