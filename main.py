@@ -1,24 +1,37 @@
 # backend/main.py
 
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, status
 from pydantic import BaseModel
 from typing import List, Optional
 import asyncio
 import json
 import logging
-from app import collect_and_scrape  # Updated import
+from app import collect_and_scrape
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 import os
-from database import engine, SessionLocal  # Updated import
-from models import Base, User  # Updated import
-from sqlalchemy.orm import Session
+# Database imports
+from database import get_user_by_email, create_user, save_query, save_feedback, get_query_by_id
+from models import User, Query, Feedback  # Updated User import
 from passlib.context import CryptContext
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+import uuid
+from dotenv import load_dotenv
+import os
 
-# Create all tables
-Base.metadata.create_all(bind=engine)
+load_dotenv()
+
+
+
+# Try to import auth_utils, but handle if it doesn't exist
+try:
+    from auth_utils import get_supabase_client
+    has_auth_utils = True
+except ImportError:
+    has_auth_utils = False
+    logging.warning("auth_utils module not found. Some functionality may be limited.")
 
 app = FastAPI(
     title="InfoMorph API",
@@ -38,10 +51,10 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,            # Allows specified origins
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],              # Allows all methods
-    allow_headers=["*"],              # Allows all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Configure logging
@@ -67,13 +80,16 @@ SECRET_KEY = "your-secret-key"  # Change this to a strong secret
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
-# Dependency to get DB session
-def get_db():
-    db = SessionLocal()
+# Only try to connect to Supabase at startup if auth_utils is available
+if has_auth_utils:
     try:
-        yield db
-    finally:
-        db.close()
+        supabase_client = get_supabase_client()
+        if supabase_client:
+            logging.info("Successfully connected to Supabase at startup")
+        else:
+            logging.warning("Could not authenticate with Supabase at startup")
+    except Exception as e:
+        logging.error(f"Error connecting to Supabase at startup: {e}")
 
 # Pydantic models
 class ScrapeRequest(BaseModel):
@@ -101,6 +117,7 @@ class FeedbackRequest(BaseModel):
 
 # Pydantic models for authentication
 class UserCreate(BaseModel):
+    name: str  # Add name field
     email: str
     password: str
 
@@ -121,16 +138,16 @@ def verify_password(plain_password, hashed_password):
 def get_password_hash(password):
     return pwd_context.hash(password)
 
-def get_user(db: Session, email: str):
-    return db.query(User).filter(User.email == email).first()
+# Placeholder functions for database operations (to be implemented later)
+def get_user(email: str) -> Optional[User]:
+    """Placeholder - Get user by email"""
+    logging.info(f"Database operation: get_user({email}) - Not implemented yet")
+    return None
 
-def authenticate_user(db: Session, email: str, password: str):
-    user = get_user(db, email)
-    if not user:
-        return False
-    if not verify_password(password, user.hashed_password):
-        return False
-    return user
+def authenticate_user(email: str, password: str) -> Optional[User]:
+    """Placeholder - Authenticate a user with email and password"""
+    logging.info(f"Database operation: authenticate_user({email}) - Not implemented yet")
+    return None
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     to_encode = data.copy()
@@ -142,13 +159,12 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
+async def get_current_user(token: str = Depends(oauth2_scheme)) -> User:
+    """Placeholder - Get current user from token"""
     credentials_exception = HTTPException(
-        status_code=401,
+        status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
         headers={"WWW-Authenticate": "Bearer"},
     )
@@ -160,87 +176,108 @@ async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = De
         token_data = TokenData(email=email)
     except JWTError:
         raise credentials_exception
-    user = get_user(db, email=token_data.email)
+        
+    # This will always raise an exception until database is implemented
+    user = get_user(email=token_data.email)
     if user is None:
         raise credentials_exception
     return user
 
 # Authentication Endpoints
-
 @app.post("/signup", response_model=Token)
-async def signup(user: UserCreate, db: Session = Depends(get_db)):
+async def signup(user: UserCreate):
     """
     Endpoint to register a new user.
     """
-    existing_user = get_user(db, user.email)
-    if existing_user:
-        raise HTTPException(status_code=400, detail="Email already registered")
-    
-    hashed_password = get_password_hash(user.password)
-    new_user = User(email=user.email, hashed_password=hashed_password)
-    db.add(new_user)
-    db.commit()
-    db.refresh(new_user)
-    
-    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    access_token = create_access_token(
-        data={"sub": new_user.email}, expires_delta=access_token_expires
-    )
-    
-    logging.info(f"New user registered: {new_user.email}")
-    
-    return {"access_token": access_token, "token_type": "bearer"}
+    try:
+        # Check if user already exists
+        existing_user = await get_user_by_email(user.email)
+        if (existing_user):
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Email already registered"
+            )
+        
+        # Create the new user
+        new_user = await create_user(user.name, user.email)
+        
+        if not new_user:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Failed to create user"
+            )
+        
+        # Create access token
+        access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        access_token = create_access_token(
+            data={"sub": user.email}, expires_delta=access_token_expires
+        )
+        
+        return {"access_token": access_token, "token_type": "bearer"}
+    except Exception as e:
+        logging.error(f"Signup error: {e}")
+        if isinstance(e, HTTPException):
+            raise e
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to create user: {str(e)}"
+        )
 
 @app.post("/token", response_model=Token)
-async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
     """
     Endpoint to authenticate a user and provide a JWT token.
+    NOTE: This is a placeholder until the database is implemented.
     """
-    user = authenticate_user(db, form_data.username, form_data.password)
-    if not user:
-        raise HTTPException(
-            status_code=401,
-            detail="Incorrect email or password",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
-    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    access_token = create_access_token(
-        data={"sub": user.email}, expires_delta=access_token_expires
+    raise HTTPException(
+        status_code=status.HTTP_501_NOT_IMPLEMENTED,
+        detail="Database functionality not implemented yet"
     )
-    logging.info(f"User logged in: {user.email}")
-    return {"access_token": access_token, "token_type": "bearer"}
 
 # Feedback Endpoint
-@app.post("/feedback")
-async def receive_feedback(feedback_request: FeedbackRequest, current_user: User = Depends(get_current_user)):
+@app.post("/feedback", response_model=dict)
+async def receive_feedback(feedback_request: FeedbackRequest):
     """
     Endpoint to receive user feedback.
     """
     try:
-        # Here, you can process the feedback, e.g., save it to a database or a file
-        logging.info(f"Feedback received from {current_user.email} for query '{feedback_request.query}': {feedback_request.feedback}")
-        return {"message": "Feedback received. Thank you!"}
+        # Look up the query ID based on the query text
+        query_response = await save_query(
+            feedback_request.query, 
+            "", 
+            "feedback_only"
+        )
+        
+        if query_response:
+            query_id = query_response.get('id')
+            # Save the feedback
+            await save_feedback(query_id, feedback_request.feedback)
+            return {"message": "Feedback submitted successfully", "success": True}
+        else:
+            raise HTTPException(status_code=404, detail="Query not found")
     except Exception as e:
-        logging.error(f"Failed to receive feedback: {e}")
-        raise HTTPException(status_code=500, detail="Failed to receive feedback.")
+        logging.error(f"Error processing feedback: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to process feedback: {str(e)}")
 
-# Existing Scrape and Static File Endpoints
+# Scrape Endpoint
 @app.post("/scrape", response_model=ScrapeResponse)
-async def scrape_articles(request: ScrapeRequest, current_user: User = Depends(get_current_user)):
+async def scrape_articles(request: ScrapeRequest):
     """
     Endpoint to scrape articles based on a query and generate a unified summary.
-    Requires authentication.
+    Authentication removed temporarily.
     """
     try:
-        logging.info(f"Scrape request received from {current_user.email}: Query='{request.query}', Num URLs={request.num_urls}")
+        logging.info(f"Scrape request received: Query='{request.query}', Num URLs={request.num_urls}")
         result = await collect_and_scrape(
             query=request.query,
-            desired_num_articles=request.num_urls
+            desired_num_articles=request.num_urls,
+            input_language=request.input_language, 
+            output_language=request.output_language
         )
         articles = result.get('articles', [])
         final_summary = result.get('final_summary', "")
     
-        # Convert articles to Pydantic models without 'summary'
+        # Convert articles to Pydantic models
         response_articles = [
             Article(
                 url=article['url'],
@@ -251,6 +288,13 @@ async def scrape_articles(request: ScrapeRequest, current_user: User = Depends(g
             )
             for article in articles
         ]
+
+        # Save the query and summary to database
+        try:
+            await save_query(request.query, final_summary)
+        except Exception as db_error:
+            logging.error(f"Failed to save query to database: {db_error}")
+            # Continue with response even if database save fails
     
         return ScrapeResponse(
             articles=response_articles,

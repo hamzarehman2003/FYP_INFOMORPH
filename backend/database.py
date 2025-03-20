@@ -1,5 +1,3 @@
-# backend/database.py
-
 import logging
 import os
 from supabase import create_client
@@ -17,8 +15,8 @@ handler.setFormatter(formatter)
 db_logger.addHandler(handler)
 
 # Supabase configuration
-SUPABASE_URL = os.getenv("NEXT_PUBLIC_SUPABASE_URL")
-SUPABASE_KEY = os.getenv("NEXT_PUBLIC_SUPABASE_ANON_KEY")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 SUPABASE_USERNAME = os.getenv("SUPABASE_USERNAME")
 SUPABASE_PASSWORD = os.getenv("SUPABASE_PASSWORD")
 

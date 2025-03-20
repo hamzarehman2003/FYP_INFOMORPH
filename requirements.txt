@@ -1,26 +1,24 @@
 # Core dependencies
 fastapi
 pydantic
-sqlalchemy
 uvicorn
 passlib[bcrypt]
 python-jose[cryptography]
 python-multipart
+bcrypt>=4.0.1
+
+# Supabase client - corrected package name
+supabase>=1.0.3  # Correct package name (not supabase-py)
+python-dotenv>=1.0.0
 
 # If you have other dependencies, add them here
-# For example:
-# requests
-# beautifulsoup4
-# numpy
-# pandas
-
 requests>=2.28.0
 pyyaml>=6.0
 newspaper3k>=0.2.8
 aiohttp>=3.8.4
 tqdm>=4.66.0
 langdetect>=1.0.9
-translate>=3.6.1  # Note: This package might have limitations; consider alternatives like Google Translate API if needed
+translate>=3.6.1
 transformers
 torch
 lxml[html_clean]

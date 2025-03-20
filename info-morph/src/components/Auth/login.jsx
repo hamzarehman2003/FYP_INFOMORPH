@@ -18,16 +18,31 @@ const Login = () => {
   const { login } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     
-    const result = await login(email, password);
-    if (result.success) {
-      toast.success("Logged in successfully!");
-      router.push("/topic-selection");
-    } else {
-      toast.error(result.message || "Login failed. Please try again.");
+    try {
+      // Make sure your login function is using Supabase's built-in auth methods
+      const result = await login(email, password);
+      if (result.success) {
+        toast.success("Logged in successfully!");
+        router.push("/topic-selection");
+      } else {
+        toast.error(result.message || "Login failed. Please try again.");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      // More specific error handling based on the error response
+      if (error.response?.status === 501) {
+        toast.error("Authentication service is not properly configured. Please contact support.");
+      } else {
+        toast.error(error.response?.data?.message || "An unexpected error occurred during login.");
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -50,13 +65,14 @@ const Login = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            autocomplete="current-password"
             required
           />
         </div>
         <WithOthers name="Log in" />
         <WithGoogle name="Log in" />
         <div className="flex justify-center">
-          <BlueButton text="Login" type="submit" />
+          <BlueButton text={isLoading ? "Logging in..." : "Login"} type="submit" disabled={isLoading} />
         </div>
       </form>
     </AuthWrapper>

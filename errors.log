@@ -67,3 +67,101 @@ You can install "python-multipart" with:
 
 pip install python-multipart
 
+2025-03-19 21:04:23,630 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:38,982 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:47,894 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:48,032 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:05:48,032 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:07:07,072 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:07:07,243 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:07:07,243 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:41:57,614 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:41:57,614 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:41:58,251 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:41:58,251 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:41:58,252 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 21:41:58,252 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 21:56:31,553 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:56:31,553 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:56:31,798 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:56:31,798 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:56:31,798 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 21:56:31,798 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:03:07,075 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 22:03:07,075 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 22:03:07,308 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 22:03:07,308 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 22:03:07,309 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:03:07,309 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:35,910 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:35,910 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:35,911 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:35,911 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:52,166 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:52,166 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:52,166 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:52,166 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:10:24,819 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:10:24,819 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:10:24,820 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:10:24,820 [ERROR] Signup error: 500: Failed to create user
+2025-03-20 06:40:41,069 [ERROR] No Supabase API key found
+2025-03-20 06:40:41,090 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 06:40:41,227 [ERROR] Missing Supabase URL or key
+2025-03-20 06:40:41,227 [ERROR] Missing Supabase URL or key
+2025-03-20 07:30:27,742 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-20 07:30:27,742 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-20 08:33:18,757 [ERROR] No Supabase API key found
+2025-03-20 08:33:18,758 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:33:19,848 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:19,848 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:38,272 [ERROR] No Supabase API key found
+2025-03-20 08:33:38,274 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:33:38,416 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:38,416 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:15,826 [ERROR] No Supabase API key found
+2025-03-20 08:35:15,827 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:35:15,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:15,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:48,511 [ERROR] No Supabase API key found
+2025-03-20 08:35:48,512 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:35:48,633 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:48,633 [ERROR] Missing Supabase URL or key
+2025-03-20 08:36:50,838 [ERROR] No Supabase API key found
+2025-03-20 08:36:50,859 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:36:50,992 [ERROR] Missing Supabase URL or key
+2025-03-20 08:36:50,992 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:00,562 [ERROR] No Supabase API key found
+2025-03-20 08:37:00,563 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:00,753 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:00,753 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:46,545 [ERROR] No Supabase API key found
+2025-03-20 08:37:46,553 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:46,684 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:46,684 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:57,842 [ERROR] No Supabase API key found
+2025-03-20 08:37:57,843 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:57,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:57,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:41:58,645 [ERROR] No Supabase API key found
+2025-03-20 08:41:58,666 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:41:58,792 [ERROR] Missing Supabase URL or key
+2025-03-20 08:41:58,792 [ERROR] Missing Supabase URL or key
+2025-03-20 08:44:33,352 [ERROR] No Supabase API key found
+2025-03-20 08:44:33,354 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:44:33,480 [ERROR] Missing Supabase URL or key
+2025-03-20 08:44:33,480 [ERROR] Missing Supabase URL or key
+2025-03-20 09:00:29,073 [ERROR] Missing Supabase URL or key
+2025-03-20 09:00:29,073 [ERROR] Missing Supabase URL or key
+2025-03-20 09:02:09,393 [ERROR] Missing Supabase URL or key
+2025-03-20 09:02:09,393 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:39,290 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:39,290 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:50,179 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:50,179 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:01,519 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:01,519 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:12,099 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:12,099 [ERROR] Missing Supabase URL or key
+2025-03-20 10:58:41,489 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-20 10:58:41,489 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'

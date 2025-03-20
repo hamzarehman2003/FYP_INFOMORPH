@@ -14,14 +14,29 @@ import { toast } from "react-toastify";
 
 const Header = () => {
   const pathName = usePathname();
-  const { auth, logout } = useContext(AuthContext);
+  const { auth, logout } = useContext(AuthContext) || {};
   const router = useRouter();
 
-  const handleLogout = () => {
-    logout();
-    toast.info("Logged out successfully.");
-    router.push("/login");
+  const handleLogout = async () => {
+    if (logout) {
+      try {
+        const result = await logout();
+        // Treat a 404 or no session as a successful logout.
+        if (result.success || result.message?.includes("No active session")) {
+          toast.info("Logged out successfully.");
+          router.push("/");
+        } else {
+          toast.error(result.message || "Failed to logout. Please try again.");
+        }
+      } catch (error) {
+        console.error("Logout exception:", error);
+        toast.error("An error occurred during logout.");
+      }
+    }
   };
+
+  // Check if user is actually authenticated (has a token)
+  const isAuthenticated = auth && auth.token;
 
   return (
     <>
@@ -55,7 +70,7 @@ const Header = () => {
 
           {/* Right Side - Auth Buttons */}
           <div className="flex-1 flex justify-end">
-            {auth.token ? (
+            {isAuthenticated ? (
               <button
                 onClick={handleLogout}
                 className="px-6 py-3 bg-red-500 text-white rounded-full hover:bg-red-600 transition duration-300"
@@ -65,13 +80,13 @@ const Header = () => {
             ) : (
               <>
                 <Link
-                  href="/login"
+                  href="/"
                   className="mr-4 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300"
                 >
                   Login
                 </Link>
                 <Link
-                  href="/signup"
+                  href="/"
                   className="px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition duration-300"
                 >
                   Sign Up

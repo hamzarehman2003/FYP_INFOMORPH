@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     if (!auth.token) {
       toast.error("You must be logged in to access this page.");
-      router.push("/login");
+      router.push("/");
     }
   }, [auth.token, router]);
 
