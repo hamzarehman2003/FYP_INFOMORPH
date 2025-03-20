@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'JameelNoori';
+  src: url('/FYP_INFOMORPH/info-morph/src/app/fonts/jameel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

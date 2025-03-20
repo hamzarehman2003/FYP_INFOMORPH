@@ -1,371 +1,402 @@
-2024-10-12 07:55:14,117 [ERROR] Failed to fetch https://www.nytimes.com/2024/08/23/sports/arshad-nadeem-javelin-gold-olympics-buffalo.html: HTTP 403
-2024-10-12 10:17:50,043 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-launches-drone-attack-israel-expected-unfold-over-hours-2024-04-13/: HTTP 401
-2024-10-12 10:57:17,289 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-says-it-has-finished-attack-israel-amid-fears-spreading-conflict-2024-10-02/: HTTP 401
-<<<<<<< HEAD
-2024-12-11 00:40:13,699 [ERROR] Video generation failed: name 'config' is not defined
-2024-12-11 00:40:13,699 [ERROR] Video generation failed: name 'config' is not defined
-2024-12-11 01:26:16,415 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
-2024-12-11 01:26:16,415 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
-2024-12-11 01:26:16,417 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
-2024-12-11 01:26:16,417 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
-2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
-2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
-2024-12-11 01:26:16,419 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
-2024-12-11 01:26:16,419 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
-2024-12-11 01:26:16,419 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-2024-12-11 01:26:16,419 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-2024-12-11 01:27:12,561 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
-2024-12-11 01:27:12,561 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
-2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
-2024-12-11 01:27:12,563 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-2024-12-11 01:27:12,563 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-2024-12-11 01:27:36,983 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:27:36,983 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:27:36,984 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-2024-12-11 01:27:36,984 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-=======
-2024-12-09 23:29:57,979 [ERROR] Error fetching robots.txt from https://olympics.com/robots.txt: Remote end closed connection without response
-2024-12-10 00:07:44,193 [ERROR] Error fetching robots.txt from https://olympics.com/robots.txt: Remote end closed connection without response
-2024-12-10 02:12:10,166 [ERROR] Failed to fetch https://www.reuters.com/sports/olympics/mud-brick-house-olympic-podium-arshad-nadeem-is-unlikely-pakistani-hero-2024-08-09/: HTTP 401
->>>>>>> bbc4b06cb7b234e642ad1055c4a9cf0837f68d6a
-2024-12-11 01:39:31,328 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
-2024-12-11 01:39:31,328 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
-2024-12-11 01:39:31,330 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:39:31,330 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
-2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
-2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
-2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
-2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
-2024-12-11 01:39:31,332 [ERROR] Summarization failed for article 'News, Photos, Stats, Ranking, Records - NDTV Sports': name 'tokenizer' is not defined
-2024-12-11 01:39:31,332 [ERROR] Summarization failed for article 'News, Photos, Stats, Ranking, Records - NDTV Sports': name 'tokenizer' is not defined
-2024-12-11 01:39:31,332 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-2024-12-11 01:39:31,332 [ERROR] Final summarization failed: name 'tokenizer' is not defined
-2024-12-11 02:21:25,027 [ERROR] Access denied to https://www.unicef.org/emergencies/devastating-floods-pakistan-2022: HTTP 403 Forbidden.
-2024-12-11 02:21:25,027 [ERROR] Access denied to https://www.unicef.org/emergencies/devastating-floods-pakistan-2022: HTTP 403 Forbidden.
-2024-12-11 02:26:12,200 [ERROR] Scraping failed: 'summary'
-2024-12-11 02:26:12,200 [ERROR] Scraping failed: 'summary'
-2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
-2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
-2024-12-11 22:24:52,970 [ERROR] Regenerated summary is still too short (275 words).
-2024-12-11 22:24:52,970 [ERROR] Regenerated summary is still too short (275 words).
-2024-12-12 02:09:26,917 [ERROR] Form data requires "python-multipart" to be installed. 
-You can install "python-multipart" with: 
-
-pip install python-multipart
-
-2024-12-12 02:09:26,917 [ERROR] Form data requires "python-multipart" to be installed. 
-You can install "python-multipart" with: 
-
-pip install python-multipart
-
-2025-03-19 07:13:31,016 [ERROR] Regenerated summary is still too short (215 words).
-2025-03-19 07:13:31,016 [ERROR] Regenerated summary is still too short (215 words).
-2025-03-19 07:16:43,087 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 07:16:43,087 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 07:16:43,804 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 07:16:43,804 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 07:16:48,169 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-19 07:16:48,169 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-19 07:20:50,413 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 07:20:50,413 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 07:24:08,819 [ERROR] Regenerated summary is still too short (297 words).
-2025-03-19 07:24:08,819 [ERROR] Regenerated summary is still too short (297 words).
-2025-03-19 07:36:12,331 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:36:12,331 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:36:14,628 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:36:14,628 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:36:16,304 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:36:16,304 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:37:09,941 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1780290330807415028: 
-2025-03-19 07:37:09,941 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1780290330807415028: 
-2025-03-19 07:37:10,027 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:37:10,027 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:37:10,047 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:37:10,047 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:37:10,059 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:37:10,059 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:37:10,068 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:37:10,068 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:37:10,077 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:37:10,077 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:37:10,087 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:37:10,087 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:37:10,095 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:37:10,095 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:37:10,104 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:37:10,104 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:37:10,115 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:37:10,115 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:37:10,127 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:37:10,127 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:37:10,135 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:37:10,135 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:37:10,143 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:37:10,143 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:37:10,177 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:37:10,177 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:37:10,186 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:37:10,186 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:37:10,194 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:37:10,194 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:37:10,206 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:37:10,206 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:37:10,216 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:37:10,216 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:37:10,223 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:37:10,223 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:37:10,233 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:37:10,233 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:37:10,243 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:37:10,243 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:37:10,252 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:37:10,252 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:37:10,260 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:37:10,260 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:37:10,269 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:37:10,269 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:37:10,276 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:37:10,276 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:40:08,095 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 07:40:08,095 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 07:40:08,904 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:40:08,904 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:40:13,125 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:40:13,125 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:40:13,387 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:40:13,387 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:40:59,947 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 07:40:59,947 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 07:40:59,994 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:40:59,994 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:41:00,004 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:41:00,004 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:41:00,017 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:41:00,017 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:41:00,035 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:41:00,035 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:41:00,046 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:41:00,046 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:41:00,057 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:41:00,057 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:41:00,068 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:41:00,068 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:41:00,085 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:41:00,085 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:41:00,095 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:41:00,095 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:41:00,108 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:41:00,108 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:41:00,118 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:41:00,118 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:41:00,128 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:41:00,128 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:41:00,164 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:41:00,164 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:41:00,174 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:41:00,174 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:41:00,180 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:41:00,180 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:41:00,192 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:41:00,192 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:41:00,201 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:41:00,201 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:41:00,208 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:41:00,208 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:41:00,218 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:41:00,218 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:41:00,226 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:41:00,226 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:41:00,235 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:41:00,235 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:41:00,244 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:41:00,244 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:41:00,255 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:41:00,255 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:41:00,267 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:41:00,267 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:45:27,342 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 07:45:27,342 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 07:45:27,580 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:45:27,580 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:45:31,152 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:45:31,152 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:45:34,188 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:45:34,188 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:46:18,951 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 07:46:18,951 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 07:46:18,997 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:46:18,997 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:46:19,005 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:46:19,005 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:46:19,018 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:46:19,018 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:46:19,031 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:46:19,031 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:46:19,039 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:46:19,039 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:46:19,048 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:46:19,048 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:46:19,056 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:46:19,056 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:46:19,065 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:46:19,065 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:46:19,074 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:46:19,074 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:46:19,083 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:46:19,083 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:46:19,090 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:46:19,090 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:46:19,100 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:46:19,100 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:46:19,137 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:46:19,137 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:46:19,145 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:46:19,145 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:46:19,153 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:46:19,153 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:46:19,162 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:46:19,162 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:46:19,171 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:46:19,171 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:46:19,178 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:46:19,178 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:46:19,187 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:46:19,187 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:46:19,197 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:46:19,197 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:46:19,204 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:46:19,204 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:46:19,213 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:46:19,213 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:46:19,223 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:46:19,223 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:46:19,233 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:46:19,233 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:50:00,257 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 07:50:00,257 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 07:50:00,539 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:50:00,539 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:50:04,420 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:50:04,420 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:50:05,253 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:50:05,253 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:50:51,946 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 07:50:51,946 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 07:50:51,991 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:50:51,991 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:50:52,000 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:50:52,000 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:50:52,010 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:50:52,010 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:50:52,018 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:50:52,018 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:50:52,028 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:50:52,028 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:50:52,036 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:50:52,036 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:50:52,045 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:50:52,045 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:50:52,115 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:50:52,115 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:50:52,124 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:50:52,124 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:50:52,154 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:50:52,154 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:50:52,163 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:50:52,163 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:50:52,172 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:50:52,172 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:50:52,210 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:50:52,210 [ERROR] Error in summarization: index out of range in self
-2025-03-19 07:50:52,219 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:50:52,219 [ERROR] Error summarizing chunk 1: index out of range in self
-2025-03-19 07:50:52,228 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:50:52,228 [ERROR] Error summarizing chunk 2: index out of range in self
-2025-03-19 07:50:52,238 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:50:52,238 [ERROR] Error summarizing chunk 3: index out of range in self
-2025-03-19 07:50:52,246 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:50:52,246 [ERROR] Error summarizing chunk 4: index out of range in self
-2025-03-19 07:50:52,255 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:50:52,255 [ERROR] Error summarizing chunk 5: index out of range in self
-2025-03-19 07:50:52,263 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:50:52,263 [ERROR] Error summarizing chunk 6: index out of range in self
-2025-03-19 07:50:52,273 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:50:52,273 [ERROR] Error summarizing chunk 7: index out of range in self
-2025-03-19 07:50:52,282 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:50:52,282 [ERROR] Error summarizing chunk 8: index out of range in self
-2025-03-19 07:50:52,292 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:50:52,292 [ERROR] Error summarizing chunk 9: index out of range in self
-2025-03-19 07:50:52,300 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:50:52,300 [ERROR] Error summarizing chunk 10: index out of range in self
-2025-03-19 07:50:52,309 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:50:52,309 [ERROR] Error summarizing chunk 11: index out of range in self
-2025-03-19 07:59:48,222 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:59:48,222 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
-2025-03-19 07:59:50,598 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:59:50,598 [ERROR] Access denied to https://www.hltv.org/news/38030/editorial-cs2s-open-qualifier-problem: HTTP 403 Forbidden.
-2025-03-19 07:59:51,230 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:59:51,230 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
-2025-03-19 07:59:52,802 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 07:59:52,802 [ERROR] Access denied to https://play.esea.net/forums/1339411: HTTP 403 Forbidden.
-2025-03-19 08:00:44,962 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 08:00:44,962 [ERROR] Max retries reached for https://twitter.com/Ozzny_CS2/status/1725115879443018154: 
-2025-03-19 08:00:45,006 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 08:00:45,006 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 15:21:22,510 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:22,510 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:23,238 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:23,238 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:29,230 [ERROR] Error fetching robots.txt from https://www.hindustantimes.com/robots.txt: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:29,230 [ERROR] Error fetching robots.txt from https://www.hindustantimes.com/robots.txt: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:38,025 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-19 15:21:38,025 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-19 15:21:39,775 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-19 15:21:39,775 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-19 15:21:50,304 [ERROR] Max retries reached for https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:50,304 [ERROR] Max retries reached for https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:50,362 [ERROR] Max retries reached for https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:50,362 [ERROR] Max retries reached for https://timesofindia.indiatimes.com/sports/cricket/news/when-babar-azam-was-captain-he-never-bothered-to-kamran-akmal-slams-pakistan-team-management/articleshow/113099488.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
-2025-03-19 15:21:50,367 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 15:21:50,367 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 15:54:06,055 [ERROR] JWT Error: Signature has expired.
-2025-03-19 15:54:06,055 [ERROR] JWT Error: Signature has expired.
-2025-03-19 15:54:54,841 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
-2025-03-19 15:54:54,841 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
-2025-03-19 15:55:00,917 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 15:55:00,917 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 15:55:01,025 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 15:55:01,025 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 15:55:05,108 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 15:55:05,108 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 16:08:35,064 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 16:08:35,064 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 16:08:38,553 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 16:08:38,553 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 16:08:38,667 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
-2025-03-19 16:08:38,667 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
-2025-03-19 16:08:40,085 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 16:08:40,085 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 16:29:03,821 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 16:29:03,821 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 16:29:10,568 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 16:29:10,568 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 16:29:13,398 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 16:29:13,398 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 16:42:39,534 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 16:42:39,534 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
-2025-03-19 16:42:42,463 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
-2025-03-19 16:42:42,463 [ERROR] Access denied to https://kick.com/category/valorant: HTTP 403 Forbidden.
-2025-03-19 16:42:45,993 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 16:42:45,993 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
-2025-03-19 16:42:47,974 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
-2025-03-19 16:42:47,974 [ERROR] Error in Gemini summarization: 'PegasusForConditionalGeneration' object has no attribute 'generate_content'
+2025-03-20 11:16:37,981 [ERROR] Unexpected error fetching article at https://resources.playcommunity.pulselive.com/playcommunity/document/2023/06/21/d92e09c8-1919-42eb-88ae-d27b894b24c3/2018-Official-Rules-of-Indoor-Cricket_WICF-Final.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 11:16:37,981 [ERROR] Unexpected error fetching article at https://resources.playcommunity.pulselive.com/playcommunity/document/2023/06/21/d92e09c8-1919-42eb-88ae-d27b894b24c3/2018-Official-Rules-of-Indoor-Cricket_WICF-Final.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 11:16:42,530 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:16:42,530 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:21:22,543 [ERROR] Error fetching robots.txt from https://www.sigmaaldrich.com/robots.txt: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-03-20 11:21:22,543 [ERROR] Error fetching robots.txt from https://www.sigmaaldrich.com/robots.txt: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-03-20 11:21:37,254 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/39488067/: HTTP 403 Forbidden.
+2025-03-20 11:21:37,254 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/39488067/: HTTP 403 Forbidden.
+2025-03-20 11:21:37,593 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/14561278/: HTTP 403 Forbidden.
+2025-03-20 11:21:37,593 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/14561278/: HTTP 403 Forbidden.
+2025-03-20 11:22:42,770 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/23851411/: HTTP 403 Forbidden.
+2025-03-20 11:22:42,770 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/23851411/: HTTP 403 Forbidden.
+2025-03-20 11:22:43,886 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/15159476/: HTTP 403 Forbidden.
+2025-03-20 11:22:43,886 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/15159476/: HTTP 403 Forbidden.
+2025-03-20 11:22:43,887 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/10802796/: HTTP 403 Forbidden.
+2025-03-20 11:22:43,887 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/10802796/: HTTP 403 Forbidden.
+2025-03-20 11:22:44,218 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/25668262/: HTTP 403 Forbidden.
+2025-03-20 11:22:44,218 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/25668262/: HTTP 403 Forbidden.
+2025-03-20 11:22:44,310 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/11356982/: HTTP 403 Forbidden.
+2025-03-20 11:22:44,310 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/11356982/: HTTP 403 Forbidden.
+2025-03-20 11:22:44,758 [ERROR] Access denied to https://legionathletics.com/products/supplements/micronized-creatine-monohydrate/: HTTP 403 Forbidden.
+2025-03-20 11:22:44,758 [ERROR] Access denied to https://legionathletics.com/products/supplements/micronized-creatine-monohydrate/: HTTP 403 Forbidden.
+2025-03-20 11:22:49,037 [ERROR] Access denied to https://pmc.ncbi.nlm.nih.gov/articles/PMC9761713/: HTTP 403 Forbidden.
+2025-03-20 11:22:49,037 [ERROR] Access denied to https://pmc.ncbi.nlm.nih.gov/articles/PMC9761713/: HTTP 403 Forbidden.
+2025-03-20 11:23:21,261 [ERROR] Max retries reached for https://www.sigmaaldrich.com/US/en/product/sigma/c3630: 
+2025-03-20 11:23:21,261 [ERROR] Max retries reached for https://www.sigmaaldrich.com/US/en/product/sigma/c3630: 
+2025-03-20 11:23:23,265 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:23:23,265 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:23:23,614 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:23:23,614 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:33:11,277 [ERROR] Max retries reached for https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/how-to-import/step-by-step-guides/category-3-step-by-step-guide-for-cats: 
+2025-03-20 11:33:11,277 [ERROR] Max retries reached for https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/how-to-import/step-by-step-guides/category-3-step-by-step-guide-for-cats: 
+2025-03-20 11:33:12,903 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:33:12,903 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:33:13,316 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:33:13,316 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:44:14,270 [ERROR] Max retries reached for https://imaginecup.microsoft.com/en-us/Team/7889342e-69c0-48bc-8b87-dad4512a8881: 
+2025-03-20 11:44:14,270 [ERROR] Max retries reached for https://imaginecup.microsoft.com/en-us/Team/7889342e-69c0-48bc-8b87-dad4512a8881: 
+2025-03-20 11:44:15,788 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:44:15,788 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:44:16,075 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:44:16,075 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:54:18,910 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:54:18,910 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:54:19,255 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 11:54:19,255 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:04:42,734 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 12:04:42,734 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 12:05:06,309 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-20 12:05:06,309 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-20 12:05:09,716 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-20 12:05:09,716 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-20 12:05:13,198 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 12:05:13,198 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 12:05:15,313 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:05:15,313 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:05:15,844 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:05:15,844 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:06:52,952 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:06:52,952 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:06:59,359 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-20 12:06:59,359 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-20 12:07:04,683 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:07:04,683 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:07:07,115 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 12:07:07,115 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 12:07:18,593 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23351) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 12:07:18,593 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23351) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 12:07:22,216 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:07:22,216 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:07:50,271 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 12:07:50,271 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 12:07:50,801 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:07:50,801 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:07:51,343 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:07:51,343 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:09:30,872 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:09:30,872 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:09:36,604 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-20 12:09:36,604 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-20 12:09:47,120 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:09:47,120 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:09:47,362 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 12:09:47,362 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 12:09:56,299 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:09:56,299 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 12:09:59,015 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 12:09:59,015 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 12:10:28,266 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 12:10:28,266 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 12:10:28,950 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:10:28,950 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:10:29,497 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:10:29,497 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:21:27,436 [ERROR] Access denied to https://www.france24.com/en/live-news/20241204-pakistan-recall-babar-azam-for-south-africa-tour-sajid-khan-out: HTTP 403 Forbidden.
+2025-03-20 12:21:27,436 [ERROR] Access denied to https://www.france24.com/en/live-news/20241204-pakistan-recall-babar-azam-for-south-africa-tour-sajid-khan-out: HTTP 403 Forbidden.
+2025-03-20 12:21:32,047 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:21:32,047 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:21:33,036 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:21:33,036 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:21:41,787 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:21:41,787 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:21:42,156 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:21:42,156 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:23:32,044 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:23:32,044 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:23:53,447 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:23:53,447 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:23:55,218 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:23:55,218 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:23:58,242 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:23:58,242 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:23:58,820 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:23:58,820 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:29:28,599 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:29:28,599 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:29:29,103 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:29:29,103 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:29:31,848 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:29:31,848 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:29:48,348 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:48,348 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:49,904 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:49,904 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:50,666 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:50,666 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:51,719 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:51,719 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:52,094 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:52,094 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:52,720 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:52,720 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:53,161 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:53,161 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:53,606 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:53,606 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:54,136 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:54,136 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:54,137 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:54,137 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:54,595 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:54,595 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:54,596 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:54,596 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:54,958 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:54,958 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:54,958 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:54,958 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:55,544 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:55,544 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:55,544 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:55,544 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:55,915 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:55,915 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:55,915 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:55,915 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:56,428 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:56,428 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:56,429 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:56,429 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:57,076 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:57,076 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:57,078 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:57,078 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:57,573 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:57,573 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:29:57,573 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:29:57,573 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:36:27,744 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:36:27,744 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:36:59,272 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:36:59,272 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:37:03,601 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:37:03,601 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:37:14,404 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:14,404 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:17,243 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:17,243 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:18,176 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:18,176 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:18,932 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:18,932 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:19,737 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:19,737 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:20,385 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:20,385 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:21,082 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:21,082 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:21,565 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:21,565 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:22,074 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:22,074 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:22,075 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:22,075 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:22,695 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:22,695 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:22,696 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:22,696 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:23,456 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:23,456 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:23,460 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:23,460 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:23,917 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:23,917 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:23,918 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:23,918 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:24,511 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:24,511 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:24,512 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:24,512 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:24,951 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:24,951 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:24,951 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:24,951 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:25,322 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:25,322 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:25,323 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:25,323 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:25,817 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:25,817 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:37:25,818 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:37:25,818 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:38:30,065 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 12:38:30,065 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 12:39:07,500 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 12:39:07,500 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 12:39:17,398 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:17,398 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:17,672 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:17,672 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:18,064 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:18,064 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:18,403 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:18,403 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:18,706 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:18,706 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:19,005 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:19,005 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:19,542 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:19,542 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:19,841 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:19,841 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:20,142 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:20,142 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:20,504 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:20,504 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:20,505 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:20,505 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:20,968 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:20,968 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:20,970 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:20,970 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:21,333 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:21,333 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:21,333 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:21,333 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:21,700 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:21,700 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:21,700 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:21,700 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:22,044 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:22,044 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:22,045 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:22,045 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:22,526 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:22,526 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:22,527 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:22,527 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:22,832 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:22,832 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:22,832 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:22,832 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:23,133 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:23,133 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:23,133 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:23,133 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:23,551 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:23,551 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-20 12:39:23,552 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:39:23,552 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-20 12:40:45,808 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 12:40:45,808 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 12:41:19,924 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 12:41:19,924 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 12:41:25,148 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:41:25,148 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:41:25,534 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:41:25,534 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:49:54,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:49:54,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:50:09,481 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:50:09,481 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:50:15,283 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:50:15,283 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:50:19,841 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:50:19,841 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:50:20,191 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:50:20,191 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:50:36,155 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:50:36,155 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 12:50:37,086 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:50:37,086 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 12:50:51,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:50:51,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 12:50:52,792 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:50:52,792 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:57:21,809 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:57:21,809 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:58:50,618 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 12:58:50,618 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 12:59:25,336 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 12:59:25,336 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 12:59:31,235 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:59:31,235 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:59:31,810 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 12:59:31,810 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:09:45,858 [ERROR] JWT Error: Signature has expired.
+2025-03-20 14:09:45,858 [ERROR] JWT Error: Signature has expired.
+2025-03-20 14:10:35,330 [ERROR] Access denied to https://openai.com/index/chatgpt/: HTTP 403 Forbidden.
+2025-03-20 14:10:35,330 [ERROR] Access denied to https://openai.com/index/chatgpt/: HTTP 403 Forbidden.
+2025-03-20 14:10:35,338 [ERROR] Access denied to https://platform.openai.com/docs/guides/text-generation: HTTP 403 Forbidden.
+2025-03-20 14:10:35,338 [ERROR] Access denied to https://platform.openai.com/docs/guides/text-generation: HTTP 403 Forbidden.
+2025-03-20 14:10:35,402 [ERROR] Access denied to https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq: HTTP 403 Forbidden.
+2025-03-20 14:10:35,402 [ERROR] Access denied to https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq: HTTP 403 Forbidden.
+2025-03-20 14:10:35,420 [ERROR] Access denied to https://openai.com/chatgpt/overview/: HTTP 403 Forbidden.
+2025-03-20 14:10:35,420 [ERROR] Access denied to https://openai.com/chatgpt/overview/: HTTP 403 Forbidden.
+2025-03-20 14:10:38,981 [ERROR] Access denied to https://help.openai.com/en/articles/6825453-chatgpt-release-notes: HTTP 403 Forbidden.
+2025-03-20 14:10:38,981 [ERROR] Access denied to https://help.openai.com/en/articles/6825453-chatgpt-release-notes: HTTP 403 Forbidden.
+2025-03-20 14:10:39,034 [ERROR] Access denied to https://openai.com/: HTTP 403 Forbidden.
+2025-03-20 14:10:39,034 [ERROR] Access denied to https://openai.com/: HTTP 403 Forbidden.
+2025-03-20 14:10:45,216 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:10:45,216 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:19:00,416 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:19:00,416 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:21:08,800 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 14:21:08,800 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-20 14:21:09,096 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 14:21:09,096 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-20 14:21:09,330 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 14:21:09,330 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-20 14:21:36,099 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:21:36,099 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:24:19,557 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:24:19,557 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:24:43,587 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-20 14:24:43,587 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-20 14:24:49,293 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-20 14:24:49,293 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-20 14:24:54,932 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:24:54,932 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:24:55,622 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:24:55,622 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:26:37,069 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 14:26:37,069 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-20 14:27:23,408 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 14:27:23,408 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-20 14:27:24,937 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:27:24,937 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:44:32,390 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:44:32,390 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:44:34,342 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:44:34,342 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:44:35,819 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 14:44:35,819 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 14:44:37,893 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-20 14:44:37,893 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-20 14:44:38,502 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:44:38,502 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:44:44,045 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 14:44:44,045 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 14:45:28,268 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 14:45:28,268 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 14:45:29,973 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:45:29,973 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:47:54,603 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:47:54,603 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:47:55,124 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:47:55,124 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:48:02,375 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 14:48:02,375 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-20 14:48:03,106 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
+2025-03-20 14:48:03,106 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
+2025-03-20 14:48:04,180 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:48:04,180 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-20 14:48:12,450 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 14:48:12,450 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-20 14:48:49,258 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 14:48:49,258 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-20 14:48:49,752 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:48:49,752 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:50:21,849 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:50:21,849 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:50:28,698 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:50:28,698 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:50:52,237 [ERROR] Access denied to https://www.alvarezandmarsal.com/our-people/imran-khan: HTTP 403 Forbidden.
+2025-03-20 14:50:52,237 [ERROR] Access denied to https://www.alvarezandmarsal.com/our-people/imran-khan: HTTP 403 Forbidden.
+2025-03-20 14:50:54,349 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-20 14:50:54,349 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-20 14:51:02,816 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:51:02,816 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-20 14:51:03,282 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-20 14:51:03,282 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.

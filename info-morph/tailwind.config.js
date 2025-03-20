@@ -7,8 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // Keep your existing definitions:
       fontFamily: {
         poppins: "var(--font-poppins)",
+
+        // 1) ADD the new 'nastaleeq' entry:
+        nastaleeq: ['JameelNoori', 'serif'],
       },
       colors: {
         background: "var(--background)",

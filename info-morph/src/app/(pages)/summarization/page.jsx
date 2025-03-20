@@ -56,7 +56,7 @@ const Summarization = () => {
           <h1 className="text-3xl font-bold">Professional Summary</h1>
         </div>
         <div className="h-96 overflow-y-scroll">
-          <p className="text-lg text-gray-700 whitespace-pre-line leading-relaxed">
+          <p className="text-lg text-gray-700 whitespace-pre-line leading-relaxed font-">
             {summary}
           </p>
         </div>
