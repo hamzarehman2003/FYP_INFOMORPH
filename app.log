@@ -458,6 +458,7 @@ Traceback (most recent call last):
     version = _bcrypt.__about__.__version__
               ^^^^^^^^^^^^^^^^^
 AttributeError: module 'bcrypt' has no attribute '__about__'
+<<<<<<< HEAD
 2025-03-20 11:53:43,612 [INFO] User logged in: t@gmail.com
 2025-03-20 11:53:50,673 [INFO] Attempting to authenticate with token: eyJhbGciOi...
 2025-03-20 11:53:50,675 [INFO] Token decoded successfully, email: t@gmail.com
@@ -50600,3 +50601,431 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-03-20 14:51:03,286 [INFO] Generated summary with 180 words.
 2025-03-20 14:51:07,456 [INFO] Final summary forcibly translated to ur
 2025-03-20 14:51:07,458 [INFO] Data written to output.json.
+=======
+2024-12-12 03:37:25,532 [INFO] User logged in: m@gmail.com
+2024-12-12 03:38:16,317 [INFO] User logged in: m@gmail.com
+2024-12-12 03:40:04,835 [INFO] User logged in: m@gmail.com
+2024-12-12 03:41:30,409 [INFO] User logged in: m@gmail.com
+2024-12-12 03:41:51,498 [INFO] User logged in: m@gmail.com
+2024-12-12 03:46:33,189 [INFO] User logged in: m@gmail.com
+2024-12-12 03:52:20,861 [INFO] User logged in: m@gmail.com
+2024-12-12 03:53:00,697 [INFO] User logged in: m@gmail.com
+2024-12-12 03:53:31,994 [INFO] User logged in: m@gmail.com
+2024-12-12 03:54:29,784 [INFO] User logged in: m@gmail.com
+2024-12-12 03:57:22,683 [INFO] User logged in: m@gmail.com
+2024-12-12 03:59:48,567 [INFO] User logged in: m@gmail.com
+2024-12-12 04:02:26,328 [INFO] User logged in: m@gmail.com
+2024-12-12 04:13:35,118 [INFO] User logged in: m@gmail.com
+2024-12-12 04:16:04,260 [INFO] User logged in: m@gmail.com
+2024-12-12 04:27:04,374 [INFO] User logged in: m@gmail.com
+2024-12-12 04:41:18,603 [INFO] User logged in: m@gmail.com
+2025-03-19 06:47:35,675 [INFO] Database path: E:\University\FYP\FYP_INFOMORPH\users.db
+2025-03-19 06:47:35,704 [INFO] Database engine created successfully
+2025-03-19 06:47:35,704 [INFO] Session maker created successfully
+2025-03-19 06:47:35,705 [INFO] Base declarative class created successfully
+2025-03-19 06:47:35,846 [INFO] BEGIN (implicit)
+2025-03-19 06:47:35,847 [INFO] PRAGMA main.table_info("users")
+2025-03-19 06:47:35,847 [INFO] [raw sql] ()
+2025-03-19 06:47:35,848 [INFO] COMMIT
+2025-03-19 06:47:35,848 [INFO] Database tables created successfully
+2025-03-19 06:48:01,392 [INFO] Database path: E:\University\FYP\FYP_INFOMORPH\users.db
+2025-03-19 06:48:01,400 [INFO] Database engine created successfully
+2025-03-19 06:48:01,401 [INFO] Session maker created successfully
+2025-03-19 06:48:01,401 [INFO] Base declarative class created successfully
+2025-03-19 06:48:01,444 [INFO] BEGIN (implicit)
+2025-03-19 06:48:01,445 [INFO] PRAGMA main.table_info("users")
+2025-03-19 06:48:01,445 [INFO] [raw sql] ()
+2025-03-19 06:48:01,446 [INFO] COMMIT
+2025-03-19 06:48:01,446 [INFO] Database tables created successfully
+2025-03-19 06:48:11,506 [INFO] Database path: E:\University\FYP\FYP_INFOMORPH\users.db
+2025-03-19 06:48:11,515 [INFO] Database engine created successfully
+2025-03-19 06:48:11,516 [INFO] Session maker created successfully
+2025-03-19 06:48:11,516 [INFO] Base declarative class created successfully
+2025-03-19 06:48:11,562 [INFO] BEGIN (implicit)
+2025-03-19 06:48:11,563 [INFO] PRAGMA main.table_info("users")
+2025-03-19 06:48:11,563 [INFO] [raw sql] ()
+2025-03-19 06:48:11,564 [INFO] COMMIT
+2025-03-19 06:48:11,564 [INFO] Database tables created successfully
+2025-03-19 06:48:51,929 [INFO] BEGIN (implicit)
+2025-03-19 06:48:51,932 [INFO] SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-03-19 06:48:51,932 [INFO] [generated in 0.00100s] ('ahmadmoazam6@gmail.com', 1, 0)
+2025-03-19 06:48:51,935 [INFO] ROLLBACK
+2025-03-19 06:48:54,427 [INFO] BEGIN (implicit)
+2025-03-19 06:48:54,428 [INFO] SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-03-19 06:48:54,429 [INFO] [cached since 2.497s ago] ('ahmadmoazam6@gmail.com', 1, 0)
+2025-03-19 06:48:54,431 [INFO] ROLLBACK
+2025-03-19 06:49:22,081 [INFO] Database path: E:\University\FYP\FYP_INFOMORPH\users.db
+2025-03-19 06:49:22,093 [INFO] Database engine created successfully
+2025-03-19 06:49:22,094 [INFO] Session maker created successfully
+2025-03-19 06:49:22,094 [INFO] Base declarative class created successfully
+2025-03-19 06:49:22,139 [INFO] BEGIN (implicit)
+2025-03-19 06:49:22,140 [INFO] PRAGMA main.table_info("users")
+2025-03-19 06:49:22,140 [INFO] [raw sql] ()
+2025-03-19 06:49:22,141 [INFO] COMMIT
+2025-03-19 06:49:22,142 [INFO] Database tables created successfully
+2025-03-19 06:49:26,524 [INFO] BEGIN (implicit)
+2025-03-19 06:49:26,526 [INFO] SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-03-19 06:49:26,527 [INFO] [generated in 0.00081s] ('ahmadmoazam6@gmail.com', 1, 0)
+2025-03-19 06:49:26,529 [INFO] ROLLBACK
+2025-03-19 06:49:41,246 [INFO] BEGIN (implicit)
+2025-03-19 06:49:41,247 [INFO] SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-03-19 06:49:41,248 [INFO] [cached since 14.72s ago] ('ahmadmoazam6@gmail.com', 1, 0)
+2025-03-19 06:49:41,250 [INFO] ROLLBACK
+2025-03-19 06:51:02,608 [INFO] Database path: E:\University\FYP\FYP_INFOMORPH\users.db
+2025-03-19 06:51:02,617 [INFO] Database engine created successfully
+2025-03-19 06:51:02,617 [INFO] Session maker created successfully
+2025-03-19 06:51:02,618 [INFO] Base declarative class created successfully
+2025-03-19 06:51:02,720 [INFO] BEGIN (implicit)
+2025-03-19 06:51:02,721 [INFO] PRAGMA main.table_info("users")
+2025-03-19 06:51:02,721 [INFO] [raw sql] ()
+2025-03-19 06:51:02,722 [INFO] COMMIT
+2025-03-19 06:51:02,722 [INFO] Database tables created successfully
+2025-03-19 06:51:19,091 [INFO] BEGIN (implicit)
+2025-03-19 06:51:19,093 [INFO] SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-03-19 06:51:19,094 [INFO] [generated in 0.00089s] ('ahmadmoazam6@gmail.com', 1, 0)
+2025-03-19 06:51:19,095 [WARNING] (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\University\FYP\FYP_INFOMORPH\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-19 06:51:19,307 [INFO] INSERT INTO users (email, hashed_password) VALUES (?, ?)
+2025-03-19 06:51:19,307 [INFO] [generated in 0.00064s] ('ahmadmoazam6@gmail.com', '$2b$12$XFfujPyzFoHYyKV0kwYQfO5nnZDNWestOeHXplEpIr.ViZjivAH8e')
+2025-03-19 06:51:19,357 [INFO] COMMIT
+2025-03-19 06:51:19,466 [INFO] BEGIN (implicit)
+2025-03-19 06:51:19,467 [INFO] SELECT users.id, users.email, users.hashed_password 
+FROM users 
+WHERE users.id = ?
+2025-03-19 06:51:19,468 [INFO] [generated in 0.00056s] (3,)
+2025-03-19 06:51:19,716 [INFO] New user registered: ahmadmoazam6@gmail.com
+2025-03-19 06:51:19,754 [INFO] ROLLBACK
+2025-03-19 16:25:41,981 [INFO] Database path: E:\University\FYP\FYP_INFOMORPH\users.db
+2025-03-19 16:25:42,077 [INFO] Database engine created successfully
+2025-03-19 16:25:42,078 [INFO] Session maker created successfully
+2025-03-19 16:25:42,078 [INFO] Base declarative class created successfully
+2025-03-19 16:25:45,346 [INFO] BEGIN (implicit)
+2025-03-19 16:25:45,346 [INFO] PRAGMA main.table_info("users")
+2025-03-19 16:25:45,346 [INFO] [raw sql] ()
+2025-03-19 16:25:45,349 [INFO] COMMIT
+2025-03-19 16:25:45,349 [INFO] Database tables created successfully
+2025-03-19 16:47:54,370 [INFO] Database configuration will be added later
+2025-03-19 16:48:03,606 [INFO] Database configuration will be added later
+2025-03-19 21:04:23,630 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:04:23,630 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:38,981 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:05:38,982 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:47,892 [INFO] Using Supabase URL: https://supabase.com/dashboard/project/ljrlwlsqivyghpshguee
+2025-03-19 21:05:47,893 [INFO] API Key found (masked): your**********************************-key
+2025-03-19 21:05:47,893 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:05:47,894 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:47,894 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-19 21:05:48,032 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:05:48,033 [WARNING] Could not authenticate with Supabase at startup
+2025-03-19 21:07:07,071 [INFO] Using Supabase URL: https://supabase.com/dashboard/project/ljrlwlsqivyghpshguee
+2025-03-19 21:07:07,072 [INFO] API Key found (masked): your**********************************-key
+2025-03-19 21:07:07,072 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:07:07,072 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:07:07,073 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-19 21:07:07,243 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:07:07,244 [WARNING] Could not authenticate with Supabase at startup
+2025-03-19 21:10:38,626 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 21:10:38,626 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 21:10:38,627 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:10:39,029 [INFO] Supabase client initialized successfully
+2025-03-19 21:10:39,354 [INFO] Successfully created Supabase client
+2025-03-19 21:10:40,593 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 21:10:40,596 [INFO] Successfully connected to Supabase
+2025-03-19 21:10:40,596 [INFO] Successfully connected to Supabase at startup
+2025-03-19 21:15:26,734 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 21:15:26,735 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 21:15:26,735 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:15:26,941 [INFO] Supabase client initialized successfully
+2025-03-19 21:15:27,269 [INFO] Successfully created Supabase client
+2025-03-19 21:15:28,025 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 21:15:28,029 [INFO] Successfully connected to Supabase
+2025-03-19 21:15:28,029 [INFO] Successfully connected to Supabase at startup
+2025-03-19 21:15:37,242 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 21:15:37,243 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 21:15:37,243 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:15:37,446 [INFO] Supabase client initialized successfully
+2025-03-19 21:15:37,754 [INFO] Successfully created Supabase client
+2025-03-19 21:15:38,221 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 21:15:38,224 [INFO] Successfully connected to Supabase
+2025-03-19 21:15:38,224 [INFO] Successfully connected to Supabase at startup
+2025-03-19 21:15:46,885 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 21:15:46,886 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 21:15:46,886 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:15:47,109 [INFO] Supabase client initialized successfully
+2025-03-19 21:15:47,423 [INFO] Successfully created Supabase client
+2025-03-19 21:15:47,878 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 21:15:47,881 [INFO] Successfully connected to Supabase
+2025-03-19 21:15:47,881 [INFO] Successfully connected to Supabase at startup
+2025-03-19 21:21:17,224 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 21:21:17,225 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 21:21:17,226 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:21:17,438 [INFO] Supabase client initialized successfully
+2025-03-19 21:21:17,758 [INFO] Successfully created Supabase client
+2025-03-19 21:21:19,026 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 21:21:19,028 [INFO] Successfully connected to Supabase
+2025-03-19 21:21:19,029 [INFO] Successfully connected to Supabase at startup
+2025-03-19 21:21:31,043 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 21:21:31,043 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 21:21:31,044 [INFO] Supabase username and password found in environment variables
+2025-03-19 21:21:31,244 [INFO] Supabase client initialized successfully
+2025-03-19 21:21:31,559 [INFO] Successfully created Supabase client
+2025-03-19 21:21:32,428 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 21:21:32,430 [INFO] Successfully connected to Supabase
+2025-03-19 21:21:32,431 [INFO] Successfully connected to Supabase at startup
+2025-03-19 21:41:57,613 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 400 Bad Request"
+2025-03-19 21:41:57,614 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:41:58,251 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users "HTTP/2 400 Bad Request"
+2025-03-19 21:41:58,251 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:41:58,252 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 21:56:31,552 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 400 Bad Request"
+2025-03-19 21:56:31,553 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:56:31,792 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users "HTTP/2 400 Bad Request"
+2025-03-19 21:56:31,798 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:56:31,798 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:03:07,074 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 400 Bad Request"
+2025-03-19 22:03:07,075 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 22:03:07,307 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users "HTTP/2 400 Bad Request"
+2025-03-19 22:03:07,308 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 22:03:07,309 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:35,662 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 200 OK"
+2025-03-19 22:07:35,909 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users "HTTP/2 401 Unauthorized"
+2025-03-19 22:07:35,910 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:35,911 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:51,931 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 200 OK"
+2025-03-19 22:07:52,165 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users "HTTP/2 401 Unauthorized"
+2025-03-19 22:07:52,166 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:52,166 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:09:10,051 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 22:09:10,052 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 22:09:10,053 [INFO] Supabase username and password found in environment variables
+2025-03-19 22:09:10,258 [INFO] Supabase client initialized successfully
+2025-03-19 22:09:10,565 [INFO] Successfully created Supabase client
+2025-03-19 22:09:11,049 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 22:09:11,052 [INFO] Successfully connected to Supabase
+2025-03-19 22:09:11,053 [INFO] Successfully connected to Supabase at startup
+2025-03-19 22:10:02,923 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 22:10:02,924 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 22:10:02,925 [INFO] Supabase username and password found in environment variables
+2025-03-19 22:10:03,130 [INFO] Supabase client initialized successfully
+2025-03-19 22:10:03,466 [INFO] Successfully created Supabase client
+2025-03-19 22:10:04,627 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 22:10:04,630 [INFO] Successfully connected to Supabase
+2025-03-19 22:10:04,630 [INFO] Successfully connected to Supabase at startup
+2025-03-19 22:10:24,352 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 200 OK"
+2025-03-19 22:10:24,580 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 200 OK"
+2025-03-19 22:10:24,818 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users "HTTP/2 401 Unauthorized"
+2025-03-19 22:10:24,819 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:10:24,820 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:26:44,639 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 200 OK"
+2025-03-19 22:26:44,871 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=%2A&email=eq.ahmadmoazam6%40gmail.com "HTTP/2 200 OK"
+2025-03-19 22:26:45,513 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users "HTTP/2 201 Created"
+2025-03-19 23:07:15,467 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 23:07:15,467 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 23:07:15,468 [INFO] Supabase username and password found in environment variables
+2025-03-19 23:07:15,890 [INFO] Supabase client initialized successfully
+2025-03-19 23:07:16,356 [INFO] Successfully created Supabase client
+2025-03-19 23:07:17,553 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 23:07:17,555 [INFO] Successfully connected to Supabase
+2025-03-19 23:07:17,556 [INFO] Successfully connected to Supabase at startup
+2025-03-19 23:33:49,188 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 23:33:49,188 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 23:33:49,189 [INFO] Supabase username and password found in environment variables
+2025-03-19 23:33:49,394 [INFO] Supabase client initialized successfully
+2025-03-19 23:33:49,703 [INFO] Successfully created Supabase client
+2025-03-19 23:33:50,880 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 23:33:50,883 [INFO] Successfully connected to Supabase
+2025-03-19 23:33:50,883 [INFO] Successfully connected to Supabase at startup
+2025-03-19 23:42:13,347 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 23:42:13,348 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 23:42:13,348 [INFO] Supabase username and password found in environment variables
+2025-03-19 23:42:13,553 [INFO] Supabase client initialized successfully
+2025-03-19 23:42:13,861 [INFO] Successfully created Supabase client
+2025-03-19 23:42:14,337 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 23:42:14,340 [INFO] Successfully connected to Supabase
+2025-03-19 23:42:14,340 [INFO] Successfully connected to Supabase at startup
+2025-03-19 23:44:05,349 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 23:44:05,349 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 23:44:05,350 [INFO] Supabase username and password found in environment variables
+2025-03-19 23:44:05,560 [INFO] Supabase client initialized successfully
+2025-03-19 23:44:05,889 [INFO] Successfully created Supabase client
+2025-03-19 23:44:07,045 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 23:44:07,048 [INFO] Successfully connected to Supabase
+2025-03-19 23:44:07,049 [INFO] Successfully connected to Supabase at startup
+2025-03-19 23:44:17,011 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 23:44:17,012 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 23:44:17,012 [INFO] Supabase username and password found in environment variables
+2025-03-19 23:44:17,215 [INFO] Supabase client initialized successfully
+2025-03-19 23:44:17,523 [INFO] Successfully created Supabase client
+2025-03-19 23:44:17,975 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 23:44:17,978 [INFO] Successfully connected to Supabase
+2025-03-19 23:44:17,978 [INFO] Successfully connected to Supabase at startup
+2025-03-19 23:51:05,974 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-19 23:51:05,975 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-19 23:51:05,975 [INFO] Supabase username and password found in environment variables
+2025-03-19 23:51:06,180 [INFO] Supabase client initialized successfully
+2025-03-19 23:51:06,503 [INFO] Successfully created Supabase client
+2025-03-19 23:51:06,989 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-19 23:51:06,991 [INFO] Successfully connected to Supabase
+2025-03-19 23:51:06,992 [INFO] Successfully connected to Supabase at startup
+2025-03-20 05:10:51,964 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 05:10:51,965 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 05:10:51,965 [INFO] Supabase username and password found in environment variables
+2025-03-20 05:10:52,568 [INFO] Supabase client initialized successfully
+2025-03-20 05:10:53,962 [INFO] Successfully created Supabase client
+2025-03-20 05:10:55,147 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-20 05:10:55,150 [INFO] Successfully connected to Supabase
+2025-03-20 05:10:55,150 [INFO] Successfully connected to Supabase at startup
+2025-03-20 05:14:35,229 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 05:14:35,230 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 05:14:35,230 [INFO] Supabase username and password found in environment variables
+2025-03-20 05:14:35,437 [INFO] Supabase client initialized successfully
+2025-03-20 05:14:35,748 [INFO] Successfully created Supabase client
+2025-03-20 05:14:36,911 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-20 05:14:36,914 [INFO] Successfully connected to Supabase
+2025-03-20 05:14:36,915 [INFO] Successfully connected to Supabase at startup
+2025-03-20 05:22:14,910 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 05:22:14,911 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 05:22:14,911 [INFO] Supabase username and password found in environment variables
+2025-03-20 05:22:15,113 [INFO] Supabase client initialized successfully
+2025-03-20 05:22:15,431 [INFO] Successfully created Supabase client
+2025-03-20 05:22:16,309 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-20 05:22:16,312 [INFO] Successfully connected to Supabase
+2025-03-20 05:22:16,312 [INFO] Successfully connected to Supabase at startup
+2025-03-20 06:36:51,682 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 06:36:51,683 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 06:36:51,683 [INFO] Supabase username and password found in environment variables
+2025-03-20 06:36:52,524 [INFO] Supabase client initialized successfully
+2025-03-20 06:36:53,028 [INFO] Successfully created Supabase client
+2025-03-20 06:36:54,181 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-20 06:36:54,184 [INFO] Successfully connected to Supabase
+2025-03-20 06:36:54,184 [INFO] Successfully connected to Supabase at startup
+2025-03-20 06:40:41,069 [ERROR] No Supabase API key found
+2025-03-20 06:40:41,090 [INFO] Supabase username and password found in environment variables
+2025-03-20 06:40:41,090 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 06:40:41,091 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 06:40:41,227 [ERROR] Missing Supabase URL or key
+2025-03-20 06:40:41,228 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 07:30:27,741 [INFO] Scrape request received: Query='wow', Num URLs=5
+2025-03-20 07:30:27,742 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-20 08:33:18,757 [ERROR] No Supabase API key found
+2025-03-20 08:33:18,758 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:33:18,758 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:33:18,759 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:33:19,848 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:19,849 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:33:38,272 [ERROR] No Supabase API key found
+2025-03-20 08:33:38,273 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:33:38,274 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:33:38,274 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:33:38,416 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:38,417 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:35:15,826 [ERROR] No Supabase API key found
+2025-03-20 08:35:15,827 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:35:15,827 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:35:15,828 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:35:15,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:15,971 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:35:48,511 [ERROR] No Supabase API key found
+2025-03-20 08:35:48,512 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:35:48,512 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:35:48,512 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:35:48,633 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:48,634 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:36:50,838 [ERROR] No Supabase API key found
+2025-03-20 08:36:50,843 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:36:50,859 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:36:50,860 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:36:50,992 [ERROR] Missing Supabase URL or key
+2025-03-20 08:36:50,992 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:37:00,562 [ERROR] No Supabase API key found
+2025-03-20 08:37:00,562 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:37:00,563 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:00,572 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:37:00,753 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:00,773 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:37:46,545 [ERROR] No Supabase API key found
+2025-03-20 08:37:46,553 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:37:46,553 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:46,561 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:37:46,684 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:46,684 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:37:57,842 [ERROR] No Supabase API key found
+2025-03-20 08:37:57,843 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:37:57,843 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:57,844 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:37:57,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:57,971 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:41:58,645 [ERROR] No Supabase API key found
+2025-03-20 08:41:58,646 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:41:58,666 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:41:58,667 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:41:58,792 [ERROR] Missing Supabase URL or key
+2025-03-20 08:41:58,793 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 08:44:33,352 [ERROR] No Supabase API key found
+2025-03-20 08:44:33,353 [INFO] Supabase username and password found in environment variables
+2025-03-20 08:44:33,354 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:44:33,354 [WARNING] Using mock Supabase client - database operations will not work
+2025-03-20 08:44:33,480 [ERROR] Missing Supabase URL or key
+2025-03-20 08:44:33,480 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 09:00:28,315 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 09:00:28,315 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 09:00:28,316 [INFO] Supabase username and password found in environment variables
+2025-03-20 09:00:28,942 [INFO] Supabase client initialized successfully
+2025-03-20 09:00:29,073 [ERROR] Missing Supabase URL or key
+2025-03-20 09:00:29,073 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 09:02:09,055 [WARNING] Python-dotenv could not parse statement starting at line 1
+2025-03-20 09:02:09,056 [WARNING] Python-dotenv could not parse statement starting at line 2
+2025-03-20 09:02:09,057 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 09:02:09,057 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 09:02:09,057 [INFO] Supabase username and password found in environment variables
+2025-03-20 09:02:09,262 [INFO] Supabase client initialized successfully
+2025-03-20 09:02:09,389 [WARNING] Python-dotenv could not parse statement starting at line 1
+2025-03-20 09:02:09,389 [WARNING] Python-dotenv could not parse statement starting at line 2
+2025-03-20 09:02:09,393 [ERROR] Missing Supabase URL or key
+2025-03-20 09:02:09,393 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 09:03:38,943 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 09:03:38,943 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 09:03:38,944 [INFO] Supabase username and password found in environment variables
+2025-03-20 09:03:39,161 [INFO] Supabase client initialized successfully
+2025-03-20 09:03:39,290 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:39,290 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 09:03:49,844 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 09:03:49,845 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 09:03:49,845 [INFO] Supabase username and password found in environment variables
+2025-03-20 09:03:50,051 [INFO] Supabase client initialized successfully
+2025-03-20 09:03:50,179 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:50,180 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 09:04:01,193 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 09:04:01,193 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 09:04:01,194 [INFO] Supabase username and password found in environment variables
+2025-03-20 09:04:01,396 [INFO] Supabase client initialized successfully
+2025-03-20 09:04:01,519 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:01,520 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 09:04:11,771 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-20 09:04:11,771 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-20 09:04:11,771 [INFO] Supabase username and password found in environment variables
+2025-03-20 09:04:11,972 [INFO] Supabase client initialized successfully
+2025-03-20 09:04:12,099 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:12,099 [WARNING] Could not authenticate with Supabase at startup
+2025-03-20 10:58:41,488 [INFO] Scrape request received: Query='valorant', Num URLs=5
+2025-03-20 10:58:41,489 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+>>>>>>> 09b176411f8743d33b9f52bd741f2b1102b56f30

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-03-20 11:16:37,981 [ERROR] Unexpected error fetching article at https://resources.playcommunity.pulselive.com/playcommunity/document/2023/06/21/d92e09c8-1919-42eb-88ae-d27b894b24c3/2018-Official-Rules-of-Indoor-Cricket_WICF-Final.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
 2025-03-20 11:16:37,981 [ERROR] Unexpected error fetching article at https://resources.playcommunity.pulselive.com/playcommunity/document/2023/06/21/d92e09c8-1919-42eb-88ae-d27b894b24c3/2018-Official-Rules-of-Indoor-Cricket_WICF-Final.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
 2025-03-20 11:16:42,530 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
@@ -400,3 +401,172 @@
 2025-03-20 14:51:02,816 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
 2025-03-20 14:51:03,282 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
 2025-03-20 14:51:03,282 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+=======
+2024-10-12 07:55:14,117 [ERROR] Failed to fetch https://www.nytimes.com/2024/08/23/sports/arshad-nadeem-javelin-gold-olympics-buffalo.html: HTTP 403
+2024-10-12 10:17:50,043 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-launches-drone-attack-israel-expected-unfold-over-hours-2024-04-13/: HTTP 401
+2024-10-12 10:57:17,289 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-says-it-has-finished-attack-israel-amid-fears-spreading-conflict-2024-10-02/: HTTP 401
+<<<<<<< HEAD
+2024-12-11 00:40:13,699 [ERROR] Video generation failed: name 'config' is not defined
+2024-12-11 00:40:13,699 [ERROR] Video generation failed: name 'config' is not defined
+2024-12-11 01:26:16,415 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:26:16,415 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:26:16,417 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:26:16,417 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:26:16,418 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:26:16,419 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
+2024-12-11 01:26:16,419 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
+2024-12-11 01:26:16,419 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 01:26:16,419 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 01:27:12,561 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:27:12,561 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
+2024-12-11 01:27:12,562 [ERROR] Summarization failed for article 'Babar Azam Profile - Cricket Player Pakistan': name 'tokenizer' is not defined
+2024-12-11 01:27:12,563 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 01:27:12,563 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 01:27:36,983 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:27:36,983 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:27:36,984 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 01:27:36,984 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+=======
+2024-12-09 23:29:57,979 [ERROR] Error fetching robots.txt from https://olympics.com/robots.txt: Remote end closed connection without response
+2024-12-10 00:07:44,193 [ERROR] Error fetching robots.txt from https://olympics.com/robots.txt: Remote end closed connection without response
+2024-12-10 02:12:10,166 [ERROR] Failed to fetch https://www.reuters.com/sports/olympics/mud-brick-house-olympic-podium-arshad-nadeem-is-unlikely-pakistani-hero-2024-08-09/: HTTP 401
+>>>>>>> bbc4b06cb7b234e642ad1055c4a9cf0837f68d6a
+2024-12-11 01:39:31,328 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:39:31,328 [ERROR] Summarization failed for article 'Babar Azam to miss remainder of England series as Pakistan gives out-of-form star batter a rest': name 'tokenizer' is not defined
+2024-12-11 01:39:31,330 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:39:31,330 [ERROR] Summarization failed for article 'Babar Azam Players Edition Bat': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'A Journey of Inspiration Dinner: Babar Azam and Mohammad Rizwan – A Continuous Charity': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:39:31,331 [ERROR] Summarization failed for article 'Babar Azam Profile - ICC Ranking, Age, Career Info & Stats': name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Summarization failed for article 'News, Photos, Stats, Ranking, Records - NDTV Sports': name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Summarization failed for article 'News, Photos, Stats, Ranking, Records - NDTV Sports': name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 01:39:31,332 [ERROR] Final summarization failed: name 'tokenizer' is not defined
+2024-12-11 02:21:25,027 [ERROR] Access denied to https://www.unicef.org/emergencies/devastating-floods-pakistan-2022: HTTP 403 Forbidden.
+2024-12-11 02:21:25,027 [ERROR] Access denied to https://www.unicef.org/emergencies/devastating-floods-pakistan-2022: HTTP 403 Forbidden.
+2024-12-11 02:26:12,200 [ERROR] Scraping failed: 'summary'
+2024-12-11 02:26:12,200 [ERROR] Scraping failed: 'summary'
+2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
+2024-12-11 02:27:30,585 [ERROR] Scraping failed: 'summary'
+2024-12-11 22:24:52,970 [ERROR] Regenerated summary is still too short (275 words).
+2024-12-11 22:24:52,970 [ERROR] Regenerated summary is still too short (275 words).
+2024-12-12 02:09:26,917 [ERROR] Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2024-12-12 02:09:26,917 [ERROR] Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-03-19 21:04:23,630 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:38,982 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:47,894 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:05:48,032 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:05:48,032 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:07:07,072 [ERROR] Failed to initialize Supabase client: Invalid API key
+2025-03-19 21:07:07,243 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:07:07,243 [ERROR] Error getting Supabase client: Invalid API key
+2025-03-19 21:41:57,614 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:41:57,614 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:41:58,251 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:41:58,251 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:41:58,252 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 21:41:58,252 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 21:56:31,553 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:56:31,553 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 21:56:31,798 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:56:31,798 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 21:56:31,798 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 21:56:31,798 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:03:07,075 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 22:03:07,075 [ERROR] Error getting user by email: {'code': '42703', 'details': None, 'hint': None, 'message': 'column Users.email does not exist'}
+2025-03-19 22:03:07,308 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 22:03:07,308 [ERROR] Error creating user: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'email' column of 'Users' in the schema cache"}
+2025-03-19 22:03:07,309 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:03:07,309 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:35,910 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:35,910 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:35,911 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:35,911 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:52,166 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:52,166 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:07:52,166 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:07:52,166 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:10:24,819 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:10:24,819 [ERROR] Error creating user: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Users"'}
+2025-03-19 22:10:24,820 [ERROR] Signup error: 500: Failed to create user
+2025-03-19 22:10:24,820 [ERROR] Signup error: 500: Failed to create user
+2025-03-20 06:40:41,069 [ERROR] No Supabase API key found
+2025-03-20 06:40:41,090 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 06:40:41,227 [ERROR] Missing Supabase URL or key
+2025-03-20 06:40:41,227 [ERROR] Missing Supabase URL or key
+2025-03-20 07:30:27,742 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-20 07:30:27,742 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-20 08:33:18,757 [ERROR] No Supabase API key found
+2025-03-20 08:33:18,758 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:33:19,848 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:19,848 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:38,272 [ERROR] No Supabase API key found
+2025-03-20 08:33:38,274 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:33:38,416 [ERROR] Missing Supabase URL or key
+2025-03-20 08:33:38,416 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:15,826 [ERROR] No Supabase API key found
+2025-03-20 08:35:15,827 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:35:15,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:15,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:48,511 [ERROR] No Supabase API key found
+2025-03-20 08:35:48,512 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:35:48,633 [ERROR] Missing Supabase URL or key
+2025-03-20 08:35:48,633 [ERROR] Missing Supabase URL or key
+2025-03-20 08:36:50,838 [ERROR] No Supabase API key found
+2025-03-20 08:36:50,859 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:36:50,992 [ERROR] Missing Supabase URL or key
+2025-03-20 08:36:50,992 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:00,562 [ERROR] No Supabase API key found
+2025-03-20 08:37:00,563 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:00,753 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:00,753 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:46,545 [ERROR] No Supabase API key found
+2025-03-20 08:37:46,553 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:46,684 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:46,684 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:57,842 [ERROR] No Supabase API key found
+2025-03-20 08:37:57,843 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:37:57,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:37:57,970 [ERROR] Missing Supabase URL or key
+2025-03-20 08:41:58,645 [ERROR] No Supabase API key found
+2025-03-20 08:41:58,666 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:41:58,792 [ERROR] Missing Supabase URL or key
+2025-03-20 08:41:58,792 [ERROR] Missing Supabase URL or key
+2025-03-20 08:44:33,352 [ERROR] No Supabase API key found
+2025-03-20 08:44:33,354 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-20 08:44:33,480 [ERROR] Missing Supabase URL or key
+2025-03-20 08:44:33,480 [ERROR] Missing Supabase URL or key
+2025-03-20 09:00:29,073 [ERROR] Missing Supabase URL or key
+2025-03-20 09:00:29,073 [ERROR] Missing Supabase URL or key
+2025-03-20 09:02:09,393 [ERROR] Missing Supabase URL or key
+2025-03-20 09:02:09,393 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:39,290 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:39,290 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:50,179 [ERROR] Missing Supabase URL or key
+2025-03-20 09:03:50,179 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:01,519 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:01,519 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:12,099 [ERROR] Missing Supabase URL or key
+2025-03-20 09:04:12,099 [ERROR] Missing Supabase URL or key
+2025-03-20 10:58:41,489 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-20 10:58:41,489 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+>>>>>>> 09b176411f8743d33b9f52bd741f2b1102b56f30

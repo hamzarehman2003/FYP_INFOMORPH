@@ -1,5 +1,3 @@
-// frontend/src/components/Auth/Signup.jsx
-
 "use client";
 
 import { useState, useContext } from "react";
@@ -16,12 +14,18 @@ import { toast } from 'react-toastify'; // Import toast from react-toastify
 const Signup = () => {
   const { signup } = useContext(AuthContext);
   const router = useRouter();
+  const [name, setName] = useState("");  // Add state for name
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [retypePassword, setRetypePassword] = useState("");
 
   const handleSignup = async (e) => {
     e.preventDefault();
+
+    if (!name.trim()) {
+      toast.error("Please enter your name");
+      return;
+    }
 
     if (password !== retypePassword) {
       toast.error("Passwords do not match");
@@ -35,7 +39,7 @@ const Signup = () => {
       return;
     }
 
-    const result = await signup(email, password);
+    const result = await signup(email, password, name); // Pass name to signup function
     if (result.success) {
       toast.success("Signed up successfully!");
       router.push("/topic-selection");
@@ -50,6 +54,14 @@ const Signup = () => {
       <form onSubmit={handleSignup}>
         <div className="max-w-[364px] w-full flex flex-col gap-7">
           <InputField
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            name={"name"}
+            placeholder={"Full Name"}
+            type={"text"}
+            required
+          />
+          <InputField
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             name={"email"}
@@ -63,6 +75,7 @@ const Signup = () => {
             name={"password"}
             placeholder={"Password"}
             type={"password"}
+            autocomplete="new-password"
             required
           />
           <InputField
@@ -71,6 +84,7 @@ const Signup = () => {
             name={"retypePassword"}
             placeholder={"Retype Password"}
             type={"password"}
+            autocomplete="new-password"
             required
           />
         </div>
