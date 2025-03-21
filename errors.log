@@ -1,407 +1,3 @@
-<<<<<<< HEAD
-2025-03-20 11:16:37,981 [ERROR] Unexpected error fetching article at https://resources.playcommunity.pulselive.com/playcommunity/document/2023/06/21/d92e09c8-1919-42eb-88ae-d27b894b24c3/2018-Official-Rules-of-Indoor-Cricket_WICF-Final.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 11:16:37,981 [ERROR] Unexpected error fetching article at https://resources.playcommunity.pulselive.com/playcommunity/document/2023/06/21/d92e09c8-1919-42eb-88ae-d27b894b24c3/2018-Official-Rules-of-Indoor-Cricket_WICF-Final.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 11:16:42,530 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:16:42,530 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:21:22,543 [ERROR] Error fetching robots.txt from https://www.sigmaaldrich.com/robots.txt: [WinError 10054] An existing connection was forcibly closed by the remote host
-2025-03-20 11:21:22,543 [ERROR] Error fetching robots.txt from https://www.sigmaaldrich.com/robots.txt: [WinError 10054] An existing connection was forcibly closed by the remote host
-2025-03-20 11:21:37,254 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/39488067/: HTTP 403 Forbidden.
-2025-03-20 11:21:37,254 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/39488067/: HTTP 403 Forbidden.
-2025-03-20 11:21:37,593 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/14561278/: HTTP 403 Forbidden.
-2025-03-20 11:21:37,593 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/14561278/: HTTP 403 Forbidden.
-2025-03-20 11:22:42,770 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/23851411/: HTTP 403 Forbidden.
-2025-03-20 11:22:42,770 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/23851411/: HTTP 403 Forbidden.
-2025-03-20 11:22:43,886 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/15159476/: HTTP 403 Forbidden.
-2025-03-20 11:22:43,886 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/15159476/: HTTP 403 Forbidden.
-2025-03-20 11:22:43,887 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/10802796/: HTTP 403 Forbidden.
-2025-03-20 11:22:43,887 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/10802796/: HTTP 403 Forbidden.
-2025-03-20 11:22:44,218 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/25668262/: HTTP 403 Forbidden.
-2025-03-20 11:22:44,218 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/25668262/: HTTP 403 Forbidden.
-2025-03-20 11:22:44,310 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/11356982/: HTTP 403 Forbidden.
-2025-03-20 11:22:44,310 [ERROR] Access denied to https://pubmed.ncbi.nlm.nih.gov/11356982/: HTTP 403 Forbidden.
-2025-03-20 11:22:44,758 [ERROR] Access denied to https://legionathletics.com/products/supplements/micronized-creatine-monohydrate/: HTTP 403 Forbidden.
-2025-03-20 11:22:44,758 [ERROR] Access denied to https://legionathletics.com/products/supplements/micronized-creatine-monohydrate/: HTTP 403 Forbidden.
-2025-03-20 11:22:49,037 [ERROR] Access denied to https://pmc.ncbi.nlm.nih.gov/articles/PMC9761713/: HTTP 403 Forbidden.
-2025-03-20 11:22:49,037 [ERROR] Access denied to https://pmc.ncbi.nlm.nih.gov/articles/PMC9761713/: HTTP 403 Forbidden.
-2025-03-20 11:23:21,261 [ERROR] Max retries reached for https://www.sigmaaldrich.com/US/en/product/sigma/c3630: 
-2025-03-20 11:23:21,261 [ERROR] Max retries reached for https://www.sigmaaldrich.com/US/en/product/sigma/c3630: 
-2025-03-20 11:23:23,265 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:23:23,265 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:23:23,614 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:23:23,614 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:33:11,277 [ERROR] Max retries reached for https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/how-to-import/step-by-step-guides/category-3-step-by-step-guide-for-cats: 
-2025-03-20 11:33:11,277 [ERROR] Max retries reached for https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/how-to-import/step-by-step-guides/category-3-step-by-step-guide-for-cats: 
-2025-03-20 11:33:12,903 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:33:12,903 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:33:13,316 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:33:13,316 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:44:14,270 [ERROR] Max retries reached for https://imaginecup.microsoft.com/en-us/Team/7889342e-69c0-48bc-8b87-dad4512a8881: 
-2025-03-20 11:44:14,270 [ERROR] Max retries reached for https://imaginecup.microsoft.com/en-us/Team/7889342e-69c0-48bc-8b87-dad4512a8881: 
-2025-03-20 11:44:15,788 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:44:15,788 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:44:16,075 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:44:16,075 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:54:18,910 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:54:18,910 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:54:19,255 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 11:54:19,255 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:04:42,734 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 12:04:42,734 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 12:05:06,309 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
-2025-03-20 12:05:06,309 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
-2025-03-20 12:05:09,716 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
-2025-03-20 12:05:09,716 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
-2025-03-20 12:05:13,198 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 12:05:13,198 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 12:05:15,313 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:05:15,313 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:05:15,844 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:05:15,844 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:06:52,952 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:06:52,952 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:06:59,359 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
-2025-03-20 12:06:59,359 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
-2025-03-20 12:07:04,683 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:07:04,683 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:07:07,115 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 12:07:07,115 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 12:07:18,593 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23351) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 12:07:18,593 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23351) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 12:07:22,216 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:07:22,216 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:07:50,271 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 12:07:50,271 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 12:07:50,801 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:07:50,801 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:07:51,343 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:07:51,343 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:09:30,872 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:09:30,872 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:09:36,604 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
-2025-03-20 12:09:36,604 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
-2025-03-20 12:09:47,120 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:09:47,120 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:09:47,362 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 12:09:47,362 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 12:09:56,299 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:09:56,299 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 12:09:59,015 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 12:09:59,015 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 12:10:28,266 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 12:10:28,266 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 12:10:28,950 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:10:28,950 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:10:29,497 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:10:29,497 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:21:27,436 [ERROR] Access denied to https://www.france24.com/en/live-news/20241204-pakistan-recall-babar-azam-for-south-africa-tour-sajid-khan-out: HTTP 403 Forbidden.
-2025-03-20 12:21:27,436 [ERROR] Access denied to https://www.france24.com/en/live-news/20241204-pakistan-recall-babar-azam-for-south-africa-tour-sajid-khan-out: HTTP 403 Forbidden.
-2025-03-20 12:21:32,047 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:21:32,047 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:21:33,036 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:21:33,036 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:21:41,787 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:21:41,787 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:21:42,156 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:21:42,156 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:23:32,044 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:23:32,044 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:23:53,447 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:23:53,447 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:23:55,218 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:23:55,218 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:23:58,242 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:23:58,242 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:23:58,820 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:23:58,820 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:29:28,599 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:29:28,599 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:29:29,103 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:29:29,103 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:29:31,848 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:29:31,848 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:29:48,348 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:48,348 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:49,904 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:49,904 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:50,666 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:50,666 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:51,719 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:51,719 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:52,094 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:52,094 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:52,720 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:52,720 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:53,161 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:53,161 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:53,606 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:53,606 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:54,136 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:54,136 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:54,137 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:54,137 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:54,595 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:54,595 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:54,596 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:54,596 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:54,958 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:54,958 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:54,958 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:54,958 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:55,544 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:55,544 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:55,544 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:55,544 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:55,915 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:55,915 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:55,915 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:55,915 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:56,428 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:56,428 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:56,429 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:56,429 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:57,076 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:57,076 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:57,078 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:57,078 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:57,573 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:57,573 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:29:57,573 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:29:57,573 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:36:27,744 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:36:27,744 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:36:59,272 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:36:59,272 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:37:03,601 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:37:03,601 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:37:14,404 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:14,404 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:17,243 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:17,243 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:18,176 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:18,176 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:18,932 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:18,932 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:19,737 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:19,737 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:20,385 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:20,385 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:21,082 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:21,082 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:21,565 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:21,565 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:22,074 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:22,074 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:22,075 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:22,075 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:22,695 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:22,695 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:22,696 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:22,696 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:23,456 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:23,456 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:23,460 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:23,460 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:23,917 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:23,917 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:23,918 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:23,918 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:24,511 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:24,511 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:24,512 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:24,512 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:24,951 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:24,951 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:24,951 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:24,951 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:25,322 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:25,322 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:25,323 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:25,323 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:25,817 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:25,817 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:37:25,818 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:37:25,818 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:38:30,065 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 12:38:30,065 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 12:39:07,500 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 12:39:07,500 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 12:39:17,398 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:17,398 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:17,672 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:17,672 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:18,064 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:18,064 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:18,403 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:18,403 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:18,706 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:18,706 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:19,005 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:19,005 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:19,542 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:19,542 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:19,841 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:19,841 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:20,142 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:20,142 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:20,504 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:20,504 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:20,505 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:20,505 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:20,968 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:20,968 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:20,970 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:20,970 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:21,333 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:21,333 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:21,333 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:21,333 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:21,700 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:21,700 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:21,700 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:21,700 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:22,044 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:22,044 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:22,045 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:22,045 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:22,526 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:22,526 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:22,527 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:22,527 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:22,832 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:22,832 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:22,832 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:22,832 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:23,133 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:23,133 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:23,133 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:23,133 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:23,551 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:23,551 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
-2025-03-20 12:39:23,552 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:39:23,552 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
-2025-03-20 12:40:45,808 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 12:40:45,808 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 12:41:19,924 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 12:41:19,924 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 12:41:25,148 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:41:25,148 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:41:25,534 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:41:25,534 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:49:54,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:49:54,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:50:09,481 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:50:09,481 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:50:15,283 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:50:15,283 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:50:19,841 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:50:19,841 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:50:20,191 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:50:20,191 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:50:36,155 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:50:36,155 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 12:50:37,086 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:50:37,086 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 12:50:51,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:50:51,113 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 12:50:52,792 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:50:52,792 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:57:21,809 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:57:21,809 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:58:50,618 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 12:58:50,618 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 12:59:25,336 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 12:59:25,336 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 12:59:31,235 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:59:31,235 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:59:31,810 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 12:59:31,810 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:09:45,858 [ERROR] JWT Error: Signature has expired.
-2025-03-20 14:09:45,858 [ERROR] JWT Error: Signature has expired.
-2025-03-20 14:10:35,330 [ERROR] Access denied to https://openai.com/index/chatgpt/: HTTP 403 Forbidden.
-2025-03-20 14:10:35,330 [ERROR] Access denied to https://openai.com/index/chatgpt/: HTTP 403 Forbidden.
-2025-03-20 14:10:35,338 [ERROR] Access denied to https://platform.openai.com/docs/guides/text-generation: HTTP 403 Forbidden.
-2025-03-20 14:10:35,338 [ERROR] Access denied to https://platform.openai.com/docs/guides/text-generation: HTTP 403 Forbidden.
-2025-03-20 14:10:35,402 [ERROR] Access denied to https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq: HTTP 403 Forbidden.
-2025-03-20 14:10:35,402 [ERROR] Access denied to https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq: HTTP 403 Forbidden.
-2025-03-20 14:10:35,420 [ERROR] Access denied to https://openai.com/chatgpt/overview/: HTTP 403 Forbidden.
-2025-03-20 14:10:35,420 [ERROR] Access denied to https://openai.com/chatgpt/overview/: HTTP 403 Forbidden.
-2025-03-20 14:10:38,981 [ERROR] Access denied to https://help.openai.com/en/articles/6825453-chatgpt-release-notes: HTTP 403 Forbidden.
-2025-03-20 14:10:38,981 [ERROR] Access denied to https://help.openai.com/en/articles/6825453-chatgpt-release-notes: HTTP 403 Forbidden.
-2025-03-20 14:10:39,034 [ERROR] Access denied to https://openai.com/: HTTP 403 Forbidden.
-2025-03-20 14:10:39,034 [ERROR] Access denied to https://openai.com/: HTTP 403 Forbidden.
-2025-03-20 14:10:45,216 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:10:45,216 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:19:00,416 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:19:00,416 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:21:08,800 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 14:21:08,800 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
-2025-03-20 14:21:09,096 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 14:21:09,096 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
-2025-03-20 14:21:09,330 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 14:21:09,330 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
-2025-03-20 14:21:36,099 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:21:36,099 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:24:19,557 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:24:19,557 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:24:43,587 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
-2025-03-20 14:24:43,587 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
-2025-03-20 14:24:49,293 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
-2025-03-20 14:24:49,293 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
-2025-03-20 14:24:54,932 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:24:54,932 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:24:55,622 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:24:55,622 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:26:37,069 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 14:26:37,069 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
-2025-03-20 14:27:23,408 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 14:27:23,408 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
-2025-03-20 14:27:24,937 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:27:24,937 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:44:32,390 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:44:32,390 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:44:34,342 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:44:34,342 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:44:35,819 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 14:44:35,819 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 14:44:37,893 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
-2025-03-20 14:44:37,893 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
-2025-03-20 14:44:38,502 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:44:38,502 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:44:44,045 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 14:44:44,045 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 14:45:28,268 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 14:45:28,268 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 14:45:29,973 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:45:29,973 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:47:54,603 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:47:54,603 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:47:55,124 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:47:55,124 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:48:02,375 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 14:48:02,375 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
-2025-03-20 14:48:03,106 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
-2025-03-20 14:48:03,106 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
-2025-03-20 14:48:04,180 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:48:04,180 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
-2025-03-20 14:48:12,450 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 14:48:12,450 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
-2025-03-20 14:48:49,258 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 14:48:49,258 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
-2025-03-20 14:48:49,752 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:48:49,752 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:50:21,849 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:50:21,849 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:50:28,698 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:50:28,698 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:50:52,237 [ERROR] Access denied to https://www.alvarezandmarsal.com/our-people/imran-khan: HTTP 403 Forbidden.
-2025-03-20 14:50:52,237 [ERROR] Access denied to https://www.alvarezandmarsal.com/our-people/imran-khan: HTTP 403 Forbidden.
-2025-03-20 14:50:54,349 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
-2025-03-20 14:50:54,349 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
-2025-03-20 14:51:02,816 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:51:02,816 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
-2025-03-20 14:51:03,282 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-2025-03-20 14:51:03,282 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-=======
 2024-10-12 07:55:14,117 [ERROR] Failed to fetch https://www.nytimes.com/2024/08/23/sports/arshad-nadeem-javelin-gold-olympics-buffalo.html: HTTP 403
 2024-10-12 10:17:50,043 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-launches-drone-attack-israel-expected-unfold-over-hours-2024-04-13/: HTTP 401
 2024-10-12 10:57:17,289 [ERROR] Failed to fetch https://www.reuters.com/world/middle-east/iran-says-it-has-finished-attack-israel-amid-fears-spreading-conflict-2024-10-02/: HTTP 401
@@ -569,4 +165,607 @@ pip install python-multipart
 2025-03-20 09:04:12,099 [ERROR] Missing Supabase URL or key
 2025-03-20 10:58:41,489 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
 2025-03-20 10:58:41,489 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
->>>>>>> 09b176411f8743d33b9f52bd741f2b1102b56f30
+2025-03-20 23:45:29,361 [ERROR] Missing Supabase URL or key
+2025-03-20 23:45:29,361 [ERROR] Missing Supabase URL or key
+2025-03-21 00:07:12,883 [ERROR] Gemini API key not found in config.yaml
+2025-03-21 00:07:12,883 [ERROR] Failed to initialize Gemini model: Gemini API key is required for Gemini summarization
+2025-03-21 00:07:46,596 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:07:46,598 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:07:46,994 [ERROR] No Supabase API key found
+2025-03-21 00:07:46,997 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:07:47,061 [ERROR] Missing Supabase URL or key
+2025-03-21 00:07:47,061 [ERROR] Missing Supabase URL or key
+2025-03-21 00:09:24,928 [ERROR] No Supabase API key found
+2025-03-21 00:09:24,933 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:09:25,162 [ERROR] Missing Supabase URL or key
+2025-03-21 00:09:25,162 [ERROR] Missing Supabase URL or key
+2025-03-21 00:09:43,113 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:09:43,114 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:09:43,361 [ERROR] No Supabase API key found
+2025-03-21 00:09:43,362 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:09:43,412 [ERROR] Missing Supabase URL or key
+2025-03-21 00:09:43,412 [ERROR] Missing Supabase URL or key
+2025-03-21 00:11:31,220 [ERROR] Gemini API key not found in config.yaml
+2025-03-21 00:11:31,221 [ERROR] Failed to initialize Gemini model: Gemini API key is required for Gemini summarization
+2025-03-21 00:13:34,182 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:13:34,183 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:13:34,438 [ERROR] No Supabase API key found
+2025-03-21 00:13:34,440 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:13:34,487 [ERROR] Missing Supabase URL or key
+2025-03-21 00:13:34,487 [ERROR] Missing Supabase URL or key
+2025-03-21 00:14:29,351 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-21 00:14:29,351 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-21 00:14:29,362 [ERROR] Scraping failed: name 'format_article_content' is not defined
+2025-03-21 00:14:29,362 [ERROR] Scraping failed: name 'format_article_content' is not defined
+2025-03-21 00:19:30,243 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:19:30,248 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:19:30,468 [ERROR] No Supabase API key found
+2025-03-21 00:19:30,470 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:19:30,523 [ERROR] Missing Supabase URL or key
+2025-03-21 00:19:30,523 [ERROR] Missing Supabase URL or key
+2025-03-21 00:19:34,703 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:19:34,704 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:19:35,010 [ERROR] No Supabase API key found
+2025-03-21 00:19:35,013 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:19:35,101 [ERROR] Missing Supabase URL or key
+2025-03-21 00:19:35,101 [ERROR] Missing Supabase URL or key
+2025-03-21 00:20:48,010 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:20:48,011 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:20:48,357 [ERROR] No Supabase API key found
+2025-03-21 00:20:48,360 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:20:48,440 [ERROR] Missing Supabase URL or key
+2025-03-21 00:20:48,440 [ERROR] Missing Supabase URL or key
+2025-03-21 00:23:57,898 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:23:57,898 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:23:58,210 [ERROR] No Supabase API key found
+2025-03-21 00:23:58,212 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:23:58,257 [ERROR] Missing Supabase URL or key
+2025-03-21 00:23:58,257 [ERROR] Missing Supabase URL or key
+2025-03-21 00:25:06,624 [ERROR] Failed to fetch https://www.icc-cricket.com/rankings/59429/babar-azam: HTTP 404
+2025-03-21 00:25:06,624 [ERROR] Failed to fetch https://www.icc-cricket.com/rankings/59429/babar-azam: HTTP 404
+2025-03-21 00:25:06,903 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-21 00:25:06,903 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-21 00:25:07,422 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-21 00:25:07,422 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-21 00:25:07,708 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-21 00:25:07,708 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: HTTP 403 Forbidden.
+2025-03-21 00:25:27,697 [ERROR] Max retries reached for https://ppforum.pakpassion.net/threads/pictures-videos-what-now-for-babar-azam.314558/: Cannot connect to host ppforum.pakpassion.net:443 ssl:default [An existing connection was forcibly closed by the remote host]
+2025-03-21 00:25:27,697 [ERROR] Max retries reached for https://ppforum.pakpassion.net/threads/pictures-videos-what-now-for-babar-azam.314558/: Cannot connect to host ppforum.pakpassion.net:443 ssl:default [An existing connection was forcibly closed by the remote host]
+2025-03-21 00:25:27,757 [ERROR] Gemini model not loaded properly. Using fallback summarizer.
+2025-03-21 00:25:27,757 [ERROR] Gemini model not loaded properly. Using fallback summarizer.
+2025-03-21 00:30:40,046 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:30:40,047 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:30:40,407 [ERROR] No Supabase API key found
+2025-03-21 00:30:40,410 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:30:40,470 [ERROR] Missing Supabase URL or key
+2025-03-21 00:30:40,470 [ERROR] Missing Supabase URL or key
+2025-03-21 00:31:38,707 [ERROR] Failed to fetch https://www.icc-cricket.com/rankings/59429/babar-azam: HTTP 404
+2025-03-21 00:31:38,707 [ERROR] Failed to fetch https://www.icc-cricket.com/rankings/59429/babar-azam: HTTP 404
+2025-03-21 00:31:38,910 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/pakistan-drop-babar-azam-mohammad-rizwan-t20-new-zealand-tour-9868195/: HTTP 403 Forbidden.
+2025-03-21 00:31:38,910 [ERROR] Access denied to https://indianexpress.com/article/sports/cricket/pakistan-drop-babar-azam-mohammad-rizwan-t20-new-zealand-tour-9868195/: HTTP 403 Forbidden.
+2025-03-21 00:31:42,334 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-21 00:31:42,334 [ERROR] Access denied to https://cricket.one/cricket-news/babar-azam-enters-a-shameful-list-claims-shocking-spot-as-wi-bowlers-surpass-him/679734cc703dbcd7d84b0a38: HTTP 403 Forbidden.
+2025-03-21 00:31:42,660 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-21 00:31:42,660 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-03-21 00:31:55,972 [ERROR] Gemini model not loaded properly. Using fallback summarizer.
+2025-03-21 00:31:55,972 [ERROR] Gemini model not loaded properly. Using fallback summarizer.
+2025-03-21 00:34:04,611 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:34:04,612 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:34:04,957 [ERROR] No Supabase API key found
+2025-03-21 00:34:04,958 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:34:05,005 [ERROR] Missing Supabase URL or key
+2025-03-21 00:34:05,005 [ERROR] Missing Supabase URL or key
+2025-03-21 00:34:54,062 [ERROR] Gemini model not loaded properly. Using fallback summarizer.
+2025-03-21 00:34:54,062 [ERROR] Gemini model not loaded properly. Using fallback summarizer.
+2025-03-21 00:42:13,331 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:42:13,331 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:44:19,616 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 00:44:19,618 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 00:44:20,617 [ERROR] No Supabase API key found
+2025-03-21 00:44:20,619 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 00:44:20,656 [ERROR] Missing Supabase URL or key
+2025-03-21 00:44:20,656 [ERROR] Missing Supabase URL or key
+2025-03-21 00:48:37,273 [ERROR] Missing Supabase URL or key
+2025-03-21 00:48:37,273 [ERROR] Missing Supabase URL or key
+2025-03-21 00:51:12,258 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:51:12,258 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:51:12,521 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:51:12,521 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:51:13,133 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:51:13,133 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:51:13,433 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:51:13,433 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:52:37,194 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 00:52:37,194 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 00:54:26,969 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 00:54:26,969 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 00:54:33,530 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 00:54:33,530 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 00:54:36,802 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 00:54:36,802 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 00:54:36,844 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 00:54:36,844 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 00:54:46,212 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9050) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 00:54:46,212 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9050) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 00:55:13,249 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 00:55:13,249 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 00:55:13,547 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:13,547 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:14,176 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:14,176 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:14,535 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:14,535 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,067 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,067 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,366 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,366 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,751 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,751 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,995 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:15,995 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:16,435 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:16,435 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:16,681 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:16,681 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:16,920 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:16,920 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,144 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,144 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,369 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,369 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,587 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,587 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,821 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:17,821 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:18,049 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:18,049 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:18,446 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:18,446 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:18,829 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:18,829 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 00:55:37,684 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 00:55:37,684 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 01:07:32,349 [ERROR] Missing Supabase URL or key
+2025-03-21 01:07:32,349 [ERROR] Missing Supabase URL or key
+2025-03-21 01:07:51,363 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Fast+Nuces&num=10&start=21
+2025-03-21 01:07:51,363 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Fast+Nuces&num=10&start=21
+2025-03-21 01:07:58,122 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:58,122 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:58,707 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:58,707 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:58,934 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:58,934 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:59,496 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:59,496 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:59,755 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:07:59,755 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:08:00,330 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:08:00,330 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:08:31,013 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 01:08:31,013 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 01:23:16,000 [ERROR] Missing Supabase URL or key
+2025-03-21 01:23:16,000 [ERROR] Missing Supabase URL or key
+2025-03-21 01:24:30,504 [ERROR] Missing Supabase URL or key
+2025-03-21 01:24:30,504 [ERROR] Missing Supabase URL or key
+2025-03-21 01:24:47,337 [ERROR] Missing Supabase URL or key
+2025-03-21 01:24:47,337 [ERROR] Missing Supabase URL or key
+2025-03-21 01:29:28,537 [ERROR] Missing Supabase URL or key
+2025-03-21 01:29:28,537 [ERROR] Missing Supabase URL or key
+2025-03-21 01:30:17,628 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Sk+Morten&num=10&start=11
+2025-03-21 01:30:17,628 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Sk+Morten&num=10&start=11
+2025-03-21 01:30:18,098 [ERROR] Access denied to https://www.deckshop.pro/spy/player/R09228V/decks: HTTP 403 Forbidden.
+2025-03-21 01:30:18,098 [ERROR] Access denied to https://www.deckshop.pro/spy/player/R09228V/decks: HTTP 403 Forbidden.
+2025-03-21 01:30:18,933 [ERROR] Access denied to https://royaleapi.com/player/R09228V?lang=en: HTTP 403 Forbidden.
+2025-03-21 01:30:18,933 [ERROR] Access denied to https://royaleapi.com/player/R09228V?lang=en: HTTP 403 Forbidden.
+2025-03-21 01:30:20,015 [ERROR] No valid articles were collected.
+2025-03-21 01:30:20,015 [ERROR] No valid articles were collected.
+2025-03-21 01:30:20,016 [ERROR] Scraping failed: No valid articles found after scraping.
+2025-03-21 01:30:20,016 [ERROR] Scraping failed: No valid articles found after scraping.
+2025-03-21 01:31:01,478 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Clash+Royale&num=10&start=1
+2025-03-21 01:31:01,478 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Clash+Royale&num=10&start=1
+2025-03-21 01:31:01,479 [ERROR] No URLs collected after filtering.
+2025-03-21 01:31:01,479 [ERROR] No URLs collected after filtering.
+2025-03-21 01:31:01,480 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 01:31:01,480 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 01:31:25,713 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Clash+Royale&num=10&start=21
+2025-03-21 01:31:25,713 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Clash+Royale&num=10&start=21
+2025-03-21 01:31:26,057 [ERROR] Access denied to https://royaleapi.com/?lang=en: HTTP 403 Forbidden.
+2025-03-21 01:31:26,057 [ERROR] Access denied to https://royaleapi.com/?lang=en: HTTP 403 Forbidden.
+2025-03-21 01:31:34,806 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:31:34,806 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:31:35,769 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:31:35,769 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:31:36,163 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:31:36,163 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 01:31:52,654 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 01:31:52,654 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 01:31:53,559 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 01:31:53,559 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 02:32:42,327 [ERROR] Missing Supabase URL or key
+2025-03-21 02:32:42,327 [ERROR] Missing Supabase URL or key
+2025-03-21 02:34:07,645 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=bitcoin&num=10&start=11
+2025-03-21 02:34:07,645 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=bitcoin&num=10&start=11
+2025-03-21 02:34:18,224 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 02:34:18,224 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 02:34:20,523 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 02:34:20,523 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23468) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 02:34:21,904 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:21,904 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:22,165 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:22,165 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:22,685 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:22,685 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:23,004 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:23,004 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:23,518 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:23,518 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:23,880 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:23,880 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 02:34:24,742 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 1722 credits remaining, while 3657 credits are required for this request.'}}
+2025-03-21 02:34:24,742 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 1722 credits remaining, while 3657 credits are required for this request.'}}
+2025-03-21 02:34:25,519 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 02:34:25,519 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 02:37:39,275 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=League+of+Legends&num=10&start=1
+2025-03-21 02:37:39,275 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=League+of+Legends&num=10&start=1
+2025-03-21 02:37:39,279 [ERROR] No URLs collected after filtering.
+2025-03-21 02:37:39,279 [ERROR] No URLs collected after filtering.
+2025-03-21 02:37:39,281 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 02:37:39,281 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 02:38:13,997 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Babar+Azam&num=10&start=1
+2025-03-21 02:38:13,997 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Babar+Azam&num=10&start=1
+2025-03-21 02:38:13,999 [ERROR] No URLs collected after filtering.
+2025-03-21 02:38:13,999 [ERROR] No URLs collected after filtering.
+2025-03-21 02:38:14,000 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 02:38:14,000 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 02:40:14,319 [ERROR] Missing Supabase URL or key
+2025-03-21 02:40:14,319 [ERROR] Missing Supabase URL or key
+2025-03-21 02:40:24,920 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 02:40:24,921 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 02:40:32,630 [ERROR] Missing Supabase URL or key
+2025-03-21 02:40:32,630 [ERROR] Missing Supabase URL or key
+2025-03-21 02:42:03,181 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 02:42:03,184 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 02:42:06,469 [ERROR] Missing Supabase URL or key
+2025-03-21 02:42:06,469 [ERROR] Missing Supabase URL or key
+2025-03-21 02:42:35,911 [ERROR] GEMINI_API_KEY not found in config.yaml
+2025-03-21 02:42:35,911 [ERROR] Failed to initialize Gemini model: GEMINI_API_KEY is required in config.yaml
+2025-03-21 02:42:38,899 [ERROR] Missing Supabase URL or key
+2025-03-21 02:42:38,899 [ERROR] Missing Supabase URL or key
+2025-03-21 02:43:25,686 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Babar+Azam&num=10&start=1
+2025-03-21 02:43:25,686 [ERROR] Google Search API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyCYmndDIOnGCipni1lnhURr6Hm95BvHwi4&cx=72e62b8642f194f09&q=Babar+Azam&num=10&start=1
+2025-03-21 02:43:25,689 [ERROR] No URLs collected after filtering.
+2025-03-21 02:43:25,689 [ERROR] No URLs collected after filtering.
+2025-03-21 02:43:25,690 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 02:43:25,690 [ERROR] Scraping failed: No valid URLs found for the query.
+2025-03-21 04:50:03,023 [ERROR] Missing Supabase URL or key
+2025-03-21 04:50:03,023 [ERROR] Missing Supabase URL or key
+2025-03-21 04:51:25,299 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-21 04:51:25,299 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-21 04:51:25,347 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
+2025-03-21 04:51:25,347 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
+2025-03-21 04:51:28,329 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:51:28,329 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:51:30,954 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:51:30,954 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:51:37,692 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9051) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 04:51:37,692 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9051) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 04:52:15,250 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 04:52:15,250 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 04:52:16,856 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:16,856 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:17,157 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:17,157 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:17,461 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:17,461 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:18,062 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:18,062 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:18,373 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:18,373 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:18,889 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:18,889 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:19,188 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:19,188 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:19,536 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:19,536 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:19,919 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:19,919 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:20,327 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:20,327 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:20,767 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:20,767 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,028 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,028 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,260 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,260 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,581 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,581 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,874 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:21,874 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:22,157 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:22,157 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:22,593 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:22,593 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:52:46,445 [ERROR] Text-to-speech conversion failed: name 'subprocess' is not defined
+2025-03-21 04:52:46,445 [ERROR] Text-to-speech conversion failed: name 'subprocess' is not defined
+2025-03-21 04:52:47,328 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 04:52:47,328 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 04:55:08,377 [ERROR] Missing Supabase URL or key
+2025-03-21 04:55:08,377 [ERROR] Missing Supabase URL or key
+2025-03-21 04:55:47,397 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:55:47,397 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:55:49,660 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:55:49,660 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:55:53,157 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 04:55:53,157 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 04:55:54,599 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 04:55:54,599 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 04:55:57,729 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:55:57,729 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:56:00,985 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9053) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 04:56:00,985 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9053) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 04:56:38,263 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 04:56:38,263 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 04:56:39,710 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:39,710 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:40,023 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:40,023 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:40,513 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:40,513 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:40,846 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:40,846 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:41,302 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:41,302 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:41,648 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:41,648 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:42,173 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:42,173 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:42,475 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:42,475 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:43,087 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:43,087 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:43,406 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:43,406 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:43,723 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:43,723 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,044 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,044 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,316 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,316 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,642 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,642 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,929 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:44,929 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:45,335 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:45,335 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 04:56:51,570 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 979 credits are required for this request.'}}
+2025-03-21 04:56:51,570 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 979 credits are required for this request.'}}
+2025-03-21 04:56:52,834 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 04:56:52,834 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 04:58:07,196 [ERROR] Missing Supabase URL or key
+2025-03-21 04:58:07,196 [ERROR] Missing Supabase URL or key
+2025-03-21 04:59:06,022 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:59:06,022 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:59:09,274 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 04:59:09,274 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 04:59:14,003 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 04:59:14,003 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 04:59:17,598 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:59:17,598 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:59:22,605 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:59:22,605 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 04:59:25,586 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9051) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 04:59:25,586 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (9051) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 04:59:54,269 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 04:59:54,269 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 04:59:55,339 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:55,339 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:56,446 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:56,446 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:57,358 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:57,358 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:58,408 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:58,408 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:59,246 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 04:59:59,246 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:00,410 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:00,410 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:01,320 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:01,320 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:02,131 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:02,131 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:03,264 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:03,264 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:04,176 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:04,176 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:05,307 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:05,307 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:06,260 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:06,260 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:07,353 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:07,353 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:08,250 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:08,250 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:09,352 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:09,352 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:10,072 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:10,072 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:10,984 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:10,984 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:10,986 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:10,986 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:12,090 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:12,090 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:12,092 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:12,092 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:12,984 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:12,984 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:12,985 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:12,985 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:14,045 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:14,045 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:14,047 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:14,047 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:14,894 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:14,894 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:14,896 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:14,896 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:16,015 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:16,015 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:16,017 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:16,017 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:16,918 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:16,918 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:16,920 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:16,920 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:17,734 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:17,734 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:17,736 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:17,736 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:18,851 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:18,851 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:18,853 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:18,853 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:19,747 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:19,747 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:19,749 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:19,749 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:20,859 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:20,859 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:20,861 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:20,861 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:21,800 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:21,800 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:21,803 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:21,803 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:22,915 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:22,915 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:22,917 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:22,917 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:23,833 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:23,833 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:23,835 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:23,835 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:24,712 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:24,712 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:24,714 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:24,714 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:25,639 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:25,639 [ERROR] Error in Gemini summarization: maximum recursion depth exceeded
+2025-03-21 05:00:25,641 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:25,641 [ERROR] Error summarizing chunk 1: maximum recursion depth exceeded
+2025-03-21 05:00:27,019 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 05:00:27,019 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 05:01:33,800 [ERROR] Missing Supabase URL or key
+2025-03-21 05:01:33,800 [ERROR] Missing Supabase URL or key
+2025-03-21 05:01:38,859 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-21 05:01:38,859 [ERROR] Scraping failed: collect_and_scrape() got an unexpected keyword argument 'input_language'
+2025-03-21 05:04:12,673 [ERROR] Missing Supabase URL or key
+2025-03-21 05:04:12,673 [ERROR] Missing Supabase URL or key
+2025-03-21 05:04:20,101 [ERROR] Missing Supabase URL or key
+2025-03-21 05:04:20,101 [ERROR] Missing Supabase URL or key
+2025-03-21 05:04:24,373 [ERROR] Missing Supabase URL or key
+2025-03-21 05:04:24,373 [ERROR] Missing Supabase URL or key
+2025-03-21 07:43:13,594 [ERROR] Missing Supabase URL or key
+2025-03-21 07:43:13,594 [ERROR] Missing Supabase URL or key
+2025-03-21 07:47:23,013 [ERROR] Missing Supabase URL or key
+2025-03-21 07:47:23,013 [ERROR] Missing Supabase URL or key
+2025-03-21 07:49:28,336 [ERROR] Missing Supabase URL or key
+2025-03-21 07:49:28,336 [ERROR] Missing Supabase URL or key
+2025-03-21 07:51:48,060 [ERROR] No Supabase API key found
+2025-03-21 07:51:48,062 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 07:51:48,113 [ERROR] Missing Supabase URL or key
+2025-03-21 07:51:48,113 [ERROR] Missing Supabase URL or key
+2025-03-21 07:51:52,294 [ERROR] No Supabase API key found
+2025-03-21 07:51:52,296 [ERROR] Failed to initialize Supabase client: supabase_url is required
+2025-03-21 07:51:52,348 [ERROR] Missing Supabase URL or key
+2025-03-21 07:51:52,348 [ERROR] Missing Supabase URL or key
+2025-03-21 07:52:15,337 [ERROR] Missing Supabase URL or key
+2025-03-21 07:52:15,337 [ERROR] Missing Supabase URL or key
+2025-03-21 07:54:20,251 [ERROR] Max retries reached for https://imaginecup.microsoft.com/en-us/Team/7889342e-69c0-48bc-8b87-dad4512a8881: 
+2025-03-21 07:54:20,251 [ERROR] Max retries reached for https://imaginecup.microsoft.com/en-us/Team/7889342e-69c0-48bc-8b87-dad4512a8881: 
+2025-03-21 07:54:21,497 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:21,497 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:21,778 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:21,778 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:22,339 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:22,339 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:22,558 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:22,558 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:23,206 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:23,206 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:23,494 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:23,494 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 07:54:33,319 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 1956 credits are required for this request.'}}
+2025-03-21 07:54:33,319 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 1956 credits are required for this request.'}}
+2025-03-21 07:54:34,541 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 07:54:34,541 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 08:01:18,438 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 08:01:18,438 [ERROR] Unexpected error fetching article at https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 08:01:20,757 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 08:01:20,757 [ERROR] Unexpected error fetching article at https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 08:01:24,423 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 08:01:24,423 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 08:01:28,296 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 08:01:28,296 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 08:01:34,403 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (18150) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 08:01:34,403 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (18150) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 08:01:34,760 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 08:01:34,760 [ERROR] Unexpected error fetching article at https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 08:02:08,261 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 08:02:08,261 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 08:02:09,650 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:09,650 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:09,996 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:09,996 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:10,489 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:10,489 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:10,816 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:10,816 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:11,310 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:11,310 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:11,660 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:11,660 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:12,135 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:12,135 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:12,559 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:12,559 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,076 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,076 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,363 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,363 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,684 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,684 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,975 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:13,975 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:14,298 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:14,298 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:14,608 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:14,608 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:14,903 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:14,903 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:15,322 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:15,322 [ERROR] Error in Gemini summarization: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:02:28,881 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 3067 credits are required for this request.'}}
+2025-03-21 08:02:28,881 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 3067 credits are required for this request.'}}
+2025-03-21 08:02:30,316 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 08:02:30,316 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 08:06:38,059 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:38,059 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:38,390 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:38,390 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:38,894 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:38,894 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:39,194 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:39,194 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:39,707 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:39,707 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:39,994 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:39,994 [ERROR] Error in Gemini summarization: 404 models/text-bison-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-21 08:06:47,857 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 1760 credits are required for this request.'}}
+2025-03-21 08:06:47,857 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 1760 credits are required for this request.'}}
+2025-03-21 08:06:48,472 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 08:06:48,472 [ERROR] Error saving query: {'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "Queries"'}
+2025-03-21 08:10:59,710 [ERROR] Missing Supabase URL or key
+2025-03-21 08:10:59,710 [ERROR] Missing Supabase URL or key
+2025-03-21 08:12:47,770 [ERROR] Missing Supabase URL or key
+2025-03-21 08:12:47,770 [ERROR] Missing Supabase URL or key
