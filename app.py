@@ -19,12 +19,13 @@ from itertools import cycle
 from bs4 import BeautifulSoup
 import subprocess
 from typing import List, Dict, Any, Optional
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse
 
 # --------------------------------------------------------
 # Global Constants and Configuration
 # --------------------------------------------------------
 
-# Naive transliteration map for converting English characters to Urdu
 TRANSLIT_MAP = {
     'a': 'ا', 'b': 'ب', 'c': 'ک', 'd': 'د', 'e': 'ے',
     'f': 'ف', 'g': 'گ', 'h': 'ہ', 'i': 'ی', 'j': 'ج',
@@ -36,8 +37,48 @@ TRANSLIT_MAP = {
     '5': '۵', '6': '۶', '7': '۷', '8': '۸', '9': '۹'
 }
 
-# Maximum words for TTS conversion to reduce payload size
 MAX_TTS_WORDS = 400
+CONSTANT_DELAY = 1.0  # Seconds
+
+# --------------------------------------------------------
+# Logging Configuration
+# --------------------------------------------------------
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[logging.FileHandler('app.log'), logging.StreamHandler()]
+)
+error_handler = logging.FileHandler('errors.log')
+error_handler.setLevel(logging.ERROR)
+error_handler.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(message)s'))
+logging.getLogger().addHandler(error_handler)
+
+# --------------------------------------------------------
+# Configuration Loading
+# --------------------------------------------------------
+
+def load_config(filename: str = 'config.yaml') -> Dict[str, Any]:
+    try:
+        with open(filename, 'r') as f:
+            cfg = yaml.safe_load(f)
+        required = ['api_key', 'cse_id', 'gemini_api_key']
+        for key in required:
+            if not cfg.get(key):
+                raise ValueError(f"{key} is required in {filename}")
+        logging.info("Configuration loaded successfully")
+        return cfg
+    except Exception as e:
+        logging.error(f"Error loading {filename}: {e}")
+        raise
+
+config = load_config()
+API_KEY = config['api_key']
+CSE_ID = config['cse_id']
+GEMINI_API_KEY = config['gemini_api_key']
+blocked_domains = config.get('blocked_domains', [])
+proxies_list = config.get('proxies', [])
+output_file = config.get('output_file', 'output.json')
 
 # --------------------------------------------------------
 # Helper Functions: Transliteration & Text Manipulation
@@ -75,7 +116,7 @@ def clean_text(text: str) -> str:
     return text
 
 def is_meaningful_content(text: str, min_length: int = 200, max_ad_ratio: float = 0.3) -> bool:
-    """Check if text is meaningful based on word count and advertisement ratio."""
+    """Check if text is meaningful based on word count and ad ratio."""
     if not text or len(text.split()) < min_length:
         return False
     ad_patterns = r'(subscribe|subscription|advert|cookie|privacy|sign up|free trial|newsletter|click here)'
@@ -99,18 +140,13 @@ def remove_duplicate_sentences(text: str) -> str:
         sentence_clean = re.sub(r'\s+', ' ', sentence_clean).strip()
         if not sentence_clean or len(sentence_clean) < 10:
             continue
-        is_duplicate = any(
-            (len(sentence_clean) > 0.9 * len(existing) and len(existing) > 0.9 * len(sentence_clean)
-             and (sentence_clean in existing or existing in sentence_clean))
-            for existing in seen
-        )
-        if not is_duplicate:
+        if not any((len(sentence_clean) > 0.9 * len(existing) and len(existing) > 0.9 * len(sentence_clean) and (sentence_clean in existing or existing in sentence_clean)) for existing in seen):
             seen.add(sentence_clean)
             unique_sentences.append(sentence.strip())
     return ' '.join(unique_sentences)
 
 def clean_summary(summary: str) -> str:
-    """Clean the summary text by removing duplicate sentences, unwanted tokens, and non-target language content."""
+    """Post-process the summary to enhance readability."""
     if not summary:
         return ""
     summary = remove_duplicate_sentences(summary)
@@ -120,14 +156,10 @@ def clean_summary(summary: str) -> str:
     summary = re.sub(r'\[EMAIL REDACTED\]|\[PHONE REDACTED\]|\[URL REDACTED\]', '', summary)
     summary = re.sub(r'https?://\S+', '', summary)
     summary = re.sub(r'contact.*?information|email|call|phone', '', summary, flags=re.IGNORECASE)
-    
-    # Remove any Cyrillic text (covers Russian and similar languages)
     summary = re.sub(r'[\u0400-\u04FF]+', '', summary)
-    
     sentences = re.split(r'(?<=[.!?]) +', summary)
     filtered_sentences = [
-        s for s in sentences
-        if not re.search(
+        s for s in sentences if not re.search(
             r'(located at|address|event details|call|email|contact|pm|am|\d{1,2}:\d{2}|January|February|March|April|May|June|July|August|September|October|November|December)',
             s, re.IGNORECASE
         )
@@ -141,72 +173,40 @@ def clean_summary(summary: str) -> str:
     return summary.strip()
 
 def format_article_content(articles: List[Dict[str, Any]]) -> str:
-    """Concatenate the content from a list of articles into a single string."""
+    """Concatenate the content from a list of articles."""
     formatted_text = [re.sub(r'\s+', ' ', article['content']).strip() for article in articles]
     return ' '.join(formatted_text)
 
 # --------------------------------------------------------
-# Configuration Loading
+# Ensure is_blocked is defined before use
 # --------------------------------------------------------
 
-def load_config(filename: str = 'config.yaml') -> Dict[str, Any]:
-    """Load configuration from a YAML file."""
-    try:
-        with open(filename, 'r') as f:
-            config = yaml.safe_load(f)
-        required = ['api_key', 'cse_id', 'gemini_api_key']
-        for key in required:
-            if not config.get(key):
-                raise ValueError(f"{key} is required in {filename}")
-        logging.info("Configuration loaded successfully")
-        return config
-    except Exception as e:
-        logging.error(f"Error loading {filename}: {e}")
-        raise
+def is_blocked(url: str, blocked_domains: List[str]) -> bool:
+    domain = urlparse(url).netloc.lower()
+    for blocked in blocked_domains:
+        if blocked in domain:
+            logging.info(f"Blocked domain detected: {domain}")
+            return True
+    return False
 
-config = load_config()
-API_KEY = config['api_key']
-CSE_ID = config['cse_id']
-GEMINI_API_KEY = config['gemini_api_key']
-blocked_domains = config.get('blocked_domains', [])
-proxies_list = config.get('proxies', [])
-output_file = config.get('output_file', 'output.json')
+def clean_url(url: str) -> str:
+    """Clean the URL by removing tracking parameters."""
+    parsed = urlparse(url)
+    clean_params = "&".join([p for p in parsed.query.split("&") if not p.startswith(('utm_', 'fbclid', 'gclid'))])
+    cleaned = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+    if clean_params:
+        cleaned += f"?{clean_params}"
+    return cleaned
 
 # --------------------------------------------------------
-# Configure Logging
+# Google Search with Retry
 # --------------------------------------------------------
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s [%(levelname)s] %(message)s',
-    handlers=[
-        logging.FileHandler('app.log'),
-        logging.StreamHandler()
-    ]
-)
-error_handler = logging.FileHandler('errors.log')
-error_handler.setLevel(logging.ERROR)
-error_handler.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(message)s'))
-logging.getLogger().addHandler(error_handler)
-
-# --------------------------------------------------------
-# Google Search Functionality with Increased Backoff & Delay
-# --------------------------------------------------------
-
-CONSTANT_DELAY = 1.0  # Additional delay (in seconds) before each request
 
 def google_search(api_key: str, cse_id: str, query: str, num_results: int = 10, start_index: int = 1, retries: int = 5, backoff_factor: float = 2.0) -> List[str]:
-    """Perform a Google Custom Search and return a list of URLs with retry logic on 429 errors."""
     url = "https://www.googleapis.com/customsearch/v1"
-    params = {
-        'key': api_key,
-        'cx': cse_id,
-        'q': query,
-        'num': num_results,
-        'start': start_index
-    }
+    params = {'key': api_key, 'cx': cse_id, 'q': query, 'num': num_results, 'start': start_index}
     for attempt in range(retries):
-        time.sleep(CONSTANT_DELAY)  # Slow down the rate of requests
+        time.sleep(CONSTANT_DELAY)
         try:
             response = requests.get(url, params=params, timeout=15)
             response.raise_for_status()
@@ -227,32 +227,11 @@ def google_search(api_key: str, cse_id: str, query: str, num_results: int = 10, 
             return []
     return []
 
-def is_blocked(url: str, blocked_domains: List[str]) -> bool:
-    """Determine if a URL belongs to a blocked domain."""
-    domain = urlparse(url).netloc.lower()
-    for blocked in blocked_domains:
-        if blocked in domain:
-            logging.info(f"Blocked domain detected: {domain}")
-            return True
-    return False
-
-def clean_url(url: str) -> str:
-    """Clean the URL by removing tracking parameters."""
-    parsed = urlparse(url)
-    clean_params = "&".join(
-        [p for p in parsed.query.split("&") if not p.startswith(('utm_', 'fbclid', 'gclid'))]
-    )
-    cleaned = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
-    if clean_params:
-        cleaned += f"?{clean_params}"
-    return cleaned
-
 # --------------------------------------------------------
 # Robots.txt Checks (Asynchronous)
 # --------------------------------------------------------
 
 async def fetch_robots_txt(robots_url: str, timeout: int) -> Optional[str]:
-    """Fetch the robots.txt file from a given URL."""
     async with ClientSession(timeout=ClientTimeout(total=timeout)) as session:
         try:
             async with session.get(robots_url) as response:
@@ -267,13 +246,11 @@ async def fetch_robots_txt(robots_url: str, timeout: int) -> Optional[str]:
     return None
 
 async def parse_robots_txt(robots_txt: str, url: str, user_agent: str = '*') -> bool:
-    """Parse robots.txt and check if the URL is allowed."""
     rp = RobotFileParser()
     rp.parse(robots_txt.splitlines())
     return rp.can_fetch(user_agent, url)
 
 async def is_allowed_async(url: str, user_agent: str = '*', timeout: int = 5) -> bool:
-    """Check asynchronously if a URL is allowed per its robots.txt."""
     parsed_url = urlparse(url)
     robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
     logging.info(f"Fetching robots.txt from {robots_url}")
@@ -287,7 +264,6 @@ async def is_allowed_async(url: str, user_agent: str = '*', timeout: int = 5) ->
     return allowed
 
 async def is_allowed(url: str, user_agent: str = '*', timeout: int = 5) -> bool:
-    """Wrapper for checking if URL is allowed."""
     return await is_allowed_async(url, user_agent, timeout)
 
 # --------------------------------------------------------
@@ -295,7 +271,6 @@ async def is_allowed(url: str, user_agent: str = '*', timeout: int = 5) -> bool:
 # --------------------------------------------------------
 
 def get_proxy() -> Optional[str]:
-    """Return the next proxy in the list if available."""
     if proxies_list:
         return next(get_proxy.proxy_cycle)
     return None
@@ -315,7 +290,6 @@ async def fetch_article(
     retries: int = 3,
     backoff_factor: float = 1.5
 ) -> Optional[Dict[str, Any]]:
-    """Fetch and parse an article from a URL asynchronously."""
     url = clean_url(url)
     for attempt in range(retries):
         try:
@@ -335,9 +309,8 @@ async def fetch_article(
                     if not html_content or len(html_content.strip()) < 100:
                         logging.error(f"Empty or very short HTML from {url}")
                         return None
-                    # Attempt parsing with newspaper3k
-                    from newspaper import Article, ArticleException
                     try:
+                        from newspaper import Article, ArticleException
                         article = Article(url)
                         article.set_html(html_content)
                         article.parse()
@@ -356,7 +329,6 @@ async def fetch_article(
                     except Exception as parse_err:
                         logging.error(f"Article parsing failed for {url}: {parse_err}")
                         return None
-                    # Translate non-English articles
                     try:
                         lang = detect(content)
                         if lang != 'en':
@@ -392,7 +364,6 @@ async def fetch_article(
     return None
 
 async def scrape_contents(urls: List[str]) -> List[Dict[str, Any]]:
-    """Scrape article contents from a list of URLs concurrently."""
     headers = {
         'User-Agent': (
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
@@ -406,10 +377,8 @@ async def scrape_contents(urls: List[str]) -> List[Dict[str, Any]]:
     semaphore = asyncio.Semaphore(3)
     connector = TCPConnector(limit_per_host=2, ssl=False)
     async with ClientSession(connector=connector, headers=headers) as session:
-        tasks = [
-            fetch_article(session, url, headers, semaphore, proxy=get_proxy() if proxies_list else None)
-            for url in urls
-        ]
+        tasks = [fetch_article(session, url, headers, semaphore, proxy=get_proxy() if proxies_list else None)
+                 for url in urls]
         contents = []
         for task in tqdm_asyncio.as_completed(tasks, total=len(tasks)):
             try:
@@ -427,7 +396,6 @@ async def scrape_contents(urls: List[str]) -> List[Dict[str, Any]]:
 try:
     import google.generativeai as genai
     genai.configure(api_key=GEMINI_API_KEY)
-    # Update to a supported model identifier (verify with current documentation)
     model = genai.GenerativeModel('gemini-2.0-flash')
     logging.info("Gemini model initialized successfully")
 except Exception as e:
@@ -435,7 +403,6 @@ except Exception as e:
     model = None
 
 def extractive_summarization_fallback(text: str, num_sentences: int = 20) -> str:
-    """Simple extractive summarization fallback by selecting key sentences."""
     logging.info("Using extractive summarization fallback")
     sentences = re.split(r'(?<=[.!?]) +', text)
     if len(sentences) <= num_sentences:
@@ -450,13 +417,7 @@ def extractive_summarization_fallback(text: str, num_sentences: int = 20) -> str
     summary_sentences.extend(sentences[-7:])
     return ' '.join(summary_sentences[:num_sentences])
 
-def summarize_with_gemini(
-    text: str,
-    max_length: int = 500,
-    min_length: int = 300,
-    article_count: Optional[int] = None
-) -> str:
-    """Generate a summary using Gemini, falling back if necessary."""
+def summarize_with_gemini(text: str, max_length: int = 500, min_length: int = 300, article_count: Optional[int] = None) -> str:
     if not model:
         logging.error("Gemini model not loaded properly. Using fallback summarizer.")
         return extractive_summarization_fallback(text)
@@ -466,7 +427,7 @@ def summarize_with_gemini(
     try:
         prompt = (
             f"Create a cohesive, concise summary focusing on relevant academic or event-related content.\n"
-            f"Exclude any technical installation details or non-academic content.\n"
+            f"Exclude technical installation details or non-academic content.\n"
             f"Your summary should be clear, factual, and between {min_length} and {max_length} words.\n\n"
             f"Text (ignore formatting labels): \n{text[:30000]}"
         )
@@ -502,7 +463,6 @@ def summarize_with_gemini(
         return extractive_summarization_fallback(text)
 
 def summarize_in_chunks(text: str, max_length: int = 500, min_length: int = 300) -> str:
-    """Divide text into chunks for summarization and combine the results."""
     chunks = []
     current_chunk = ""
     sentences = re.split(r'(?<=[.!?]) +', text)
@@ -547,14 +507,12 @@ def summarize_in_chunks(text: str, max_length: int = 500, min_length: int = 300)
         return combined_summary
 
 # --------------------------------------------------------
-# Text-to-Speech using ElevenLabs (with Text Reduction)
+# Text-to-Speech using ElevenLabs with FFmpeg Speed Adjustment
 # --------------------------------------------------------
 
 from elevenlabs.client import ElevenLabs
 
 def convert_text_to_speech(text: str, output_filename: str = "output_audio.mp3", speed: float = 1.5) -> Optional[str]:
-    """Convert text to speech using ElevenLabs and adjust playback speed with FFmpeg.
-       If the text is too long, truncate to reduce payload size."""
     words = text.split()
     if len(words) > MAX_TTS_WORDS:
         tts_text = ' '.join(words[:MAX_TTS_WORDS])
@@ -573,7 +531,6 @@ def convert_text_to_speech(text: str, output_filename: str = "output_audio.mp3",
                 if isinstance(chunk, bytes):
                     output_file.write(chunk)
         logging.info(f"Audio has been downloaded and saved as {output_filename}")
-
         fast_output_filename = "output_audio_fast.mp3"
         subprocess.run(
             ["ffmpeg", "-y", "-i", output_filename, "-filter:a", f"atempo={speed}", fast_output_filename],
@@ -597,7 +554,6 @@ async def collect_and_scrape(
     max_api_calls: int = 10,
     max_urls_to_attempt: int = 20
 ) -> Dict[str, Any]:
-    """Collect articles based on the query, summarize them, and convert the summary to audio."""
     if not API_KEY or not CSE_ID:
         raise ValueError("API_KEY and CSE_ID are required but not properly configured")
     
@@ -731,7 +687,7 @@ async def collect_and_scrape(
         except Exception as e:
             logging.error(f"Error translating final summary to {output_language}: {e}")
 
-    audio_file = convert_text_to_speech(final_summary, output_filename="output_audio.mp3")
+    audio_file = convert_text_to_speech(final_summary, output_filename="output_audio.mp3", speed=1.5)
 
     result = {
         'articles': valid_articles,
@@ -754,10 +710,27 @@ async def collect_and_scrape(
 
     return result
 
-# For running the script directly
+# --------------------------------------------------------
+# Endpoint to Serve the Audio File
+# --------------------------------------------------------
+
+app = FastAPI()
+
+@app.get("/audio", response_class=FileResponse)
+async def get_audio():
+    audio_path = "output_audio_fast.mp3"
+    if os.path.exists(audio_path):
+        return FileResponse(audio_path, media_type="audio/mpeg")
+    else:
+        raise HTTPException(status_code=404, detail="Audio file not found")
+
+# --------------------------------------------------------
+# For Running the Script Directly
+# --------------------------------------------------------
+
 if __name__ == "__main__":
     query_input = "Your search query here"
-    desired_articles = 5  # Adjust the desired number of articles
+    desired_articles = 5  # Adjust as needed
     try:
         final_result = asyncio.run(collect_and_scrape(query_input, desired_articles))
         logging.info("Process completed successfully.")

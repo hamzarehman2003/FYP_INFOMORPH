@@ -909,3 +909,211 @@ pip install python-multipart
 2025-03-21 08:58:52,518 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
 2025-03-21 08:59:18,366 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 2722 credits are required for this request.'}}
 2025-03-21 08:59:18,366 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 743 credits remaining, while 2722 credits are required for this request.'}}
+2025-03-21 09:03:59,257 [ERROR] Max retries reached for https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/how-to-import/step-by-step-guides/category-3-step-by-step-guide-for-cats: 
+2025-03-21 09:03:59,257 [ERROR] Max retries reached for https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/how-to-import/step-by-step-guides/category-3-step-by-step-guide-for-cats: 
+2025-03-21 09:05:02,357 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 09:05:02,357 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 09:06:04,795 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:06:04,795 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:06:17,561 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-21 09:06:17,561 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-21 09:06:20,691 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 09:06:20,691 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 09:06:27,497 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:06:27,497 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:06:46,945 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:46,945 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,144 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,144 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,331 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,331 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,529 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,529 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,722 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:47,722 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:48,023 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:48,023 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:48,332 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:06:48,332 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:07:14,770 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 09:07:14,770 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 09:29:52,130 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:29:52,130 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:30:01,909 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 09:30:01,909 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 09:30:02,301 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-21 09:30:02,301 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-21 09:30:12,824 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:30:12,824 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 09:30:33,637 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:33,637 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:33,830 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:33,830 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,049 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,049 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,259 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,259 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,478 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,478 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,795 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:30:34,795 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 09:31:05,664 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 09:31:05,664 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 09:42:55,883 [ERROR] Access denied to https://thechicagodogs.com/: HTTP 403 Forbidden.
+2025-03-21 09:42:55,883 [ERROR] Access denied to https://thechicagodogs.com/: HTTP 403 Forbidden.
+2025-03-21 09:44:40,267 [ERROR] Max retries reached for https://www.stanislausanimalservices.com/adopt-dogs.shtm: 
+2025-03-21 09:44:40,267 [ERROR] Max retries reached for https://www.stanislausanimalservices.com/adopt-dogs.shtm: 
+2025-03-21 09:45:31,139 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 09:45:31,139 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-03-21 10:17:47,534 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:17:47,534 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:17:59,554 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-21 10:17:59,554 [ERROR] Access denied to https://doctors.nghs.com/provider/imran-khan/2632146: HTTP 403 Forbidden.
+2025-03-21 10:17:59,732 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 10:17:59,732 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 10:18:12,304 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:18:12,304 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:18:33,605 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:33,605 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:33,819 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:33,819 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,023 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,023 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,227 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,227 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,439 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,439 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,740 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:18:34,740 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:24:22,124 [ERROR] Scraping failed: name 'is_blocked' is not defined
+2025-03-21 10:24:22,124 [ERROR] Scraping failed: name 'is_blocked' is not defined
+2025-03-21 10:31:37,176 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,176 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,177 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,177 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,178 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,178 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,179 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,179 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,179 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,179 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,180 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,180 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,181 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,181 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,181 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,181 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,183 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,183 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,183 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,183 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,184 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,184 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,185 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,185 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,185 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,185 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,187 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,187 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,188 [ERROR] No valid articles were collected.
+2025-03-21 10:31:37,188 [ERROR] No valid articles were collected.
+2025-03-21 10:31:37,188 [ERROR] Scraping failed: No valid articles found after scraping.
+2025-03-21 10:31:37,188 [ERROR] Scraping failed: No valid articles found after scraping.
+2025-03-21 10:36:13,707 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-21 10:36:13,707 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-21 10:37:21,798 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-21 10:37:21,798 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-21 10:37:49,800 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 2709 credits are required for this request.'}}
+2025-03-21 10:37:49,800 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 2709 credits are required for this request.'}}
+2025-03-21 10:39:44,376 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 10:39:44,376 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 10:39:45,430 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 10:39:45,430 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 10:39:45,768 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 10:39:45,768 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 10:39:47,840 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 10:39:47,840 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 10:39:54,912 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 10:39:54,912 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 10:40:28,266 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 10:40:28,266 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 10:47:00,089 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-21 10:47:00,089 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-21 10:48:02,778 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-21 10:48:02,778 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-21 10:48:31,077 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:48:31,077 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:52:18,965 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:18,965 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:31,831 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:31,831 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:43,814 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 10:52:43,814 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 10:52:56,813 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:56,813 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 11:13:26,623 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:26,623 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:27,431 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 11:13:27,431 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 11:13:30,053 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 11:13:30,053 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 11:13:34,784 [ERROR] Decoding error for https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:34,784 [ERROR] Decoding error for https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:38,769 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:38,769 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:41,438 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 11:13:41,438 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 11:14:16,259 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 11:14:16,259 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 11:14:29,093 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 11:14:29,093 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 11:14:29,098 [ERROR] Regeneration of summary failed: summarize_with_gemini() got an unexpected keyword argument 'article_count'
+2025-03-21 11:14:29,098 [ERROR] Regeneration of summary failed: summarize_with_gemini() got an unexpected keyword argument 'article_count'
+2025-03-21 11:14:59,453 [ERROR] Failed to write output to file: name 'output_file' is not defined
+2025-03-21 11:14:59,453 [ERROR] Failed to write output to file: name 'output_file' is not defined
+2025-03-21 11:54:29,231 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 1687 credits are required for this request.'}}
+2025-03-21 11:54:29,231 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 1687 credits are required for this request.'}}
+2025-03-21 11:57:38,296 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 11:57:38,296 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 11:57:43,590 [ERROR] Decoding error for https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:57:43,590 [ERROR] Decoding error for https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:57:43,891 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:57:43,891 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:57:46,111 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:57:46,111 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:57:47,875 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 11:57:47,875 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 11:57:56,172 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (20751) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 11:57:56,172 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (20751) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 11:58:35,262 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 11:58:35,262 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 11:58:56,081 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 2606 credits are required for this request.'}}
+2025-03-21 11:58:56,081 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 2606 credits are required for this request.'}}
+2025-03-21 12:01:27,471 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
+2025-03-21 12:01:27,471 [ERROR] Access denied to https://www.coinbase.com/price/bitcoin: HTTP 403 Forbidden.
+2025-03-21 12:01:27,781 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-21 12:01:27,781 [ERROR] Access denied to https://www.coingecko.com/en/coins/bitcoin: HTTP 403 Forbidden.
+2025-03-21 12:01:34,221 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 12:01:34,221 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 12:01:45,010 [ERROR] Decoding error for https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 12:01:45,010 [ERROR] Decoding error for https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 12:01:47,469 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 12:01:47,469 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 12:02:22,272 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 12:02:22,272 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 12:02:41,483 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 12:02:41,483 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 12:02:42,977 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 2916 credits are required for this request.'}}
+2025-03-21 12:02:42,977 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 2916 credits are required for this request.'}}

@@ -7,14 +7,17 @@ export const SummaryContext = createContext({
   setSummary: () => {},
   query: '',
   setQuery: () => {},
+  audioFile: '',
+  setAudioFile: () => {}
 });
 
 export const SummaryProvider = ({ children }) => {
   const [summary, setSummary] = useState('');
   const [query, setQuery] = useState('');
+  const [audioFile, setAudioFile] = useState('');
 
   return (
-    <SummaryContext.Provider value={{ summary, setSummary, query, setQuery }}>
+    <SummaryContext.Provider value={{ summary, setSummary, query, setQuery, audioFile, setAudioFile }}>
       {children}
     </SummaryContext.Provider>
   );

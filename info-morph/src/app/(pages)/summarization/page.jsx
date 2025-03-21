@@ -14,7 +14,6 @@ const SummarizationPage = () => {
   useEffect(() => {
     console.log("Summarization Page: summary =", summary);
     console.log("Summarization Page: query =", query);
-
     if (!summary) {
       router.push('/topic-selection');
     }
@@ -22,12 +21,10 @@ const SummarizationPage = () => {
 
   const handleReportFeedback = async () => {
     const userFeedback = prompt("Please enter your feedback:");
-
     if (!userFeedback) {
       alert("Feedback cannot be empty.");
       return;
     }
-
     try {
       const response = await axios.post("http://localhost:8000/feedback", {
         query,
@@ -47,40 +44,40 @@ const SummarizationPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-      <div className="max-w-4xl w-full bg-white shadow-md rounded-lg p-8 mt-10">
-        <div className="flex items-center justify-center mb-4">
-          <FaRegLightbulb className="text-yellow-500 text-4xl mr-2" />
-          <h1 className="text-3xl font-bold">Professional Summary</h1>
-        </div>
-        <div className="h-96 overflow-y-scroll">
-          <p className="text-lg text-gray-700 whitespace-pre-line leading-relaxed">
-            {summary}
-          </p>
-        </div>
-        <div className="mt-6 flex justify-center gap-4">
-          <button
-            onClick={handleNewSearch}
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-          >
-            New Search
-          </button>
-          <button
-            onClick={handleReportFeedback}
-            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-          >
-            Report Feedback
-          </button>
+    <ProtectedRoute>
+      <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+        <div className="max-w-4xl w-full bg-white shadow-md rounded-lg p-8 mt-10">
+          <div className="flex items-center justify-center mb-4">
+            <FaRegLightbulb className="text-yellow-500 text-4xl mr-2" />
+            <h1 className="text-3xl font-bold">Professional Summary</h1>
+          </div>
+          <div className="h-96 overflow-y-scroll mb-4">
+            <p className="text-lg text-gray-700 whitespace-pre-line leading-relaxed">
+              {summary}
+            </p>
+          </div>
+          {/* Audio player for the generated audio */}
+          <div className="mb-4">
+            <audio controls src="http://localhost:8000/audio" className="w-full"></audio>
+          </div>
+          <div className="flex justify-center gap-4">
+            <button
+              onClick={handleNewSearch}
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+            >
+              New Search
+            </button>
+            <button
+              onClick={handleReportFeedback}
+              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
+            >
+              Report Feedback
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </ProtectedRoute>
   );
 };
 
-const WrappedSummarizationPage = () => (
-  <ProtectedRoute>
-    <SummarizationPage />
-  </ProtectedRoute>
-);
-
-export default WrappedSummarizationPage;
+export default SummarizationPage;

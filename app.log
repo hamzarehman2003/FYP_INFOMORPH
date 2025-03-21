@@ -2007,3 +2007,798 @@ WHERE users.id = ?
 2025-03-21 08:12:47,723 [INFO] Supabase client initialized successfully
 2025-03-21 08:12:47,770 [ERROR] Missing Supabase URL or key
 2025-03-21 08:12:47,771 [WARNING] Could not authenticate with Supabase at startup
+2025-03-21 10:30:48,995 [INFO] Configuration loaded successfully
+2025-03-21 10:30:49,933 [INFO] Gemini model initialized successfully
+2025-03-21 10:30:51,167 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:30:51,168 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:30:51,169 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:30:51,689 [INFO] Supabase client initialized successfully
+2025-03-21 10:30:52,011 [INFO] Successfully created Supabase client
+2025-03-21 10:30:52,569 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:30:52,575 [INFO] Successfully connected to Supabase
+2025-03-21 10:30:52,576 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:30:58,505 [INFO] Scrape request received: Query='bitcoin', Num URLs=10
+2025-03-21 10:30:58,506 [INFO] Starting collection process for query: 'bitcoin'
+2025-03-21 10:30:58,506 [INFO] Desired article count: 10
+2025-03-21 10:31:00,092 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:31:00,093 [INFO] Blocked domain detected: www.reddit.com
+2025-03-21 10:31:00,094 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-21 10:31:00,095 [INFO] Filtered 2 blocked domains
+2025-03-21 10:31:00,095 [INFO] Fetching robots.txt from https://bitcoin.org/robots.txt
+2025-03-21 10:31:00,669 [INFO] Fetching robots.txt from https://www.bitcoin.com/robots.txt
+2025-03-21 10:31:01,604 [INFO] Fetching robots.txt from https://coinmarketcap.com/robots.txt
+2025-03-21 10:31:01,826 [INFO] Fetching robots.txt from https://www.ussc.gov/robots.txt
+2025-03-21 10:31:03,307 [INFO] Fetching robots.txt from https://finance.yahoo.com/robots.txt
+2025-03-21 10:31:04,215 [INFO] Fetching robots.txt from https://www.whitehouse.gov/robots.txt
+2025-03-21 10:31:04,757 [INFO] Fetching robots.txt from https://ccaf.io/robots.txt
+2025-03-21 10:31:05,353 [INFO] Non-200 response from https://ccaf.io/robots.txt: 404
+2025-03-21 10:31:05,355 [INFO] Skipping https://ccaf.io/cbnsi/cbeci as robots.txt could not be fetched.
+2025-03-21 10:31:05,356 [INFO] Fetching robots.txt from https://www.whitehouse.gov/robots.txt
+2025-03-21 10:31:05,803 [INFO] Collected 8 unique URLs so far
+2025-03-21 10:31:08,320 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:31:08,322 [INFO] Filtered 0 blocked domains
+2025-03-21 10:31:08,322 [INFO] Fetching robots.txt from https://www.whitehouse.gov/robots.txt
+2025-03-21 10:31:08,789 [INFO] Fetching robots.txt from https://www.cmegroup.com/robots.txt
+2025-03-21 10:31:14,256 [INFO] Timeout occurred while fetching https://www.cmegroup.com/robots.txt
+2025-03-21 10:31:14,258 [INFO] Skipping https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin.html as robots.txt could not be fetched.
+2025-03-21 10:31:14,258 [INFO] Fetching robots.txt from https://bitcoincore.org/robots.txt
+2025-03-21 10:31:15,215 [INFO] Fetching robots.txt from https://en.bitcoin.it/robots.txt
+2025-03-21 10:31:15,579 [INFO] Fetching robots.txt from https://digiconomist.net/robots.txt
+2025-03-21 10:31:17,098 [INFO] Fetching robots.txt from https://play.google.com/robots.txt
+2025-03-21 10:31:17,462 [INFO] Fetching robots.txt from https://www.investopedia.com/robots.txt
+2025-03-21 10:31:17,913 [INFO] Fetching robots.txt from https://www.cftc.gov/robots.txt
+2025-03-21 10:31:18,934 [INFO] Fetching robots.txt from https://www.coinbase.com/robots.txt
+2025-03-21 10:31:19,318 [INFO] Fetching robots.txt from https://www.congress.gov/robots.txt
+2025-03-21 10:31:19,389 [INFO] Non-200 response from https://www.congress.gov/robots.txt: 403
+2025-03-21 10:31:19,389 [INFO] Skipping https://www.congress.gov/bill/118th-congress/senate-bill/4912/text as robots.txt could not be fetched.
+2025-03-21 10:31:19,391 [INFO] Collected 17 unique URLs so far
+2025-03-21 10:31:21,991 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:31:21,993 [INFO] Blocked domain detected: x.com
+2025-03-21 10:31:21,994 [INFO] Filtered 1 blocked domains
+2025-03-21 10:31:21,994 [INFO] Fetching robots.txt from https://www.usenix.org/robots.txt
+2025-03-21 10:31:23,272 [INFO] Fetching robots.txt from https://le.utah.gov/robots.txt
+2025-03-21 10:31:29,263 [INFO] Timeout occurred while fetching https://le.utah.gov/robots.txt
+2025-03-21 10:31:29,264 [INFO] Skipping https://le.utah.gov/~2025/bills/static/HB0230.html as robots.txt could not be fetched.
+2025-03-21 10:31:29,265 [INFO] Fetching robots.txt from https://oksenate.gov/robots.txt
+2025-03-21 10:31:30,160 [INFO] Fetching robots.txt from https://www.fidelitycharitable.org/robots.txt
+2025-03-21 10:31:33,578 [INFO] Fetching robots.txt from https://www.santamonica.gov/robots.txt
+2025-03-21 10:31:34,399 [INFO] Non-200 response from https://www.santamonica.gov/robots.txt: 404
+2025-03-21 10:31:34,400 [INFO] Skipping https://www.santamonica.gov/programs/bitcoin-office as robots.txt could not be fetched.
+2025-03-21 10:31:34,401 [INFO] Fetching robots.txt from https://www.blockchain.com/robots.txt
+2025-03-21 10:31:35,292 [INFO] Fetching robots.txt from https://www.coindesk.com/robots.txt
+2025-03-21 10:31:35,633 [INFO] Fetching robots.txt from https://www.binance.com/robots.txt
+2025-03-21 10:31:35,984 [INFO] Fetching robots.txt from https://b.tc/robots.txt
+2025-03-21 10:31:37,164 [INFO] Non-200 response from https://b.tc/robots.txt: 404
+2025-03-21 10:31:37,167 [INFO] Skipping https://b.tc/conference/ as robots.txt could not be fetched.
+2025-03-21 10:31:37,168 [INFO] Collected 26 unique URLs so far
+2025-03-21 10:31:37,168 [INFO] Limited URL collection to 20
+2025-03-21 10:31:37,169 [INFO] Scraping content from 20 collected URLs...
+2025-03-21 10:31:37,176 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,177 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,178 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,179 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,179 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,180 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,181 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,181 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,182 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,183 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,183 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,184 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,185 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,185 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,186 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,187 [ERROR] Error processing task: name 'clean_url' is not defined
+2025-03-21 10:31:37,188 [ERROR] No valid articles were collected.
+2025-03-21 10:31:37,188 [ERROR] Scraping failed: No valid articles found after scraping.
+2025-03-21 10:35:39,042 [INFO] Configuration loaded successfully
+2025-03-21 10:35:39,965 [INFO] Gemini model initialized successfully
+2025-03-21 10:35:41,280 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:35:41,282 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:35:41,283 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:35:41,664 [INFO] Supabase client initialized successfully
+2025-03-21 10:35:42,043 [INFO] Successfully created Supabase client
+2025-03-21 10:35:43,201 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:35:43,206 [INFO] Successfully connected to Supabase
+2025-03-21 10:35:43,207 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:36:06,371 [INFO] Scrape request received: Query='Computer Science', Num URLs=10
+2025-03-21 10:36:06,372 [INFO] Starting collection process for query: 'Computer Science'
+2025-03-21 10:36:06,373 [INFO] Desired article count: 10
+2025-03-21 10:36:07,944 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:36:07,944 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-21 10:36:07,945 [INFO] Blocked domain detected: www.reddit.com
+2025-03-21 10:36:07,946 [INFO] Filtered 2 blocked domains
+2025-03-21 10:36:07,946 [INFO] Fetching robots.txt from https://undergrad.cs.umd.edu/robots.txt
+2025-03-21 10:36:08,969 [INFO] Fetching robots.txt from https://www.mtu.edu/robots.txt
+2025-03-21 10:36:10,951 [INFO] Fetching robots.txt from https://cs.utdallas.edu/robots.txt
+2025-03-21 10:36:12,481 [INFO] Non-200 response from https://cs.utdallas.edu/robots.txt: 404
+2025-03-21 10:36:12,483 [INFO] Skipping https://cs.utdallas.edu/ as robots.txt could not be fetched.
+2025-03-21 10:36:12,484 [INFO] Fetching robots.txt from https://www.khanacademy.org/robots.txt
+2025-03-21 10:36:12,981 [INFO] Fetching robots.txt from https://cs.brown.edu/robots.txt
+2025-03-21 10:36:13,707 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-21 10:36:13,710 [INFO] Skipping https://cs.brown.edu/ as robots.txt could not be fetched.
+2025-03-21 10:36:13,711 [INFO] Fetching robots.txt from https://www.hmc.edu/robots.txt
+2025-03-21 10:36:15,038 [INFO] Fetching robots.txt from https://compsci.rpi.edu/robots.txt
+2025-03-21 10:36:15,364 [INFO] Fetching robots.txt from https://pll.harvard.edu/robots.txt
+2025-03-21 10:36:15,838 [INFO] Collected 8 unique URLs so far
+2025-03-21 10:36:18,438 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:36:18,448 [INFO] Filtered 0 blocked domains
+2025-03-21 10:36:18,449 [INFO] Fetching robots.txt from https://www.albany.edu/robots.txt
+2025-03-21 10:36:19,532 [INFO] Fetching robots.txt from https://compsci.colostate.edu/robots.txt
+2025-03-21 10:36:20,697 [INFO] Fetching robots.txt from https://computerscience.uchicago.edu/robots.txt
+2025-03-21 10:36:21,980 [INFO] Fetching robots.txt from https://www.doe.virginia.gov/robots.txt
+2025-03-21 10:36:22,734 [INFO] Non-200 response from https://www.doe.virginia.gov/robots.txt: 403
+2025-03-21 10:36:22,736 [INFO] Skipping https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science as robots.txt could not be fetched.
+2025-03-21 10:36:22,737 [INFO] Fetching robots.txt from https://csteachers.org/robots.txt
+2025-03-21 10:36:23,726 [INFO] Non-200 response from https://csteachers.org/robots.txt: 403
+2025-03-21 10:36:23,727 [INFO] Skipping https://csteachers.org/ as robots.txt could not be fetched.
+2025-03-21 10:36:23,728 [INFO] Fetching robots.txt from https://www.wpi.edu/robots.txt
+2025-03-21 10:36:27,604 [INFO] Fetching robots.txt from https://cs.indiana.edu/robots.txt
+2025-03-21 10:36:28,883 [INFO] Fetching robots.txt from https://cse.ucsd.edu/robots.txt
+2025-03-21 10:36:30,424 [INFO] Fetching robots.txt from https://www.smith.edu/robots.txt
+2025-03-21 10:36:31,636 [INFO] Fetching robots.txt from https://education.mn.gov/robots.txt
+2025-03-21 10:36:32,932 [INFO] Scraping not allowed for https://education.mn.gov/MDE/dse/stds/ComputerScience/ as per robots.txt.
+2025-03-21 10:36:32,933 [INFO] Collected 17 unique URLs so far
+2025-03-21 10:36:35,463 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:36:35,466 [INFO] Filtered 0 blocked domains
+2025-03-21 10:36:35,467 [INFO] Fetching robots.txt from https://www.cs.stanford.edu/robots.txt
+2025-03-21 10:36:36,109 [INFO] Fetching robots.txt from https://www.cs.ucsb.edu/robots.txt
+2025-03-21 10:36:37,043 [INFO] Fetching robots.txt from https://siebelschool.illinois.edu/robots.txt
+2025-03-21 10:36:38,606 [INFO] Fetching robots.txt from https://www.cs.cornell.edu/robots.txt
+2025-03-21 10:36:40,289 [INFO] Fetching robots.txt from https://www.cs.jhu.edu/robots.txt
+2025-03-21 10:36:42,253 [INFO] Fetching robots.txt from https://cs.mst.edu/robots.txt
+2025-03-21 10:36:44,276 [INFO] Non-200 response from https://cs.mst.edu/robots.txt: 404
+2025-03-21 10:36:44,279 [INFO] Skipping https://cs.mst.edu/ as robots.txt could not be fetched.
+2025-03-21 10:36:44,280 [INFO] Fetching robots.txt from https://www.msoe.edu/robots.txt
+2025-03-21 10:36:45,247 [INFO] Fetching robots.txt from https://www.wellesley.edu/robots.txt
+2025-03-21 10:36:45,797 [INFO] Fetching robots.txt from https://cse.umn.edu/robots.txt
+2025-03-21 10:36:48,304 [INFO] Fetching robots.txt from http://www.ou.edu/robots.txt
+2025-03-21 10:36:50,481 [INFO] Collected 27 unique URLs so far
+2025-03-21 10:36:50,483 [INFO] Limited URL collection to 20
+2025-03-21 10:36:50,483 [INFO] Scraping content from 20 collected URLs...
+2025-03-21 10:37:17,483 [INFO] newspaper3k extracted low-quality content from https://cs.utdallas.edu/, trying BeautifulSoup
+2025-03-21 10:37:17,530 [INFO] Failed to extract meaningful content from https://cs.utdallas.edu/
+2025-03-21 10:37:17,602 [INFO] newspaper3k extracted low-quality content from https://www.hmc.edu/cs/, trying BeautifulSoup
+2025-03-21 10:37:17,636 [INFO] Failed to extract meaningful content from https://www.hmc.edu/cs/
+2025-03-21 10:37:17,956 [INFO] newspaper3k extracted low-quality content from https://compsci.colostate.edu/, trying BeautifulSoup
+2025-03-21 10:37:19,304 [INFO] newspaper3k extracted low-quality content from https://www.cs.ucsb.edu/, trying BeautifulSoup
+2025-03-21 10:37:19,614 [INFO] newspaper3k extracted low-quality content from https://cs.indiana.edu/index.html, trying BeautifulSoup
+2025-03-21 10:37:19,673 [INFO] Failed to extract meaningful content from https://cs.indiana.edu/index.html
+2025-03-21 10:37:20,170 [INFO] newspaper3k extracted low-quality content from https://compsci.rpi.edu/, trying BeautifulSoup
+2025-03-21 10:37:20,188 [INFO] Failed to extract meaningful content from https://compsci.rpi.edu/
+2025-03-21 10:37:20,226 [INFO] newspaper3k extracted low-quality content from https://www.khanacademy.org/computing/computer-science, trying BeautifulSoup
+2025-03-21 10:37:20,232 [INFO] Failed to extract meaningful content from https://www.khanacademy.org/computing/computer-science
+2025-03-21 10:37:21,045 [INFO] newspaper3k extracted low-quality content from https://computerscience.uchicago.edu/, trying BeautifulSoup
+2025-03-21 10:37:21,190 [INFO] Failed to extract meaningful content from https://computerscience.uchicago.edu/
+2025-03-21 10:37:21,459 [INFO] newspaper3k extracted low-quality content from https://undergrad.cs.umd.edu/what-computer-science, trying BeautifulSoup
+2025-03-21 10:37:21,479 [INFO] Failed to extract meaningful content from https://undergrad.cs.umd.edu/what-computer-science
+2025-03-21 10:37:21,798 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-21 10:37:22,295 [INFO] newspaper3k extracted low-quality content from https://pll.harvard.edu/course/cs50-introduction-computer-science, trying BeautifulSoup
+2025-03-21 10:37:22,359 [INFO] Article at https://pll.harvard.edu/course/cs50-introduction-computer-science has insufficient content after processing.
+2025-03-21 10:37:22,548 [INFO] newspaper3k extracted low-quality content from https://cse.ucsd.edu/, trying BeautifulSoup
+2025-03-21 10:37:22,624 [INFO] Failed to extract meaningful content from https://cse.ucsd.edu/
+2025-03-21 10:37:23,028 [INFO] newspaper3k extracted low-quality content from https://siebelschool.illinois.edu/, trying BeautifulSoup
+2025-03-21 10:37:24,101 [INFO] newspaper3k extracted low-quality content from https://cs.brown.edu/, trying BeautifulSoup
+2025-03-21 10:37:24,138 [INFO] Failed to extract meaningful content from https://cs.brown.edu/
+2025-03-21 10:37:25,406 [INFO] newspaper3k extracted low-quality content from https://csteachers.org/, trying BeautifulSoup
+2025-03-21 10:37:26,670 [INFO] newspaper3k extracted low-quality content from https://www.albany.edu/computer-science, trying BeautifulSoup
+2025-03-21 10:37:26,737 [INFO] Failed to extract meaningful content from https://www.albany.edu/computer-science
+2025-03-21 10:37:27,233 [INFO] newspaper3k extracted low-quality content from https://www.cs.stanford.edu/, trying BeautifulSoup
+2025-03-21 10:37:29,490 [INFO] newspaper3k extracted low-quality content from https://www.wpi.edu/academics/departments/computer-science, trying BeautifulSoup
+2025-03-21 10:37:29,899 [INFO] Article 'CSU – Department of Computer Science at Colorado State University' added to valid articles.
+2025-03-21 10:37:29,900 [INFO] Article 'UCSB Computer Science' added to valid articles.
+2025-03-21 10:37:29,900 [INFO] Article 'Home' added to valid articles.
+2025-03-21 10:37:29,900 [INFO] Article 'Computer Science' added to valid articles.
+2025-03-21 10:37:29,901 [INFO] Article 'Computer Science Teachers Association Connect, Grow, & Share With CS Teachers-' added to valid articles.
+2025-03-21 10:37:29,901 [INFO] Article skipped due to missing content or duplicate title.
+2025-03-21 10:37:29,901 [INFO] Article 'What is Computer Science?' added to valid articles.
+2025-03-21 10:37:29,902 [INFO] Article 'Worcester Polytechnic Institute' added to valid articles.
+2025-03-21 10:37:29,956 [INFO] Formatted content for summarization with 7688 words
+2025-03-21 10:37:29,973 [INFO] Summarizing chunk 1/15
+2025-03-21 10:37:31,907 [INFO] Summarizing chunk 2/15
+2025-03-21 10:37:32,964 [INFO] Summarizing chunk 3/15
+2025-03-21 10:37:33,844 [INFO] Summarizing chunk 4/15
+2025-03-21 10:37:35,076 [INFO] Summarizing chunk 5/15
+2025-03-21 10:37:36,307 [INFO] Summarizing chunk 6/15
+2025-03-21 10:37:37,388 [INFO] Summarizing chunk 7/15
+2025-03-21 10:37:38,606 [INFO] Summarizing chunk 8/15
+2025-03-21 10:37:39,514 [WARNING] Gemini generated a short summary (9 words), using fallback
+2025-03-21 10:37:39,514 [INFO] Using extractive summarization fallback
+2025-03-21 10:37:39,515 [INFO] Summarizing chunk 9/15
+2025-03-21 10:37:40,652 [INFO] Summarizing chunk 10/15
+2025-03-21 10:37:41,706 [INFO] Summarizing chunk 11/15
+2025-03-21 10:37:42,581 [INFO] Summarizing chunk 12/15
+2025-03-21 10:37:43,718 [INFO] Summarizing chunk 13/15
+2025-03-21 10:37:44,845 [INFO] Summarizing chunk 14/15
+2025-03-21 10:37:45,920 [INFO] Summarizing chunk 15/15
+2025-03-21 10:37:49,104 [WARNING] Gemini generated a short summary (215 words), using fallback
+2025-03-21 10:37:49,105 [INFO] Using extractive summarization fallback
+2025-03-21 10:37:49,108 [INFO] Summarization completed in 19.14 seconds
+2025-03-21 10:37:49,109 [INFO] Generated summary with 355 words.
+2025-03-21 10:37:49,796 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream "HTTP/1.1 401 Unauthorized"
+2025-03-21 10:37:49,800 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 31 credits remaining, while 2709 credits are required for this request.'}}
+2025-03-21 10:37:49,802 [INFO] Data written to output.json.
+2025-03-21 10:37:50,674 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Queries "HTTP/2 201 Created"
+2025-03-21 10:38:58,837 [INFO] Configuration loaded successfully
+2025-03-21 10:38:59,700 [INFO] Gemini model initialized successfully
+2025-03-21 10:39:00,804 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:39:00,806 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:39:00,807 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:39:01,219 [INFO] Supabase client initialized successfully
+2025-03-21 10:39:01,526 [INFO] Successfully created Supabase client
+2025-03-21 10:39:02,162 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:39:02,171 [INFO] Successfully connected to Supabase
+2025-03-21 10:39:02,173 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:39:02,727 [INFO] Scrape request received: Query='bitcoin', Num URLs=10
+2025-03-21 10:39:02,728 [INFO] Starting collection process for query: 'bitcoin'
+2025-03-21 10:39:02,728 [INFO] Desired article count: 10
+2025-03-21 10:39:04,256 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:39:04,257 [INFO] Blocked domain detected: www.reddit.com
+2025-03-21 10:39:04,258 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-21 10:39:04,259 [INFO] Filtered 2 blocked domains
+2025-03-21 10:39:04,259 [INFO] Fetching robots.txt from https://bitcoin.org/robots.txt
+2025-03-21 10:39:04,576 [INFO] Fetching robots.txt from https://www.bitcoin.com/robots.txt
+2025-03-21 10:39:04,649 [INFO] Fetching robots.txt from https://coinmarketcap.com/robots.txt
+2025-03-21 10:39:04,854 [INFO] Fetching robots.txt from https://www.ussc.gov/robots.txt
+2025-03-21 10:39:06,377 [INFO] Fetching robots.txt from https://finance.yahoo.com/robots.txt
+2025-03-21 10:39:07,284 [INFO] Fetching robots.txt from https://www.whitehouse.gov/robots.txt
+2025-03-21 10:39:08,061 [INFO] Fetching robots.txt from https://ccaf.io/robots.txt
+2025-03-21 10:39:08,353 [INFO] Non-200 response from https://ccaf.io/robots.txt: 404
+2025-03-21 10:39:08,354 [INFO] Skipping https://ccaf.io/cbnsi/cbeci as robots.txt could not be fetched.
+2025-03-21 10:39:08,354 [INFO] Fetching robots.txt from https://www.whitehouse.gov/robots.txt
+2025-03-21 10:39:08,777 [INFO] Collected 8 unique URLs so far
+2025-03-21 10:39:11,316 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:39:11,317 [INFO] Filtered 0 blocked domains
+2025-03-21 10:39:11,317 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-21 10:39:11,890 [INFO] Fetching robots.txt from https://www.cmegroup.com/robots.txt
+2025-03-21 10:39:17,249 [INFO] Timeout occurred while fetching https://www.cmegroup.com/robots.txt
+2025-03-21 10:39:17,250 [INFO] Skipping https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin.html as robots.txt could not be fetched.
+2025-03-21 10:39:17,251 [INFO] Fetching robots.txt from https://bitcoincore.org/robots.txt
+2025-03-21 10:39:17,973 [INFO] Fetching robots.txt from https://en.bitcoin.it/robots.txt
+2025-03-21 10:39:18,042 [INFO] Fetching robots.txt from https://digiconomist.net/robots.txt
+2025-03-21 10:39:19,068 [INFO] Fetching robots.txt from https://play.google.com/robots.txt
+2025-03-21 10:39:19,444 [INFO] Fetching robots.txt from https://www.investopedia.com/robots.txt
+2025-03-21 10:39:19,889 [INFO] Fetching robots.txt from https://www.cftc.gov/robots.txt
+2025-03-21 10:39:20,909 [INFO] Fetching robots.txt from https://www.coinbase.com/robots.txt
+2025-03-21 10:39:21,347 [INFO] Fetching robots.txt from https://www.congress.gov/robots.txt
+2025-03-21 10:39:21,420 [INFO] Non-200 response from https://www.congress.gov/robots.txt: 403
+2025-03-21 10:39:21,421 [INFO] Skipping https://www.congress.gov/bill/118th-congress/senate-bill/4912/text as robots.txt could not be fetched.
+2025-03-21 10:39:21,422 [INFO] Collected 18 unique URLs so far
+2025-03-21 10:39:24,173 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:39:24,175 [INFO] Blocked domain detected: x.com
+2025-03-21 10:39:24,175 [INFO] Filtered 1 blocked domains
+2025-03-21 10:39:24,175 [INFO] Fetching robots.txt from https://le.utah.gov/robots.txt
+2025-03-21 10:39:29,252 [INFO] Timeout occurred while fetching https://le.utah.gov/robots.txt
+2025-03-21 10:39:29,253 [INFO] Skipping https://le.utah.gov/~2025/bills/static/HB0230.html as robots.txt could not be fetched.
+2025-03-21 10:39:29,253 [INFO] Fetching robots.txt from https://oksenate.gov/robots.txt
+2025-03-21 10:39:29,890 [INFO] Fetching robots.txt from https://www.congress.gov/robots.txt
+2025-03-21 10:39:29,933 [INFO] Non-200 response from https://www.congress.gov/robots.txt: 403
+2025-03-21 10:39:29,934 [INFO] Skipping https://www.congress.gov/bill/118th-congress/senate-bill/4912/text as robots.txt could not be fetched.
+2025-03-21 10:39:29,934 [INFO] Fetching robots.txt from https://www.cftc.gov/robots.txt
+2025-03-21 10:39:30,928 [INFO] Fetching robots.txt from https://www.fidelitycharitable.org/robots.txt
+2025-03-21 10:39:33,679 [INFO] Fetching robots.txt from https://www.tradingview.com/robots.txt
+2025-03-21 10:39:34,125 [INFO] Fetching robots.txt from https://www.santamonica.gov/robots.txt
+2025-03-21 10:39:34,927 [INFO] Non-200 response from https://www.santamonica.gov/robots.txt: 404
+2025-03-21 10:39:34,928 [INFO] Skipping https://www.santamonica.gov/programs/bitcoin-office as robots.txt could not be fetched.
+2025-03-21 10:39:34,929 [INFO] Fetching robots.txt from https://www.blockchain.com/robots.txt
+2025-03-21 10:39:35,016 [INFO] Fetching robots.txt from https://nymag.com/robots.txt
+2025-03-21 10:39:35,490 [INFO] Collected 25 unique URLs so far
+2025-03-21 10:39:35,491 [INFO] Limited URL collection to 20
+2025-03-21 10:39:35,492 [INFO] Scraping content from 20 collected URLs...
+2025-03-21 10:39:39,783 [INFO] newspaper3k extracted low-quality content from https://ccaf.io/cbnsi/cbeci, trying BeautifulSoup
+2025-03-21 10:39:39,808 [INFO] Failed to extract meaningful content from https://ccaf.io/cbnsi/cbeci
+2025-03-21 10:39:39,877 [INFO] newspaper3k extracted low-quality content from https://bitcoincore.org/, trying BeautifulSoup
+2025-03-21 10:39:39,987 [INFO] Failed to extract meaningful content from https://bitcoincore.org/
+2025-03-21 10:39:40,760 [INFO] newspaper3k extracted low-quality content from https://bitcoin.org/, trying BeautifulSoup
+2025-03-21 10:39:40,793 [INFO] Failed to extract meaningful content from https://bitcoin.org/
+2025-03-21 10:39:42,153 [INFO] Article at https://oksenate.gov/press-releases/deevers-introduces-bitcoin-freedom-act-bring-oklahomas-economy-future has insufficient content after processing.
+2025-03-21 10:39:44,376 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 10:39:45,430 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 10:39:45,768 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 10:39:46,899 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying in 1.5s (1/3)...
+2025-03-21 10:39:47,135 [INFO] newspaper3k extracted low-quality content from https://digiconomist.net/bitcoin-energy-consumption/, trying BeautifulSoup
+2025-03-21 10:39:47,691 [INFO] newspaper3k extracted low-quality content from https://www.bitcoin.com/, trying BeautifulSoup
+2025-03-21 10:39:47,840 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 10:39:49,427 [INFO] Article at https://play.google.com/store/apps/details?id=de.schildbach.wallet&hl=en_US has insufficient content after processing.
+2025-03-21 10:39:50,322 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (15550) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying in 3.0s (2/3)...
+2025-03-21 10:39:52,266 [WARNING] Error fetching article at https://le.utah.gov/~2025/bills/static/HB0230.html: . Retrying in 1.5s (1/3)...
+2025-03-21 10:39:54,912 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 10:40:09,271 [WARNING] Error fetching article at https://le.utah.gov/~2025/bills/static/HB0230.html: . Retrying in 3.0s (2/3)...
+2025-03-21 10:40:28,266 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 10:40:28,270 [INFO] Article 'Bitcoin price today, BTC to USD live price, marketcap and chart' added to valid articles.
+2025-03-21 10:40:28,271 [INFO] Article 'Bitcoin Overview' added to valid articles.
+2025-03-21 10:40:28,273 [INFO] Article 'ESTABLISHMENT OF THE STRATEGIC BITCOIN RESERVE AND UNITED STATES DIGITAL ASSET STOCKPILE' added to valid articles.
+2025-03-21 10:40:28,274 [INFO] Article 'What Is Bitcoin? How To Buy, Mine, and Use It' added to valid articles.
+2025-03-21 10:40:28,275 [INFO] Article 'Bitcoin Wiki' added to valid articles.
+2025-03-21 10:40:28,275 [INFO] Article 'Fact Sheet: President Donald J. Trump Establishes the Strategic Bitcoin Reserve and U.S. Digital Asset Stockpile' added to valid articles.
+2025-03-21 10:40:28,276 [INFO] Article 'Bitcoin Energy Consumption Index' added to valid articles.
+2025-03-21 10:40:28,277 [INFO] Article 'Buy Bitcoin & cryptocurrency' added to valid articles.
+2025-03-21 10:40:28,277 [INFO] Article 'bitcoin/bitcoin: Bitcoin Core integration/staging tree' added to valid articles.
+2025-03-21 10:40:28,315 [INFO] Formatted content for summarization with 8933 words
+2025-03-21 10:40:28,336 [INFO] Summarizing chunk 1/15
+2025-03-21 10:40:30,367 [INFO] Summarizing chunk 2/15
+2025-03-21 10:40:31,314 [INFO] Summarizing chunk 3/15
+2025-03-21 10:40:32,306 [INFO] Summarizing chunk 4/15
+2025-03-21 10:40:33,463 [INFO] Summarizing chunk 5/15
+2025-03-21 10:40:34,727 [INFO] Summarizing chunk 6/15
+2025-03-21 10:40:35,655 [INFO] Summarizing chunk 7/15
+2025-03-21 10:40:36,766 [INFO] Summarizing chunk 8/15
+2025-03-21 10:40:37,851 [INFO] Summarizing chunk 9/15
+2025-03-21 10:40:38,965 [INFO] Summarizing chunk 10/15
+2025-03-21 10:40:40,004 [INFO] Summarizing chunk 11/15
+2025-03-21 10:40:40,979 [INFO] Summarizing chunk 12/15
+2025-03-21 10:40:42,213 [INFO] Summarizing chunk 13/15
+2025-03-21 10:40:43,367 [INFO] Summarizing chunk 14/15
+2025-03-21 10:40:44,390 [INFO] Summarizing chunk 15/15
+2025-03-21 10:40:47,562 [WARNING] Gemini generated a short summary (287 words), using fallback
+2025-03-21 10:40:47,562 [INFO] Using extractive summarization fallback
+2025-03-21 10:40:47,564 [INFO] Summarization completed in 19.23 seconds
+2025-03-21 10:40:47,565 [INFO] Generated summary with 330 words.
+2025-03-21 10:40:51,877 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream "HTTP/1.1 200 OK"
+2025-03-21 10:41:21,526 [INFO] Audio has been downloaded and saved as output_audio.mp3
+2025-03-21 10:41:22,499 [INFO] Audio speed increased and saved as output_audio_fast.mp3
+2025-03-21 10:41:22,501 [INFO] Data written to output.json.
+2025-03-21 10:41:23,767 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Queries "HTTP/2 201 Created"
+2025-03-21 10:46:36,679 [INFO] Configuration loaded successfully
+2025-03-21 10:46:37,554 [INFO] Gemini model initialized successfully
+2025-03-21 10:46:38,781 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:46:38,782 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:46:38,783 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:46:39,194 [INFO] Supabase client initialized successfully
+2025-03-21 10:46:39,554 [INFO] Successfully created Supabase client
+2025-03-21 10:46:40,402 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:46:40,408 [INFO] Successfully connected to Supabase
+2025-03-21 10:46:40,409 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:46:53,352 [INFO] Scrape request received: Query='Computer Science', Num URLs=10
+2025-03-21 10:46:53,353 [INFO] Starting collection process for query: 'Computer Science'
+2025-03-21 10:46:53,353 [INFO] Desired article count: 10
+2025-03-21 10:46:54,941 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:46:54,943 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-21 10:46:54,944 [INFO] Blocked domain detected: www.reddit.com
+2025-03-21 10:46:54,945 [INFO] Filtered 2 blocked domains
+2025-03-21 10:46:54,945 [INFO] Fetching robots.txt from https://undergrad.cs.umd.edu/robots.txt
+2025-03-21 10:46:55,641 [INFO] Fetching robots.txt from https://www.mtu.edu/robots.txt
+2025-03-21 10:46:57,589 [INFO] Fetching robots.txt from https://cs.utdallas.edu/robots.txt
+2025-03-21 10:46:58,816 [INFO] Non-200 response from https://cs.utdallas.edu/robots.txt: 404
+2025-03-21 10:46:58,818 [INFO] Skipping https://cs.utdallas.edu/ as robots.txt could not be fetched.
+2025-03-21 10:46:58,819 [INFO] Fetching robots.txt from https://www.khanacademy.org/robots.txt
+2025-03-21 10:46:59,272 [INFO] Fetching robots.txt from https://cs.brown.edu/robots.txt
+2025-03-21 10:47:00,089 [ERROR] Error fetching robots.txt from https://cs.brown.edu/robots.txt: Cannot connect to host cs.brown.edu:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
+2025-03-21 10:47:00,091 [INFO] Skipping https://cs.brown.edu/ as robots.txt could not be fetched.
+2025-03-21 10:47:00,091 [INFO] Fetching robots.txt from https://www.hmc.edu/robots.txt
+2025-03-21 10:47:01,020 [INFO] Fetching robots.txt from https://compsci.rpi.edu/robots.txt
+2025-03-21 10:47:01,726 [INFO] Fetching robots.txt from https://pll.harvard.edu/robots.txt
+2025-03-21 10:47:02,072 [INFO] Collected 8 unique URLs so far
+2025-03-21 10:47:04,769 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:47:04,770 [INFO] Filtered 0 blocked domains
+2025-03-21 10:47:04,771 [INFO] Fetching robots.txt from https://www.albany.edu/robots.txt
+2025-03-21 10:47:05,783 [INFO] Fetching robots.txt from https://compsci.colostate.edu/robots.txt
+2025-03-21 10:47:06,691 [INFO] Fetching robots.txt from https://computerscience.uchicago.edu/robots.txt
+2025-03-21 10:47:07,936 [INFO] Fetching robots.txt from https://www.doe.virginia.gov/robots.txt
+2025-03-21 10:47:08,620 [INFO] Non-200 response from https://www.doe.virginia.gov/robots.txt: 403
+2025-03-21 10:47:08,622 [INFO] Skipping https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science as robots.txt could not be fetched.
+2025-03-21 10:47:08,623 [INFO] Fetching robots.txt from https://csteachers.org/robots.txt
+2025-03-21 10:47:09,066 [INFO] Fetching robots.txt from https://www.wpi.edu/robots.txt
+2025-03-21 10:47:11,178 [INFO] Fetching robots.txt from https://cs.indiana.edu/robots.txt
+2025-03-21 10:47:12,031 [INFO] Fetching robots.txt from https://cse.ucsd.edu/robots.txt
+2025-03-21 10:47:13,149 [INFO] Fetching robots.txt from https://www.smith.edu/robots.txt
+2025-03-21 10:47:14,128 [INFO] Fetching robots.txt from https://education.mn.gov/robots.txt
+2025-03-21 10:47:15,372 [INFO] Scraping not allowed for https://education.mn.gov/MDE/dse/stds/ComputerScience/ as per robots.txt.
+2025-03-21 10:47:15,374 [INFO] Collected 17 unique URLs so far
+2025-03-21 10:47:17,948 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:47:17,949 [INFO] Filtered 0 blocked domains
+2025-03-21 10:47:17,950 [INFO] Fetching robots.txt from https://www.cs.stanford.edu/robots.txt
+2025-03-21 10:47:18,113 [INFO] Fetching robots.txt from https://www.cs.ucsb.edu/robots.txt
+2025-03-21 10:47:19,135 [INFO] Fetching robots.txt from https://siebelschool.illinois.edu/robots.txt
+2025-03-21 10:47:20,714 [INFO] Fetching robots.txt from https://www.cs.cornell.edu/robots.txt
+2025-03-21 10:47:22,154 [INFO] Fetching robots.txt from https://www.cs.jhu.edu/robots.txt
+2025-03-21 10:47:23,006 [INFO] Fetching robots.txt from https://cs.mst.edu/robots.txt
+2025-03-21 10:47:24,757 [INFO] Non-200 response from https://cs.mst.edu/robots.txt: 404
+2025-03-21 10:47:24,758 [INFO] Skipping https://cs.mst.edu/ as robots.txt could not be fetched.
+2025-03-21 10:47:24,758 [INFO] Fetching robots.txt from https://www.msoe.edu/robots.txt
+2025-03-21 10:47:25,493 [INFO] Fetching robots.txt from https://www.wellesley.edu/robots.txt
+2025-03-21 10:47:26,053 [INFO] Fetching robots.txt from https://cse.umn.edu/robots.txt
+2025-03-21 10:47:27,344 [INFO] Fetching robots.txt from http://www.ou.edu/robots.txt
+2025-03-21 10:47:29,339 [INFO] Collected 27 unique URLs so far
+2025-03-21 10:47:29,339 [INFO] Limited URL collection to 20
+2025-03-21 10:47:29,340 [INFO] Scraping content from 20 collected URLs...
+2025-03-21 10:47:57,302 [INFO] newspaper3k extracted low-quality content from https://cs.utdallas.edu/, trying BeautifulSoup
+2025-03-21 10:47:57,405 [INFO] Failed to extract meaningful content from https://cs.utdallas.edu/
+2025-03-21 10:47:57,626 [INFO] newspaper3k extracted low-quality content from https://www.hmc.edu/cs/, trying BeautifulSoup
+2025-03-21 10:47:57,699 [INFO] Failed to extract meaningful content from https://www.hmc.edu/cs/
+2025-03-21 10:47:58,151 [INFO] newspaper3k extracted low-quality content from https://compsci.colostate.edu/, trying BeautifulSoup
+2025-03-21 10:47:59,963 [INFO] newspaper3k extracted low-quality content from https://www.cs.ucsb.edu/, trying BeautifulSoup
+2025-03-21 10:48:00,340 [INFO] newspaper3k extracted low-quality content from https://cs.indiana.edu/index.html, trying BeautifulSoup
+2025-03-21 10:48:00,395 [INFO] Failed to extract meaningful content from https://cs.indiana.edu/index.html
+2025-03-21 10:48:00,909 [INFO] newspaper3k extracted low-quality content from https://www.khanacademy.org/computing/computer-science, trying BeautifulSoup
+2025-03-21 10:48:00,915 [INFO] Failed to extract meaningful content from https://www.khanacademy.org/computing/computer-science
+2025-03-21 10:48:01,037 [INFO] newspaper3k extracted low-quality content from https://compsci.rpi.edu/, trying BeautifulSoup
+2025-03-21 10:48:01,064 [INFO] Failed to extract meaningful content from https://compsci.rpi.edu/
+2025-03-21 10:48:01,716 [INFO] newspaper3k extracted low-quality content from https://computerscience.uchicago.edu/, trying BeautifulSoup
+2025-03-21 10:48:01,994 [INFO] Failed to extract meaningful content from https://computerscience.uchicago.edu/
+2025-03-21 10:48:02,306 [INFO] newspaper3k extracted low-quality content from https://undergrad.cs.umd.edu/what-computer-science, trying BeautifulSoup
+2025-03-21 10:48:02,335 [INFO] Failed to extract meaningful content from https://undergrad.cs.umd.edu/what-computer-science
+2025-03-21 10:48:02,778 [ERROR] Access denied to https://www.doe.virginia.gov/teaching-learning-assessment/instruction/computer-science: HTTP 403 Forbidden.
+2025-03-21 10:48:03,317 [INFO] newspaper3k extracted low-quality content from https://pll.harvard.edu/course/cs50-introduction-computer-science, trying BeautifulSoup
+2025-03-21 10:48:03,417 [INFO] Article at https://pll.harvard.edu/course/cs50-introduction-computer-science has insufficient content after processing.
+2025-03-21 10:48:03,586 [INFO] newspaper3k extracted low-quality content from https://cse.ucsd.edu/, trying BeautifulSoup
+2025-03-21 10:48:03,672 [INFO] Failed to extract meaningful content from https://cse.ucsd.edu/
+2025-03-21 10:48:04,022 [INFO] newspaper3k extracted low-quality content from https://siebelschool.illinois.edu/, trying BeautifulSoup
+2025-03-21 10:48:06,940 [INFO] newspaper3k extracted low-quality content from https://csteachers.org/, trying BeautifulSoup
+2025-03-21 10:48:07,206 [INFO] newspaper3k extracted low-quality content from https://cs.brown.edu/, trying BeautifulSoup
+2025-03-21 10:48:07,243 [INFO] Failed to extract meaningful content from https://cs.brown.edu/
+2025-03-21 10:48:08,450 [INFO] newspaper3k extracted low-quality content from https://www.cs.stanford.edu/, trying BeautifulSoup
+2025-03-21 10:48:08,773 [INFO] newspaper3k extracted low-quality content from https://www.albany.edu/computer-science, trying BeautifulSoup
+2025-03-21 10:48:08,853 [INFO] Failed to extract meaningful content from https://www.albany.edu/computer-science
+2025-03-21 10:48:11,076 [INFO] newspaper3k extracted low-quality content from https://www.wpi.edu/academics/departments/computer-science, trying BeautifulSoup
+2025-03-21 10:48:11,521 [INFO] Article 'CSU – Department of Computer Science at Colorado State University' added to valid articles.
+2025-03-21 10:48:11,523 [INFO] Article 'UCSB Computer Science' added to valid articles.
+2025-03-21 10:48:11,524 [INFO] Article 'Home' added to valid articles.
+2025-03-21 10:48:11,525 [INFO] Article 'Computer Science' added to valid articles.
+2025-03-21 10:48:11,526 [INFO] Article 'Computer Science Teachers Association Connect, Grow, & Share With CS Teachers-' added to valid articles.
+2025-03-21 10:48:11,527 [INFO] Article skipped due to missing content or duplicate title.
+2025-03-21 10:48:11,528 [INFO] Article 'What is Computer Science?' added to valid articles.
+2025-03-21 10:48:11,529 [INFO] Article 'Worcester Polytechnic Institute' added to valid articles.
+2025-03-21 10:48:11,597 [INFO] Formatted content for summarization with 7688 words
+2025-03-21 10:48:11,617 [INFO] Summarizing chunk 1/15
+2025-03-21 10:48:13,426 [INFO] Summarizing chunk 2/15
+2025-03-21 10:48:14,474 [INFO] Summarizing chunk 3/15
+2025-03-21 10:48:15,392 [INFO] Summarizing chunk 4/15
+2025-03-21 10:48:16,648 [INFO] Summarizing chunk 5/15
+2025-03-21 10:48:17,744 [INFO] Summarizing chunk 6/15
+2025-03-21 10:48:19,076 [INFO] Summarizing chunk 7/15
+2025-03-21 10:48:20,363 [INFO] Summarizing chunk 8/15
+2025-03-21 10:48:21,266 [WARNING] Gemini generated a short summary (9 words), using fallback
+2025-03-21 10:48:21,267 [INFO] Using extractive summarization fallback
+2025-03-21 10:48:21,268 [INFO] Summarizing chunk 9/15
+2025-03-21 10:48:22,323 [INFO] Summarizing chunk 10/15
+2025-03-21 10:48:23,286 [WARNING] Gemini generated a short summary (15 words), using fallback
+2025-03-21 10:48:23,287 [INFO] Using extractive summarization fallback
+2025-03-21 10:48:23,288 [INFO] Summarizing chunk 11/15
+2025-03-21 10:48:24,158 [INFO] Summarizing chunk 12/15
+2025-03-21 10:48:25,337 [INFO] Summarizing chunk 13/15
+2025-03-21 10:48:26,549 [INFO] Summarizing chunk 14/15
+2025-03-21 10:48:27,619 [INFO] Summarizing chunk 15/15
+2025-03-21 10:48:30,756 [WARNING] Gemini generated a short summary (179 words), using fallback
+2025-03-21 10:48:30,757 [INFO] Using extractive summarization fallback
+2025-03-21 10:48:30,760 [INFO] Summarization completed in 19.14 seconds
+2025-03-21 10:48:30,762 [INFO] Generated summary with 296 words.
+2025-03-21 10:48:30,762 [WARNING] Generated summary is too short (296 words). Attempting to regenerate.
+2025-03-21 10:48:31,077 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 10:48:31,078 [INFO] Falling back to extractive summarization
+2025-03-21 10:48:31,079 [INFO] Using extractive summarization fallback
+2025-03-21 10:48:31,081 [INFO] Regenerated summary with 238 words.
+2025-03-21 10:48:31,081 [WARNING] Summary remains short (296 words), returning as is.
+2025-03-21 10:48:34,947 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream "HTTP/1.1 200 OK"
+2025-03-21 10:49:03,064 [INFO] Audio has been downloaded and saved as output_audio.mp3
+2025-03-21 10:49:04,364 [INFO] Audio speed increased and saved as output_audio_fast.mp3
+2025-03-21 10:49:04,366 [INFO] Data written to output.json.
+2025-03-21 10:49:05,406 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Queries "HTTP/2 201 Created"
+2025-03-21 10:51:24,662 [INFO] Configuration loaded successfully
+2025-03-21 10:51:25,798 [INFO] Gemini model initialized successfully
+2025-03-21 10:51:26,745 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:51:26,746 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:51:26,747 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:51:27,077 [INFO] Supabase client initialized successfully
+2025-03-21 10:51:27,374 [INFO] Successfully created Supabase client
+2025-03-21 10:51:28,195 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:51:28,201 [INFO] Successfully connected to Supabase
+2025-03-21 10:51:28,202 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:51:30,225 [INFO] Configuration loaded successfully
+2025-03-21 10:51:31,279 [INFO] Gemini model initialized successfully
+2025-03-21 10:51:32,535 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:51:32,535 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:51:32,537 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:51:32,874 [INFO] Supabase client initialized successfully
+2025-03-21 10:51:33,337 [INFO] Successfully created Supabase client
+2025-03-21 10:51:34,184 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:51:34,192 [INFO] Successfully connected to Supabase
+2025-03-21 10:51:34,193 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:51:38,576 [INFO] Configuration loaded successfully
+2025-03-21 10:51:39,437 [INFO] Gemini model initialized successfully
+2025-03-21 10:51:40,657 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:51:40,658 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:51:40,660 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:51:40,980 [INFO] Supabase client initialized successfully
+2025-03-21 10:51:41,356 [INFO] Successfully created Supabase client
+2025-03-21 10:51:41,873 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:51:41,880 [INFO] Successfully connected to Supabase
+2025-03-21 10:51:41,881 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:51:52,131 [INFO] Configuration loaded successfully
+2025-03-21 10:51:52,869 [INFO] Gemini model initialized successfully
+2025-03-21 10:51:53,736 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:51:53,737 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:51:53,738 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:51:54,084 [INFO] Supabase client initialized successfully
+2025-03-21 10:51:54,373 [INFO] Successfully created Supabase client
+2025-03-21 10:51:54,882 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:51:54,889 [INFO] Successfully connected to Supabase
+2025-03-21 10:51:54,890 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:51:57,012 [INFO] Configuration loaded successfully
+2025-03-21 10:51:57,898 [INFO] Gemini model initialized successfully
+2025-03-21 10:51:59,043 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 10:51:59,045 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 10:51:59,046 [INFO] Supabase username and password found in environment variables
+2025-03-21 10:51:59,385 [INFO] Supabase client initialized successfully
+2025-03-21 10:51:59,704 [INFO] Successfully created Supabase client
+2025-03-21 10:52:00,211 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 10:52:00,219 [INFO] Successfully connected to Supabase
+2025-03-21 10:52:00,220 [INFO] Successfully connected to Supabase at startup
+2025-03-21 10:52:10,596 [INFO] Scrape request received: Query='Imran Khan', Num URLs=10
+2025-03-21 10:52:10,597 [INFO] Starting collection process for query: 'Imran Khan'
+2025-03-21 10:52:10,598 [INFO] Desired article count: 10
+2025-03-21 10:52:12,243 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:52:12,244 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-21 10:52:12,245 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-21 10:52:12,246 [INFO] Blocked domain detected: www.instagram.com
+2025-03-21 10:52:12,247 [INFO] Blocked domain detected: x.com
+2025-03-21 10:52:12,247 [INFO] Blocked domain detected: x.com
+2025-03-21 10:52:12,248 [INFO] Filtered 5 blocked domains
+2025-03-21 10:52:12,249 [INFO] Fetching robots.txt from https://www.espncricinfo.com/robots.txt
+2025-03-21 10:52:12,489 [INFO] Fetching robots.txt from https://time.com/robots.txt
+2025-03-21 10:52:12,827 [INFO] Fetching robots.txt from https://www.bbc.com/robots.txt
+2025-03-21 10:52:13,005 [INFO] Fetching robots.txt from https://www.inova.org/robots.txt
+2025-03-21 10:52:14,299 [INFO] Fetching robots.txt from https://www.icij.org/robots.txt
+2025-03-21 10:52:14,593 [INFO] Collected 5 unique URLs so far
+2025-03-21 10:52:17,161 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:52:17,165 [INFO] Filtered 0 blocked domains
+2025-03-21 10:52:17,166 [INFO] Fetching robots.txt from https://health.ucdavis.edu/robots.txt
+2025-03-21 10:52:18,965 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:18,966 [INFO] Skipping https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html as robots.txt could not be fetched.
+2025-03-21 10:52:18,966 [INFO] Fetching robots.txt from http://sherman.house.gov/robots.txt
+2025-03-21 10:52:19,750 [INFO] Non-200 response from http://sherman.house.gov/robots.txt: 403
+2025-03-21 10:52:19,750 [INFO] Skipping http://sherman.house.gov/media-center/press-releases/sherman-reacts-to-the-arrest-of-former-pakistan-pm-imran-khan as robots.txt could not be fetched.
+2025-03-21 10:52:19,751 [INFO] Fetching robots.txt from https://open.spotify.com/robots.txt
+2025-03-21 10:52:20,638 [INFO] Fetching robots.txt from https://www.britannica.com/robots.txt
+2025-03-21 10:52:21,344 [INFO] Fetching robots.txt from https://ccr.cancer.gov/robots.txt
+2025-03-21 10:52:22,927 [INFO] Fetching robots.txt from http://sherman.house.gov/robots.txt
+2025-03-21 10:52:23,222 [INFO] Non-200 response from http://sherman.house.gov/robots.txt: 403
+2025-03-21 10:52:23,223 [INFO] Skipping http://sherman.house.gov/media-center/press-releases/congressman-sherman-statement-on-conviction-of-former-pm-imran-khan as robots.txt could not be fetched.
+2025-03-21 10:52:23,224 [INFO] Fetching robots.txt from https://www.theguardian.com/robots.txt
+2025-03-21 10:52:24,307 [INFO] Fetching robots.txt from https://carnegieendowment.org/robots.txt
+2025-03-21 10:52:25,401 [INFO] Fetching robots.txt from https://www.du.edu/robots.txt
+2025-03-21 10:52:26,604 [INFO] Fetching robots.txt from https://pediatrics.ucsf.edu/robots.txt
+2025-03-21 10:52:28,297 [INFO] Collected 15 unique URLs so far
+2025-03-21 10:52:30,841 [INFO] Google Search API returned 10 URLs
+2025-03-21 10:52:30,843 [INFO] Blocked domain detected: www.nytimes.com
+2025-03-21 10:52:30,844 [INFO] Filtered 1 blocked domains
+2025-03-21 10:52:30,844 [INFO] Fetching robots.txt from https://health.ucdavis.edu/robots.txt
+2025-03-21 10:52:31,831 [ERROR] Error fetching robots.txt from https://health.ucdavis.edu/robots.txt: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:31,834 [INFO] Skipping https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html as robots.txt could not be fetched.
+2025-03-21 10:52:31,835 [INFO] Fetching robots.txt from https://www.npr.org/robots.txt
+2025-03-21 10:52:32,378 [INFO] Fetching robots.txt from http://sherman.house.gov/robots.txt
+2025-03-21 10:52:32,778 [INFO] Non-200 response from http://sherman.house.gov/robots.txt: 403
+2025-03-21 10:52:32,781 [INFO] Skipping http://sherman.house.gov/media-center/press-releases/congressman-sherman-statement-on-conviction-of-former-pm-imran-khan as robots.txt could not be fetched.
+2025-03-21 10:52:32,781 [INFO] Fetching robots.txt from https://carle.org/robots.txt
+2025-03-21 10:52:34,290 [INFO] Fetching robots.txt from https://apnews.com/robots.txt
+2025-03-21 10:52:34,383 [INFO] Fetching robots.txt from https://www.reuters.com/robots.txt
+2025-03-21 10:52:34,601 [INFO] Fetching robots.txt from https://www.mdh.org/robots.txt
+2025-03-21 10:52:38,334 [INFO] Fetching robots.txt from https://www.alvarezandmarsal.com/robots.txt
+2025-03-21 10:52:38,808 [INFO] Non-200 response from https://www.alvarezandmarsal.com/robots.txt: 403
+2025-03-21 10:52:38,809 [INFO] Skipping https://www.alvarezandmarsal.com/our-people/imran-khan as robots.txt could not be fetched.
+2025-03-21 10:52:38,809 [INFO] Fetching robots.txt from https://www.ikandp.co.uk/robots.txt
+2025-03-21 10:52:39,215 [INFO] Collected 22 unique URLs so far
+2025-03-21 10:52:39,215 [INFO] Limited URL collection to 20
+2025-03-21 10:52:39,215 [INFO] Scraping content from 20 collected URLs...
+2025-03-21 10:52:41,387 [WARNING] Error fetching article at https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]. Retrying in 1.5s (1/3)...
+2025-03-21 10:52:42,522 [INFO] newspaper3k extracted low-quality content from https://ccr.cancer.gov/staff-directory/imran-khan, trying BeautifulSoup
+2025-03-21 10:52:42,627 [INFO] Failed to extract meaningful content from https://ccr.cancer.gov/staff-directory/imran-khan
+2025-03-21 10:52:43,581 [INFO] newspaper3k extracted low-quality content from http://sherman.house.gov/media-center/press-releases/congressman-sherman-statement-on-conviction-of-former-pm-imran-khan, trying BeautifulSoup
+2025-03-21 10:52:43,642 [INFO] Failed to extract meaningful content from http://sherman.house.gov/media-center/press-releases/congressman-sherman-statement-on-conviction-of-former-pm-imran-khan
+2025-03-21 10:52:43,814 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/imran-khan-40560: HTTP 403 Forbidden.
+2025-03-21 10:52:44,896 [INFO] newspaper3k extracted low-quality content from https://www.inova.org/doctors/imran-a-khan-md, trying BeautifulSoup
+2025-03-21 10:52:44,975 [INFO] Failed to extract meaningful content from https://www.inova.org/doctors/imran-a-khan-md
+2025-03-21 10:52:45,248 [INFO] newspaper3k extracted low-quality content from https://www.mdh.org/find-a-provider/imran-khan-md/, trying BeautifulSoup
+2025-03-21 10:52:45,319 [INFO] Failed to extract meaningful content from https://www.mdh.org/find-a-provider/imran-khan-md/
+2025-03-21 10:52:45,628 [INFO] newspaper3k extracted low-quality content from http://sherman.house.gov/media-center/press-releases/sherman-reacts-to-the-arrest-of-former-pakistan-pm-imran-khan, trying BeautifulSoup
+2025-03-21 10:52:45,673 [INFO] Failed to extract meaningful content from http://sherman.house.gov/media-center/press-releases/sherman-reacts-to-the-arrest-of-former-pakistan-pm-imran-khan
+2025-03-21 10:52:46,963 [INFO] newspaper3k extracted low-quality content from https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js, trying BeautifulSoup
+2025-03-21 10:52:46,972 [INFO] Failed to extract meaningful content from https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js
+2025-03-21 10:52:49,146 [INFO] newspaper3k extracted low-quality content from https://carle.org/find-a-doctor/1979, trying BeautifulSoup
+2025-03-21 10:52:49,278 [INFO] Failed to extract meaningful content from https://carle.org/find-a-doctor/1979
+2025-03-21 10:52:53,218 [WARNING] Error fetching article at https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]. Retrying in 3.0s (2/3)...
+2025-03-21 10:52:56,813 [ERROR] Max retries reached for https://health.ucdavis.edu/pathology/our_team/faculty/khanI.html: Cannot connect to host health.ucdavis.edu:443 ssl:default [[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)]
+2025-03-21 10:52:56,819 [INFO] Article 'Imran Khan: The cricket star and former PM who is dividing Pakistan' added to valid articles.
+2025-03-21 10:52:56,820 [INFO] Article 'Department of Pediatrics' added to valid articles.
+2025-03-21 10:52:56,820 [INFO] Article 'Pakistan’s Imran Khan handed 14-year jail term in land graft case' added to valid articles.
+2025-03-21 10:52:56,821 [INFO] Article 'Imran Khan, former prime minister of Pakistan, arrested following court conviction' added to valid articles.
+2025-03-21 10:52:56,821 [INFO] Article 'Imran Khan criticised for defence of Pakistan blasphemy laws' added to valid articles.
+2025-03-21 10:52:56,822 [INFO] Article 'Prime Minister Imran Khan promised ‘new Pakistan’ but members of his inner circle secretly moved millions offshore' added to valid articles.
+2025-03-21 10:52:56,822 [INFO] Article 'From Prison, Imran Khan Reminds Us to Pay Attention To Pakistan' added to valid articles.
+2025-03-21 10:52:56,823 [INFO] Article 'Pakistan’s former premier Imran Khan and wife convicted of marriage law violation in a fourth case' added to valid articles.
+2025-03-21 10:52:56,823 [INFO] Article 'Pakistan, Biography, Cricketer, Prime Minister, & PTI' added to valid articles.
+2025-03-21 10:52:56,824 [INFO] Article 'Why Imran Khan Isn’t Going Away' added to valid articles.
+2025-03-21 10:52:56,904 [INFO] Formatted content for summarization with 12446 words
+2025-03-21 10:52:56,938 [INFO] Summarizing chunk 1/22
+2025-03-21 10:52:58,779 [INFO] Summarizing chunk 2/22
+2025-03-21 10:53:00,164 [INFO] Summarizing chunk 3/22
+2025-03-21 10:53:01,761 [INFO] Summarizing chunk 4/22
+2025-03-21 10:53:03,162 [INFO] Summarizing chunk 5/22
+2025-03-21 10:53:04,254 [INFO] Summarizing chunk 6/22
+2025-03-21 10:53:05,560 [INFO] Summarizing chunk 7/22
+2025-03-21 10:53:06,650 [INFO] Summarizing chunk 8/22
+2025-03-21 10:53:07,935 [INFO] Summarizing chunk 9/22
+2025-03-21 10:53:09,086 [INFO] Summarizing chunk 10/22
+2025-03-21 10:53:10,366 [INFO] Summarizing chunk 11/22
+2025-03-21 10:53:11,698 [INFO] Summarizing chunk 12/22
+2025-03-21 10:53:12,923 [INFO] Summarizing chunk 13/22
+2025-03-21 10:53:14,090 [INFO] Summarizing chunk 14/22
+2025-03-21 10:53:15,372 [INFO] Summarizing chunk 15/22
+2025-03-21 10:53:16,571 [INFO] Summarizing chunk 16/22
+2025-03-21 10:53:17,928 [INFO] Summarizing chunk 17/22
+2025-03-21 10:53:19,132 [INFO] Summarizing chunk 18/22
+2025-03-21 10:53:20,352 [INFO] Summarizing chunk 19/22
+2025-03-21 10:53:21,599 [INFO] Summarizing chunk 20/22
+2025-03-21 10:53:22,712 [INFO] Summarizing chunk 21/22
+2025-03-21 10:53:23,982 [INFO] Summarizing chunk 22/22
+2025-03-21 10:53:27,142 [WARNING] Gemini generated a short summary (202 words), using fallback
+2025-03-21 10:53:27,143 [INFO] Using extractive summarization fallback
+2025-03-21 10:53:27,146 [INFO] Summarization completed in 30.21 seconds
+2025-03-21 10:53:27,147 [INFO] Generated summary with 334 words.
+2025-03-21 10:53:31,454 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream "HTTP/1.1 200 OK"
+2025-03-21 10:54:01,147 [INFO] Audio has been downloaded and saved as output_audio.mp3
+2025-03-21 10:54:03,221 [INFO] Audio speed increased and saved as output_audio_fast.mp3
+2025-03-21 10:54:03,226 [INFO] Data written to output.json.
+2025-03-21 10:54:03,939 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Queries "HTTP/2 201 Created"
+2025-03-21 11:08:28,121 [INFO] Configuration loaded successfully.
+2025-03-21 11:08:28,896 [INFO] Gemini model initialized successfully
+2025-03-21 11:08:54,239 [INFO] Configuration loaded successfully.
+2025-03-21 11:08:54,919 [INFO] Gemini model initialized successfully
+2025-03-21 11:12:17,846 [INFO] Configuration loaded successfully.
+2025-03-21 11:12:18,522 [INFO] Gemini model initialized successfully
+2025-03-21 11:12:19,447 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 11:12:19,448 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 11:12:19,450 [INFO] Supabase username and password found in environment variables
+2025-03-21 11:12:19,701 [INFO] Supabase client initialized successfully
+2025-03-21 11:12:19,922 [INFO] Successfully created Supabase client
+2025-03-21 11:12:21,094 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 11:12:21,099 [INFO] Successfully connected to Supabase
+2025-03-21 11:12:21,099 [INFO] Successfully connected to Supabase at startup
+2025-03-21 11:12:23,305 [INFO] Configuration loaded successfully.
+2025-03-21 11:12:23,968 [INFO] Gemini model initialized successfully
+2025-03-21 11:12:25,089 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 11:12:25,091 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 11:12:25,093 [INFO] Supabase username and password found in environment variables
+2025-03-21 11:12:25,330 [INFO] Supabase client initialized successfully
+2025-03-21 11:12:25,620 [INFO] Successfully created Supabase client
+2025-03-21 11:12:26,499 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 11:12:26,505 [INFO] Successfully connected to Supabase
+2025-03-21 11:12:26,506 [INFO] Successfully connected to Supabase at startup
+2025-03-21 11:12:49,021 [INFO] Scrape request received: Query='bitcoin', Num URLs=10
+2025-03-21 11:12:49,021 [INFO] Starting collection process for query: 'bitcoin'
+2025-03-21 11:12:49,022 [INFO] Desired article count: 10
+2025-03-21 11:12:50,613 [INFO] Google Search API returned 10 URLs
+2025-03-21 11:12:50,614 [INFO] Blocked domain detected: www.reddit.com
+2025-03-21 11:12:50,615 [INFO] Blocked domain detected: en.wikipedia.org
+2025-03-21 11:12:50,616 [INFO] Filtered 2 blocked domains
+2025-03-21 11:12:50,616 [INFO] Fetching robots.txt from https://bitcoin.org/robots.txt
+2025-03-21 11:12:50,706 [INFO] Fetching robots.txt from https://www.bitcoin.com/robots.txt
+2025-03-21 11:12:50,845 [INFO] Fetching robots.txt from https://coinmarketcap.com/robots.txt
+2025-03-21 11:12:51,018 [INFO] Fetching robots.txt from https://www.ussc.gov/robots.txt
+2025-03-21 11:12:52,478 [INFO] Fetching robots.txt from https://www.whitehouse.gov/robots.txt
+2025-03-21 11:12:53,220 [INFO] Fetching robots.txt from https://ccaf.io/robots.txt
+2025-03-21 11:12:53,644 [INFO] Non-200 response from https://ccaf.io/robots.txt: 404
+2025-03-21 11:12:53,646 [INFO] Skipping https://ccaf.io/cbnsi/cbeci as robots.txt could not be fetched.
+2025-03-21 11:12:53,646 [INFO] Fetching robots.txt from https://finance.yahoo.com/robots.txt
+2025-03-21 11:12:54,505 [INFO] Fetching robots.txt from https://www.whitehouse.gov/robots.txt
+2025-03-21 11:12:54,942 [INFO] Collected 8 unique URLs so far
+2025-03-21 11:12:57,549 [INFO] Google Search API returned 10 URLs
+2025-03-21 11:12:57,550 [INFO] Filtered 0 blocked domains
+2025-03-21 11:12:57,551 [INFO] Fetching robots.txt from https://github.com/robots.txt
+2025-03-21 11:12:57,990 [INFO] Fetching robots.txt from https://www.cmegroup.com/robots.txt
+2025-03-21 11:13:03,259 [INFO] Timeout occurred while fetching https://www.cmegroup.com/robots.txt
+2025-03-21 11:13:03,260 [INFO] Skipping https://www.cmegroup.com/markets/cryptocurrencies/bitcoin/bitcoin.html as robots.txt could not be fetched.
+2025-03-21 11:13:03,261 [INFO] Fetching robots.txt from https://bitcoincore.org/robots.txt
+2025-03-21 11:13:04,131 [INFO] Fetching robots.txt from https://en.bitcoin.it/robots.txt
+2025-03-21 11:13:04,204 [INFO] Fetching robots.txt from https://digiconomist.net/robots.txt
+2025-03-21 11:13:05,249 [INFO] Fetching robots.txt from https://play.google.com/robots.txt
+2025-03-21 11:13:05,616 [INFO] Fetching robots.txt from https://www.investopedia.com/robots.txt
+2025-03-21 11:13:06,050 [INFO] Fetching robots.txt from https://www.cftc.gov/robots.txt
+2025-03-21 11:13:07,107 [INFO] Fetching robots.txt from https://www.coinbase.com/robots.txt
+2025-03-21 11:13:07,507 [INFO] Fetching robots.txt from https://www.congress.gov/robots.txt
+2025-03-21 11:13:07,571 [INFO] Non-200 response from https://www.congress.gov/robots.txt: 403
+2025-03-21 11:13:07,572 [INFO] Skipping https://www.congress.gov/bill/118th-congress/senate-bill/4912/text as robots.txt could not be fetched.
+2025-03-21 11:13:07,572 [INFO] Collected 18 unique URLs so far
+2025-03-21 11:13:10,155 [INFO] Google Search API returned 10 URLs
+2025-03-21 11:13:10,156 [INFO] Blocked domain detected: x.com
+2025-03-21 11:13:10,157 [INFO] Filtered 1 blocked domains
+2025-03-21 11:13:10,158 [INFO] Fetching robots.txt from https://www.usenix.org/robots.txt
+2025-03-21 11:13:11,255 [INFO] Fetching robots.txt from https://le.utah.gov/robots.txt
+2025-03-21 11:13:16,258 [INFO] Timeout occurred while fetching https://le.utah.gov/robots.txt
+2025-03-21 11:13:16,259 [INFO] Skipping https://le.utah.gov/~2025/bills/static/HB0230.html as robots.txt could not be fetched.
+2025-03-21 11:13:16,260 [INFO] Fetching robots.txt from https://oksenate.gov/robots.txt
+2025-03-21 11:13:17,151 [INFO] Fetching robots.txt from https://www.fidelitycharitable.org/robots.txt
+2025-03-21 11:13:19,954 [INFO] Fetching robots.txt from https://www.santamonica.gov/robots.txt
+2025-03-21 11:13:20,759 [INFO] Non-200 response from https://www.santamonica.gov/robots.txt: 404
+2025-03-21 11:13:20,760 [INFO] Skipping https://www.santamonica.gov/programs/bitcoin-office as robots.txt could not be fetched.
+2025-03-21 11:13:20,761 [INFO] Fetching robots.txt from https://www.blockchain.com/robots.txt
+2025-03-21 11:13:21,942 [INFO] Fetching robots.txt from https://www.coindesk.com/robots.txt
+2025-03-21 11:13:22,296 [INFO] Fetching robots.txt from https://www.binance.com/robots.txt
+2025-03-21 11:13:22,671 [INFO] Fetching robots.txt from https://b.tc/robots.txt
+2025-03-21 11:13:24,384 [INFO] Non-200 response from https://b.tc/robots.txt: 404
+2025-03-21 11:13:24,385 [INFO] Skipping https://b.tc/conference/ as robots.txt could not be fetched.
+2025-03-21 11:13:24,385 [INFO] Collected 27 unique URLs so far
+2025-03-21 11:13:24,385 [INFO] Limited URL collection to 20
+2025-03-21 11:13:24,385 [INFO] Scraping content from 20 collected URLs...
+2025-03-21 11:13:25,882 [INFO] newspaper3k extracted low-quality content from https://digiconomist.net/bitcoin-energy-consumption/, trying BeautifulSoup
+2025-03-21 11:13:26,623 [ERROR] Decoding error for https://www.cftc.gov/sites/default/files/2019-12/oceo_bitcoinbasics0218.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:27,431 [ERROR] Access denied to https://www.coinbase.com/: HTTP 403 Forbidden.
+2025-03-21 11:13:28,897 [INFO] Article at https://play.google.com/store/apps/details?id=de.schildbach.wallet&hl=en_US has insufficient content after processing.
+2025-03-21 11:13:29,936 [INFO] newspaper3k extracted low-quality content from https://www.bitcoin.com/, trying BeautifulSoup
+2025-03-21 11:13:30,053 [ERROR] Access denied to https://www.congress.gov/bill/118th-congress/senate-bill/4912/text: HTTP 403 Forbidden.
+2025-03-21 11:13:30,436 [INFO] newspaper3k extracted low-quality content from https://ccaf.io/cbnsi/cbeci, trying BeautifulSoup
+2025-03-21 11:13:30,446 [INFO] Failed to extract meaningful content from https://ccaf.io/cbnsi/cbeci
+2025-03-21 11:13:31,570 [INFO] newspaper3k extracted low-quality content from https://bitcoincore.org/, trying BeautifulSoup
+2025-03-21 11:13:31,617 [INFO] Failed to extract meaningful content from https://bitcoincore.org/
+2025-03-21 11:13:32,643 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying in 1.5s (1/3)...
+2025-03-21 11:13:34,784 [ERROR] Decoding error for https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:35,502 [INFO] newspaper3k extracted low-quality content from https://bitcoin.org/, trying BeautifulSoup
+2025-03-21 11:13:35,521 [INFO] Failed to extract meaningful content from https://bitcoin.org/
+2025-03-21 11:13:36,882 [WARNING] Error fetching article at https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (22051) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'. Retrying in 3.0s (2/3)...
+2025-03-21 11:13:38,769 [ERROR] Decoding error for https://www.ussc.gov/sites/default/files/pdf/training/annual-national-training-seminar/2018/Emerging_Tech_Bitcoin_Crypto.pdf: 'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte
+2025-03-21 11:13:40,260 [WARNING] Error fetching article at https://le.utah.gov/~2025/bills/static/HB0230.html: . Retrying in 1.5s (1/3)...
+2025-03-21 11:13:41,438 [ERROR] Max retries reached for https://finance.yahoo.com/quote/BTC-USD/: 400, message='Got more than 8190 bytes (23488) when reading Header value is too long.', url='https://finance.yahoo.com/quote/BTC-USD/'
+2025-03-21 11:13:57,247 [WARNING] Error fetching article at https://le.utah.gov/~2025/bills/static/HB0230.html: . Retrying in 3.0s (2/3)...
+2025-03-21 11:14:16,259 [ERROR] Max retries reached for https://le.utah.gov/~2025/bills/static/HB0230.html: 
+2025-03-21 11:14:16,261 [INFO] Article 'Bitcoin Energy Consumption Index' added to valid articles.
+2025-03-21 11:14:16,262 [INFO] Article 'ESTABLISHMENT OF THE STRATEGIC BITCOIN RESERVE AND UNITED STATES DIGITAL ASSET STOCKPILE' added to valid articles.
+2025-03-21 11:14:16,263 [INFO] Article 'bitcoin/bitcoin: Bitcoin Core integration/staging tree' added to valid articles.
+2025-03-21 11:14:16,263 [INFO] Article 'Bitcoin Overview' added to valid articles.
+2025-03-21 11:14:16,263 [INFO] Article 'Buy Bitcoin & cryptocurrency' added to valid articles.
+2025-03-21 11:14:16,264 [INFO] Article 'What Is Bitcoin? How To Buy, Mine, and Use It' added to valid articles.
+2025-03-21 11:14:16,265 [INFO] Article 'Bitcoin price today, BTC to USD live price, marketcap and chart' added to valid articles.
+2025-03-21 11:14:16,265 [INFO] Article 'Bitcoin Wiki' added to valid articles.
+2025-03-21 11:14:16,265 [INFO] Article 'Fact Sheet: President Donald J. Trump Establishes the Strategic Bitcoin Reserve and U.S. Digital Asset Stockpile' added to valid articles.
+2025-03-21 11:14:16,318 [INFO] Formatted content for summarization with 8933 words
+2025-03-21 11:14:16,332 [INFO] Summarizing chunk 1/16
+2025-03-21 11:14:17,954 [INFO] Summarizing chunk 2/16
+2025-03-21 11:14:18,744 [INFO] Summarizing chunk 3/16
+2025-03-21 11:14:19,536 [INFO] Summarizing chunk 4/16
+2025-03-21 11:14:20,270 [INFO] Summarizing chunk 5/16
+2025-03-21 11:14:21,010 [INFO] Summarizing chunk 6/16
+2025-03-21 11:14:21,751 [INFO] Summarizing chunk 7/16
+2025-03-21 11:14:22,293 [INFO] Summarizing chunk 8/16
+2025-03-21 11:14:23,041 [INFO] Summarizing chunk 9/16
+2025-03-21 11:14:23,826 [WARNING] Gemini generated a short summary (0 words), using fallback
+2025-03-21 11:14:23,827 [INFO] Using extractive summarization fallback
+2025-03-21 11:14:23,828 [INFO] Summarizing chunk 10/16
+2025-03-21 11:14:24,609 [INFO] Summarizing chunk 11/16
+2025-03-21 11:14:25,206 [INFO] Summarizing chunk 12/16
+2025-03-21 11:14:25,876 [INFO] Summarizing chunk 13/16
+2025-03-21 11:14:26,899 [INFO] Summarizing chunk 14/16
+2025-03-21 11:14:27,649 [INFO] Summarizing chunk 15/16
+2025-03-21 11:14:28,311 [INFO] Summarizing chunk 16/16
+2025-03-21 11:14:29,093 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 11:14:29,094 [INFO] Falling back to extractive summarization
+2025-03-21 11:14:29,095 [INFO] Using extractive summarization fallback
+2025-03-21 11:14:29,096 [INFO] Summarization completed in 12.77 seconds
+2025-03-21 11:14:29,097 [INFO] Generated summary with 247 words.
+2025-03-21 11:14:29,097 [WARNING] Generated summary is too short (247 words). Attempting to regenerate.
+2025-03-21 11:14:29,098 [ERROR] Regeneration of summary failed: summarize_with_gemini() got an unexpected keyword argument 'article_count'
+2025-03-21 11:14:33,221 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream "HTTP/1.1 200 OK"
+2025-03-21 11:14:56,168 [INFO] Audio has been downloaded and saved as output_audio.mp3
+2025-03-21 11:14:59,452 [INFO] Audio speed increased and saved as output_audio_fast.mp3
+2025-03-21 11:14:59,453 [ERROR] Failed to write output to file: name 'output_file' is not defined
+2025-03-21 11:15:00,740 [INFO] HTTP Request: POST https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Queries "HTTP/2 201 Created"
+2025-03-21 11:17:07,904 [INFO] Configuration loaded successfully.
+2025-03-21 11:17:08,512 [INFO] Gemini model initialized successfully
+2025-03-21 12:04:30,326 [INFO] Configuration loaded successfully
+2025-03-21 12:04:31,596 [INFO] Gemini model initialized successfully
+2025-03-21 12:04:33,281 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 12:04:33,283 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 12:04:33,287 [INFO] Supabase username and password found in environment variables
+2025-03-21 12:04:33,981 [INFO] Supabase client initialized successfully
+2025-03-21 12:04:34,448 [INFO] Successfully created Supabase client
+2025-03-21 12:04:35,789 [INFO] HTTP Request: GET https://ljrlwlsqivyghpshguee.supabase.co/rest/v1/Users?select=count&limit=1 "HTTP/2 200 OK"
+2025-03-21 12:04:35,811 [INFO] Successfully connected to Supabase
+2025-03-21 12:04:35,816 [INFO] Successfully connected to Supabase at startup
+2025-03-21 12:04:49,182 [INFO] Configuration loaded successfully
+2025-03-21 12:04:50,488 [INFO] Gemini model initialized successfully
+2025-03-21 12:04:52,093 [INFO] Using Supabase URL: https://ljrlwlsqivyghpshguee.supabase.co
+2025-03-21 12:04:52,094 [INFO] API Key found (masked): eyJh********************************************************************************************************************************************************************************************************K5Tg
+2025-03-21 12:04:52,096 [INFO] Supabase username and password found in environment variables
+2025-03-21 12:04:52,502 [INFO] Supabase client initialized successfully
