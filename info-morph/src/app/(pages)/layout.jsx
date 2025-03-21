@@ -1,12 +1,14 @@
-// frontend/app/urllink/layout.jsx
-
 "use client";
+
+import { SummaryProvider } from '../../app/(pages)/summaryContext/SummaryContext';
 
 const PagesLayout = ({ children }) => {
   return (
-    <div className="bg-[#dcebfe] min-h-screen flex justify-center">
-      {children}
-    </div>
+    <SummaryProvider>
+      <div className="bg-[#dcebfe] min-h-screen flex justify-center">
+        {children}
+      </div>
+    </SummaryProvider>
   );
 };
 

@@ -5,9 +5,9 @@ import { SummaryContext } from '../summaryContext/SummaryContext';
 import { useRouter } from 'next/navigation';
 import { FaRegLightbulb } from 'react-icons/fa';
 import axios from 'axios';
+import ProtectedRoute from '../../../components/Auth/ProtectedRoute';
 
-
-const Summarization = () => {
+const SummarizationPage = () => {
   const { summary, query, setSummary, setQuery } = useContext(SummaryContext);
   const router = useRouter();
 
@@ -15,9 +15,8 @@ const Summarization = () => {
     console.log("Summarization Page: summary =", summary);
     console.log("Summarization Page: query =", query);
 
-    // If no summary is present, redirect back to the Topic Selection page
     if (!summary) {
-      router.push('/topic-selection'); // Updated redirection path
+      router.push('/topic-selection');
     }
   }, [summary, router]);
 
@@ -42,10 +41,9 @@ const Summarization = () => {
   };
 
   const handleNewSearch = () => {
-    // Reset the summary and query before navigating back
     setSummary('');
     setQuery('');
-    router.push('/topic-selection'); // Updated navigation path
+    router.push('/topic-selection');
   };
 
   return (
@@ -56,7 +54,7 @@ const Summarization = () => {
           <h1 className="text-3xl font-bold">Professional Summary</h1>
         </div>
         <div className="h-96 overflow-y-scroll">
-          <p className="text-lg text-gray-700 whitespace-pre-line leading-relaxed font-">
+          <p className="text-lg text-gray-700 whitespace-pre-line leading-relaxed">
             {summary}
           </p>
         </div>
@@ -79,4 +77,10 @@ const Summarization = () => {
   );
 };
 
-export default Summarization;
+const WrappedSummarizationPage = () => (
+  <ProtectedRoute>
+    <SummarizationPage />
+  </ProtectedRoute>
+);
+
+export default WrappedSummarizationPage;

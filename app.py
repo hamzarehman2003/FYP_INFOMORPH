@@ -9,7 +9,6 @@ import os
 import time
 import re
 import html  # For unescaping HTML entities
-from newspaper import Article, ArticleException
 from urllib.parse import urlparse
 from aiohttp import ClientSession, TCPConnector, ClientTimeout, ClientError
 from tqdm.asyncio import tqdm_asyncio
@@ -18,10 +17,14 @@ from langdetect import detect, LangDetectException
 from translate import Translator
 from itertools import cycle
 from bs4 import BeautifulSoup
+import subprocess
+from typing import List, Dict, Any, Optional
 
 # --------------------------------------------------------
-# 1) ADD OUR NAIVE TRANSLITERATION MAP AT THE TOP
+# Global Constants and Configuration
 # --------------------------------------------------------
+
+# Naive transliteration map for converting English characters to Urdu
 TRANSLIT_MAP = {
     'a': 'ا', 'b': 'ب', 'c': 'ک', 'd': 'د', 'e': 'ے',
     'f': 'ف', 'g': 'گ', 'h': 'ہ', 'i': 'ی', 'j': 'ج',
@@ -29,46 +32,150 @@ TRANSLIT_MAP = {
     'p': 'پ', 'q': 'ق', 'r': 'ر', 's': 'س', 't': 'ت',
     'u': 'ُ', 'v': 'و', 'w': 'و', 'x': 'کس', 'y': 'ے',
     'z': 'ز',
-    # You could add uppercase letters or special combos, e.g. 'sh': 'ش'
+    '0': '۰', '1': '۱', '2': '۲', '3': '۳', '4': '۴',
+    '5': '۵', '6': '۶', '7': '۷', '8': '۸', '9': '۹'
 }
 
-def naive_transliterate_to_urdu(token: str, translit_map: dict) -> str:
-    """
-    Convert an English token into approximate Urdu script
-    by replacing each English letter with an Urdu character.
-    """
-    result_chars = []
-    for ch in token:
-        lower_ch = ch.lower()
-        if lower_ch in translit_map:
-            result_chars.append(translit_map[lower_ch])
-        else:
-            # Keep digits, punctuation, or unknown characters as-is
-            result_chars.append(ch)
-    return "".join(result_chars)
+# Maximum words for TTS conversion to reduce payload size
+MAX_TTS_WORDS = 400
+
+# --------------------------------------------------------
+# Helper Functions: Transliteration & Text Manipulation
+# --------------------------------------------------------
+
+def naive_transliterate_to_urdu(token: str, translit_map: dict = TRANSLIT_MAP) -> str:
+    """Transliterate a token from English to Urdu using a simple character map."""
+    return "".join(translit_map.get(ch.lower(), ch) for ch in token)
 
 def force_urdu_tokens(text: str) -> str:
-    """
-    If a token is 'mostly English' but the translator didn't convert it,
-    forcibly transliterate it using our naive map.
-    """
+    """Force transliteration of tokens that contain mostly ASCII characters."""
     tokens = text.split()
     new_tokens = []
     for token in tokens:
-        # Count how many characters are ASCII letters
         ascii_count = sum(1 for ch in token if ch.isascii() and ch.isalpha())
-        # If more than half the chars in a token are ASCII letters => "English"
-        if len(token) > 0 and (ascii_count > 0.5 * len(token)):
-            # Transliterate brand names, leftover words, etc.
-            forced = naive_transliterate_to_urdu(token, TRANSLIT_MAP)
-            new_tokens.append(forced)
+        if token and (ascii_count > 0.5 * len(token)):
+            new_tokens.append(naive_transliterate_to_urdu(token))
         else:
             new_tokens.append(token)
     return " ".join(new_tokens)
 
+def clean_text(text: str) -> str:
+    """Clean and normalize text by unescaping HTML and removing unwanted patterns."""
+    if not text:
+        return ""
+    text = html.unescape(text)
+    text = re.sub(r'[\x00-\x1F\x7F-\x9F]', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(
+        r'(accept all cookies|accept cookies|use cookies|privacy policy|terms of service|terms and conditions|all rights reserved)',
+        '',
+        text,
+        flags=re.IGNORECASE
+    )
+    return text
+
+def is_meaningful_content(text: str, min_length: int = 200, max_ad_ratio: float = 0.3) -> bool:
+    """Check if text is meaningful based on word count and advertisement ratio."""
+    if not text or len(text.split()) < min_length:
+        return False
+    ad_patterns = r'(subscribe|subscription|advert|cookie|privacy|sign up|free trial|newsletter|click here)'
+    ad_matches = len(re.findall(ad_patterns, text, re.IGNORECASE))
+    word_count = len(text.split())
+    ad_ratio = ad_matches / word_count if word_count > 0 else 1
+    if ad_ratio > max_ad_ratio:
+        logging.info(f"Text appears promotional (ad ratio: {ad_ratio:.2f})")
+        return False
+    return True
+
+def remove_duplicate_sentences(text: str) -> str:
+    """Remove duplicate or near-duplicate sentences from text."""
+    if not text:
+        return ""
+    sentences = re.split(r'(?<=[.!?]) +', text)
+    seen = set()
+    unique_sentences = []
+    for sentence in sentences:
+        sentence_clean = re.sub(r'\W+', ' ', sentence.strip().lower())
+        sentence_clean = re.sub(r'\s+', ' ', sentence_clean).strip()
+        if not sentence_clean or len(sentence_clean) < 10:
+            continue
+        is_duplicate = any(
+            (len(sentence_clean) > 0.9 * len(existing) and len(existing) > 0.9 * len(sentence_clean)
+             and (sentence_clean in existing or existing in sentence_clean))
+            for existing in seen
+        )
+        if not is_duplicate:
+            seen.add(sentence_clean)
+            unique_sentences.append(sentence.strip())
+    return ' '.join(unique_sentences)
+
+def clean_summary(summary: str) -> str:
+    """Clean the summary text by removing duplicate sentences, unwanted tokens, and non-target language content."""
+    if not summary:
+        return ""
+    summary = remove_duplicate_sentences(summary)
+    summary = re.sub(r'ARTICLE\s*\d*\s*:', '', summary)
+    summary = re.sub(r'([A-Z][a-z]+\s*)+(-|–|:|\|)\s*([A-Z][a-z]+\s*)+', '', summary)
+    summary = re.sub(r'[A-Z][A-Z\s]+:', '', summary)
+    summary = re.sub(r'\[EMAIL REDACTED\]|\[PHONE REDACTED\]|\[URL REDACTED\]', '', summary)
+    summary = re.sub(r'https?://\S+', '', summary)
+    summary = re.sub(r'contact.*?information|email|call|phone', '', summary, flags=re.IGNORECASE)
+    
+    # Remove any Cyrillic text (covers Russian and similar languages)
+    summary = re.sub(r'[\u0400-\u04FF]+', '', summary)
+    
+    sentences = re.split(r'(?<=[.!?]) +', summary)
+    filtered_sentences = [
+        s for s in sentences
+        if not re.search(
+            r'(located at|address|event details|call|email|contact|pm|am|\d{1,2}:\d{2}|January|February|March|April|May|June|July|August|September|October|November|December)',
+            s, re.IGNORECASE
+        )
+    ]
+    summary = ' '.join(filtered_sentences)
+    summary = re.sub(r'\s+', ' ', summary)
+    if summary:
+        summary = summary[0].upper() + summary[1:]
+    if summary and summary[-1] not in '.!?':
+        summary += '.'
+    return summary.strip()
+
+def format_article_content(articles: List[Dict[str, Any]]) -> str:
+    """Concatenate the content from a list of articles into a single string."""
+    formatted_text = [re.sub(r'\s+', ' ', article['content']).strip() for article in articles]
+    return ' '.join(formatted_text)
+
 # --------------------------------------------------------
-# Configure logging
+# Configuration Loading
 # --------------------------------------------------------
+
+def load_config(filename: str = 'config.yaml') -> Dict[str, Any]:
+    """Load configuration from a YAML file."""
+    try:
+        with open(filename, 'r') as f:
+            config = yaml.safe_load(f)
+        required = ['api_key', 'cse_id', 'gemini_api_key']
+        for key in required:
+            if not config.get(key):
+                raise ValueError(f"{key} is required in {filename}")
+        logging.info("Configuration loaded successfully")
+        return config
+    except Exception as e:
+        logging.error(f"Error loading {filename}: {e}")
+        raise
+
+config = load_config()
+API_KEY = config['api_key']
+CSE_ID = config['cse_id']
+GEMINI_API_KEY = config['gemini_api_key']
+blocked_domains = config.get('blocked_domains', [])
+proxies_list = config.get('proxies', [])
+output_file = config.get('output_file', 'output.json')
+
+# --------------------------------------------------------
+# Configure Logging
+# --------------------------------------------------------
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -83,31 +190,13 @@ error_handler.setFormatter(logging.Formatter('%(asctime)s [%(levelname)s] %(mess
 logging.getLogger().addHandler(error_handler)
 
 # --------------------------------------------------------
-# Load configuration from config.yaml
+# Google Search Functionality with Increased Backoff & Delay
 # --------------------------------------------------------
-try:
-    with open('config.yaml', 'r') as f:
-        config = yaml.safe_load(f)
-    API_KEY = config.get('api_key')
-    CSE_ID = config.get('cse_id')
-    if not API_KEY or not CSE_ID:
-        logging.error("API_KEY or CSE_ID not found in config.yaml")
-        raise ValueError("API_KEY and CSE_ID are required in config.yaml")
-    blocked_domains = config.get('blocked_domains', [])
-    proxies_list = config.get('proxies', [])
-    logging.info("Configuration loaded successfully")
-except Exception as e:
-    logging.error(f"Error loading config.yaml: {e}")
-    API_KEY = ""
-    CSE_ID = ""
-    blocked_domains = []
-    proxies_list = []
 
-# --------------------------------------------------------
-# Google Search
-# --------------------------------------------------------
-def google_search(api_key, cse_id, query, num_results=10, start_index=1):
-    """Search Google using the Custom Search API and return URLs."""
+CONSTANT_DELAY = 1.0  # Additional delay (in seconds) before each request
+
+def google_search(api_key: str, cse_id: str, query: str, num_results: int = 10, start_index: int = 1, retries: int = 5, backoff_factor: float = 2.0) -> List[str]:
+    """Perform a Google Custom Search and return a list of URLs with retry logic on 429 errors."""
     url = "https://www.googleapis.com/customsearch/v1"
     params = {
         'key': api_key,
@@ -116,28 +205,39 @@ def google_search(api_key, cse_id, query, num_results=10, start_index=1):
         'num': num_results,
         'start': start_index
     }
-    try:
-        response = requests.get(url, params=params, timeout=15)
-        response.raise_for_status()
-        results = response.json()
-        urls = [item['link'] for item in results.get('items', [])]
-        logging.info(f"Google Search API returned {len(urls)} URLs")
-        return urls
-    except requests.exceptions.RequestException as e:
-        logging.error(f"Google Search API request failed: {e}")
-        return []
+    for attempt in range(retries):
+        time.sleep(CONSTANT_DELAY)  # Slow down the rate of requests
+        try:
+            response = requests.get(url, params=params, timeout=15)
+            response.raise_for_status()
+            results = response.json()
+            urls = [item['link'] for item in results.get('items', [])]
+            logging.info(f"Google Search API returned {len(urls)} URLs")
+            return urls
+        except requests.exceptions.HTTPError as e:
+            if response.status_code == 429:
+                wait_time = backoff_factor * (2 ** attempt)
+                logging.warning(f"Received 429 Too Many Requests. Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+                continue
+            logging.error(f"Google Search API request failed: {e}")
+            return []
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Google Search API request failed: {e}")
+            return []
+    return []
 
-def is_blocked(url, blocked_domains):
-    """Check if the URL's domain is in the list of blocked domains."""
+def is_blocked(url: str, blocked_domains: List[str]) -> bool:
+    """Determine if a URL belongs to a blocked domain."""
     domain = urlparse(url).netloc.lower()
-    for blocked_domain in blocked_domains:
-        if blocked_domain in domain:
+    for blocked in blocked_domains:
+        if blocked in domain:
             logging.info(f"Blocked domain detected: {domain}")
             return True
     return False
 
-def clean_url(url):
-    """Clean URL by removing tracking parameters and fragments."""
+def clean_url(url: str) -> str:
+    """Clean the URL by removing tracking parameters."""
     parsed = urlparse(url)
     clean_params = "&".join(
         [p for p in parsed.query.split("&") if not p.startswith(('utm_', 'fbclid', 'gclid'))]
@@ -148,54 +248,54 @@ def clean_url(url):
     return cleaned
 
 # --------------------------------------------------------
-# Robots.txt checks
+# Robots.txt Checks (Asynchronous)
 # --------------------------------------------------------
-async def fetch_robots_txt(robots_url, timeout):
-    """Asynchronously fetch robots.txt with a timeout."""
+
+async def fetch_robots_txt(robots_url: str, timeout: int) -> Optional[str]:
+    """Fetch the robots.txt file from a given URL."""
     async with ClientSession(timeout=ClientTimeout(total=timeout)) as session:
         try:
             async with session.get(robots_url) as response:
                 if response.status == 200:
-                    text = await response.text()
-                    return text
+                    return await response.text()
                 else:
                     logging.info(f"Non-200 response from {robots_url}: {response.status}")
-                    return None
         except asyncio.TimeoutError:
             logging.info(f"Timeout occurred while fetching {robots_url}")
         except Exception as e:
             logging.error(f"Error fetching robots.txt from {robots_url}: {e}")
-        return None
+    return None
 
-async def parse_robots_txt(robots_txt, url, user_agent='*'):
-    """Parse the fetched robots.txt and check permissions."""
+async def parse_robots_txt(robots_txt: str, url: str, user_agent: str = '*') -> bool:
+    """Parse robots.txt and check if the URL is allowed."""
     rp = RobotFileParser()
     rp.parse(robots_txt.splitlines())
     return rp.can_fetch(user_agent, url)
 
-async def is_allowed_async(url, user_agent='*', timeout=5):
-    """Check if scraping is allowed asynchronously with timeout."""
+async def is_allowed_async(url: str, user_agent: str = '*', timeout: int = 5) -> bool:
+    """Check asynchronously if a URL is allowed per its robots.txt."""
     parsed_url = urlparse(url)
     robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
     logging.info(f"Fetching robots.txt from {robots_url}")
     robots_txt = await fetch_robots_txt(robots_url, timeout)
     if robots_txt is None:
         logging.info(f"Skipping {url} as robots.txt could not be fetched.")
-        return True  # Optimistic if not fetchable
+        return True
     allowed = await parse_robots_txt(robots_txt, url, user_agent)
     if not allowed:
         logging.info(f"Scraping not allowed for {url} as per robots.txt.")
     return allowed
 
-async def is_allowed(url, user_agent='*', timeout=5):
-    """Check if scraping is allowed asynchronously with timeout."""
+async def is_allowed(url: str, user_agent: str = '*', timeout: int = 5) -> bool:
+    """Wrapper for checking if URL is allowed."""
     return await is_allowed_async(url, user_agent, timeout)
 
 # --------------------------------------------------------
 # Proxy Handling
 # --------------------------------------------------------
-def get_proxy():
-    """Get a proxy from the list, if available."""
+
+def get_proxy() -> Optional[str]:
+    """Return the next proxy in the list if available."""
     if proxies_list:
         return next(get_proxy.proxy_cycle)
     return None
@@ -203,41 +303,19 @@ def get_proxy():
 get_proxy.proxy_cycle = cycle(proxies_list) if proxies_list else None
 
 # --------------------------------------------------------
-# Text Cleaning / Checks
+# Asynchronous Article Fetching / Parsing
 # --------------------------------------------------------
-def clean_text(text):
-    """Clean and normalize text by removing extra whitespace and control characters."""
-    if not text:
-        return ""
-    text = html.unescape(text)
-    text = re.sub(r'[\x00-\x1F\x7F-\x9F]', '', text)
-    text = re.sub(r'\s+', ' ', text).strip()
-    text = re.sub(
-        r'(accept all cookies|accept cookies|use cookies|privacy policy|terms of service|terms and conditions|all rights reserved)',
-        '',
-        text, 
-        flags=re.IGNORECASE
-    )
-    return text
 
-def is_meaningful_content(text, min_length=200, max_ad_ratio=0.3):
-    """Check if the text contains meaningful content rather than ads or boilerplate."""
-    if not text or len(text.split()) < min_length:
-        return False
-    ad_patterns = r'(subscribe|subscription|advert|cookie|privacy|sign up|free trial|newsletter|click here)'
-    ad_matches = len(re.findall(ad_patterns, text, re.IGNORECASE))
-    word_count = len(text.split())
-    ad_ratio = ad_matches / word_count if word_count > 0 else 1
-    if ad_ratio > max_ad_ratio:
-        logging.info(f"Text appears promotional (ad ratio: {ad_ratio:.2f})")
-        return False
-    return True
-
-# --------------------------------------------------------
-# Asynchronous article fetching / parsing
-# --------------------------------------------------------
-async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3, backoff_factor=1.5):
-    """Asynchronously fetch and parse an article with improved error handling and content extraction."""
+async def fetch_article(
+    session: ClientSession,
+    url: str,
+    headers: Dict[str, str],
+    semaphore: asyncio.Semaphore,
+    proxy: Optional[str] = None,
+    retries: int = 3,
+    backoff_factor: float = 1.5
+) -> Optional[Dict[str, Any]]:
+    """Fetch and parse an article from a URL asynchronously."""
     url = clean_url(url)
     for attempt in range(retries):
         try:
@@ -249,10 +327,16 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3,
                     elif response.status != 200:
                         logging.error(f"Failed to fetch {url}: HTTP {response.status}")
                         return None
-                    html_content = await response.text()
+                    try:
+                        html_content = await response.text()
+                    except Exception as decode_err:
+                        logging.error(f"Decoding error for {url}: {decode_err}")
+                        return None
                     if not html_content or len(html_content.strip()) < 100:
                         logging.error(f"Empty or very short HTML from {url}")
                         return None
+                    # Attempt parsing with newspaper3k
+                    from newspaper import Article, ArticleException
                     try:
                         article = Article(url)
                         article.set_html(html_content)
@@ -269,33 +353,30 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3,
                                 logging.info(f"Failed to extract meaningful content from {url}")
                                 return None
                         content = clean_text(content)
-
-                        try:
-                            lang = detect(content)
-                            if lang != 'en':
-                                logging.info(f"Translating article at {url} from {lang} to English.")
-                                translator = Translator(to_lang='en')
-                                # Break content into chunks because some translators have length limits
-                                chunks = [content[i:i+500] for i in range(0, len(content), 500)]
-                                translated_chunks = [translator.translate(chunk) for chunk in chunks]
-                                content = ' '.join(translated_chunks)
-                        except Exception as e:
-                            logging.error(f"Language detection/translation failed for {url}: {e}")
-
-                        content = clean_text(content)
-                        if len(content.split()) < 300:
-                            logging.info(f"Article at {url} has insufficient content after processing.")
-                            return None
-                        return {
-                            'url': url,
-                            'title': clean_text(article.title) or 'No Title',
-                            'authors': article.authors or [],
-                            'publish_date': (article.publish_date.strftime('%Y-%m-%d') if article.publish_date else 'No Publish Date'),
-                            'content': content
-                        }
-                    except ArticleException as e:
-                        logging.error(f"newspaper3k parsing failed for {url}: {e}")
+                    except Exception as parse_err:
+                        logging.error(f"Article parsing failed for {url}: {parse_err}")
                         return None
+                    # Translate non-English articles
+                    try:
+                        lang = detect(content)
+                        if lang != 'en':
+                            logging.info(f"Translating article at {url} from {lang} to English.")
+                            translator = Translator(to_lang='en')
+                            chunks = [content[i:i+500] for i in range(0, len(content), 500)]
+                            content = ' '.join(translator.translate(chunk) for chunk in chunks)
+                    except Exception as trans_err:
+                        logging.error(f"Language detection/translation failed for {url}: {trans_err}")
+                    content = clean_text(content)
+                    if len(content.split()) < 300:
+                        logging.info(f"Article at {url} has insufficient content after processing.")
+                        return None
+                    return {
+                        'url': url,
+                        'title': clean_text(article.title) or 'No Title',
+                        'authors': article.authors or [],
+                        'publish_date': (article.publish_date.strftime('%Y-%m-%d') if article.publish_date else 'No Publish Date'),
+                        'content': content
+                    }
         except (asyncio.TimeoutError, ClientError) as e:
             if attempt < retries - 1:
                 wait_time = backoff_factor * (2 ** attempt)
@@ -308,9 +389,10 @@ async def fetch_article(session, url, headers, semaphore, proxy=None, retries=3,
         except Exception as e:
             logging.error(f"Unexpected error fetching article at {url}: {e}")
             return None
+    return None
 
-async def scrape_contents(urls):
-    """Scrape contents from a list of URLs asynchronously with improved resilience."""
+async def scrape_contents(urls: List[str]) -> List[Dict[str, Any]]:
+    """Scrape article contents from a list of URLs concurrently."""
     headers = {
         'User-Agent': (
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
@@ -324,10 +406,10 @@ async def scrape_contents(urls):
     semaphore = asyncio.Semaphore(3)
     connector = TCPConnector(limit_per_host=2, ssl=False)
     async with ClientSession(connector=connector, headers=headers) as session:
-        tasks = []
-        for url in urls:
-            proxy = get_proxy() if proxies_list else None
-            tasks.append(fetch_article(session, url, headers, semaphore, proxy))
+        tasks = [
+            fetch_article(session, url, headers, semaphore, proxy=get_proxy() if proxies_list else None)
+            for url in urls
+        ]
         contents = []
         for task in tqdm_asyncio.as_completed(tasks, total=len(tasks)):
             try:
@@ -339,104 +421,42 @@ async def scrape_contents(urls):
         return [c for c in contents if c is not None]
 
 # --------------------------------------------------------
-# Initialize Gemini Summarization (using Google Generative AI)
+# Gemini Summarization Initialization and Helpers
 # --------------------------------------------------------
+
 try:
     import google.generativeai as genai
-    GEMINI_API_KEY = config.get('gemini_api_key')
-    if not GEMINI_API_KEY:
-        logging.error("GEMINI_API_KEY not found in config.yaml")
-        raise ValueError("GEMINI_API_KEY is required in config.yaml")
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-pro')
+    # Update to a supported model identifier (verify with current documentation)
+    model = genai.GenerativeModel('gemini-2.0-flash')
     logging.info("Gemini model initialized successfully")
 except Exception as e:
     logging.error(f"Failed to initialize Gemini model: {e}")
     model = None
 
-# --------------------------------------------------------
-# Summary Helpers
-# --------------------------------------------------------
-def remove_duplicate_sentences(text):
-    """Remove duplicate sentences from text with an improved algorithm."""
-    if not text:
-        return ""
-    sentences = re.split(r'(?<=[.!?]) +', text)
-    seen = set()
-    unique_sentences = []
-    for sentence in sentences:
-        sentence_clean = re.sub(r'\W+', ' ', sentence.strip().lower())
-        sentence_clean = re.sub(r'\s+', ' ', sentence_clean).strip()
-        if not sentence_clean or len(sentence_clean) < 10:
-            continue
-        is_duplicate = False
-        for existing in seen:
-            if (len(sentence_clean) > 0.9 * len(existing)
-                and len(existing) > 0.9 * len(sentence_clean)):
-                if sentence_clean in existing or existing in sentence_clean:
-                    is_duplicate = True
-                    break
-        if not is_duplicate:
-            seen.add(sentence_clean)
-            unique_sentences.append(sentence.strip())
-    return ' '.join(unique_sentences)
-
-def clean_summary(summary):
-    """Post-process the summary to enhance readability."""
-    if not summary:
-        return ""
-    summary = remove_duplicate_sentences(summary)
-    summary = re.sub(r'ARTICLE\s*\d*\s*:', '', summary)
-    summary = re.sub(r'([A-Z][a-z]+\s*)+(-|–|:|\|)\s*([A-Z][a-z]+\s*)+', '', summary)
-    summary = re.sub(r'[A-Z][A-Z\s]+:', '', summary)
-    summary = re.sub(r'\[EMAIL REDACTED\]|\[PHONE REDACTED\]|\[URL REDACTED\]', '', summary)
-    summary = re.sub(r'https?://\S+', '', summary)
-    summary = re.sub(r'contact.*?information|email|call|phone', '', summary, flags=re.IGNORECASE)
-    sentences = re.split(r'(?<=[.!?]) +', summary)
-    filtered_sentences = [
-        s for s in sentences
-        if not re.search(
-            r'(located at|address|event details|call|email|contact|pm|am|\d{1,2}:\d{2}'
-            r'|January|February|March|April|May|June|July|August'
-            r'|September|October|November|December)',
-            s, re.IGNORECASE
-        )
-    ]
-    summary = ' '.join(filtered_sentences)
-    summary = re.sub(r'\s+', ' ', summary)
-    if summary:
-        summary = summary[0].upper() + summary[1:]
-    if summary and summary[-1] not in '.!?':
-        summary += '.'
-    return re.sub(r'\s+', ' ', summary).strip()
-
-def format_article_content(articles):
-    """Format article content for summarization by concatenating cleaned content without labels."""
-    formatted_text = []
-    for article in articles:
-        content = article['content']
-        content = re.sub(r'\s+', ' ', content).strip()
-        formatted_text.append(content)
-    return ' '.join(formatted_text)
-
-def extractive_summarization_fallback(text, num_sentences=15):
-    """Simple extractive summarization as a fallback."""
+def extractive_summarization_fallback(text: str, num_sentences: int = 20) -> str:
+    """Simple extractive summarization fallback by selecting key sentences."""
     logging.info("Using extractive summarization fallback")
     sentences = re.split(r'(?<=[.!?]) +', text)
     if len(sentences) <= num_sentences:
         return ' '.join(sentences)
-    summary_sentences = sentences[:5]
-    middle_start = max(5, len(sentences) // 3)
-    middle_end = min(len(sentences) - 5, 2 * len(sentences) // 3)
-    middle_step = max(1, (middle_end - middle_start) // 5)
+    summary_sentences = sentences[:7]
+    middle_start = max(7, len(sentences) // 3)
+    middle_end = min(len(sentences) - 7, 2 * len(sentences) // 3)
+    middle_step = max(1, (middle_end - middle_start) // 7)
     for i in range(middle_start, middle_end, middle_step):
-        if len(summary_sentences) < num_sentences - 5:
+        if len(summary_sentences) < num_sentences - 7:
             summary_sentences.append(sentences[i])
-    summary_sentences.extend(sentences[-5:])
+    summary_sentences.extend(sentences[-7:])
     return ' '.join(summary_sentences[:num_sentences])
 
-def summarize_with_gemini(text, max_length=300, min_length=150, article_count=None):
-    """Summarize text using Gemini with fallback to extractive summarization."""
+def summarize_with_gemini(
+    text: str,
+    max_length: int = 500,
+    min_length: int = 300,
+    article_count: Optional[int] = None
+) -> str:
+    """Generate a summary using Gemini, falling back if necessary."""
     if not model:
         logging.error("Gemini model not loaded properly. Using fallback summarizer.")
         return extractive_summarization_fallback(text)
@@ -444,12 +464,11 @@ def summarize_with_gemini(text, max_length=300, min_length=150, article_count=No
         logging.error("Text too short for summarization")
         return "The collected content was insufficient for summarization."
     try:
-        article_context = f"from {article_count} sources" if article_count else "from multiple sources"
         prompt = (
             f"Create a cohesive, concise summary focusing on relevant academic or event-related content.\n"
-            f"Exclude any technical installation details, browser extension instructions, or non-academic content.\n"
+            f"Exclude any technical installation details or non-academic content.\n"
             f"Your summary should be clear, factual, and between {min_length} and {max_length} words.\n\n"
-            f"Text (ignore any formatting labels): \n{text[:30000]}"
+            f"Text (ignore formatting labels): \n{text[:30000]}"
         )
         generation_config = {
             "temperature": 0.1,
@@ -471,8 +490,7 @@ def summarize_with_gemini(text, max_length=300, min_length=150, article_count=No
         if not hasattr(response, 'text'):
             logging.error("Gemini response has no text attribute")
             return extractive_summarization_fallback(text)
-        summary = response.text
-        summary = clean_summary(summary)
+        summary = clean_summary(response.text)
         word_count = len(summary.split())
         if word_count < min_length:
             logging.warning(f"Gemini generated a short summary ({word_count} words), using fallback")
@@ -483,8 +501,8 @@ def summarize_with_gemini(text, max_length=300, min_length=150, article_count=No
         logging.info("Falling back to extractive summarization")
         return extractive_summarization_fallback(text)
 
-def summarize_in_chunks(text, max_length=300, min_length=150):
-    """Summarize very long text by splitting it into chunks and combining summaries."""
+def summarize_in_chunks(text: str, max_length: int = 500, min_length: int = 300) -> str:
+    """Divide text into chunks for summarization and combine the results."""
     chunks = []
     current_chunk = ""
     sentences = re.split(r'(?<=[.!?]) +', text)
@@ -529,21 +547,62 @@ def summarize_in_chunks(text, max_length=300, min_length=150):
         return combined_summary
 
 # --------------------------------------------------------
-# collect_and_scrape function with final translation + transliteration
+# Text-to-Speech using ElevenLabs (with Text Reduction)
 # --------------------------------------------------------
+
+from elevenlabs.client import ElevenLabs
+
+def convert_text_to_speech(text: str, output_filename: str = "output_audio.mp3", speed: float = 1.5) -> Optional[str]:
+    """Convert text to speech using ElevenLabs and adjust playback speed with FFmpeg.
+       If the text is too long, truncate to reduce payload size."""
+    words = text.split()
+    if len(words) > MAX_TTS_WORDS:
+        tts_text = ' '.join(words[:MAX_TTS_WORDS])
+        logging.info(f"Truncating text for TTS to {MAX_TTS_WORDS} words (was {len(words)} words)")
+    else:
+        tts_text = text
+    try:
+        client = ElevenLabs(api_key="sk_3f1a3487ca77c74a2913c70cf3b298bccf85b21bba5a44fc")
+        audio_stream = client.text_to_speech.convert_as_stream(
+            text=tts_text,
+            voice_id="JBFqnCBsd6RMkjVDRZzb",
+            model_id="eleven_multilingual_v2"
+        )
+        with open(output_filename, "wb") as output_file:
+            for chunk in audio_stream:
+                if isinstance(chunk, bytes):
+                    output_file.write(chunk)
+        logging.info(f"Audio has been downloaded and saved as {output_filename}")
+
+        fast_output_filename = "output_audio_fast.mp3"
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", output_filename, "-filter:a", f"atempo={speed}", fast_output_filename],
+            check=True
+        )
+        logging.info(f"Audio speed increased and saved as {fast_output_filename}")
+        return fast_output_filename
+    except Exception as e:
+        logging.error(f"Text-to-speech conversion failed: {e}")
+        return None
+
+# --------------------------------------------------------
+# Main Process: Collect, Scrape, Summarize, Translate, and TTS
+# --------------------------------------------------------
+
 async def collect_and_scrape(
-    query,
-    desired_num_articles,
-    input_language="en",
-    output_language="en",
-    max_api_calls=10,
-    max_urls_to_attempt=20
-):
-    """Collect URLs based on query and scrape articles. Then summarize and optionally translate to Urdu with forced transliteration."""
+    query: str,
+    desired_num_articles: int,
+    input_language: str = "en",
+    output_language: str = "en",
+    max_api_calls: int = 10,
+    max_urls_to_attempt: int = 20
+) -> Dict[str, Any]:
+    """Collect articles based on the query, summarize them, and convert the summary to audio."""
     if not API_KEY or not CSE_ID:
         raise ValueError("API_KEY and CSE_ID are required but not properly configured")
-    collected_urls = []
-    valid_articles = []
+    
+    collected_urls: List[str] = []
+    valid_articles: List[Dict[str, Any]] = []
     start_index = 1
     api_calls_made = 0
     seen_titles = set()
@@ -552,8 +611,7 @@ async def collect_and_scrape(
     logging.info(f"Desired article count: {desired_num_articles}")
 
     while len(valid_articles) < desired_num_articles and api_calls_made < max_api_calls:
-        num_results = 10
-        urls = google_search(API_KEY, CSE_ID, query, num_results=num_results, start_index=start_index)
+        urls = google_search(API_KEY, CSE_ID, query, num_results=10, start_index=start_index)
         api_calls_made += 1
         if not urls:
             logging.info("No more results from Google.")
@@ -562,13 +620,12 @@ async def collect_and_scrape(
         logging.info(f"Filtered {len(urls) - len(filtered_urls)} blocked domains")
         allowed_urls = []
         for url in filtered_urls:
-            allowed = await is_allowed(url)
-            if allowed:
+            if await is_allowed(url):
                 allowed_urls.append(url)
         collected_urls.extend(allowed_urls)
         collected_urls = list(dict.fromkeys(collected_urls))
         logging.info(f"Collected {len(collected_urls)} unique URLs so far")
-        start_index += num_results
+        start_index += 10
         if len(collected_urls) >= max_urls_to_attempt:
             collected_urls = collected_urls[:max_urls_to_attempt]
             logging.info(f"Limited URL collection to {max_urls_to_attempt}")
@@ -581,7 +638,6 @@ async def collect_and_scrape(
 
     logging.info(f"Scraping content from {len(collected_urls)} collected URLs...")
     contents = await scrape_contents(collected_urls)
-    valid_articles = []
     for content in contents:
         if content and content['title'] not in seen_titles:
             valid_articles.append(content)
@@ -590,7 +646,7 @@ async def collect_and_scrape(
             if len(valid_articles) >= desired_num_articles:
                 break
         else:
-            logging.info("No content retrieved, article skipped, or duplicate title found.")
+            logging.info("Article skipped due to missing content or duplicate title.")
 
     if not valid_articles:
         logging.error("No valid articles were collected.")
@@ -605,26 +661,22 @@ async def collect_and_scrape(
         logging.error("Combined text is not meaningful enough for summarization.")
         raise Exception("Insufficient unique content for summarization.")
 
-    # ---------------------
-    # 1) Generate summary in English
-    # ---------------------
     try:
         start_time = time.time()
-        try:
+        if len(cleaned_text) > 500:
+            final_summary = summarize_in_chunks(cleaned_text, max_length=500, min_length=300)
+        else:
             final_summary = summarize_with_gemini(
                 cleaned_text, 
-                max_length=300,
-                min_length=150,
+                max_length=500,
+                min_length=300,
                 article_count=len(valid_articles)
             )
-        except Exception as e:
-            logging.error(f"Gemini summarization failed: {e}")
-            final_summary = extractive_summarization_fallback(cleaned_text)
         final_summary = clean_summary(final_summary)
         logging.info(f"Summarization completed in {time.time() - start_time:.2f} seconds")
     except Exception as e:
         logging.error(f"All summarization methods failed: {e}")
-        final_summary = "Summary could not be generated. Excerpts: \n\n"
+        final_summary = "Summary could not be generated. Excerpts:\n\n"
         for article in valid_articles[:3]:
             sentences = re.split(r'(?<=[.!?]) +', article['content'])
             final_summary += f"{article['title']}: {' '.join(sentences[:3])}\n\n"
@@ -632,18 +684,14 @@ async def collect_and_scrape(
     word_count = len(final_summary.split())
     logging.info(f"Generated summary with {word_count} words.")
 
-    # ---------------------
-    # 2) If English is requested, enforce min/max word logic
-    # ---------------------
     if output_language.lower() == "en":
-        # If summary is too short, attempt to regenerate
         if word_count < 300:
             logging.warning(f"Generated summary is too short ({word_count} words). Attempting to regenerate.")
             try:
                 new_summary = summarize_with_gemini(
                     cleaned_text, 
-                    max_length=350,
-                    min_length=200,
+                    max_length=550,
+                    min_length=350,
                     article_count=len(valid_articles)
                 )
                 new_summary = clean_summary(new_summary)
@@ -656,16 +704,14 @@ async def collect_and_scrape(
                     logging.warning(f"Summary remains short ({word_count} words), returning as is.")
             except Exception as e:
                 logging.error(f"Regeneration of summary failed: {e}")
-
-        # If summary is too long, truncate
-        elif word_count > 550:
+        elif word_count > 650:
             logging.warning(f"Generated summary is too long ({word_count} words). Truncating.")
             sentences = re.split(r'(?<=[.!?]) +', final_summary)
             truncated_sentences = []
             current_word_count = 0
             for sentence in sentences:
                 sentence_word_count = len(sentence.split())
-                if current_word_count + sentence_word_count <= 550:
+                if current_word_count + sentence_word_count <= 650:
                     truncated_sentences.append(sentence)
                     current_word_count += sentence_word_count
                 else:
@@ -673,39 +719,24 @@ async def collect_and_scrape(
             final_summary = ' '.join(truncated_sentences)
             word_count = len(final_summary.split())
             logging.info(f"Truncated summary to {word_count} words at sentence boundaries.")
-
-    # ---------------------
-    # 3) If not English, do chunk translation + second pass transliteration
-    # ---------------------
-    if output_language.lower() != "en":
+    else:
         try:
             translator = Translator(to_lang=output_language)
-            # Break final summary into chunks to avoid "QUERY LENGTH LIMIT EXCEEDED"
             chunk_size = 500
-            summary_chunks = [
-                final_summary[i:i+chunk_size]
-                for i in range(0, len(final_summary), chunk_size)
-            ]
-            translated_chunks = []
-            for chunk in summary_chunks:
-                translated_chunk = translator.translate(chunk)
-                translated_chunks.append(translated_chunk)
-            # Combine all translated chunks
+            summary_chunks = [final_summary[i:i+chunk_size] for i in range(0, len(final_summary), chunk_size)]
+            translated_chunks = [translator.translate(chunk) for chunk in summary_chunks]
             final_summary = ' '.join(translated_chunks)
-
-            # Second pass: forcibly transliterate leftover English tokens
             final_summary = force_urdu_tokens(final_summary)
-
-            logging.info(f"Final summary forcibly translated to {output_language}")
+            logging.info(f"Final summary translated to {output_language}")
         except Exception as e:
             logging.error(f"Error translating final summary to {output_language}: {e}")
 
-    # ---------------------
-    # Prepare the final result
-    # ---------------------
+    audio_file = convert_text_to_speech(final_summary, output_filename="output_audio.mp3")
+
     result = {
         'articles': valid_articles,
         'final_summary': final_summary,
+        'audio_file': audio_file,
         'meta': {
             'query': query,
             'article_count': len(valid_articles),
@@ -714,8 +745,6 @@ async def collect_and_scrape(
         }
     }
 
-    # Write to output.json if desired
-    output_file = config.get('output_file', 'output.json')
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=4)
@@ -724,3 +753,13 @@ async def collect_and_scrape(
         logging.error(f"Failed to write output to file: {e}")
 
     return result
+
+# For running the script directly
+if __name__ == "__main__":
+    query_input = "Your search query here"
+    desired_articles = 5  # Adjust the desired number of articles
+    try:
+        final_result = asyncio.run(collect_and_scrape(query_input, desired_articles))
+        logging.info("Process completed successfully.")
+    except Exception as e:
+        logging.error(f"Process terminated with error: {e}")

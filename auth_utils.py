@@ -18,8 +18,8 @@ handler.setFormatter(formatter)
 auth_logger.addHandler(handler)
 
 # Supabase configuration
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_URL = os.getenv("NEXT_PUBLIC_SUPABASE_URL")
+SUPABASE_KEY = os.getenv("NEXT_PUBLIC_SUPABASE_ANON_KEY")
 
 def get_supabase_client() -> Optional[Client]:
     """
