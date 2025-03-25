@@ -21,7 +21,6 @@ const Header = () => {
     if (logout) {
       try {
         const result = await logout();
-        // Treat a 404 or no session as a successful logout.
         if (result.success || result.message?.includes("No active session")) {
           toast.info("Logged out successfully.");
           router.push("/");
@@ -35,24 +34,22 @@ const Header = () => {
     }
   };
 
-  // Check if user is actually authenticated (has a token)
   const isAuthenticated = auth && auth.token;
 
   return (
     <>
       <BurgerMenu pathName={pathName} />
-      <header className="hidden laptop:flex items-center py-8 bg-[#FCFEDC] w-full px-14">
-        <div className="flex items-center w-full">
-          {/* Left Side - Logo */}
-          <div className="flex-1 flex items-center gap-[5px]">
-            <Link href="/" className="flex items-center">
-              <LogoSVG />
-              <div className="text-5xl font-bold text-[#1A3453]">Info Morph</div>
-            </Link>
+      <header className="hidden laptop:flex items-center py-8 bg-[#FCFEDC] w-screen px-14">
+        <div className="flex items-center justify-between w-full">
+          {/* Left Side - Logo and Info Morph */}
+          <div className="flex items-center gap-[5px]">
+            <LogoSVG />
+            {/* Non-clickable Info Morph text */}
+            <div className="text-5xl font-bold text-[#1A3453]">Info Morph</div>
           </div>
 
           {/* Center - Navigation Links */}
-          <div className="flex-1 flex items-center justify-center space-x-8">
+          <div className="flex items-center space-x-8">
             {headerLinks.map((item, index) => (
               <Link
                 key={index}
@@ -69,7 +66,7 @@ const Header = () => {
           </div>
 
           {/* Right Side - Auth Buttons */}
-          <div className="flex-1 flex justify-end">
+          <div className="flex">
             {isAuthenticated ? (
               <button
                 onClick={handleLogout}

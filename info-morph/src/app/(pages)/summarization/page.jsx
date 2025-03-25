@@ -1,36 +1,37 @@
 "use client";
 
-import React, { useContext, useEffect } from 'react';
-import { SummaryContext } from '../summaryContext/SummaryContext';
-import { useRouter } from 'next/navigation';
-import { FaRegLightbulb } from 'react-icons/fa';
-import axios from 'axios';
-import ProtectedRoute from '../../../components/Auth/ProtectedRoute';
+import React, { useContext, useEffect, useState } from "react";
+import { SummaryContext } from "../summaryContext/SummaryContext";
+import { useRouter } from "next/navigation";
+import { FaRegLightbulb } from "react-icons/fa";
+import axios from "axios";
+import ProtectedRoute from "../../../components/Auth/ProtectedRoute";
 
 const SummarizationPage = () => {
   const { summary, query, setSummary, setQuery } = useContext(SummaryContext);
   const router = useRouter();
+  const [feedback, setFeedback] = useState("");
 
   useEffect(() => {
     console.log("Summarization Page: summary =", summary);
     console.log("Summarization Page: query =", query);
     if (!summary) {
-      router.push('/topic-selection');
+      router.push("/topic-selection");
     }
   }, [summary, router]);
 
   const handleReportFeedback = async () => {
-    const userFeedback = prompt("Please enter your feedback:");
-    if (!userFeedback) {
+    if (!feedback) {
       alert("Feedback cannot be empty.");
       return;
     }
     try {
       const response = await axios.post("http://localhost:8000/feedback", {
         query,
-        feedback: userFeedback,
+        feedback,
       });
       alert(response.data.message);
+      setFeedback(""); // Clear feedback after submission
     } catch (error) {
       console.error("Error submitting feedback:", error);
       alert("Failed to submit feedback.");
@@ -38,9 +39,9 @@ const SummarizationPage = () => {
   };
 
   const handleNewSearch = () => {
-    setSummary('');
-    setQuery('');
-    router.push('/topic-selection');
+    setSummary("");
+    setQuery("");
+    router.push("/topic-selection");
   };
 
   return (
@@ -56,22 +57,35 @@ const SummarizationPage = () => {
               {summary}
             </p>
           </div>
+
           {/* Audio player for the generated audio */}
           <div className="mb-4">
             <audio controls src="http://localhost:8000/audio" className="w-full"></audio>
           </div>
+
+          {/* Feedback Box */}
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold mb-2">Provide Feedback:</h2>
+            <textarea
+              value={feedback}
+              onChange={(e) => setFeedback(e.target.value)}
+              placeholder="Write your feedback here..."
+              className="w-full h-24 p-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              onClick={handleReportFeedback}
+              className="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
+            >
+              Submit Feedback
+            </button>
+          </div>
+
           <div className="flex justify-center gap-4">
             <button
               onClick={handleNewSearch}
               className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
             >
               New Search
-            </button>
-            <button
-              onClick={handleReportFeedback}
-              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
-            >
-              Report Feedback
             </button>
           </div>
         </div>

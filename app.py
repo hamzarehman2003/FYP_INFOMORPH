@@ -520,7 +520,7 @@ def convert_text_to_speech(text: str, output_filename: str = "output_audio.mp3",
     else:
         tts_text = text
     try:
-        client = ElevenLabs(api_key="sk_3f1a3487ca77c74a2913c70cf3b298bccf85b21bba5a44fc")
+        client = ElevenLabs(api_key="sk_6c67a283e4d57d527246a53a3d71ec98b2d66d715a99bc8e")
         audio_stream = client.text_to_speech.convert_as_stream(
             text=tts_text,
             voice_id="JBFqnCBsd6RMkjVDRZzb",

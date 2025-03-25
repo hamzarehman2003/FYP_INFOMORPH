@@ -89,10 +89,11 @@ const TopicSelectionPage = () => {
           </div>
         </div>
 
-        <div className="mt-24 flex flex-col md:flex-row flex-wrap items-center gap-10">
-          <div className="flex flex-col md:flex-row gap-5">
-            <div className="flex flex-wrap items-center">
-              <label className="w-[120px] font-poppins" htmlFor="topic">Topic</label>
+        <div className="mt-24 flex flex-col items-center gap-10">
+          {/* Topic Input Section */}
+          <div className="flex flex-col items-center gap-5">
+            <div className="flex flex-wrap items-center justify-center">
+              <label className="w-[120px] font-poppins text-center" htmlFor="topic">Topic</label>
               <input
                 type="text"
                 id="topic"
@@ -102,8 +103,12 @@ const TopicSelectionPage = () => {
                 placeholder="Enter your topic here"
               />
             </div>
-            <div className="flex flex-col gap-2">
-              <label className="font-poppins">Input Language</label>
+          </div>
+
+          {/* Language Selection Section */}
+          <div className="flex flex-col md:flex-row gap-5 justify-center items-center mt-5">
+            <div className="flex flex-col gap-2 items-center">
+              <label className="font-poppins text-center">Input Language</label>
               <select
                 className={`${styles.selectClass} py-2 px-2 rounded-lg text-[#5533FF] font-medium border border-[rgba(0,0,0,0.1)]`}
                 value={inputLanguage}
@@ -113,8 +118,8 @@ const TopicSelectionPage = () => {
                 <option value="ur">Urdu</option>
               </select>
             </div>
-            <div className="flex flex-col gap-2">
-              <label className="font-poppins">Output Language</label>
+            <div className="flex flex-col gap-2 items-center">
+              <label className="font-poppins text-center">Output Language</label>
               <select
                 className={`${styles.selectClass} py-2 px-2 rounded-lg text-[#5533FF] font-medium border border-[rgba(0,0,0,0.1)]`}
                 value={outputLanguage}
