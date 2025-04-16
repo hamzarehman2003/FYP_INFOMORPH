@@ -11,6 +11,8 @@ const SummarizationPage = () => {
   const { summary, query, setSummary, setQuery } = useContext(SummaryContext);
   const router = useRouter();
   const [feedback, setFeedback] = useState("");
+  const [videoUrl, setVideoUrl] = useState(null);
+  const [isGeneratingVideo, setIsGeneratingVideo] = useState(false);
 
   useEffect(() => {
     console.log("Summarization Page: summary =", summary);
@@ -42,6 +44,26 @@ const SummarizationPage = () => {
     setSummary("");
     setQuery("");
     router.push("/topic-selection");
+  };
+
+  const handleGenerateVideo = async () => {
+    try {
+      setIsGeneratingVideo(true);
+      const response = await axios.post("http://localhost:8000/generate-video");
+      // Use the video_url returned by the backend
+      if (response.data.video_url) {
+        setVideoUrl(response.data.video_url);
+        setIsGeneratingVideo(false);
+        alert("Your AI video is ready!");
+      } else {
+        throw new Error("No video URL returned from backend.");
+      }
+    } catch (error) {
+      console.error("Error generating video:", error);
+      alert(error.response?.data?.detail || "Failed to generate video.");
+      setIsGeneratingVideo(false);
+      
+    }
   };
 
   return (
@@ -79,6 +101,28 @@ const SummarizationPage = () => {
               Submit Feedback
             </button>
           </div>
+
+          <div className="mb-4">
+            <button
+              onClick={handleGenerateVideo}
+              disabled={isGeneratingVideo}
+              className={`bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition ${
+                isGeneratingVideo ? 'opacity-50 cursor-not-allowed' : ''
+              }`}
+            >
+              {isGeneratingVideo ? 'Generating Video...' : 'Generate AI Video'}
+            </button>
+          </div>
+
+          {videoUrl && (
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold mb-2">Generated Video:</h2>
+              <video controls className="w-full rounded-lg">
+                <source src={videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
 
           <div className="flex justify-center gap-4">
             <button

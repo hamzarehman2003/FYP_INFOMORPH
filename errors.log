@@ -1223,3 +1223,751 @@ pip install python-multipart
 2025-03-21 15:51:44,259 [ERROR] Error in Gemini summarization: 429 Resource has been exhausted (e.g. check quota).
 2025-03-21 15:51:45,341 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'detected_unusual_activity', 'message': 'Unusual activity detected. Free Tier usage disabled. If you are using a proxy/VPN you might need to purchase a Paid Plan to not trigger our abuse detectors. Free Tier only works if users do not abuse it, for example by creating multiple free accounts. If we notice that many people try to abuse it, we will need to reconsider Free Tier altogether. \nPlease play fair and purchase any Paid Subscription to continue.'}}
 2025-03-21 15:51:45,341 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'detected_unusual_activity', 'message': 'Unusual activity detected. Free Tier usage disabled. If you are using a proxy/VPN you might need to purchase a Paid Plan to not trigger our abuse detectors. Free Tier only works if users do not abuse it, for example by creating multiple free accounts. If we notice that many people try to abuse it, we will need to reconsider Free Tier altogether. \nPlease play fair and purchase any Paid Subscription to continue.'}}
+2025-04-15 15:38:42,416 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-04-15 15:38:42,416 [ERROR] Access denied to https://www.esports.net/news/counter-strike/has-valve-finally-fixed-the-cs2-anti-cheat/: HTTP 403 Forbidden.
+2025-04-15 15:38:44,089 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-04-15 15:38:44,089 [ERROR] Access denied to https://blog.clash.gg/cs2-cheating-problem: HTTP 403 Forbidden.
+2025-04-15 15:38:44,834 [ERROR] Access denied to https://undetek.com/troubleshoot-cs2-cheat-problems/: HTTP 403 Forbidden.
+2025-04-15 15:38:44,834 [ERROR] Access denied to https://undetek.com/troubleshoot-cs2-cheat-problems/: HTTP 403 Forbidden.
+2025-04-15 15:39:11,117 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-04-15 15:39:11,117 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-04-15 15:39:32,469 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 15:39:32,469 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 16:22:58,701 [ERROR] Error fetching robots.txt from https://www.hindustantimes.com/robots.txt: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:22:58,701 [ERROR] Error fetching robots.txt from https://www.hindustantimes.com/robots.txt: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:09,013 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:09,013 [ERROR] Error fetching robots.txt from https://timesofindia.indiatimes.com/robots.txt: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:16,767 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:16,767 [ERROR] Error fetching robots.txt from https://indianexpress.com/robots.txt: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:18,419 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-04-15 16:23:18,419 [ERROR] Access denied to https://www.espncricinfo.com/cricketers/babar-azam-348144: HTTP 403 Forbidden.
+2025-04-15 16:23:30,730 [ERROR] Access denied to https://cricket.one/cricket-news/watch-babar-azam-embarrassed-as-net-bowler-dismisses-him-with-a-ripper/67dd02f49724cd66d538036e: HTTP 403 Forbidden.
+2025-04-15 16:23:30,730 [ERROR] Access denied to https://cricket.one/cricket-news/watch-babar-azam-embarrassed-as-net-bowler-dismisses-him-with-a-ripper/67dd02f49724cd66d538036e: HTTP 403 Forbidden.
+2025-04-15 16:23:33,829 [ERROR] Max retries reached for https://www.hindustantimes.com/cricket/babar-azam-torn-to-shreds-as-pakistan-reduced-to-32-5-in-horrific-collapse-vs-nz-fan-says-missed-century-by-99-runs-101743567868410.html: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:33,829 [ERROR] Max retries reached for https://www.hindustantimes.com/cricket/babar-azam-torn-to-shreds-as-pakistan-reduced-to-32-5-in-horrific-collapse-vs-nz-fan-says-missed-century-by-99-runs-101743567868410.html: Cannot connect to host www.hindustantimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:33,932 [ERROR] Max retries reached for https://timesofindia.indiatimes.com/sports/cricket/news/hasan-nawaz-breaks-babar-azams-record-scores-fastest-t20i-century-for-pakistan/articleshow/119297555.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:33,932 [ERROR] Max retries reached for https://timesofindia.indiatimes.com/sports/cricket/news/hasan-nawaz-breaks-babar-azams-record-scores-fastest-t20i-century-for-pakistan/articleshow/119297555.cms: Cannot connect to host timesofindia.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:34,034 [ERROR] Max retries reached for https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:34,034 [ERROR] Max retries reached for https://indianexpress.com/article/sports/cricket/wasim-akram-on-babar-azams-90-ball-64-knock-against-new-zealand-its-not-on-in-this-day-and-age-9845727/: Cannot connect to host indianexpress.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:34,215 [ERROR] Max retries reached for https://m.economictimes.com/magazines/panache/pakistani-actress-in-babar-azam-marriage-proposal-controversy-now-faces-arrest-what-went-wrong-who-is-nazish-jahangir/articleshow/119289062.cms: Cannot connect to host economictimes.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:23:34,215 [ERROR] Max retries reached for https://m.economictimes.com/magazines/panache/pakistani-actress-in-babar-azam-marriage-proposal-controversy-now-faces-arrest-what-went-wrong-who-is-nazish-jahangir/articleshow/119289062.cms: Cannot connect to host economictimes.indiatimes.com:443 ssl:default [getaddrinfo failed]
+2025-04-15 16:24:15,359 [ERROR] Max retries reached for https://twitter.com/babarazam258: 
+2025-04-15 16:24:15,359 [ERROR] Max retries reached for https://twitter.com/babarazam258: 
+2025-04-15 16:25:04,103 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 16:25:04,103 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 18:46:58,220 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-04-15 18:46:58,220 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-04-15 18:47:38,605 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 18:47:38,605 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 21:05:59,393 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:05:59,393 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:06:05,319 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:06:05,319 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:06:54,933 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:06:54,933 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:07:26,356 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 21:07:26,356 [ERROR] Text-to-speech conversion failed: [WinError 2] The system cannot find the file specified
+2025-04-15 21:09:58,363 [ERROR] Error generating video: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 21:09:58,363 [ERROR] Error generating video: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 21:14:19,909 [ERROR] Error generating video: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 21:14:19,909 [ERROR] Error generating video: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 21:15:45,244 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:15:45,244 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:15:49,873 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:15:49,873 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:16:39,957 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:16:39,957 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:16:56,747 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1368 credits are required for this request.'}}
+2025-04-15 21:16:56,747 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1368 credits are required for this request.'}}
+2025-04-15 21:17:57,734 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:17:57,734 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:17:57,736 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:17:57,736 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:20:12,098 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:20:12,098 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:20:12,099 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:20:12,099 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:20:35,802 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:20:35,802 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:20:35,803 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:20:35,803 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:24:17,572 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:24:17,572 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:24:17,572 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:24:17,572 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:25:34,504 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:25:34,504 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:25:34,505 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:25:34,505 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:26:04,763 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:26:04,763 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:26:04,764 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:26:04,764 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:26:33,510 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:26:33,510 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:26:33,511 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:26:33,511 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:28:30,832 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:28:30,832 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:28:30,833 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:28:30,833 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:29:47,426 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:29:47,426 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:29:51,756 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:29:51,756 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:30:42,954 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:30:42,954 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:30:59,892 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1584 credits are required for this request.'}}
+2025-04-15 21:30:59,892 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1584 credits are required for this request.'}}
+2025-04-15 21:32:09,783 [ERROR] D-ID API Error: Status 401, Response: {"message":"Unauthorized"}
+
+2025-04-15 21:32:09,783 [ERROR] D-ID API Error: Status 401, Response: {"message":"Unauthorized"}
+
+2025-04-15 21:32:09,784 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:32:09,784 [ERROR] D-ID API Error Response: {"message":"Unauthorized"}
+
+2025-04-15 21:32:09,784 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:32:09,784 [ERROR] Error generating video: 500: D-ID API error: 401 Client Error: Unauthorized for url: https://api.d-id.com/talks
+2025-04-15 21:42:47,713 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:42:47,713 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 21:42:50,873 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:42:50,873 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 21:43:42,947 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:43:42,947 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 21:44:00,629 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1643 credits are required for this request.'}}
+2025-04-15 21:44:00,629 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1643 credits are required for this request.'}}
+2025-04-15 21:44:33,238 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 21:44:33,238 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 21:44:33,239 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 21:44:33,239 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 23:36:13,439 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 23:36:13,439 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 23:36:13,441 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 23:36:13,441 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 23:38:20,166 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 23:38:20,166 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 23:38:22,962 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 23:38:22,962 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 23:39:15,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 23:39:15,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 23:39:33,767 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-15 23:39:33,767 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-15 23:46:50,106 [ERROR] D-ID API Error Response: {"kind":"ValidationError","description":"validation failed","details":{"body.script":{"message":"'script' is required"}}}
+2025-04-15 23:46:50,106 [ERROR] D-ID API Error Response: {"kind":"ValidationError","description":"validation failed","details":{"body.script":{"message":"'script' is required"}}}
+2025-04-15 23:46:50,106 [ERROR] Error generating video: 500: D-ID API error: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-15 23:46:50,106 [ERROR] Error generating video: 500: D-ID API error: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-15 23:48:23,943 [ERROR] D-ID API Error Response: {"kind":"ValidationError","description":"validation failed","details":{"body.script":{"message":"'script' is required"}}}
+2025-04-15 23:48:23,943 [ERROR] D-ID API Error Response: {"kind":"ValidationError","description":"validation failed","details":{"body.script":{"message":"'script' is required"}}}
+2025-04-15 23:48:23,943 [ERROR] Error generating video: 500: D-ID API error: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-15 23:48:23,943 [ERROR] Error generating video: 500: D-ID API error: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-15 23:50:13,854 [ERROR] D-ID API Error Response: {"kind":"ValidationError","description":"validation failed","details":{"body.script":{"message":"'script' is required"}}}
+2025-04-15 23:50:13,854 [ERROR] D-ID API Error Response: {"kind":"ValidationError","description":"validation failed","details":{"body.script":{"message":"'script' is required"}}}
+2025-04-15 23:50:13,855 [ERROR] Error generating video: 500: D-ID API error: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-15 23:50:13,855 [ERROR] Error generating video: 500: D-ID API error: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-15 23:52:10,056 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 23:52:10,056 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 23:52:12,591 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 23:52:12,591 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 23:53:04,954 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 23:53:04,954 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 23:53:23,551 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1039 credits are required for this request.'}}
+2025-04-15 23:53:23,551 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1039 credits are required for this request.'}}
+2025-04-15 23:53:33,124 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 23:53:33,124 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 23:53:33,124 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 23:53:33,124 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 23:55:59,752 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 23:55:59,752 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-15 23:55:59,752 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 23:55:59,752 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-15 23:57:32,885 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 23:57:32,885 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-15 23:57:36,324 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 23:57:36,324 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-15 23:58:08,940 [ERROR] Cancelling an overlapped future failed
+future: <_OverlappedFuture pending cb=[_ProactorReadPipeTransport._loop_reading()]>
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 402, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 542, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 72, in _cancel_overlapped
+    self._ov.cancel()
+OSError: [WinError 6] The handle is invalid
+2025-04-15 23:58:08,940 [ERROR] Cancelling an overlapped future failed
+future: <_OverlappedFuture pending cb=[_ProactorReadPipeTransport._loop_reading()]>
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 402, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 542, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 72, in _cancel_overlapped
+    self._ov.cancel()
+OSError: [WinError 6] The handle is invalid
+2025-04-15 23:58:26,933 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 23:58:26,933 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-15 23:58:44,683 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-15 23:58:44,683 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 00:08:42,799 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:08:42,799 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:08:42,800 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:08:42,800 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:14:54,289 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-04-16 00:14:54,289 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-04-16 00:14:54,503 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-04-16 00:14:54,503 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-04-16 00:14:54,713 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-04-16 00:14:54,713 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-04-16 00:14:54,913 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:54,913 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,109 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,109 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,314 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,314 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,519 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,519 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,721 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:55,721 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 4
+}
+]
+2025-04-16 00:14:56,039 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-04-16 00:14:56,039 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-04-16 00:14:56,382 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-04-16 00:14:56,382 [ERROR] Error in Gemini summarization: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-04-16 00:14:56,992 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 2074 credits are required for this request.'}}
+2025-04-16 00:14:56,992 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 2074 credits are required for this request.'}}
+2025-04-16 00:15:03,816 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:15:03,816 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:15:03,816 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:15:03,816 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:15:11,365 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:15:11,365 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:15:11,365 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:15:11,365 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:18:53,582 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:18:53,582 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:18:53,583 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:18:53,583 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:20:19,834 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 00:20:19,834 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 00:20:23,288 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 00:20:23,288 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 00:21:15,936 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 00:21:15,936 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 00:21:34,178 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 629 credits are required for this request.'}}
+2025-04-16 00:21:34,178 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 629 credits are required for this request.'}}
+2025-04-16 00:21:56,729 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:21:56,729 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:21:56,730 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:21:56,730 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:22:47,177 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:22:47,177 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:22:47,178 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:22:47,178 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:24:47,564 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:24:47,564 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:24:47,564 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:24:47,564 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:30:15,587 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:30:15,587 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:30:15,588 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:30:15,588 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:37:04,045 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:37:04,045 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:37:04,046 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:37:04,046 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:39:40,882 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:39:40,882 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:39:40,882 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:39:40,882 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:40:53,963 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:40:53,963 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:40:53,964 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:40:53,964 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:40:57,045 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:40:57,045 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:40:57,045 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:40:57,045 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:40:59,272 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:40:59,272 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:40:59,274 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:40:59,274 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:41:12,924 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:41:12,924 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:41:12,925 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:41:12,925 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:57:09,239 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:57:09,239 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 00:57:09,239 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 00:57:09,239 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 01:00:08,307 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 01:00:08,307 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 01:00:08,307 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 01:00:08,307 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 01:05:03,232 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 01:05:03,232 [ERROR] D-ID API Error Response: {"kind":"UnknownError","description":"Internal Server Error"}
+2025-04-16 01:05:03,233 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 01:05:03,233 [ERROR] Error generating video: 500: D-ID API error: 500 Server Error: Internal Server Error for url: https://api.d-id.com/talks
+2025-04-16 02:56:03,338 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 02:56:03,338 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 02:56:06,417 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 02:56:06,417 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 02:56:06,885 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 02:56:06,885 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 02:56:59,941 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 02:56:59,941 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 02:57:17,856 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 02:57:17,856 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 02:57:51,877 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 02:57:51,877 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 02:58:17,678 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 02:58:17,678 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 02:59:23,494 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 02:59:23,494 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 02:59:25,936 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 02:59:25,936 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 02:59:26,279 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 02:59:26,279 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:00:18,942 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:00:18,942 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:00:36,810 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1380 credits are required for this request.'}}
+2025-04-16 03:00:36,810 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1380 credits are required for this request.'}}
+2025-04-16 03:02:28,918 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:02:28,918 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:03:07,623 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:03:07,623 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:03:24,514 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:03:24,514 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:04:17,160 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:04:17,160 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:04:19,505 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:04:19,505 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:04:20,283 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:04:20,283 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:05:17,961 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:05:17,961 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:05:35,487 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:05:35,487 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:07:21,792 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:07:21,792 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:08:18,359 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:08:18,359 [ERROR] Error generating video: 400 Client Error: Bad Request for url: https://api.d-id.com/talks
+2025-04-16 03:14:04,523 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:14:04,523 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:14:07,003 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:14:07,003 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:14:08,066 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:14:08,066 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:14:59,960 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:14:59,960 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:15:17,514 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:15:17,514 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:19:09,000 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:19:09,000 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:19:10,596 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:19:10,596 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:19:11,295 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:19:11,295 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:20:02,937 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:20:02,937 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:20:21,943 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:20:21,943 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:28:31,735 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:28:31,735 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:28:32,986 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:28:32,986 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:28:33,649 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:28:33,649 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:29:25,931 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:29:25,931 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:29:44,280 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1380 credits are required for this request.'}}
+2025-04-16 03:29:44,280 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1380 credits are required for this request.'}}
+2025-04-16 03:51:24,286 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:51:24,286 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:51:26,456 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:51:26,456 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:51:27,401 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:51:27,401 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:52:17,932 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:52:17,932 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:52:34,984 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:52:34,984 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 03:56:00,971 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:56:00,971 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 03:56:02,748 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:56:02,748 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 03:56:04,264 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:56:04,264 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 03:56:37,942 [ERROR] Cancelling an overlapped future failed
+future: <_OverlappedFuture pending cb=[_ProactorReadPipeTransport._loop_reading()]>
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 402, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 542, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 72, in _cancel_overlapped
+    self._ov.cancel()
+OSError: [WinError 6] The handle is invalid
+2025-04-16 03:56:37,942 [ERROR] Cancelling an overlapped future failed
+future: <_OverlappedFuture pending cb=[_ProactorReadPipeTransport._loop_reading()]>
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 402, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 542, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hamza\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 72, in _cancel_overlapped
+    self._ov.cancel()
+OSError: [WinError 6] The handle is invalid
+2025-04-16 03:56:55,943 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:56:55,943 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 03:57:14,425 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1187 credits are required for this request.'}}
+2025-04-16 03:57:14,425 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1187 credits are required for this request.'}}
+2025-04-16 03:58:50,584 [ERROR] Error generating video: name 'StreamingResponse' is not defined
+2025-04-16 03:58:50,584 [ERROR] Error generating video: name 'StreamingResponse' is not defined
+2025-04-16 04:00:37,294 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:00:37,294 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:00:39,415 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:00:39,415 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:00:39,860 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:00:39,860 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:01:30,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:01:30,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:01:48,073 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:01:48,073 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:04:52,204 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:04:52,204 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:04:54,342 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:04:54,342 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:04:54,717 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:04:54,717 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:05:45,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:05:45,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:06:03,706 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:06:03,706 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:11:04,754 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:11:04,754 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:11:07,067 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:11:07,067 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:11:07,422 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:11:07,422 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:11:59,939 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:11:59,939 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:12:17,989 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:12:17,989 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:21:18,912 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 04:21:18,912 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 04:23:16,894 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 04:23:16,894 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 04:24:37,352 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:24:37,352 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:24:40,087 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:24:40,087 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:24:41,320 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:24:41,320 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:25:32,960 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:25:32,960 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:25:50,352 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:25:50,352 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:27:27,851 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 04:27:27,851 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 04:29:51,743 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:29:51,743 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:29:54,316 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:29:54,316 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:29:55,667 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:29:55,667 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:30:46,955 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:30:46,955 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:31:04,645 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 992 credits are required for this request.'}}
+2025-04-16 04:31:04,645 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 992 credits are required for this request.'}}
+2025-04-16 04:32:30,400 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:32:30,400 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:32:32,555 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:32:32,555 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:32:32,907 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:32:32,907 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:33:24,950 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:33:24,950 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:33:42,917 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 963 credits are required for this request.'}}
+2025-04-16 04:33:42,917 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 963 credits are required for this request.'}}
+2025-04-16 04:34:44,460 [ERROR] Error generating video: 500: Timed out waiting for video generation.
+2025-04-16 04:34:44,460 [ERROR] Error generating video: 500: Timed out waiting for video generation.
+2025-04-16 04:42:37,444 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:42:37,444 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:42:39,897 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:42:39,897 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:42:41,012 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:42:41,012 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:42:57,571 [ERROR] Decoding error for https://www.jmu.edu/jmuxlabs/esports/valorant.shtml: 
+2025-04-16 04:42:57,571 [ERROR] Decoding error for https://www.jmu.edu/jmuxlabs/esports/valorant.shtml: 
+2025-04-16 04:43:32,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:43:32,946 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:43:51,201 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1096 credits are required for this request.'}}
+2025-04-16 04:43:51,201 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 1096 credits are required for this request.'}}
+2025-04-16 04:44:28,523 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:44:28,523 [ERROR] Access denied to https://tracker.gg/valorant: HTTP 403 Forbidden.
+2025-04-16 04:44:31,801 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:44:31,801 [ERROR] Access denied to https://www.brookdalecc.edu/brookdale-esports-valorant-team-are-national-champions/: HTTP 403 Forbidden.
+2025-04-16 04:44:32,319 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:44:32,319 [ERROR] Access denied to https://store.epicgames.com/en-US/p/valorant: HTTP 403 Forbidden.
+2025-04-16 04:45:24,952 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:45:24,952 [ERROR] Max retries reached for https://twitter.com/ValorantEsports: 
+2025-04-16 04:45:41,407 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:45:41,407 [ERROR] Text-to-speech conversion failed: status_code: 401, body: {'detail': {'status': 'quota_exceeded', 'message': 'This request exceeds your quota of 10000. You have 40 credits remaining, while 558 credits are required for this request.'}}
+2025-04-16 04:47:20,932 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks
+2025-04-16 04:47:20,932 [ERROR] Error generating video: 402 Client Error: Payment Required for url: https://api.d-id.com/talks

@@ -20,6 +20,9 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import uuid
 from dotenv import load_dotenv
 import os
+import base64
+import requests
+from fastapi.responses import JSONResponse
 
 load_dotenv()
 
@@ -315,3 +318,75 @@ async def serve_static(file_path: str):
         return FileResponse(full_path)
     else:
         raise HTTPException(status_code=404, detail="File not found.")
+
+def get_custom_public_image() -> str:
+    """
+    Returns a custom public image URL hosted on GitHub.
+    This image should show a clear, unobstructed human face.
+    
+    Update the URL below with your own GitHub raw URL:
+    https://raw.githubusercontent.com/your-username/my-public-images/main/gg.png
+    """
+    custom_image_url = "https://raw.githubusercontent.com/tallal02/my-public-images/main/hamza.jpg"
+    logging.info("Using custom image with a clear face: %s", custom_image_url)
+    return custom_image_url
+
+
+@app.post("/generate-video")
+async def generate_video():
+    try:
+        # D-ID API Configuration – Replace these with your actual D-ID credentials
+        D_ID_CREDENTIALS = "dGFxaXVycmVobWFuMTM1N0BnbWFpbC5jb20:mPd1gYC-L0VfHImTG7UjE"
+        D_ID_API_URL = "https://api.d-id.com/talks"
+        
+        # Encode credentials for Basic Authentication
+        encoded_credentials = base64.b64encode(D_ID_CREDENTIALS.encode()).decode("utf-8")
+        headers = {
+            "Authorization": f"Basic {encoded_credentials}",
+            "Content-Type": "application/json",
+            "accept": "application/json"
+        }
+        
+        # Construct the payload using the custom public image URL and audio URL.
+        payload = {
+            "source_url": get_custom_public_image(),  # use the custom public image logic
+            "script": {
+                "type": "audio",
+                "audio_url": "https://github.com/Syedhamza2/audio_hosting/raw/refs/heads/main/output_audio_fast.mp3"
+            }
+            # Optional fields can be added here if needed.
+        }
+        
+        # Create the talk (video request)
+        response = requests.post(D_ID_API_URL, headers=headers, json=payload)
+        response.raise_for_status()
+        data = response.json()
+        logging.info(f"Create talk response: {json.dumps(data, indent=4)}")
+        
+        talk_id = data.get("id")
+        if not talk_id:
+            raise HTTPException(status_code=500, detail="No talk ID received. Check your API key and payload.")
+        
+        # Poll for the video until it is ready
+        poll_url = f"{D_ID_API_URL}/{talk_id}"
+        logging.info("Polling for video status...")
+        for i in range(40):  # Poll up to 15 times (adjust as needed)
+            poll_response = requests.get(poll_url, headers=headers)
+            poll_response.raise_for_status()
+            poll_data = poll_response.json()
+            status = poll_data.get("status")
+            logging.info(f"Poll {i+1}: status = {status}")
+            
+            if status == "done":
+                video_url = poll_data.get("result_url")
+                logging.info(f"Video is ready! Video URL: {video_url}")
+                return JSONResponse(content={"video_url": video_url})
+            elif status == "failed":
+                raise HTTPException(status_code=500, detail="Video generation failed.")
+            await asyncio.sleep(4)  # Wait for 2 seconds asynchronously before re-polling
+
+        raise HTTPException(status_code=500, detail="Timed out waiting for video generation.")
+        
+    except Exception as e:
+        logging.error(f"Error generating video: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))

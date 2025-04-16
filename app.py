@@ -225,7 +225,7 @@ def google_search(api_key: str, cse_id: str, query: str, num_results: int = 10, 
         except requests.exceptions.RequestException as e:
             logging.error(f"Google Search API request failed: {e}")
             return []
-    return []
+           
 
 # --------------------------------------------------------
 # Robots.txt Checks (Asynchronous)
@@ -243,7 +243,7 @@ async def fetch_robots_txt(robots_url: str, timeout: int) -> Optional[str]:
             logging.info(f"Timeout occurred while fetching {robots_url}")
         except Exception as e:
             logging.error(f"Error fetching robots.txt from {robots_url}: {e}")
-    return None
+        return None
 
 async def parse_robots_txt(robots_txt: str, url: str, user_agent: str = '*') -> bool:
     rp = RobotFileParser()
@@ -315,20 +315,28 @@ async def fetch_article(
                         article.set_html(html_content)
                         article.parse()
                         content = article.text
+
+                        # If newspaper3k fails to extract meaningful content, try with BeautifulSoup
                         if not is_meaningful_content(content):
                             logging.info(f"newspaper3k extracted low-quality content from {url}, trying BeautifulSoup")
                             soup = BeautifulSoup(html_content, 'html.parser')
+
+                            # Remove unwanted elements
                             for unwanted in soup.select('script, style, nav, footer, header, [class*="cookie"], [class*="banner"], [class*="ad-"], [class*="advertisement"]'):
                                 unwanted.decompose()
+
+                            # Get paragraphs
                             paragraphs = soup.find_all('p')
                             content = ' '.join([p.get_text() for p in paragraphs if len(p.get_text()) > 30])
+
                             if not is_meaningful_content(content):
                                 logging.info(f"Failed to extract meaningful content from {url}")
                                 return None
                         content = clean_text(content)
-                    except Exception as parse_err:
-                        logging.error(f"Article parsing failed for {url}: {parse_err}")
+                    except ArticleException as e:
+                        logging.error(f"newspaper3k parsing failed for {url}: {e}")
                         return None
+
                     try:
                         lang = detect(content)
                         if lang != 'en':
@@ -338,10 +346,12 @@ async def fetch_article(
                             content = ' '.join(translator.translate(chunk) for chunk in chunks)
                     except Exception as trans_err:
                         logging.error(f"Language detection/translation failed for {url}: {trans_err}")
+
                     content = clean_text(content)
                     if len(content.split()) < 300:
                         logging.info(f"Article at {url} has insufficient content after processing.")
                         return None
+
                     return {
                         'url': url,
                         'title': clean_text(article.title) or 'No Title',
@@ -349,6 +359,7 @@ async def fetch_article(
                         'publish_date': (article.publish_date.strftime('%Y-%m-%d') if article.publish_date else 'No Publish Date'),
                         'content': content
                     }
+
         except (asyncio.TimeoutError, ClientError) as e:
             if attempt < retries - 1:
                 wait_time = backoff_factor * (2 ** attempt)
@@ -361,13 +372,13 @@ async def fetch_article(
         except Exception as e:
             logging.error(f"Unexpected error fetching article at {url}: {e}")
             return None
-    return None
+
 
 async def scrape_contents(urls: List[str]) -> List[Dict[str, Any]]:
     headers = {
         'User-Agent': (
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-            'AppleWebKit/537.36 (KHTML, like Gecko) '
+                       'AppleWebKit/537.36 (KHTML, like Gecko) '
             'Chrome/94.0.4606.81 Safari/537.36'
         ),
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -496,7 +507,7 @@ def summarize_in_chunks(text: str, max_length: int = 500, min_length: int = 300)
         try:
             final_summary = summarize_with_gemini(
                 combined_summary,
-                max_length=max_length,
+        max_length=max_length,
                 min_length=min_length
             )
             return final_summary
@@ -587,7 +598,7 @@ async def collect_and_scrape(
             logging.info(f"Limited URL collection to {max_urls_to_attempt}")
             break
         await asyncio.sleep(1)
-    
+
     if not collected_urls:
         logging.error("No URLs collected after filtering.")
         raise Exception("No valid URLs found for the query.")
@@ -644,22 +655,22 @@ async def collect_and_scrape(
         if word_count < 300:
             logging.warning(f"Generated summary is too short ({word_count} words). Attempting to regenerate.")
             try:
-                new_summary = summarize_with_gemini(
-                    cleaned_text, 
-                    max_length=550,
-                    min_length=350,
-                    article_count=len(valid_articles)
-                )
-                new_summary = clean_summary(new_summary)
-                new_word_count = len(new_summary.split())
-                logging.info(f"Regenerated summary with {new_word_count} words.")
-                if new_word_count > word_count:
-                    final_summary = new_summary
-                    word_count = new_word_count
-                if word_count < 300:
-                    logging.warning(f"Summary remains short ({word_count} words), returning as is.")
+                    new_summary = summarize_with_gemini(
+                        cleaned_text, 
+                        max_length=550,
+                        min_length=350,
+                        article_count=len(valid_articles)
+                    )
+                    new_summary = clean_summary(new_summary)
+                    new_word_count = len(new_summary.split())
+                    logging.info(f"Regenerated summary with {new_word_count} words.")
+                    if new_word_count > word_count:
+                        final_summary = new_summary
+                        word_count = new_word_count
+                    if word_count < 300:
+                        logging.warning(f"Summary remains short ({word_count} words), returning as is.")
             except Exception as e:
-                logging.error(f"Regeneration of summary failed: {e}")
+                    logging.error(f"Regeneration of summary failed: {e}")
         elif word_count > 650:
             logging.warning(f"Generated summary is too long ({word_count} words). Truncating.")
             sentences = re.split(r'(?<=[.!?]) +', final_summary)
@@ -704,7 +715,7 @@ async def collect_and_scrape(
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=4)
-        logging.info(f"Data written to {output_file}.")
+            logging.info(f"Data written to {output_file}.")
     except Exception as e:
         logging.error(f"Failed to write output to file: {e}")
 
